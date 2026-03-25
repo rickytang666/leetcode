@@ -59,6 +59,7 @@
 *.log
 *.dSYM/
 *.dSYM
+*.DS_Store
 
 # === Ignore common build folders ===
 /build/
