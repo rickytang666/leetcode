@@ -4,8 +4,6 @@ import json
 import argparse
 import sys
 import subprocess
-import sys
-import subprocess
 import re
 from markdownify import markdownify as md
 
@@ -73,7 +71,7 @@ def build_id_to_slug_map(force_refresh=False):
                 id_map = json.load(f)
             print(f"loaded {len(id_map)} problems from cache.")
             return id_map
-        except:
+        except Exception:
             print("cache invalid, fetching from remote...")
 
     print("fetching global problem list for id mapping...")
@@ -156,7 +154,7 @@ def format_readme(question_data):
     try:
         stats = json.loads(question_data.get("stats", "{}"))
         acceptance_rate = stats.get("acRate", "N/A")
-    except:
+    except Exception:
         acceptance_rate = "N/A"
 
     markdown_content = f"# {frontend_id}. {title}\n\n"
@@ -351,10 +349,6 @@ def main():
                 if not os.path.isdir(problem_path) or problem_dir.startswith("."):
                     continue
                 
-                # if --new, filter by target_dirs
-                if args.new and problem_path not in target_dirs:
-                    continue
-                    
                 success, error = process_problem(problem_path, problem_dir, id_map)
                 if error:
                     any_failure = True
