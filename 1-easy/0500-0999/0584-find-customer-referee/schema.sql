@@ -7,5 +7,5 @@ insert into Customer (id, name, referee_id) values ('4', 'Bill', NULL)
 insert into Customer (id, name, referee_id) values ('5', 'Zack', '1')
 insert into Customer (id, name, referee_id) values ('6', 'Mark', '2')
 
-# Write your MySQL query statement below
-select name from customer where referee_id != 2 or referee_id is null;
+-- Write your PostgreSQL query statement below
+select name from Customer where referee_id != 2 or referee_id is null
