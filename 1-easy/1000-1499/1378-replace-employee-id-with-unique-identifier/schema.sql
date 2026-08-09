@@ -11,6 +11,8 @@ insert into EmployeeUNI (id, unique_id) values ('3', '1')
 insert into EmployeeUNI (id, unique_id) values ('11', '2')
 insert into EmployeeUNI (id, unique_id) values ('90', '3')
 
-# Write your MySQL query statement below
-select EmployeeUNI.unique_id as unique_id, Employees.name as name
-from Employees left join EmployeeUNI on Employees.id = EmployeeUNI.id
+-- Write your PostgreSQL query statement below
+select EmployeeUNI.unique_id, Employees.name
+from Employees
+left join EmployeeUNI
+on Employees.id = EmployeeUNI.id
