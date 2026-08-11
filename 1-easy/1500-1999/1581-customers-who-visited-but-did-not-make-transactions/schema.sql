@@ -15,9 +15,10 @@ insert into Transactions (transaction_id, visit_id, amount) values ('9', '5', '2
 insert into Transactions (transaction_id, visit_id, amount) values ('12', '1', '910')
 insert into Transactions (transaction_id, visit_id, amount) values ('13', '2', '970')
 
-# Write your MySQL query statement below
+-- Write your PostgreSQL query statement below
 select v.customer_id, count(v.visit_id) as count_no_trans
 from Visits v
-left join Transactions t on v.visit_id = t.visit_id
-where t.transaction_id is null
+left join Transactions t
+on v.visit_id = t.visit_id
+where t.visit_id is null
 group by v.customer_id
