@@ -9,8 +9,8 @@ Truncate table Bonus
 insert into Bonus (empId, bonus) values ('2', '500')
 insert into Bonus (empId, bonus) values ('4', '2000')
 
-# Write your MySQL query statement below
-select e.name, b.bonus
-from Employee e
-left join Bonus b on e.empId = b.empId
-where bonus < 1000 or bonus is null
+-- Write your PostgreSQL query statement
+SELECT Employee.name, Bonus.bonus
+FROM Employee LEFT JOIN Bonus
+ON Employee.empId = Bonus.empId
+WHERE Bonus.bonus IS NULL OR Bonus.bonus < 1000
