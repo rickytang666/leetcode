@@ -13,11 +13,11 @@ insert into Activity (machine_id, process_id, activity_type, timestamp) values (
 insert into Activity (machine_id, process_id, activity_type, timestamp) values ('2', '1', 'start', '2.5')
 insert into Activity (machine_id, process_id, activity_type, timestamp) values ('2', '1', 'end', '5')
 
-# Write your MySQL query statement below
-select
-    machine_id,
-    round(sum(case when activity_type = 'start' then timestamp*-1 else timestamp end)*1.0/(select count(distinct process_id)), 3) as processing_time
-from
-    Activity
-group by
-    machine_id
+-- Write your PostgreSQL query statement below
+SELECT a.machine_id, ROUND(AVG(b.timestamp - a.timestamp)::numeric, 3) AS processing_time
+FROM Activity a, Activity b
+WHERE a.machine_id = b.machine_id
+AND a.process_id = b.process_id
+AND a.activity_type = 'start'
+AND b.activity_type = 'end'
+GROUP BY a.machine_id
