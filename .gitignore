@@ -71,6 +71,7 @@ id_map.json
 # === Ignore IDE/editor files ===
 .vscode/
 .idea/
+.workspace/
 *.iml
 *.swp
 *~
