@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -48,6 +49,8 @@ LANG_EXTENSIONS = {
     "swift": "swift",
     "typescript": "ts",
 }
+
+SOLUTION_FILE_RE = re.compile(r"^solution-[1-9]\d*\.[^.]+$")
 
 
 class LcError(Exception):
@@ -105,6 +108,13 @@ def build_parser() -> argparse.ArgumentParser:
     add_parser.add_argument("--force-readme", action="store_true", help="regenerate README.md if it exists")
     add_parser.add_argument("--no-open", action="store_true", help="do not open files in VS Code after writing")
     add_parser.set_defaults(func=add_problem)
+
+    done_parser = subparsers.add_parser("done", help="stage and commit one completed problem")
+    done_parser.add_argument("problem_id", type=parse_problem_id, help="numeric LeetCode frontend ID")
+    done_parser.add_argument("--message", "-m", help='commit message, default: "add q<id>"')
+    done_parser.add_argument("--push", action="store_true", help="push after a successful commit")
+    done_parser.add_argument("--dry-run", action="store_true", help="show what would be committed without staging")
+    done_parser.set_defaults(func=done_problem)
 
     return parser
 
@@ -165,6 +175,123 @@ def add_problem(args: argparse.Namespace) -> int:
         open_in_vscode(solution_path, readme_path)
 
     return 0
+
+
+def done_problem(args: argparse.Namespace) -> int:
+    problem_dir = resolve_local_problem_dir(args.problem_id)
+    validate_done_problem_dir(problem_dir)
+
+    message = args.message or f"add q{args.problem_id}"
+    changed_paths = git_changed_paths(problem_dir)
+
+    print(f"problem: q{args.problem_id}")
+    print(f"folder:  {problem_dir.relative_to(ROOT_DIR)}")
+
+    if not changed_paths:
+        print("nothing to commit for this problem")
+        return 0
+
+    print("changes:")
+    for path in changed_paths:
+        print(f"  {path}")
+    print(f"commit:  {message}")
+
+    outside_staged = git_staged_paths_outside(problem_dir)
+    if outside_staged:
+        print("note: unrelated staged changes exist and will be left untouched:")
+        for path in outside_staged:
+            print(f"  {path}")
+
+    if args.dry_run:
+        print("dry run: skipped git add/commit")
+        return 0
+
+    git_run(["add", "-A", "--", str(problem_dir.relative_to(ROOT_DIR))])
+
+    if git_run(["diff", "--cached", "--quiet", "--", str(problem_dir.relative_to(ROOT_DIR))], check=False).returncode == 0:
+        print("nothing to commit for this problem")
+        return 0
+
+    git_run(["commit", "-m", message, "--", str(problem_dir.relative_to(ROOT_DIR))])
+    print("committed")
+
+    if args.push:
+        git_run(["push"])
+        print("pushed")
+
+    return 0
+
+
+def resolve_local_problem_dir(problem_id: int) -> Path:
+    matches = find_existing_problem_dirs(problem_id)
+    if not matches:
+        raise LcError(f"q{problem_id} is not present locally. Run `uv run lc add {problem_id} <langSlug>` first.")
+    if len(matches) > 1:
+        paths = "\n".join(f"  - {path.relative_to(ROOT_DIR)}" for path in matches)
+        raise LcError(f"multiple folders match q{problem_id}:\n{paths}")
+    return matches[0]
+
+
+def validate_done_problem_dir(problem_dir: Path) -> None:
+    readme_path = problem_dir / "README.md"
+    if not readme_path.is_file():
+        raise LcError(f"{problem_dir.relative_to(ROOT_DIR)} is missing README.md")
+
+    solution_paths = sorted(path for path in problem_dir.iterdir() if path.is_file() and SOLUTION_FILE_RE.match(path.name))
+    if not solution_paths:
+        raise LcError(
+            f"{problem_dir.relative_to(ROOT_DIR)} has no solution files. "
+            "Expected at least one file matching solution-*.*"
+        )
+
+    nonconvention_files = []
+    for path in sorted(item for item in problem_dir.iterdir() if item.is_file()):
+        if path.name == "README.md" or SOLUTION_FILE_RE.match(path.name):
+            continue
+        if is_git_ignored(path):
+            continue
+        nonconvention_files.append(path.name)
+
+    if nonconvention_files:
+        names = "\n".join(f"  - {name}" for name in nonconvention_files)
+        raise LcError(f"folder has non-convention files that Git would track:\n{names}")
+
+
+def git_changed_paths(problem_dir: Path) -> list[str]:
+    result = git_run(["status", "--short", "--", str(problem_dir.relative_to(ROOT_DIR))], capture=True)
+    return [line for line in result.stdout.splitlines() if line.strip()]
+
+
+def git_staged_paths_outside(problem_dir: Path) -> list[str]:
+    result = git_run(["diff", "--cached", "--name-only"], capture=True)
+    prefix = f"{problem_dir.relative_to(ROOT_DIR)}/"
+    return [path for path in result.stdout.splitlines() if path and path != str(problem_dir.relative_to(ROOT_DIR)) and not path.startswith(prefix)]
+
+
+def is_git_ignored(path: Path) -> bool:
+    return git_run(["check-ignore", "-q", "--", str(path.relative_to(ROOT_DIR))], check=False).returncode == 0
+
+
+def git_run(
+    args: list[str],
+    *,
+    capture: bool = False,
+    check: bool = True,
+) -> subprocess.CompletedProcess[str]:
+    result = subprocess.run(
+        ["git", *args],
+        cwd=ROOT_DIR,
+        text=True,
+        capture_output=capture,
+        check=False,
+    )
+    if check and result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip()
+        command = "git " + " ".join(args)
+        if detail:
+            raise LcError(f"{command} failed: {detail}")
+        raise LcError(f"{command} failed with exit code {result.returncode}")
+    return result
 
 
 def fetch_problem(client: ApiClient, problem_id: int) -> dict[str, Any]:
