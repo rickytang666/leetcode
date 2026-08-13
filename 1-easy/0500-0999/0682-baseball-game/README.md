@@ -12,14 +12,14 @@ You are keeping the scores for a baseball game with strange rules. At the beginn
 
 You are given a list of strings `operations`, where `operations[i]` is the `i^th` operation you must apply to the record and is one of the following:
 
-* An integer `x`.
-    *   Record a new score of `x`.
-* `'+'`.
-    *   Record a new score that is the sum of the previous two scores.
-* `'D'`.
-    *   Record a new score that is the double of the previous score.
-* `'C'`.
-    *   Invalidate the previous score, removing it from the record.
+- An integer `x`.
+  - Record a new score of `x`.
+- `'+'`.
+  - Record a new score that is the sum of the previous two scores.
+- `'D'`.
+  - Record a new score that is the double of the previous score.
+- `'C'`.
+  - Invalidate the previous score, removing it from the record.
 
 Return _the sum of all the scores on the record after applying all the operations_.
 
@@ -69,7 +69,7 @@ Since the record is empty, the total sum is 0.
 
 **Constraints:**
 
-* `1 <= operations.length <= 1000`
-* `operations[i]` is `"C"`, `"D"`, `"+"`, or a string representing an integer in the range `[-3 * 10^4, 3 * 10^4]`.
-* For operation `"+"`, there will always be at least two previous scores on the record.
-* For operations `"C"` and `"D"`, there will always be at least one previous score on the record.
+- `1 <= operations.length <= 1000`
+- `operations[i]` is `"C"`, `"D"`, `"+"`, or a string representing an integer in the range `[-3 * 10^4, 3 * 10^4]`.
+- For operation `"+"`, there will always be at least two previous scores on the record.
+- For operations `"C"` and `"D"`, there will always be at least one previous score on the record.

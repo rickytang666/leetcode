@@ -41,8 +41,8 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 
 **Constraints:**
 
-* `1 <= s.length <= 10^4`
-* `s` contains English letters (upper-case and lower-case), digits, and spaces `' '`.
-* There is **at least one** word in `s`.
+- `1 <= s.length <= 10^4`
+- `s` contains English letters (upper-case and lower-case), digits, and spaces `' '`.
+- There is **at least one** word in `s`.
 
 **Follow-up:** If the string data type is mutable in your language, can you solve it **in-place** with `O(1)` extra space?

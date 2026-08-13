@@ -61,9 +61,9 @@ Explanation: For empty arrays, the answer is always init.
 
 **Constraints:**
 
-* `0 <= nums.length <= 1000`
-* `0 <= nums[i] <= 1000`
-* `0 <= init <= 1000`
+- `0 <= nums.length <= 1000`
+- `0 <= nums[i] <= 1000`
+- `0 <= init <= 1000`
 
 ---
 

@@ -29,6 +29,6 @@ Output: 0.50000
 
 **Constraints:**
 
-* `3 <= points.length <= 50`
-* `-50 <= x_i, y_i <= 50`
-* All the given points are **unique**.
+- `3 <= points.length <= 50`
+- `-50 <= x_i, y_i <= 50`
+- All the given points are **unique**.

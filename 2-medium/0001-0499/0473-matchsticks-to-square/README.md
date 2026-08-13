@@ -32,8 +32,8 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
 
 **Constraints:**
 
-* `1 <= matchsticks.length <= 15`
-* `1 <= matchsticks[i] <= 10^8`
+- `1 <= matchsticks.length <= 15`
+- `1 <= matchsticks[i] <= 10^8`
 
 ---
 

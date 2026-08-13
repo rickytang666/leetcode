@@ -33,6 +33,6 @@ Output: [[1]]
 
 **Constraints:**
 
-* `1 <= nums.length <= 6`
-* `-10 <= nums[i] <= 10`
-* All the integers of `nums` are **unique**.
+- `1 <= nums.length <= 6`
+- `-10 <= nums[i] <= 10`
+- All the integers of `nums` are **unique**.

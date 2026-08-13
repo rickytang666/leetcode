@@ -41,8 +41,8 @@ Output: [0,0,0,0]
 
 **Constraints:**
 
-* `2 <= nums.length <= 500`
-* `0 <= nums[i] <= 100`
+- `2 <= nums.length <= 500`
+- `0 <= nums[i] <= 100`
 
 ---
 

@@ -29,5 +29,5 @@ Output: 2
 
 **Constraints:**
 
-* `1 <= a.length, b.length <= 10^4`
-* `a` and `b` consist of lowercase English letters.
+- `1 <= a.length, b.length <= 10^4`
+- `a` and `b` consist of lowercase English letters.

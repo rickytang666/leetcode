@@ -27,5 +27,5 @@ Explanation: [4,9] is also accepted.
 
 **Constraints:**
 
-* `1 <= nums1.length, nums2.length <= 1000`
-* `0 <= nums1[i], nums2[i] <= 1000`
+- `1 <= nums1.length, nums2.length <= 1000`
+- `0 <= nums1[i], nums2[i] <= 1000`

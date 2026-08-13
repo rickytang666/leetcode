@@ -16,8 +16,8 @@ Return _the array `ans`._ Answers within `10^-5` of the actual answer will be ac
 
 **Note that:**
 
-* `Kelvin = Celsius + 273.15`
-* `Fahrenheit = Celsius * 1.80 + 32.00`
+- `Kelvin = Celsius + 273.15`
+- `Fahrenheit = Celsius * 1.80 + 32.00`
 
 **Example 1:**
 
@@ -37,7 +37,7 @@ Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and con
 
 **Constraints:**
 
-* `0 <= celsius <= 1000`
+- `0 <= celsius <= 1000`
 
 ---
 

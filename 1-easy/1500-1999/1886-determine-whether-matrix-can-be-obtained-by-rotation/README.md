@@ -42,10 +42,10 @@ Explanation: We can rotate mat 90 degrees clockwise two times to make mat equal 
 
 **Constraints:**
 
-* `n == mat.length == target.length`
-* `n == mat[i].length == target[i].length`
-* `1 <= n <= 10`
-* `mat[i][j]` and `target[i][j]` are either `0` or `1`.
+- `n == mat.length == target.length`
+- `n == mat[i].length == target[i].length`
+- `1 <= n <= 10`
+- `mat[i][j]` and `target[i][j]` are either `0` or `1`.
 
 ---
 

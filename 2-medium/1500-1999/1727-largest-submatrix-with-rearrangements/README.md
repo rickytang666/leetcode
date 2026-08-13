@@ -44,10 +44,10 @@ Explanation: Notice that you must rearrange entire columns, and there is no way 
 
 **Constraints:**
 
-* `m == matrix.length`
-* `n == matrix[i].length`
-* `1 <= m * n <= 10^5`
-* `matrix[i][j]` is either `0` or `1`.
+- `m == matrix.length`
+- `n == matrix[i].length`
+- `1 <= m * n <= 10^5`
+- `matrix[i][j]` is either `0` or `1`.
 
 ---
 

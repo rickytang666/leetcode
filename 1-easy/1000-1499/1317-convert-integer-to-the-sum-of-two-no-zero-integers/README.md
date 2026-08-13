@@ -12,8 +12,8 @@
 
 Given an integer `n`, return _a list of two integers_ `[a, b]` _where_:
 
-* `a` and `b` are **No-Zero integers**.
-* `a + b = n`
+- `a` and `b` are **No-Zero integers**.
+- `a + b = n`
 
 The test cases are generated so that there is at least one valid solution. If there are many valid solutions, you can return any of them.
 
@@ -38,7 +38,7 @@ Note that there are other valid answers as [8, 3] that can be accepted.
 
 **Constraints:**
 
-* `2 <= n <= 10^4`
+- `2 <= n <= 10^4`
 
 ---
 

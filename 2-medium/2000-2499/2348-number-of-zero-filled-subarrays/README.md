@@ -45,8 +45,8 @@ Explanation: There is no subarray filled with 0. Therefore, we return 0.
 
 **Constraints:**
 
-* `1 <= nums.length <= 10^5`
-* `-10^9 <= nums[i] <= 10^9`
+- `1 <= nums.length <= 10^5`
+- `-10^9 <= nums[i] <= 10^9`
 
 ---
 

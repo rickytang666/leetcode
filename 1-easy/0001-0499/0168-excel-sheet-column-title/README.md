@@ -46,4 +46,4 @@ Output: "ZY"
 
 **Constraints:**
 
-* `1 <= columnNumber <= 2^31 - 1`
+- `1 <= columnNumber <= 2^31 - 1`

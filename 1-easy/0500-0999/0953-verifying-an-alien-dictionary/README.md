@@ -38,7 +38,7 @@ Explanation: The first three characters "app" match, and the second string is sh
 
 **Constraints:**
 
-* `1 <= words.length <= 100`
-* `1 <= words[i].length <= 20`
-* `order.length == 26`
-* All characters in `words[i]` and `order` are English lowercase letters.
+- `1 <= words.length <= 100`
+- `1 <= words[i].length <= 20`
+- `order.length == 26`
+- All characters in `words[i]` and `order` are English lowercase letters.

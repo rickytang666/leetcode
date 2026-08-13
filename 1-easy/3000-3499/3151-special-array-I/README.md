@@ -44,8 +44,8 @@ There is only two pairs: `(2,1)` and `(1,4)`, and both of them contain numbers w
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `1 <= nums[i] <= 100`
+- `1 <= nums.length <= 100`
+- `1 <= nums[i] <= 100`
 
 ---
 

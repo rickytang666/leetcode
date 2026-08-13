@@ -32,7 +32,7 @@ Output: []
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 5000]`.
-* `1 <= Node.val <= 10^7`
-* `root` is a binary search tree.
-* `1 <= val <= 10^7`
+- The number of nodes in the tree is in the range `[1, 5000]`.
+- `1 <= Node.val <= 10^7`
+- `root` is a binary search tree.
+- `1 <= val <= 10^7`

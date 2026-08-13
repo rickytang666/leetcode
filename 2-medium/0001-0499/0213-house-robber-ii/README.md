@@ -38,8 +38,8 @@ Output: 3
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `0 <= nums[i] <= 1000`
+- `1 <= nums.length <= 100`
+- `0 <= nums[i] <= 1000`
 
 ---
 

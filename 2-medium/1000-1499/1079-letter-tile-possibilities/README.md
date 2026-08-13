@@ -36,8 +36,8 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= tiles.length <= 7`
-* `tiles` consists of uppercase English letters.
+- `1 <= tiles.length <= 7`
+- `tiles` consists of uppercase English letters.
 
 ---
 

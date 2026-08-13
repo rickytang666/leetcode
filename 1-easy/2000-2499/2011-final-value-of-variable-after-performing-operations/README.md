@@ -10,8 +10,8 @@
 
 There is a programming language with only **four** operations and **one** variable `X`:
 
-* `++X` and `X++` **increments** the value of the variable `X` by `1`.
-* `--X` and `X--` **decrements** the value of the variable `X` by `1`.
+- `++X` and `X++` **increments** the value of the variable `X` by `1`.
+- `--X` and `X--` **decrements** the value of the variable `X` by `1`.
 
 Initially, the value of `X` is `0`.
 
@@ -56,8 +56,8 @@ X--: X is decremented by 1, X = 1 - 1 = 0.
 
 **Constraints:**
 
-* `1 <= operations.length <= 100`
-* `operations[i]` will be either `"++X"`, `"X++"`, `"--X"`, or `"X--"`.
+- `1 <= operations.length <= 100`
+- `operations[i]` will be either `"++X"`, `"X++"`, `"--X"`, or `"X--"`.
 
 ---
 

@@ -30,6 +30,6 @@ Output: [1,2]
 
 **Constraints:**
 
-* The number of nodes in the list is in the range `[0, 200]`.
-* `-100 <= Node.val <= 100`
-* `-200 <= x <= 200`
+- The number of nodes in the list is in the range `[0, 200]`.
+- `-100 <= Node.val <= 100`
+- `-200 <= x <= 200`

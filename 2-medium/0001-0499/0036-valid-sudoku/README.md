@@ -16,8 +16,8 @@ Determine if a `9 x 9` Sudoku board is valid. Only the filled cells need to be v
 
 **Note:**
 
-* A Sudoku board (partially filled) could be valid but is not necessarily solvable.
-* Only the filled cells need to be validated according to the mentioned rules.
+- A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+- Only the filled cells need to be validated according to the mentioned rules.
 
 **Example 1:**
 
@@ -56,6 +56,6 @@ Explanation: Same as Example 1, except with the 5 in the top left corner being m
 
 **Constraints:**
 
-* `board.length == 9`
-* `board[i].length == 9`
-* `board[i][j]` is a digit `1-9` or `'.'`.
+- `board.length == 9`
+- `board[i].length == 9`
+- `board[i][j]` is a digit `1-9` or `'.'`.

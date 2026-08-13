@@ -25,5 +25,5 @@ Given `n = 5` and `edges = [[0, 1], [1, 2], [3, 4]]`, what should your return? I
 <details>
 <summary>Hint 2</summary>
 
-According to the [definition of tree on Wikipedia](https://en.wikipedia.org/wiki/Tree_\(graph_theory\)): “a tree is an undirected graph in which any two vertices are connected by _exactly_ one path. In other words, any connected graph without simple cycles is a tree.”
+According to the [definition of tree on Wikipedia](<https://en.wikipedia.org/wiki/Tree_(graph_theory)>): “a tree is an undirected graph in which any two vertices are connected by _exactly_ one path. In other words, any connected graph without simple cycles is a tree.”
 </details>

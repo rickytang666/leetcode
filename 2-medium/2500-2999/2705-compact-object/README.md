@@ -38,5 +38,5 @@ Explanation: obj[0], obj[1], obj[3][0], and obj[4][0] were falsy and removed.
 
 **Constraints:**
 
-* `obj` is a valid JSON object
-* `2 <= JSON.stringify(obj).length <= 10^6`
+- `obj` is a valid JSON object
+- `2 <= JSON.stringify(obj).length <= 10^6`

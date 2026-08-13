@@ -16,8 +16,8 @@ Return _the **smallest sorted** list of ranges that **cover all the numbers in t
 
 Each range `[a,b]` in the list should be output as:
 
-* `"a->b"` if `a != b`
-* `"a"` if `a == b`
+- `"a->b"` if `a != b`
+- `"a"` if `a == b`
 
 **Example 1:**
 
@@ -44,7 +44,7 @@ Explanation: The ranges are:
 
 **Constraints:**
 
-* `0 <= nums.length <= 20`
-* `-2^31 <= nums[i] <= 2^31 - 1`
-* All the values of `nums` are **unique**.
-* `nums` is sorted in ascending order.
+- `0 <= nums.length <= 20`
+- `-2^31 <= nums[i] <= 2^31 - 1`
+- All the values of `nums` are **unique**.
+- `nums` is sorted in ascending order.

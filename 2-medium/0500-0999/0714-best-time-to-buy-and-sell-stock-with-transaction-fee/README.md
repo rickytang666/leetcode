@@ -14,8 +14,8 @@ Find the maximum profit you can achieve. You may complete as many transactions a
 
 **Note:**
 
-* You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
-* The transaction fee is only charged once for each stock purchase and sale.
+- You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+- The transaction fee is only charged once for each stock purchase and sale.
 
 **Example 1:**
 
@@ -39,9 +39,9 @@ Output: 6
 
 **Constraints:**
 
-* `1 <= prices.length <= 5 * 10^4`
-* `1 <= prices[i] < 5 * 10^4`
-* `0 <= fee < 5 * 10^4`
+- `1 <= prices.length <= 5 * 10^4`
+- `1 <= prices[i] < 5 * 10^4`
+- `0 <= fee < 5 * 10^4`
 
 ---
 

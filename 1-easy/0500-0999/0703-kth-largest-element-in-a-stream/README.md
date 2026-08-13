@@ -14,8 +14,8 @@ You are tasked to implement a class which, for a given integer `k`, maintains a 
 
 Implement the `KthLargest` class:
 
-* `KthLargest(int k, int[] nums)` Initializes the object with the integer `k` and the stream of test scores `nums`.
-* `int add(int val)` Adds a new test score `val` to the stream and returns the element representing the `k^th` largest element in the pool of test scores so far.
+- `KthLargest(int k, int[] nums)` Initializes the object with the integer `k` and the stream of test scores `nums`.
+- `int add(int val)` Adds a new test score `val` to the stream and returns the element representing the `k^th` largest element in the pool of test scores so far.
 
 **Example 1:**
 
@@ -52,8 +52,8 @@ kthLargest.add(9); // return 8
 
 **Constraints:**
 
-* `0 <= nums.length <= 10^4`
-* `1 <= k <= nums.length + 1`
-* `-10^4 <= nums[i] <= 10^4`
-* `-10^4 <= val <= 10^4`
-* At most `10^4` calls will be made to `add`.
+- `0 <= nums.length <= 10^4`
+- `1 <= k <= nums.length + 1`
+- `-10^4 <= nums[i] <= 10^4`
+- `-10^4 <= val <= 10^4`
+- At most `10^4` calls will be made to `add`.

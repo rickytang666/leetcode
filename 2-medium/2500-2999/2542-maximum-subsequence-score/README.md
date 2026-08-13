@@ -12,8 +12,8 @@ You are given two **0-indexed** integer arrays `nums1` and `nums2` of equal leng
 
 For chosen indices `i_0`, `i_1`, ..., `i_k - 1`, your **score** is defined as:
 
-* The sum of the selected elements from `nums1` multiplied with the **minimum** of the selected elements from `nums2`.
-* It can defined simply as: `(nums1[i_0] + nums1[i_1] +...+ nums1[i_k - 1]) * min(nums2[i_0] , nums2[i_1], ... ,nums2[i_k - 1])`.
+- The sum of the selected elements from `nums1` multiplied with the **minimum** of the selected elements from `nums2`.
+- It can defined simply as: `(nums1[i_0] + nums1[i_1] +...+ nums1[i_k - 1]) * min(nums2[i_0] , nums2[i_1], ... ,nums2[i_k - 1])`.
 
 Return _the **maximum** possible score._
 
@@ -44,10 +44,10 @@ Choosing index 2 is optimal: nums1[2] * nums2[2] = 3 * 10 = 30 is the maximum po
 
 **Constraints:**
 
-* `n == nums1.length == nums2.length`
-* `1 <= n <= 10^5`
-* `0 <= nums1[i], nums2[j] <= 10^5`
-* `1 <= k <= n`
+- `n == nums1.length == nums2.length`
+- `1 <= n <= 10^5`
+- `0 <= nums1[i], nums2[j] <= 10^5`
+- `1 <= k <= n`
 
 ---
 

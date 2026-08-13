@@ -10,11 +10,11 @@
 
 A string `s` is called **happy** if it satisfies the following conditions:
 
-* `s` only contains the letters `'a'`, `'b'`, and `'c'`.
-* `s` does not contain any of `"aaa"`, `"bbb"`, or `"ccc"` as a substring.
-* `s` contains **at most** `a` occurrences of the letter `'a'`.
-* `s` contains **at most** `b` occurrences of the letter `'b'`.
-* `s` contains **at most** `c` occurrences of the letter `'c'`.
+- `s` only contains the letters `'a'`, `'b'`, and `'c'`.
+- `s` does not contain any of `"aaa"`, `"bbb"`, or `"ccc"` as a substring.
+- `s` contains **at most** `a` occurrences of the letter `'a'`.
+- `s` contains **at most** `b` occurrences of the letter `'b'`.
+- `s` contains **at most** `c` occurrences of the letter `'c'`.
 
 Given three integers `a`, `b`, and `c`, return _the **longest possible happy** string_. If there are multiple longest happy strings, return _any of them_. If there is no such string, return _the empty string_ `""`.
 
@@ -38,8 +38,8 @@ Explanation: It is the only correct answer in this case.
 
 **Constraints:**
 
-* `0 <= a, b, c <= 100`
-* `a + b + c > 0`
+- `0 <= a, b, c <= 100`
+- `a + b + c > 0`
 
 ---
 

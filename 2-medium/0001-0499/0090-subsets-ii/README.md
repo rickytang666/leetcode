@@ -28,5 +28,5 @@ Output: [[],[0]]
 
 **Constraints:**
 
-* `1 <= nums.length <= 10`
-* `-10 <= nums[i] <= 10`
+- `1 <= nums.length <= 10`
+- `-10 <= nums[i] <= 10`

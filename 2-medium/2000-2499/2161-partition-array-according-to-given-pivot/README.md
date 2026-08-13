@@ -10,10 +10,10 @@
 
 You are given a **0-indexed** integer array `nums` and an integer `pivot`. Rearrange `nums` such that the following conditions are satisfied:
 
-* Every element less than `pivot` appears **before** every element greater than `pivot`.
-* Every element equal to `pivot` appears **in between** the elements less than and greater than `pivot`.
-* The **relative order** of the elements less than `pivot` and the elements greater than `pivot` is maintained.
-    *   More formally, consider every `p_i`, `p_j` where `p_i` is the new position of the `i^th` element and `p_j` is the new position of the `j^th` element. If `i < j` and **both** elements are smaller (_or larger_) than `pivot`, then `p_i < p_j`.
+- Every element less than `pivot` appears **before** every element greater than `pivot`.
+- Every element equal to `pivot` appears **in between** the elements less than and greater than `pivot`.
+- The **relative order** of the elements less than `pivot` and the elements greater than `pivot` is maintained.
+  - More formally, consider every `p_i`, `p_j` where `p_i` is the new position of the `i^th` element and `p_j` is the new position of the `j^th` element. If `i < j` and **both** elements are smaller (_or larger_) than `pivot`, then `p_i < p_j`.
 
 Return `nums` _after the rearrangement._
 
@@ -41,9 +41,9 @@ The relative ordering of the elements less than and greater than pivot is also m
 
 **Constraints:**
 
-* `1 <= nums.length <= 10^5`
-* `-10^6 <= nums[i] <= 10^6`
-* `pivot` equals to an element of `nums`.
+- `1 <= nums.length <= 10^5`
+- `-10^6 <= nums[i] <= 10^6`
+- `pivot` equals to an element of `nums`.
 
 ---
 

@@ -10,7 +10,7 @@
 
 You are given an integer array `nums` and an integer `k`. You can perform the following operation any number of times:
 
-* Select an index `i` and replace `nums[i]` with `nums[i] - 1`.
+- Select an index `i` and replace `nums[i]` with `nums[i] - 1`.
 
 Return the **minimum** number of operations required to make the sum of the array divisible by `k`.
 
@@ -22,8 +22,8 @@ Return the **minimum** number of operations required to make the sum of the arra
 
 **Explanation:**
 
-* Perform 4 operations on `nums[1] = 9`. Now, `nums = [3, 5, 7]`.
-* The sum is 15, which is divisible by 5.
+- Perform 4 operations on `nums[1] = 9`. Now, `nums = [3, 5, 7]`.
+- The sum is 15, which is divisible by 5.
 
 **Example 2:**
 
@@ -33,7 +33,7 @@ Return the **minimum** number of operations required to make the sum of the arra
 
 **Explanation:**
 
-* The sum is 8, which is already divisible by 4. Hence, no operations are needed.
+- The sum is 8, which is already divisible by 4. Hence, no operations are needed.
 
 **Example 3:**
 
@@ -43,14 +43,14 @@ Return the **minimum** number of operations required to make the sum of the arra
 
 **Explanation:**
 
-* Perform 3 operations on `nums[0] = 3` and 2 operations on `nums[1] = 2`. Now, `nums = [0, 0]`.
-* The sum is 0, which is divisible by 6.
+- Perform 3 operations on `nums[0] = 3` and 2 operations on `nums[1] = 2`. Now, `nums = [0, 0]`.
+- The sum is 0, which is divisible by 6.
 
 **Constraints:**
 
-* `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 1000`
-* `1 <= k <= 100`
+- `1 <= nums.length <= 1000`
+- `1 <= nums[i] <= 1000`
+- `1 <= k <= 100`
 
 ---
 

@@ -36,7 +36,7 @@ Therefore, we return false.
 
 **Constraints:**
 
-* `4 <= n <= 10^5`
+- `4 <= n <= 10^5`
 
 ---
 

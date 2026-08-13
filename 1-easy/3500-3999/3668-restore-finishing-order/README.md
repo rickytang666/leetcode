@@ -10,8 +10,8 @@
 
 You are given an integer array `order` of length `n` and an integer array `friends`.
 
-* `order` contains every integer from 1 to `n` **exactly once**, representing the IDs of the participants of a race in their **finishing** order.
-* `friends` contains the IDs of your friends in the race **sorted** in strictly increasing order. Each ID in friends is guaranteed to appear in the `order` array.
+- `order` contains every integer from 1 to `n` **exactly once**, representing the IDs of the participants of a race in their **finishing** order.
+- `friends` contains the IDs of your friends in the race **sorted** in strictly increasing order. Each ID in friends is guaranteed to appear in the `order` array.
 
 Return an array containing your friends' IDs in their **finishing** order.
 
@@ -37,11 +37,11 @@ The finishing order is `[1, 4, **5**, 3, **2**]`. Therefore, the finishing order
 
 **Constraints:**
 
-* `1 <= n == order.length <= 100`
-* `order` contains every integer from 1 to `n` exactly once
-* `1 <= friends.length <= min(8, n)`
-* `1 <= friends[i] <= n`
-* `friends` is strictly increasing
+- `1 <= n == order.length <= 100`
+- `order` contains every integer from 1 to `n` exactly once
+- `1 <= friends.length <= min(8, n)`
+- `1 <= friends[i] <= n`
+- `friends` is strictly increasing
 
 ---
 

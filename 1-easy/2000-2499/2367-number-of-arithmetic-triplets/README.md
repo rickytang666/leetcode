@@ -10,9 +10,9 @@
 
 You are given a **0-indexed**, **strictly increasing** integer array `nums` and a positive integer `diff`. A triplet `(i, j, k)` is an **arithmetic triplet** if the following conditions are met:
 
-* `i < j < k`,
-* `nums[j] - nums[i] == diff`, and
-* `nums[k] - nums[j] == diff`.
+- `i < j < k`,
+- `nums[j] - nums[i] == diff`, and
+- `nums[k] - nums[j] == diff`.
 
 Return _the number of unique **arithmetic triplets**._
 
@@ -38,10 +38,10 @@ Explanation:
 
 **Constraints:**
 
-* `3 <= nums.length <= 200`
-* `0 <= nums[i] <= 200`
-* `1 <= diff <= 50`
-* `nums` is **strictly** increasing.
+- `3 <= nums.length <= 200`
+- `0 <= nums[i] <= 200`
+- `1 <= diff <= 50`
+- `nums` is **strictly** increasing.
 
 ---
 

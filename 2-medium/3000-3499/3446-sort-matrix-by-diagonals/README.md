@@ -10,8 +10,8 @@
 
 You are given an `n x n` square matrix of integers `grid`. Return the matrix such that:
 
-* The diagonals in the **bottom-left triangle** (including the middle diagonal) are sorted in **non-increasing order**.
-* The diagonals in the **top-right triangle** are sorted in **non-decreasing order**.
+- The diagonals in the **bottom-left triangle** (including the middle diagonal) are sorted in **non-increasing order**.
+- The diagonals in the **top-right triangle** are sorted in **non-decreasing order**.
 
 **Example 1:**
 
@@ -25,13 +25,13 @@ You are given an `n x n` square matrix of integers `grid`. Return the matrix suc
 
 The diagonals with a black arrow (bottom-left triangle) should be sorted in non-increasing order:
 
-* `[1, 8, 6]` becomes `[8, 6, 1]`.
-* `[9, 5]` and `[4]` remain unchanged.
+- `[1, 8, 6]` becomes `[8, 6, 1]`.
+- `[9, 5]` and `[4]` remain unchanged.
 
 The diagonals with a blue arrow (top-right triangle) should be sorted in non-decreasing order:
 
-* `[7, 2]` becomes `[2, 7]`.
-* `[3]` remains unchanged.
+- `[7, 2]` becomes `[2, 7]`.
+- `[3]` remains unchanged.
 
 **Example 2:**
 
@@ -57,9 +57,9 @@ Diagonals with exactly one element are already in order, so no changes are neede
 
 **Constraints:**
 
-* `grid.length == grid[i].length == n`
-* `1 <= n <= 10`
-* `-10^5 <= grid[i][j] <= 10^5`
+- `grid.length == grid[i].length == n`
+- `1 <= n <= 10`
+- `-10^5 <= grid[i][j] <= 10^5`
 
 ---
 

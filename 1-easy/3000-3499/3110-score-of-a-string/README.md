@@ -34,8 +34,8 @@ The **ASCII** values of the characters in `s` are: `'z' = 122`, `'a' = 97`. So, 
 
 **Constraints:**
 
-* `2 <= s.length <= 100`
-* `s` consists only of lowercase English letters.
+- `2 <= s.length <= 100`
+- `s` consists only of lowercase English letters.
 
 ---
 

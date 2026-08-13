@@ -28,5 +28,5 @@ Explanation: The array cannot be partitioned into equal sum subsets.
 
 **Constraints:**
 
-* `1 <= nums.length <= 200`
-* `1 <= nums[i] <= 100`
+- `1 <= nums.length <= 200`
+- `1 <= nums[i] <= 100`

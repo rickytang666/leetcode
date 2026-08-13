@@ -46,8 +46,8 @@ There are 0 hills and valleys so we return 0.
 
 **Constraints:**
 
-* `3 <= nums.length <= 100`
-* `1 <= nums[i] <= 100`
+- `3 <= nums.length <= 100`
+- `1 <= nums[i] <= 100`
 
 ---
 

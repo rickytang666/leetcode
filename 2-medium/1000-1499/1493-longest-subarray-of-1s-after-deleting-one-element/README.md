@@ -38,8 +38,8 @@ Explanation: You must delete one element.
 
 **Constraints:**
 
-* `1 <= nums.length <= 10^5`
-* `nums[i]` is either `0` or `1`.
+- `1 <= nums.length <= 10^5`
+- `nums[i]` is either `0` or `1`.
 
 ---
 

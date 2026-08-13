@@ -12,8 +12,8 @@ Given a **0-indexed** integer array `nums` of size `n` and two integers `lower` 
 
 A pair `(i, j)` is **fair** if:
 
-* `0 <= i < j < n`, and
-* `lower <= nums[i] + nums[j] <= upper`
+- `0 <= i < j < n`, and
+- `lower <= nums[i] + nums[j] <= upper`
 
 **Example 1:**
 
@@ -33,10 +33,10 @@ Explanation: There is a single fair pair: (2,3).
 
 **Constraints:**
 
-* `1 <= nums.length <= 10^5`
-* `nums.length == n`
-* `-10^9 <= nums[i] <= 10^9`
-* `-10^9 <= lower <= upper <= 10^9`
+- `1 <= nums.length <= 10^5`
+- `nums.length == n`
+- `-10^9 <= nums[i] <= 10^9`
+- `-10^9 <= lower <= upper <= 10^9`
 
 ---
 

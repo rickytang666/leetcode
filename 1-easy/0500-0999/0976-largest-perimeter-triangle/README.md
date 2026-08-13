@@ -32,5 +32,5 @@ As we cannot use any three side lengths to form a triangle of non-zero area, we 
 
 **Constraints:**
 
-* `3 <= nums.length <= 10^4`
-* `1 <= nums[i] <= 10^6`
+- `3 <= nums.length <= 10^4`
+- `1 <= nums[i] <= 10^6`

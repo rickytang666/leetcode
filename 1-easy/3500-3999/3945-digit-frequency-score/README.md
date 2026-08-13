@@ -22,9 +22,9 @@ Return an integer denoting the score of `n`.
 
 **Explanation:**
 
-* The digit 1 appears 1 time, contributing `1 * 1 = 1`.
-* The digit 2 appears 2 times, contributing `2 * 2 = 4`.
-* Thus, the score of `n` is `1 + 4 = 5`.
+- The digit 1 appears 1 time, contributing `1 * 1 = 1`.
+- The digit 2 appears 2 times, contributing `2 * 2 = 4`.
+- Thus, the score of `n` is `1 + 4 = 5`.
 
 **Example 2:**
 
@@ -34,13 +34,13 @@ Return an integer denoting the score of `n`.
 
 **Explanation:**
 
-* The digit 0 appears 1 time, contributing `0 * 1 = 0`.
-* The digit 1 appears 2 times, contributing `1 * 2 = 2`.
-* Thus, the score of `n` is 2.
+- The digit 0 appears 1 time, contributing `0 * 1 = 0`.
+- The digit 1 appears 2 times, contributing `1 * 2 = 2`.
+- Thus, the score of `n` is 2.
 
 **Constraints:**
 
-* `1 <= n <= 10^9`
+- `1 <= n <= 10^9`
 
 ---
 

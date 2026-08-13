@@ -40,8 +40,8 @@ Output: "alGalooG"
 
 **Constraints:**
 
-* `1 <= command.length <= 100`
-* `command` consists of `"G"`, `"()"`, and/or `"(al)"` in some order.
+- `1 <= command.length <= 100`
+- `command` consists of `"G"`, `"()"`, and/or `"(al)"` in some order.
 
 ---
 

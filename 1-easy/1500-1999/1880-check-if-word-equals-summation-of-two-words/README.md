@@ -12,7 +12,7 @@ The **letter value** of a letter is its position in the alphabet **starting from
 
 The **numerical value** of some string of lowercase English letters `s` is the **concatenation** of the **letter values** of each letter in `s`, which is then **converted** into an integer.
 
-* For example, if `s = "acb"`, we concatenate each letter's letter value, resulting in `"021"`. After converting it, we get `21`.
+- For example, if `s = "acb"`, we concatenate each letter's letter value, resulting in `"021"`. After converting it, we get `21`.
 
 You are given three strings `firstWord`, `secondWord`, and `targetWord`, each consisting of lowercase English letters `'a'` through `'j'` **inclusive**.
 
@@ -56,8 +56,8 @@ We return true because 0 + 0 == 0.
 
 **Constraints:**
 
-* `1 <= firstWord.length,` `secondWord.length,` `targetWord.length <= 8`
-* `firstWord`, `secondWord`, and `targetWord` consist of lowercase English letters from `'a'` to `'j'` **inclusive**.
+- `1 <= firstWord.length,` `secondWord.length,` `targetWord.length <= 8`
+- `firstWord`, `secondWord`, and `targetWord` consist of lowercase English letters from `'a'` to `'j'` **inclusive**.
 
 ---
 

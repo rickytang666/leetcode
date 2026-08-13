@@ -12,7 +12,7 @@ There are `n` **availabe** seats and `n` students **standing** in a room. You ar
 
 You may perform the following move any number of times:
 
-* Increase or decrease the position of the `i^th` student by `1` (i.e., moving the `i^th` student from position `x` to `x + 1` or `x - 1`)
+- Increase or decrease the position of the `i^th` student by `1` (i.e., moving the `i^th` student from position `x` to `x + 1` or `x - 1`)
 
 Return _the **minimum number of moves** required to move each student to a seat_ _such that no two students are in the same seat._
 
@@ -59,9 +59,9 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 
 **Constraints:**
 
-* `n == seats.length == students.length`
-* `1 <= n <= 100`
-* `1 <= seats[i], students[j] <= 100`
+- `n == seats.length == students.length`
+- `1 <= n <= 100`
+- `1 <= seats[i], students[j] <= 100`
 
 ---
 

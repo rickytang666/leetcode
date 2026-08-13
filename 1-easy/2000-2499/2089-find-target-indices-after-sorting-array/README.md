@@ -43,8 +43,8 @@ The index where nums[i] == 5 is 4.
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `1 <= nums[i], target <= 100`
+- `1 <= nums.length <= 100`
+- `1 <= nums[i], target <= 100`
 
 ---
 

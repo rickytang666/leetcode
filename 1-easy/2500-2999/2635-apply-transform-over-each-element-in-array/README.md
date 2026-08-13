@@ -40,9 +40,9 @@ Explanation: The function always returns 42.
 
 **Constraints:**
 
-* `0 <= arr.length <= 1000`
-* `-10^9 <= arr[i] <= 10^9`
-* `fn` returns an integer.
+- `0 <= arr.length <= 1000`
+- `-10^9 <= arr[i] <= 10^9`
+- `fn` returns an integer.
 
 ---
 

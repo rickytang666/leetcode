@@ -30,4 +30,4 @@ Explanation: The two input promises resolve with the values of 10 and -12 respec
 
 **Constraints:**
 
-* `promise1` and `promise2` are promises that resolve with a number
+- `promise1` and `promise2` are promises that resolve with a number

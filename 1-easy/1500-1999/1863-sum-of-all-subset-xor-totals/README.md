@@ -10,7 +10,7 @@
 
 The **XOR total** of an array is defined as the bitwise `XOR` of **all its elements**, or `0` if the array is **empty**.
 
-* For example, the **XOR total** of the array `[2,5,6]` is `2 XOR 5 XOR 6 = 1`.
+- For example, the **XOR total** of the array `[2,5,6]` is `2 XOR 5 XOR 6 = 1`.
 
 Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of_ `nums`.
 
@@ -58,8 +58,8 @@ Explanation: The sum of all XOR totals for every subset is 480.
 
 **Constraints:**
 
-* `1 <= nums.length <= 12`
-* `1 <= nums[i] <= 20`
+- `1 <= nums.length <= 12`
+- `1 <= nums[i] <= 20`
 
 ---
 

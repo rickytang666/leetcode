@@ -54,8 +54,8 @@ Explanation:
 
 **Constraints:**
 
-* `1 <= days <= weights.length <= 5 * 10^4`
-* `1 <= weights[i] <= 500`
+- `1 <= days <= weights.length <= 5 * 10^4`
+- `1 <= weights[i] <= 500`
 
 ---
 

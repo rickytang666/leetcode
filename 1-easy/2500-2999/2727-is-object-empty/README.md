@@ -8,8 +8,8 @@
 
 Given an object or an array, return if it is empty.
 
-* An empty object contains no key-value pairs.
-* An empty array contains no elements.
+- An empty object contains no key-value pairs.
+- An empty array contains no elements.
 
 You may assume the object or array is the output of `JSON.parse`.
 
@@ -39,7 +39,7 @@ Explanation: The array has 3 elements so it is not empty.
 
 **Constraints:**
 
-* `obj` is a valid JSON object or array
-* `2 <= JSON.stringify(obj).length <= 10^5`
+- `obj` is a valid JSON object or array
+- `2 <= JSON.stringify(obj).length <= 10^5`
 
 **Can you solve it in O(1) time?**

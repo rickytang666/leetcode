@@ -36,6 +36,6 @@ Explanation: arr is sorted in ascending order by number at index=1.
 
 **Constraints:**
 
-* `arr` is a valid JSON array
-* `fn` is a function that returns a number
-* `1 <= arr.length <= 5 * 10^5`
+- `arr` is a valid JSON array
+- `fn` is a function that returns a number
+- `1 <= arr.length <= 5 * 10^5`

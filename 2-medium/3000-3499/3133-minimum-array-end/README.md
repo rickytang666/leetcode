@@ -34,7 +34,7 @@ Return the **minimum** possible value of `nums[n - 1]`.
 
 **Constraints:**
 
-* `1 <= n, x <= 10^8`
+- `1 <= n, x <= 10^8`
 
 ---
 

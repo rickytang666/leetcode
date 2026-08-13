@@ -24,8 +24,8 @@ All occurrences of a character must be replaced with another character while pre
 
 The strings `s` and `t` can be made identical by:
 
-* Mapping `'e'` to `'a'`.
-* Mapping `'g'` to `'d'`.
+- Mapping `'e'` to `'a'`.
+- Mapping `'g'` to `'d'`.
 
 **Example 2:**
 
@@ -45,6 +45,6 @@ The strings `s` and `t` can not be made identical as `'1'` needs to be mapped to
 
 **Constraints:**
 
-* `1 <= s.length <= 5 * 10^4`
-* `t.length == s.length`
-* `s` and `t` consist of any valid ascii character.
+- `1 <= s.length <= 5 * 10^4`
+- `t.length == s.length`
+- `s` and `t` consist of any valid ascii character.

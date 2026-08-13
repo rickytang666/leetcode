@@ -29,6 +29,6 @@ Output: 5.00000
 
 **Constraints:**
 
-* `n == nums.length`
-* `1 <= k <= n <= 10^5`
-* `-10^4 <= nums[i] <= 10^4`
+- `n == nums.length`
+- `1 <= k <= n <= 10^5`
+- `-10^4 <= nums[i] <= 10^4`

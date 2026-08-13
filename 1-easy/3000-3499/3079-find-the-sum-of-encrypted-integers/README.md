@@ -30,8 +30,8 @@ Return _the **sum** of encrypted elements_.
 
 **Constraints:**
 
-* `1 <= nums.length <= 50`
-* `1 <= nums[i] <= 1000`
+- `1 <= nums.length <= 50`
+- `1 <= nums[i] <= 1000`
 
 ---
 

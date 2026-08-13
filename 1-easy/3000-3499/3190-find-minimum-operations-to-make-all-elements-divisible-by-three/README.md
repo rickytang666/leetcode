@@ -22,9 +22,9 @@ Return the **minimum** number of operations to make all elements of `nums` divis
 
 All array elements can be made divisible by 3 using 3 operations:
 
-* Subtract 1 from 1.
-* Add 1 to 2.
-* Subtract 1 from 4.
+- Subtract 1 from 1.
+- Add 1 to 2.
+- Subtract 1 from 4.
 
 **Example 2:**
 
@@ -34,8 +34,8 @@ All array elements can be made divisible by 3 using 3 operations:
 
 **Constraints:**
 
-* `1 <= nums.length <= 50`
-* `1 <= nums[i] <= 50`
+- `1 <= nums.length <= 50`
+- `1 <= nums[i] <= 50`
 
 ---
 

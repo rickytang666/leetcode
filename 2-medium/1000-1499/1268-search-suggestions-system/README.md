@@ -34,13 +34,13 @@ Explanation: The only word "havana" will be always suggested while typing the se
 
 **Constraints:**
 
-* `1 <= products.length <= 1000`
-* `1 <= products[i].length <= 3000`
-* `1 <= sum(products[i].length) <= 2 * 10^4`
-* All the strings of `products` are **unique**.
-* `products[i]` consists of lowercase English letters.
-* `1 <= searchWord.length <= 1000`
-* `searchWord` consists of lowercase English letters.
+- `1 <= products.length <= 1000`
+- `1 <= products[i].length <= 3000`
+- `1 <= sum(products[i].length) <= 2 * 10^4`
+- All the strings of `products` are **unique**.
+- `products[i]` consists of lowercase English letters.
+- `1 <= searchWord.length <= 1000`
+- `searchWord` consists of lowercase English letters.
 
 ---
 

@@ -48,9 +48,9 @@ Explanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then contin
 
 **Constraints:**
 
-* `2 <= asteroids.length <= 10^4`
-* `-1000 <= asteroids[i] <= 1000`
-* `asteroids[i] != 0`
+- `2 <= asteroids.length <= 10^4`
+- `-1000 <= asteroids[i] <= 1000`
+- `asteroids[i] != 0`
 
 ---
 

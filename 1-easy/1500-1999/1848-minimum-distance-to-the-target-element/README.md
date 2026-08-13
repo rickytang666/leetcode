@@ -40,10 +40,10 @@ Explanation: Every value of nums is 1, but nums[0] minimizes abs(i - start), whi
 
 **Constraints:**
 
-* `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 10^4`
-* `0 <= start < nums.length`
-* `target` is in `nums`.
+- `1 <= nums.length <= 1000`
+- `1 <= nums[i] <= 10^4`
+- `0 <= start < nums.length`
+- `target` is in `nums`.
 
 ---
 

@@ -31,7 +31,7 @@ Output: 12
 
 **Constraints:**
 
-* `m == grid.length`
-* `n == grid[i].length`
-* `1 <= m, n <= 200`
-* `0 <= grid[i][j] <= 200`
+- `m == grid.length`
+- `n == grid[i].length`
+- `1 <= m, n <= 200`
+- `0 <= grid[i][j] <= 200`

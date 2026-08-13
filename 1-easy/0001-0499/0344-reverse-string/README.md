@@ -28,8 +28,8 @@ Output: ["h","a","n","n","a","H"]
 
 **Constraints:**
 
-* `1 <= s.length <= 10^5`
-* `s[i]` is a [printable ascii character](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
+- `1 <= s.length <= 10^5`
+- `s[i]` is a [printable ascii character](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
 
 ---
 

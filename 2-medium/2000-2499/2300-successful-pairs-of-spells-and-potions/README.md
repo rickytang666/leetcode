@@ -40,11 +40,11 @@ Thus, [2,0,2] is returned.
 
 **Constraints:**
 
-* `n == spells.length`
-* `m == potions.length`
-* `1 <= n, m <= 10^5`
-* `1 <= spells[i], potions[i] <= 10^5`
-* `1 <= success <= 10^10`
+- `n == spells.length`
+- `m == potions.length`
+- `1 <= n, m <= 10^5`
+- `1 <= spells[i], potions[i] <= 10^5`
+- `1 <= success <= 10^10`
 
 ---
 

@@ -49,8 +49,8 @@ Delete the elements `nums[2] == -1` and `nums[3] == -2`, and select the subarray
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `-100 <= nums[i] <= 100`
+- `1 <= nums.length <= 100`
+- `-100 <= nums[i] <= 100`
 
 ---
 

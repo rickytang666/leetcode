@@ -33,8 +33,8 @@ Explanation: Since no value in nums is repeated, there are no pairs (i,j) that m
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `1 <= nums[i], k <= 100`
+- `1 <= nums.length <= 100`
+- `1 <= nums[i], k <= 100`
 
 ---
 

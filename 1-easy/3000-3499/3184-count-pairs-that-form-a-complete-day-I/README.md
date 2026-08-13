@@ -36,8 +36,8 @@ The pairs of indices that form a complete day are `(0, 1)`, `(0, 2)`, and `(1, 2
 
 **Constraints:**
 
-* `1 <= hours.length <= 100`
-* `1 <= hours[i] <= 10^9`
+- `1 <= hours.length <= 100`
+- `1 <= hours[i] <= 10^9`
 
 ---
 

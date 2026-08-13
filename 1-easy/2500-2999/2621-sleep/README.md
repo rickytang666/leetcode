@@ -32,7 +32,7 @@ Explanation: It should return a promise that resolves after 200ms.
 
 **Constraints:**
 
-* `1 <= millis <= 1000`
+- `1 <= millis <= 1000`
 
 ---
 

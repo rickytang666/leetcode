@@ -37,13 +37,13 @@ Output: -1
 
 **Constraints:**
 
-* `1 <= k <= n <= 100`
-* `1 <= times.length <= 6000`
-* `times[i].length == 3`
-* `1 <= u_i, v_i <= n`
-* `u_i != v_i`
-* `0 <= w_i <= 100`
-* All the pairs `(u_i, v_i)` are **unique**. (i.e., no multiple edges.)
+- `1 <= k <= n <= 100`
+- `1 <= times.length <= 6000`
+- `times[i].length == 3`
+- `1 <= u_i, v_i <= n`
+- `u_i != v_i`
+- `0 <= w_i <= 100`
+- All the pairs `(u_i, v_i)` are **unique**. (i.e., no multiple edges.)
 
 ---
 

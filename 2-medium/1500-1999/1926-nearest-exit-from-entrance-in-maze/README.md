@@ -55,14 +55,14 @@ Explanation: There are no exits in this maze.
 
 **Constraints:**
 
-* `maze.length == m`
-* `maze[i].length == n`
-* `1 <= m, n <= 100`
-* `maze[i][j]` is either `'.'` or `'+'`.
-* `entrance.length == 2`
-* `0 <= entrancerow < m`
-* `0 <= entrancecol < n`
-* `entrance` will always be an empty cell.
+- `maze.length == m`
+- `maze[i].length == n`
+- `1 <= m, n <= 100`
+- `maze[i][j]` is either `'.'` or `'+'`.
+- `entrance.length == 2`
+- `0 <= entrancerow < m`
+- `0 <= entrancecol < n`
+- `entrance` will always be an empty cell.
 
 ---
 

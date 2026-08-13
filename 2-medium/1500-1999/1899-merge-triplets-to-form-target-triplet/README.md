@@ -12,8 +12,8 @@ A **triplet** is an array of three integers. You are given a 2D integer array `t
 
 To obtain `target`, you may apply the following operation on `triplets` **any number** of times (possibly **zero**):
 
-* Choose two indices (**0-indexed**) `i` and `j` (`i != j`) and **update** `triplets[j]` to become `[max(a_i, a_j), max(b_i, b_j), max(c_i, c_j)]`.
-    *   For example, if `triplets[i] = [2, 5, 3]` and `triplets[j] = [1, 7, 5]`, `triplets[j]` will be updated to `[max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5]`.
+- Choose two indices (**0-indexed**) `i` and `j` (`i != j`) and **update** `triplets[j]` to become `[max(a_i, a_j), max(b_i, b_j), max(c_i, c_j)]`.
+  - For example, if `triplets[i] = [2, 5, 3]` and `triplets[j] = [1, 7, 5]`, `triplets[j]` will be updated to `[max(2, 1), max(5, 7), max(3, 5)] = [2, 7, 5]`.
 
 Return `true` _if it is possible to obtain the_ `target` _**triplet**_ `[x, y, z]` _as an **element** of_ `triplets`_, or_ `false` _otherwise_.
 
@@ -48,9 +48,9 @@ The target triplet [5,5,5] is now an element of triplets.
 
 **Constraints:**
 
-* `1 <= triplets.length <= 10^5`
-* `triplets[i].length == target.length == 3`
-* `1 <= a_i, b_i, c_i, x, y, z <= 1000`
+- `1 <= triplets.length <= 10^5`
+- `triplets[i].length == target.length == 3`
+- `1 <= a_i, b_i, c_i, x, y, z <= 1000`
 
 ---
 

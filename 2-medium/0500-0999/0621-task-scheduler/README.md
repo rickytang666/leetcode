@@ -44,9 +44,9 @@ There are only two types of tasks, A and B, which need to be separated by 3 inte
 
 **Constraints:**
 
-* `1 <= tasks.length <= 10^4`
-* `tasks[i]` is an uppercase English letter.
-* `0 <= n <= 100`
+- `1 <= tasks.length <= 10^4`
+- `tasks[i]` is an uppercase English letter.
+- `0 <= n <= 100`
 
 ---
 

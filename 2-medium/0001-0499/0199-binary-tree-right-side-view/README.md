@@ -44,5 +44,5 @@ Given the `root` of a binary tree, imagine yourself standing on the **right side
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 100]`.
-* `-100 <= Node.val <= 100`
+- The number of nodes in the tree is in the range `[0, 100]`.
+- `-100 <= Node.val <= 100`

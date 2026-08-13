@@ -31,5 +31,5 @@ Explanation: There is 1 choose 1 = 1 total combination.
 
 **Constraints:**
 
-* `1 <= n <= 20`
-* `1 <= k <= n`
+- `1 <= n <= 20`
+- `1 <= k <= n`

@@ -43,8 +43,8 @@ Output: [9,0,1,6]
 
 **Constraints:**
 
-* `1 <= prices.length <= 500`
-* `1 <= prices[i] <= 1000`
+- `1 <= prices.length <= 500`
+- `1 <= prices[i] <= 1000`
 
 ---
 

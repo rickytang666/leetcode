@@ -36,9 +36,9 @@ The 2 good pairs are `(3, 0)` and `(3, 1)`.
 
 **Constraints:**
 
-* `1 <= n, m <= 50`
-* `1 <= nums1[i], nums2[j] <= 50`
-* `1 <= k <= 50`
+- `1 <= n, m <= 50`
+- `1 <= nums1[i], nums2[j] <= 50`
+- `1 <= k <= 50`
 
 ---
 

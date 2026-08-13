@@ -14,9 +14,9 @@ Given an array of strings `words`, return _the words that can be typed using let
 
 In the **American keyboard**:
 
-* the first row consists of the characters `"qwertyuiop"`,
-* the second row consists of the characters `"asdfghjkl"`, and
-* the third row consists of the characters `"zxcvbnm"`.
+- the first row consists of the characters `"qwertyuiop"`,
+- the second row consists of the characters `"asdfghjkl"`, and
+- the third row consists of the characters `"zxcvbnm"`.
 
 ![](https://assets.leetcode.com/uploads/2018/10/12/keyboard.png)
 
@@ -44,6 +44,6 @@ Both `"a"` and `"A"` are in the 2nd row of the American keyboard due to case ins
 
 **Constraints:**
 
-* `1 <= words.length <= 20`
-* `1 <= words[i].length <= 100`
-* `words[i]` consists of English letters (both lowercase and uppercase).
+- `1 <= words.length <= 20`
+- `1 <= words[i].length <= 100`
+- `words[i]` consists of English letters (both lowercase and uppercase).

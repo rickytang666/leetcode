@@ -44,8 +44,8 @@ Explanation: Leaf nodes in green with value (target = 2) are removed at each ste
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 3000]`.
-* `1 <= Node.val, target <= 1000`
+- The number of nodes in the tree is in the range `[1, 3000]`.
+- `1 <= Node.val, target <= 1000`
 
 ---
 

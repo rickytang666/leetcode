@@ -33,4 +33,4 @@ Output: 0
 
 **Constraints:**
 
-* `0 <= left <= right <= 2^31 - 1`
+- `0 <= left <= right <= 2^31 - 1`

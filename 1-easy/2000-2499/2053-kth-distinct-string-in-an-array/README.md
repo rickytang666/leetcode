@@ -46,9 +46,9 @@ The only distinct string is "b". Since there are fewer than 3 distinct strings, 
 
 **Constraints:**
 
-* `1 <= k <= arr.length <= 1000`
-* `1 <= arr[i].length <= 5`
-* `arr[i]` consists of lowercase English letters.
+- `1 <= k <= arr.length <= 1000`
+- `1 <= arr[i].length <= 5`
+- `arr[i]` consists of lowercase English letters.
 
 ---
 

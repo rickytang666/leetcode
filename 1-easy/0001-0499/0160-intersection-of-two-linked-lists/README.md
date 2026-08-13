@@ -22,11 +22,11 @@ The test cases are generated such that there are no cycles anywhere in the entir
 
 The inputs to the **judge** are given as follows (your program is **not** given these inputs):
 
-* `intersectVal` - The value of the node where the intersection occurs. This is `0` if there is no intersected node.
-* `listA` - The first linked list.
-* `listB` - The second linked list.
-* `skipA` - The number of nodes to skip ahead in `listA` (starting from the head) to get to the intersected node.
-* `skipB` - The number of nodes to skip ahead in `listB` (starting from the head) to get to the intersected node.
+- `intersectVal` - The value of the node where the intersection occurs. This is `0` if there is no intersected node.
+- `listA` - The first linked list.
+- `listB` - The second linked list.
+- `skipA` - The number of nodes to skip ahead in `listA` (starting from the head) to get to the intersected node.
+- `skipB` - The number of nodes to skip ahead in `listB` (starting from the head) to get to the intersected node.
 
 The judge will then create the linked structure based on these inputs and pass the two heads, `headA` and `headB` to your program. If you correctly return the intersected node, then your solution will be **accepted**.
 
@@ -66,13 +66,13 @@ Explanation: The two lists do not intersect, so return null.
 
 **Constraints:**
 
-* The number of nodes of `listA` is in the `m`.
-* The number of nodes of `listB` is in the `n`.
-* `1 <= m, n <= 3 * 10^4`
-* `1 <= Node.val <= 10^5`
-* `0 <= skipA <= m`
-* `0 <= skipB <= n`
-* `intersectVal` is `0` if `listA` and `listB` do not intersect.
-* `intersectVal == listA[skipA] == listB[skipB]` if `listA` and `listB` intersect.
+- The number of nodes of `listA` is in the `m`.
+- The number of nodes of `listB` is in the `n`.
+- `1 <= m, n <= 3 * 10^4`
+- `1 <= Node.val <= 10^5`
+- `0 <= skipA <= m`
+- `0 <= skipB <= n`
+- `intersectVal` is `0` if `listA` and `listB` do not intersect.
+- `intersectVal == listA[skipA] == listB[skipB]` if `listA` and `listB` intersect.
 
 **Follow up:** Could you write a solution that runs in `O(m + n)` time and use only `O(1)` memory?

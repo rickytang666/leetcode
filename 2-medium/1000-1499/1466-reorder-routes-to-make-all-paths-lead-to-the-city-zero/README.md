@@ -47,11 +47,11 @@ Output: 0
 
 **Constraints:**
 
-* `2 <= n <= 5 * 10^4`
-* `connections.length == n - 1`
-* `connections[i].length == 2`
-* `0 <= a_i, b_i <= n - 1`
-* `a_i != b_i`
+- `2 <= n <= 5 * 10^4`
+- `connections.length == n - 1`
+- `connections[i].length == 2`
+- `0 <= a_i, b_i <= n - 1`
+- `a_i != b_i`
 
 ---
 

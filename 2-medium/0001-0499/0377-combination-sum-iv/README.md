@@ -38,9 +38,9 @@ Output: 0
 
 **Constraints:**
 
-* `1 <= nums.length <= 200`
-* `1 <= nums[i] <= 1000`
-* All the elements of `nums` are **unique**.
-* `1 <= target <= 1000`
+- `1 <= nums.length <= 200`
+- `1 <= nums[i] <= 1000`
+- All the elements of `nums` are **unique**.
+- `1 <= target <= 1000`
 
 **Follow up:** What if negative numbers are allowed in the given array? How does it change the problem? What limitation we need to add to the question to allow negative numbers?

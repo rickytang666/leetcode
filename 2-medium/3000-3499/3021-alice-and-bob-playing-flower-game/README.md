@@ -20,9 +20,9 @@ The game proceeds as follows:
 
 Given two integers, `n` and `m`, the task is to compute the number of possible pairs `(x, y)` that satisfy the conditions:
 
-* Alice must win the game according to the described rules.
-* The number of flowers `x` in the first lane must be in the range `[1,n]`.
-* The number of flowers `y` in the second lane must be in the range `[1,m]`.
+- Alice must win the game according to the described rules.
+- The number of flowers `x` in the first lane must be in the range `[1,n]`.
+- The number of flowers `y` in the second lane must be in the range `[1,m]`.
 
 Return _the number of possible pairs_ `(x, y)` _that satisfy the conditions mentioned in the statement_.
 
@@ -44,7 +44,7 @@ Explanation: No pairs satisfy the conditions described in the statement.
 
 **Constraints:**
 
-* `1 <= n, m <= 10^5`
+- `1 <= n, m <= 10^5`
 
 ---
 

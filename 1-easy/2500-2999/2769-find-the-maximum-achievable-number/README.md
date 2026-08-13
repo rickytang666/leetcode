@@ -10,7 +10,7 @@
 
 Given two integers, `num` and `t`. A **number** `x` is **achievable** if it can become equal to `num` after applying the following operation **at most** `t` times:
 
-* Increase or decrease `x` by `1`, and _simultaneously_ increase or decrease `num` by `1`.
+- Increase or decrease `x` by `1`, and _simultaneously_ increase or decrease `num` by `1`.
 
 Return the **maximum** possible value of `x`.
 
@@ -24,7 +24,7 @@ Return the **maximum** possible value of `x`.
 
 Apply the following operation once to make the maximum achievable number equal to `num`:
 
-* Decrease the maximum achievable number by 1, and increase `num` by 1.
+- Decrease the maximum achievable number by 1, and increase `num` by 1.
 
 **Example 2:**
 
@@ -36,11 +36,11 @@ Apply the following operation once to make the maximum achievable number equal t
 
 Apply the following operation twice to make the maximum achievable number equal to `num`:
 
-* Decrease the maximum achievable number by 1, and increase `num` by 1.
+- Decrease the maximum achievable number by 1, and increase `num` by 1.
 
 **Constraints:**
 
-* `1 <= num, t <= 50`
+- `1 <= num, t <= 50`
 
 ---
 

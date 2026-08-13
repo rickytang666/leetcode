@@ -30,9 +30,9 @@ Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
 
 **Constraints:**
 
-* `n == gain.length`
-* `1 <= n <= 100`
-* `-100 <= gain[i] <= 100`
+- `n == gain.length`
+- `1 <= n <= 100`
+- `-100 <= gain[i] <= 100`
 
 ---
 

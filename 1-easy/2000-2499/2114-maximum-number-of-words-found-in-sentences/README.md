@@ -37,11 +37,11 @@ In this example, the second and third sentences (underlined) have the same numbe
 
 **Constraints:**
 
-* `1 <= sentences.length <= 100`
-* `1 <= sentences[i].length <= 100`
-* `sentences[i]` consists only of lowercase English letters and `' '` only.
-* `sentences[i]` does not have leading or trailing spaces.
-* All the words in `sentences[i]` are separated by a single space.
+- `1 <= sentences.length <= 100`
+- `1 <= sentences[i].length <= 100`
+- `sentences[i]` consists only of lowercase English letters and `' '` only.
+- `sentences[i]` does not have leading or trailing spaces.
+- All the words in `sentences[i]` are separated by a single space.
 
 ---
 

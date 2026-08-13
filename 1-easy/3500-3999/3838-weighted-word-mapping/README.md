@@ -26,9 +26,9 @@ Return a string formed by concatenating the mapped characters for all words in o
 
 **Explanation:**
 
-* The weight of `"abcd"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.
-* The weight of `"def"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.
-* The weight of `"xyz"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.
+- The weight of `"abcd"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.
+- The weight of `"def"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.
+- The weight of `"xyz"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.
 
 Thus, the string formed by concatenating the mapped characters is `"rij"`.
 
@@ -58,11 +58,11 @@ Thus, the string formed by concatenating the mapped characters is `"g"`.
 
 **Constraints:**
 
-* `1 <= words.length <= 100`
-* `1 <= words[i].length <= 10`
-* `weights.length == 26`
-* `1 <= weights[i] <= 100`
-* `words[i]` consists of lowercase English letters.
+- `1 <= words.length <= 100`
+- `1 <= words[i].length <= 10`
+- `weights.length == 26`
+- `1 <= weights[i] <= 100`
+- `words[i]` consists of lowercase English letters.
 
 ---
 

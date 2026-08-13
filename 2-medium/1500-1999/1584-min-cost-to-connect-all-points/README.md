@@ -36,9 +36,9 @@ Output: 18
 
 **Constraints:**
 
-* `1 <= points.length <= 1000`
-* `-10^6 <= x_i, y_i <= 10^6`
-* All pairs `(x_i, y_i)` are distinct.
+- `1 <= points.length <= 1000`
+- `-10^6 <= x_i, y_i <= 10^6`
+- All pairs `(x_i, y_i)` are distinct.
 
 ---
 

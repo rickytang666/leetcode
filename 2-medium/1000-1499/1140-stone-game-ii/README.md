@@ -26,8 +26,8 @@ Assuming Alice and Bob play optimally, return the maximum number of stones Alice
 
 **Explanation:**
 
-* If Alice takes one pile at the beginning, Bob takes two piles, then Alice takes 2 piles again. Alice can get `2 + 4 + 4 = 10` stones in total.
-* If Alice takes two piles at the beginning, then Bob can take all three piles left. In this case, Alice get `2 + 7 = 9` stones in total.
+- If Alice takes one pile at the beginning, Bob takes two piles, then Alice takes 2 piles again. Alice can get `2 + 4 + 4 = 10` stones in total.
+- If Alice takes two piles at the beginning, then Bob can take all three piles left. In this case, Alice get `2 + 7 = 9` stones in total.
 
 So we return 10 since it's larger.
 
@@ -39,8 +39,8 @@ So we return 10 since it's larger.
 
 **Constraints:**
 
-* `1 <= piles.length <= 100`
-* `1 <= piles[i] <= 10^4`
+- `1 <= piles.length <= 100`
+- `1 <= piles[i] <= 10^4`
 
 ---
 

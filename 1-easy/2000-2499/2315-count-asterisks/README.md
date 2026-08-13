@@ -43,9 +43,9 @@ Explanation: The considered characters are underlined: "yo|uar|e**|b|e***au|tifu
 
 **Constraints:**
 
-* `1 <= s.length <= 1000`
-* `s` consists of lowercase English letters, vertical bars `'|'`, and asterisks `'*'`.
-* `s` contains an **even** number of vertical bars `'|'`.
+- `1 <= s.length <= 1000`
+- `s` consists of lowercase English letters, vertical bars `'|'`, and asterisks `'*'`.
+- `s` contains an **even** number of vertical bars `'|'`.
 
 ---
 

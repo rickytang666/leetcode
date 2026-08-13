@@ -59,8 +59,8 @@ The cancellation was scheduled to occur after a delay of cancelTimeMs (100ms), w
 
 **Constraints:**
 
-* `fn` is a function
-* `args` is a valid JSON array
-* `1 <= args.length <= 10`
-* `20 <= t <= 1000`
-* `10 <= cancelTimeMs <= 1000`
+- `fn` is a function
+- `args` is a valid JSON array
+- `1 <= args.length <= 10`
+- `20 <= t <= 1000`
+- `10 <= cancelTimeMs <= 1000`

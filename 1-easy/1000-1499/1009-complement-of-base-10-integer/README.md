@@ -10,7 +10,7 @@
 
 The **complement** of an integer is the integer you get when you flip all the `0`'s to `1`'s and all the `1`'s to `0`'s in its binary representation.
 
-* For example, The integer `5` is `"101"` in binary and its **complement** is `"010"` which is the integer `2`.
+- For example, The integer `5` is `"101"` in binary and its **complement** is `"010"` which is the integer `2`.
 
 Given an integer `n`, return _its complement_.
 
@@ -40,7 +40,7 @@ Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 
 
 **Constraints:**
 
-* `0 <= n < 10^9`
+- `0 <= n < 10^9`
 
 **Note:** This question is the same as 476: [https://leetcode.com/problems/number-complement/](https://leetcode.com/problems/number-complement/)
 

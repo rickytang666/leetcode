@@ -12,7 +12,7 @@ You are given an array of `n` strings `strs`, all of the same length.
 
 The strings can be arranged such that there is one on each line, making a grid.
 
-* For example, `strs = ["abc", "bce", "cae"]` can be arranged as follows:
+- For example, `strs = ["abc", "bce", "cae"]` can be arranged as follows:
 
 ```
 abc
@@ -61,7 +61,7 @@ All 3 columns are not sorted, so you will delete all 3.
 
 **Constraints:**
 
-* `n == strs.length`
-* `1 <= n <= 100`
-* `1 <= strs[i].length <= 1000`
-* `strs[i]` consists of lowercase English letters.
+- `n == strs.length`
+- `1 <= n <= 100`
+- `1 <= strs[i].length <= 1000`
+- `strs[i]` consists of lowercase English letters.

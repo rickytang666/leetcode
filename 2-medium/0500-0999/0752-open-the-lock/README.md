@@ -45,11 +45,11 @@ Explanation: We cannot reach the target without getting stuck.
 
 **Constraints:**
 
-* `1 <= deadends.length <= 500`
-* `deadends[i].length == 4`
-* `target.length == 4`
-* target **will not be** in the list `deadends`.
-* `target` and `deadends[i]` consist of digits only.
+- `1 <= deadends.length <= 500`
+- `deadends[i].length == 4`
+- `target.length == 4`
+- target **will not be** in the list `deadends`.
+- `target` and `deadends[i]` consist of digits only.
 
 ---
 

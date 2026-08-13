@@ -32,5 +32,5 @@ Three values were passed to the function so it should return 3.
 
 **Constraints:**
 
-* `args` is a valid JSON array
-* `0 <= args.length <= 100`
+- `args` is a valid JSON array
+- `0 <= args.length <= 100`

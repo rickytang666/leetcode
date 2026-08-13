@@ -32,8 +32,8 @@ Output: [2,6,14,11,7,3,12,8,4,13,9,10,5,1]
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 10^4]`.
-* `0 <= Node.val <= 10^4`
-* The height of the n-ary tree is less than or equal to `1000`.
+- The number of nodes in the tree is in the range `[0, 10^4]`.
+- `0 <= Node.val <= 10^4`
+- The height of the n-ary tree is less than or equal to `1000`.
 
 **Follow up:** Recursive solution is trivial, could you do it iteratively?

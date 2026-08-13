@@ -38,5 +38,5 @@ Explanation: 4 boats (3), (3), (4), (5)
 
 **Constraints:**
 
-* `1 <= people.length <= 5 * 10^4`
-* `1 <= people[i] <= limit <= 3 * 10^4`
+- `1 <= people.length <= 5 * 10^4`
+- `1 <= people[i] <= limit <= 3 * 10^4`

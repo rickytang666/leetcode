@@ -44,7 +44,7 @@ The binary representation of 3 is `"11"`.
 
 **Constraints:**
 
-* `1 <= n <= 1000`
+- `1 <= n <= 1000`
 
 ---
 

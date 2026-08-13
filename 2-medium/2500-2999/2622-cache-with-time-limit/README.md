@@ -54,14 +54,14 @@ At t=250, count() returns 0 because the cache is empty.
 
 **Constraints:**
 
-* `0 <= key, value <= 10^9`
-* `0 <= duration <= 1000`
-* `1 <= actions.length <= 100`
-* `actions.length === values.length`
-* `actions.length === timeDelays.length`
-* `0 <= timeDelays[i] <= 1450`
-* `actions[i]` is one of "TimeLimitedCache", "set", "get" and "count"
-* First action is always "TimeLimitedCache" and must be executed immediately, with a 0-millisecond delay
+- `0 <= key, value <= 10^9`
+- `0 <= duration <= 1000`
+- `1 <= actions.length <= 100`
+- `actions.length === values.length`
+- `actions.length === timeDelays.length`
+- `0 <= timeDelays[i] <= 1450`
+- `actions[i]` is one of "TimeLimitedCache", "set", "get" and "count"
+- First action is always "TimeLimitedCache" and must be executed immediately, with a 0-millisecond delay
 
 ---
 

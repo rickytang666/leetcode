@@ -37,8 +37,8 @@ Output: [5,-1,4,4,-6,-6,1,1,1]
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `-100 <= nums[i] <= 100`
+- `1 <= nums.length <= 100`
+- `-100 <= nums[i] <= 100`
 
 ---
 

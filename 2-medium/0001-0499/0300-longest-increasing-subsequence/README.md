@@ -34,7 +34,7 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= nums.length <= 2500`
-* `-10^4 <= nums[i] <= 10^4`
+- `1 <= nums.length <= 2500`
+- `-10^4 <= nums[i] <= 10^4`
 
 **Follow up:** Can you come up with an algorithm that runs in `O(n log(n))` time complexity?

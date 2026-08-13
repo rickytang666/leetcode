@@ -32,9 +32,9 @@ Output: false
 
 **Constraints:**
 
-* `1 <= nums.length <= 5000`
-* `-10^4 <= nums[i] <= 10^4`
-* `nums` is guaranteed to be rotated at some pivot.
-* `-10^4 <= target <= 10^4`
+- `1 <= nums.length <= 5000`
+- `-10^4 <= nums[i] <= 10^4`
+- `nums` is guaranteed to be rotated at some pivot.
+- `-10^4 <= target <= 10^4`
 
 **Follow up:** This problem is similar to [Search in Rotated Sorted Array](/problems/search-in-rotated-sorted-array/description/), but `nums` may contain **duplicates**. Would this affect the runtime complexity? How and why?

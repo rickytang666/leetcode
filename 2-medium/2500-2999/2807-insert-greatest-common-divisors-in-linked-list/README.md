@@ -43,5 +43,5 @@ There are no pairs of adjacent nodes, so we return the initial linked list.
 
 **Constraints:**
 
-* The number of nodes in the list is in the range `[1, 5000]`.
-* `1 <= Node.val <= 1000`
+- The number of nodes in the list is in the range `[1, 5000]`.
+- `1 <= Node.val <= 1000`

@@ -10,8 +10,8 @@
 
 Find all valid combinations of `k` numbers that sum up to `n` such that the following conditions are true:
 
-* Only numbers `1` through `9` are used.
-* Each number is used **at most once**.
+- Only numbers `1` through `9` are used.
+- Each number is used **at most once**.
 
 Return _a list of all possible valid combinations_. The list must not contain the same combination twice, and the combinations may be returned in any order.
 
@@ -48,5 +48,5 @@ Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2
 
 **Constraints:**
 
-* `2 <= k <= 9`
-* `1 <= n <= 60`
+- `2 <= k <= 9`
+- `1 <= n <= 60`

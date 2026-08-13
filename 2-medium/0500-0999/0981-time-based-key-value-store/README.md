@@ -12,9 +12,9 @@ Design a time-based key-value data structure that can store multiple values for 
 
 Implement the `TimeMap` class:
 
-* `TimeMap()` Initializes the object of the data structure.
-* `void set(String key, String value, int timestamp)` Stores the key `key` with the value `value` at the given time `timestamp`.
-* `String get(String key, int timestamp)` Returns a value such that `set` was called previously, with `timestamp_prev <= timestamp`. If there are multiple such values, it returns the value associated with the largest `timestamp_prev`. If there are no values, it returns `""`.
+- `TimeMap()` Initializes the object of the data structure.
+- `void set(String key, String value, int timestamp)` Stores the key `key` with the value `value` at the given time `timestamp`.
+- `String get(String key, int timestamp)` Returns a value such that `set` was called previously, with `timestamp_prev <= timestamp`. If there are multiple such values, it returns the value associated with the largest `timestamp_prev`. If there are no values, it returns `""`.
 
 **Example 1:**
 
@@ -37,8 +37,8 @@ timeMap.get("foo", 5);         // return "bar2"
 
 **Constraints:**
 
-* `1 <= key.length, value.length <= 100`
-* `key` and `value` consist of lowercase English letters and digits.
-* `1 <= timestamp <= 10^7`
-* All the timestamps `timestamp` of `set` are strictly increasing.
-* At most `2 * 10^5` calls will be made to `set` and `get`.
+- `1 <= key.length, value.length <= 100`
+- `key` and `value` consist of lowercase English letters and digits.
+- `1 <= timestamp <= 10^7`
+- All the timestamps `timestamp` of `set` are strictly increasing.
+- At most `2 * 10^5` calls will be made to `set` and `get`.

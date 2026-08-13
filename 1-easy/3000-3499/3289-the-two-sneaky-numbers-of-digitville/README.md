@@ -44,10 +44,10 @@ The numbers 4 and 5 each appear twice in the array.
 
 **Constraints:**
 
-* `2 <= n <= 100`
-* `nums.length == n + 2`
-* `0 <= nums[i] < n`
-* The input is generated such that `nums` contains **exactly** two repeated elements.
+- `2 <= n <= 100`
+- `nums.length == n + 2`
+- `0 <= nums[i] < n`
+- The input is generated such that `nums` contains **exactly** two repeated elements.
 
 ---
 

@@ -37,12 +37,12 @@ Output: [3,4]
 
 **Constraints:**
 
-* `1 <= n <= 2 * 10^4`
-* `edges.length == n - 1`
-* `0 <= a_i, b_i < n`
-* `a_i != b_i`
-* All the pairs `(a_i, b_i)` are distinct.
-* The given input is **guaranteed** to be a tree and there will be **no repeated** edges.
+- `1 <= n <= 2 * 10^4`
+- `edges.length == n - 1`
+- `0 <= a_i, b_i < n`
+- `a_i != b_i`
+- All the pairs `(a_i, b_i)` are distinct.
+- The given input is **guaranteed** to be a tree and there will be **no repeated** edges.
 
 ---
 

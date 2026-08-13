@@ -45,7 +45,7 @@ Therefore, you can't travel around the circuit once no matter where you start.
 
 **Constraints:**
 
-* `n == gas.length == cost.length`
-* `1 <= n <= 10^5`
-* `0 <= gas[i], cost[i] <= 10^4`
-* The input is generated such that the answer is unique.
+- `n == gas.length == cost.length`
+- `1 <= n <= 10^5`
+- `0 <= gas[i], cost[i] <= 10^4`
+- The input is generated such that the answer is unique.

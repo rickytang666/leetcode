@@ -45,7 +45,7 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= coins.length <= 300`
-* `1 <= coins[i] <= 5000`
-* All the values of `coins` are **unique**.
-* `0 <= amount <= 5000`
+- `1 <= coins.length <= 300`
+- `1 <= coins[i] <= 5000`
+- All the values of `coins` are **unique**.
+- `0 <= amount <= 5000`

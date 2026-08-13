@@ -12,9 +12,9 @@ Given two strings `word1` and `word2`, return _the minimum number of operations 
 
 You have the following three operations permitted on a word:
 
-* Insert a character
-* Delete a character
-* Replace a character
+- Insert a character
+- Delete a character
+- Replace a character
 
 **Example 1:**
 
@@ -42,5 +42,5 @@ exection -> execution (insert 'u')
 
 **Constraints:**
 
-* `0 <= word1.length, word2.length <= 500`
-* `word1` and `word2` consist of lowercase English letters.
+- `0 <= word1.length, word2.length <= 500`
+- `word1` and `word2` consist of lowercase English letters.

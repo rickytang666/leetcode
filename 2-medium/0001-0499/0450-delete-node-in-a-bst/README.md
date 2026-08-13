@@ -44,10 +44,10 @@ Output: []
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 10^4]`.
-* `-10^5 <= Node.val <= 10^5`
-* Each node has a **unique** value.
-* `root` is a valid binary search tree.
-* `-10^5 <= key <= 10^5`
+- The number of nodes in the tree is in the range `[0, 10^4]`.
+- `-10^5 <= Node.val <= 10^5`
+- Each node has a **unique** value.
+- `root` is a valid binary search tree.
+- `-10^5 <= key <= 10^5`
 
 **Follow up:** Could you solve it with time complexity `O(height of tree)`?

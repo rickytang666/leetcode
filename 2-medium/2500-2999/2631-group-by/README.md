@@ -83,8 +83,8 @@ The selector function splits the array by whether each number is greater than 5.
 
 **Constraints:**
 
-* `0 <= array.length <= 10^5`
-* `fn` returns a string
+- `0 <= array.length <= 10^5`
+- `fn` returns a string
 
 ---
 

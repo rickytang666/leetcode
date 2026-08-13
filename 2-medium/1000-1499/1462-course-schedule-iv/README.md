@@ -10,7 +10,7 @@
 
 There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [a_i, b_i]` indicates that you **must** take course `a_i` first if you want to take course `b_i`.
 
-* For example, the pair `[0, 1]` indicates that you have to take course `0` before you can take course `1`.
+- For example, the pair `[0, 1]` indicates that you have to take course `0` before you can take course `1`.
 
 Prerequisites can also be **indirect**. If course `a` is a prerequisite of course `b`, and course `b` is a prerequisite of course `c`, then course `a` is a prerequisite of course `c`.
 
@@ -48,16 +48,16 @@ Output: [true,true]
 
 **Constraints:**
 
-* `2 <= numCourses <= 100`
-* `0 <= prerequisites.length <= (numCourses * (numCourses - 1) / 2)`
-* `prerequisites[i].length == 2`
-* `0 <= a_i, b_i <= numCourses - 1`
-* `a_i != b_i`
-* All the pairs `[a_i, b_i]` are **unique**.
-* The prerequisites graph has no cycles.
-* `1 <= queries.length <= 10^4`
-* `0 <= u_i, v_i <= numCourses - 1`
-* `u_i != v_i`
+- `2 <= numCourses <= 100`
+- `0 <= prerequisites.length <= (numCourses * (numCourses - 1) / 2)`
+- `prerequisites[i].length == 2`
+- `0 <= a_i, b_i <= numCourses - 1`
+- `a_i != b_i`
+- All the pairs `[a_i, b_i]` are **unique**.
+- The prerequisites graph has no cycles.
+- `1 <= queries.length <= 10^4`
+- `0 <= u_i, v_i <= numCourses - 1`
+- `u_i != v_i`
 
 ---
 

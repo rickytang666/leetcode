@@ -14,12 +14,12 @@ A subarray is **turbulent** if the comparison sign flips between each adjacent p
 
 More formally, a subarray `[arr[i], arr[i + 1], ..., arr[j]]` of `arr` is said to be turbulent if and only if:
 
-* For `i <= k < j`:
-    *   `arr[k] > arr[k + 1]` when `k` is odd, and
-    *   `arr[k] < arr[k + 1]` when `k` is even.
-* Or, for `i <= k < j`:
-    *   `arr[k] > arr[k + 1]` when `k` is even, and
-    *   `arr[k] < arr[k + 1]` when `k` is odd.
+- For `i <= k < j`:
+  - `arr[k] > arr[k + 1]` when `k` is odd, and
+  - `arr[k] < arr[k + 1]` when `k` is even.
+- Or, for `i <= k < j`:
+  - `arr[k] > arr[k + 1]` when `k` is even, and
+  - `arr[k] < arr[k + 1]` when `k` is odd.
 
 **Example 1:**
 
@@ -45,5 +45,5 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= arr.length <= 4 * 10^4`
-* `0 <= arr[i] <= 10^9`
+- `1 <= arr.length <= 4 * 10^4`
+- `0 <= arr[i] <= 10^9`

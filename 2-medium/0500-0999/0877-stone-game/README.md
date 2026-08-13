@@ -38,7 +38,7 @@ Output: true
 
 **Constraints:**
 
-* `2 <= piles.length <= 500`
-* `piles.length` is **even**.
-* `1 <= piles[i] <= 500`
-* `sum(piles[i])` is **odd**.
+- `2 <= piles.length <= 500`
+- `piles.length` is **even**.
+- `1 <= piles[i] <= 500`
+- `sum(piles[i])` is **odd**.

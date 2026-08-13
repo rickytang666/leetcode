@@ -34,10 +34,10 @@ Output: [1,4]
 
 **Constraints:**
 
-* `n == edges.length`
-* `3 <= n <= 1000`
-* `edges[i].length == 2`
-* `1 <= a_i < b_i <= edges.length`
-* `a_i != b_i`
-* There are no repeated edges.
-* The given graph is connected.
+- `n == edges.length`
+- `3 <= n <= 1000`
+- `edges[i].length == 2`
+- `1 <= a_i < b_i <= edges.length`
+- `a_i != b_i`
+- There are no repeated edges.
+- The given graph is connected.

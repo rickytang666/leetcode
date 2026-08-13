@@ -43,9 +43,9 @@ No two adjacent strings in words are anagrams of each other, so no operations ar
 
 **Constraints:**
 
-* `1 <= words.length <= 100`
-* `1 <= words[i].length <= 10`
-* `words[i]` consists of lowercase English letters.
+- `1 <= words.length <= 100`
+- `1 <= words[i].length <= 10`
+- `words[i]` consists of lowercase English letters.
 
 ---
 

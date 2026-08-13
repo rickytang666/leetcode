@@ -35,5 +35,5 @@ Output: true
 
 **Constraints:**
 
-* `1 <= ransomNote.length, magazine.length <= 10^5`
-* `ransomNote` and `magazine` consist of lowercase English letters.
+- `1 <= ransomNote.length, magazine.length <= 10^5`
+- `ransomNote` and `magazine` consist of lowercase English letters.

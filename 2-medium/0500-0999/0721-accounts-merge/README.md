@@ -35,11 +35,11 @@ Output: [["Ethan","Ethan0@m.co","Ethan4@m.co","Ethan5@m.co"],["Gabe","Gabe0@m.co
 
 **Constraints:**
 
-* `1 <= accounts.length <= 1000`
-* `2 <= accounts[i].length <= 10`
-* `1 <= accounts[i][j].length <= 30`
-* `accounts[i][0]` consists of English letters.
-* `accounts[i][j] (for j > 0)` is a valid email.
+- `1 <= accounts.length <= 1000`
+- `2 <= accounts[i].length <= 10`
+- `1 <= accounts[i][j].length <= 30`
+- `accounts[i][0]` consists of English letters.
+- `accounts[i][j] (for j > 0)` is a valid email.
 
 ---
 

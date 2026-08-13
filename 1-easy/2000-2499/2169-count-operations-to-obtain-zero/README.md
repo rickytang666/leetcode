@@ -12,7 +12,7 @@ You are given two **non-negative** integers `num1` and `num2`.
 
 In one **operation**, if `num1 >= num2`, you must subtract `num2` from `num1`, otherwise subtract `num1` from `num2`.
 
-* For example, if `num1 = 5` and `num2 = 4`, subtract `num2` from `num1`, thus obtaining `num1 = 1` and `num2 = 4`. However, if `num1 = 4` and `num2 = 5`, after one operation, `num1 = 4` and `num2 = 1`.
+- For example, if `num1 = 5` and `num2 = 4`, subtract `num2` from `num1`, thus obtaining `num1 = 1` and `num2 = 4`. However, if `num1 = 4` and `num2 = 5`, after one operation, `num1 = 4` and `num2 = 1`.
 
 Return _the **number of operations** required to make either_ `num1 = 0` _or_ `num2 = 0`.
 
@@ -42,7 +42,7 @@ So the total number of operations required is 1.
 
 **Constraints:**
 
-* `0 <= num1, num2 <= 10^5`
+- `0 <= num1, num2 <= 10^5`
 
 ---
 

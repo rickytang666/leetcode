@@ -38,6 +38,6 @@ Explanation: There is no x where 3^x = (-1).
 
 **Constraints:**
 
-* `-2^31 <= n <= 2^31 - 1`
+- `-2^31 <= n <= 2^31 - 1`
 
 **Follow up:** Could you solve it without loops/recursion?

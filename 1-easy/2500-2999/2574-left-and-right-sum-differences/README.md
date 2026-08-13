@@ -12,8 +12,8 @@ You are given a **0-indexed** integer array `nums` of size `n`.
 
 Define two arrays `leftSum` and `rightSum` where:
 
-* `leftSum[i]` is the sum of elements to the left of the index `i` in the array `nums`. If there is no such element, `leftSum[i] = 0`.
-* `rightSum[i]` is the sum of elements to the right of the index `i` in the array `nums`. If there is no such element, `rightSum[i] = 0`.
+- `leftSum[i]` is the sum of elements to the left of the index `i` in the array `nums`. If there is no such element, `leftSum[i] = 0`.
+- `rightSum[i]` is the sum of elements to the right of the index `i` in the array `nums`. If there is no such element, `rightSum[i] = 0`.
 
 Return an integer array `answer` of size `n` where `answer[i] = |leftSum[i] - rightSum[i]|`.
 
@@ -37,8 +37,8 @@ The array answer is [|0 - 0|] = [0].
 
 **Constraints:**
 
-* `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 10^5`
+- `1 <= nums.length <= 1000`
+- `1 <= nums[i] <= 10^5`
 
 ---
 

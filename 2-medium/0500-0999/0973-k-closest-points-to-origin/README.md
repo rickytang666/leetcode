@@ -38,5 +38,5 @@ Explanation: The answer [[-2,4],[3,3]] would also be accepted.
 
 **Constraints:**
 
-* `1 <= k <= points.length <= 10^4`
-* `-10^4 <= x_i, y_i <= 10^4`
+- `1 <= k <= points.length <= 10^4`
+- `-10^4 <= x_i, y_i <= 10^4`

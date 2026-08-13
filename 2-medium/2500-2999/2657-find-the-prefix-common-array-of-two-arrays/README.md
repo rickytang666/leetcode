@@ -39,9 +39,9 @@ At i = 2: 1, 2, and 3 are common in A and B, so C[2] = 3.
 
 **Constraints:**
 
-* `1 <= A.length == B.length == n <= 50`
-* `1 <= A[i], B[i] <= n`
-* `It is guaranteed that A and B are both a permutation of n integers.`
+- `1 <= A.length == B.length == n <= 50`
+- `1 <= A[i], B[i] <= n`
+- `It is guaranteed that A and B are both a permutation of n integers.`
 
 ---
 

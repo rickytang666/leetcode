@@ -40,9 +40,9 @@ Explanation: Subarray [-2] has maximum sum -2.
 
 **Constraints:**
 
-* `n == nums.length`
-* `1 <= n <= 3 * 10^4`
-* `-3 * 10^4 <= nums[i] <= 3 * 10^4`
+- `n == nums.length`
+- `1 <= n <= 3 * 10^4`
+- `-3 * 10^4 <= nums[i] <= 3 * 10^4`
 
 ---
 

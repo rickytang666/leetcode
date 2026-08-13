@@ -30,5 +30,5 @@ Output: ["a","b","c"]
 
 **Constraints:**
 
-* `1 <= digits.length <= 4`
-* `digits[i]` is a digit in the range `['2', '9']`.
+- `1 <= digits.length <= 4`
+- `digits[i]` is a digit in the range `['2', '9']`.

@@ -10,16 +10,16 @@
 
 You have two soups, **A** and **B**, each starting with `n` mL. On every turn, one of the following four serving operations is chosen _at random_, each with probability `0.25` **independent** of all previous turns:
 
-* pour 100 mL from type A and 0 mL from type B
-* pour 75 mL from type A and 25 mL from type B
-* pour 50 mL from type A and 50 mL from type B
-* pour 25 mL from type A and 75 mL from type B
+- pour 100 mL from type A and 0 mL from type B
+- pour 75 mL from type A and 25 mL from type B
+- pour 50 mL from type A and 50 mL from type B
+- pour 25 mL from type A and 75 mL from type B
 
 **Note:**
 
-* There is no operation that pours 0 mL from A and 100 mL from B.
-* The amounts from A and B are poured _simultaneously_ during the turn.
-* If an operation asks you to pour **more than** you have left of a soup, pour all that remains of that soup.
+- There is no operation that pours 0 mL from A and 100 mL from B.
+- The amounts from A and B are poured _simultaneously_ during the turn.
+- If an operation asks you to pour **more than** you have left of a soup, pour all that remains of that soup.
 
 The process stops immediately after any turn in which _one of the soups_ is used up.
 
@@ -52,7 +52,7 @@ So the total probability of A becoming empty first plus half the probability tha
 
 **Constraints:**
 
-* `0 <= n <= 10^9`
+- `0 <= n <= 10^9`
 
 ---
 

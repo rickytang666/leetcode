@@ -30,5 +30,5 @@ Output: 4
 
 **Constraints:**
 
-* `1 <= k <= nums.length <= 10^5`
-* `-10^4 <= nums[i] <= 10^4`
+- `1 <= k <= nums.length <= 10^5`
+- `-10^4 <= nums[i] <= 10^4`

@@ -51,12 +51,12 @@ The optimal path with no stops from city 0 to 2 is marked in red and has cost 50
 
 **Constraints:**
 
-* `2 <= n <= 100`
-* `0 <= flights.length <= (n * (n - 1) / 2)`
-* `flights[i].length == 3`
-* `0 <= fromi, to_i < n`
-* `fromi != to_i`
-* `1 <= pricei <= 10^4`
-* There will not be any multiple flights between two cities.
-* `0 <= src, dst, k < n`
-* `src != dst`
+- `2 <= n <= 100`
+- `0 <= flights.length <= (n * (n - 1) / 2)`
+- `flights[i].length == 3`
+- `0 <= fromi, to_i < n`
+- `fromi != to_i`
+- `1 <= pricei <= 10^4`
+- There will not be any multiple flights between two cities.
+- `0 <= src, dst, k < n`
+- `src != dst`

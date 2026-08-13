@@ -47,7 +47,7 @@ Output: 12
 
 **Constraints:**
 
-* `0 <= num <= 10^6`
+- `0 <= num <= 10^6`
 
 ---
 

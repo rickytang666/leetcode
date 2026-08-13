@@ -41,8 +41,8 @@ Note that common prefixes between elements of the same array do not count.
 
 **Constraints:**
 
-* `1 <= arr1.length, arr2.length <= 5 * 10^4`
-* `1 <= arr1[i], arr2[i] <= 10^8`
+- `1 <= arr1.length, arr2.length <= 5 * 10^4`
+- `1 <= arr1[i], arr2[i] <= 10^8`
 
 ---
 

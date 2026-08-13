@@ -14,12 +14,12 @@ Evaluate the expression. Return _an integer that represents the value of the exp
 
 **Note** that:
 
-* The valid operators are `'+'`, `'-'`, `'*'`, and `'/'`.
-* Each operand may be an integer or another expression.
-* The division between two integers always **truncates toward zero**.
-* There will not be any division by zero.
-* The input represents a valid arithmetic expression in a reverse polish notation.
-* The answer and all the intermediate calculations can be represented in a **32-bit** integer.
+- The valid operators are `'+'`, `'-'`, `'*'`, and `'/'`.
+- Each operand may be an integer or another expression.
+- The division between two integers always **truncates toward zero**.
+- There will not be any division by zero.
+- The input represents a valid arithmetic expression in a reverse polish notation.
+- The answer and all the intermediate calculations can be represented in a **32-bit** integer.
 
 **Example 1:**
 
@@ -53,5 +53,5 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 
 **Constraints:**
 
-* `1 <= tokens.length <= 10^4`
-* `tokens[i]` is either an operator: `"+"`, `"-"`, `"*"`, or `"/"`, or an integer in the range `[-200, 200]`.
+- `1 <= tokens.length <= 10^4`
+- `tokens[i]` is either an operator: `"+"`, `"-"`, `"*"`, or `"/"`, or an integer in the range `[-200, 200]`.

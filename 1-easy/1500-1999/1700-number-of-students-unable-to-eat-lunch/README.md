@@ -12,8 +12,8 @@ The school cafeteria offers circular and square sandwiches at lunch break, refer
 
 The number of sandwiches in the cafeteria is equal to the number of students. The sandwiches are placed in a **stack**. At each step:
 
-* If the student at the front of the queue **prefers** the sandwich on the top of the stack, they will **take it** and leave the queue.
-* Otherwise, they will **leave it** and go to the queue's end.
+- If the student at the front of the queue **prefers** the sandwich on the top of the stack, they will **take it** and leave the queue.
+- Otherwise, they will **leave it** and go to the queue's end.
 
 This continues until none of the queue students want to take the top sandwich and are thus unable to eat.
 
@@ -45,10 +45,10 @@ Output: 3
 
 **Constraints:**
 
-* `1 <= students.length, sandwiches.length <= 100`
-* `students.length == sandwiches.length`
-* `sandwiches[i]` is `0` or `1`.
-* `students[i]` is `0` or `1`.
+- `1 <= students.length, sandwiches.length <= 100`
+- `students.length == sandwiches.length`
+- `sandwiches[i]` is `0` or `1`.
+- `students[i]` is `0` or `1`.
 
 ---
 

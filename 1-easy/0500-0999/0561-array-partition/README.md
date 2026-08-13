@@ -32,9 +32,9 @@ Explanation: The optimal pairing is (2, 1), (2, 5), (6, 6). min(2, 1) + min(2, 5
 
 **Constraints:**
 
-* `1 <= n <= 10^4`
-* `nums.length == 2 * n`
-* `-10^4 <= nums[i] <= 10^4`
+- `1 <= n <= 10^4`
+- `nums.length == 2 * n`
+- `-10^4 <= nums[i] <= 10^4`
 
 ---
 

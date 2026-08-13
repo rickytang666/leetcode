@@ -38,11 +38,11 @@ Explanation: We cannot type either word because the 'e' key is broken.
 
 **Constraints:**
 
-* `1 <= text.length <= 10^4`
-* `0 <= brokenLetters.length <= 26`
-* `text` consists of words separated by a single space without any leading or trailing spaces.
-* Each word only consists of lowercase English letters.
-* `brokenLetters` consists of **distinct** lowercase English letters.
+- `1 <= text.length <= 10^4`
+- `0 <= brokenLetters.length <= 26`
+- `text` consists of words separated by a single space without any leading or trailing spaces.
+- Each word only consists of lowercase English letters.
+- `brokenLetters` consists of **distinct** lowercase English letters.
 
 ---
 

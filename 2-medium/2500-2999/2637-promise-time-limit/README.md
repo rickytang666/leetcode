@@ -10,8 +10,8 @@ Given an asynchronous function `fn` and a time `t` in milliseconds, return a new
 
 The **time limited** function should follow these rules:
 
-* If the `fn` completes within the time limit of `t` milliseconds, the **time limited** function should resolve with the result.
-* If the execution of the `fn` exceeds the time limit, the **time limited** function should reject with the string `"Time Limit Exceeded"`.
+- If the `fn` completes within the time limit of `t` milliseconds, the **time limited** function should resolve with the result.
+- If the execution of the `fn` exceeds the time limit, the **time limited** function should reject with the string `"Time Limit Exceeded"`.
 
 **Example 1:**
 
@@ -85,9 +85,9 @@ The function immediately throws an error.
 
 **Constraints:**
 
-* `0 <= inputs.length <= 10`
-* `0 <= t <= 1000`
-* `fn` returns a promise
+- `0 <= inputs.length <= 10`
+- `0 <= t <= 1000`
+- `fn` returns a promise
 
 ---
 

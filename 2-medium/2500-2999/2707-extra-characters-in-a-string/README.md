@@ -30,11 +30,11 @@ Explanation: We can break s in two substrings: "hello" from index 3 to 7 and "wo
 
 **Constraints:**
 
-* `1 <= s.length <= 50`
-* `1 <= dictionary.length <= 50`
-* `1 <= dictionary[i].length <= 50`
-* `dictionary[i]` and `s` consists of only lowercase English letters
-* `dictionary` contains distinct words
+- `1 <= s.length <= 50`
+- `1 <= dictionary.length <= 50`
+- `1 <= dictionary[i].length <= 50`
+- `dictionary[i]` and `s` consists of only lowercase English letters
+- `dictionary` contains distinct words
 
 ---
 

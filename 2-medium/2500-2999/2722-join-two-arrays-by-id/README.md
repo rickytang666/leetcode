@@ -14,8 +14,8 @@ If a given `id` exists in one array but not the other, the single object with th
 
 If two objects share an `id`, their properties should be merged into a single object:
 
-* If a key only exists in one object, that single key-value pair should be included in the object.
-* If a key is included in both objects, the value in the object from `arr2` should override the value from `arr1`.
+- If a key only exists in one object, that single key-value pair should be included in the object.
+- If a key is included in both objects, the value in the object from `arr2` should override the value from `arr1`.
 
 **Example 1:**
 
@@ -76,7 +76,7 @@ Explanation: The two objects with id=1 are merged together. For the keys "b" and
 
 **Constraints:**
 
-* `arr1` and `arr2` are valid JSON arrays
-* Each object in `arr1` and `arr2` has a unique integer `id` key
-* `2 <= JSON.stringify(arr1).length <= 10^6`
-* `2 <= JSON.stringify(arr2).length <= 10^6`
+- `arr1` and `arr2` are valid JSON arrays
+- Each object in `arr1` and `arr2` has a unique integer `id` key
+- `2 <= JSON.stringify(arr1).length <= 10^6`
+- `2 <= JSON.stringify(arr2).length <= 10^6`

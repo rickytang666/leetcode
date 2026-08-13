@@ -20,9 +20,9 @@ However, while decoding the message, you realize that there are many different w
 
 For example, `"11106"` can be decoded into:
 
-* `"AAJF"` with the grouping `(1, 1, 10, 6)`
-* `"KJF"` with the grouping `(11, 10, 6)`
-* The grouping `(1, 11, 06)` is invalid because `"06"` is not a valid code (only `"6"` is valid).
+- `"AAJF"` with the grouping `(1, 1, 10, 6)`
+- `"KJF"` with the grouping `(11, 10, 6)`
+- The grouping `(1, 11, 06)` is invalid because `"06"` is not a valid code (only `"6"` is valid).
 
 Note: there may be strings that are impossible to decode.
 
@@ -62,5 +62,5 @@ The test cases are generated so that the answer fits in a **32-bit** integer.
 
 **Constraints:**
 
-* `1 <= s.length <= 100`
-* `s` contains only digits and may contain leading zero(s).
+- `1 <= s.length <= 100`
+- `s` contains only digits and may contain leading zero(s).

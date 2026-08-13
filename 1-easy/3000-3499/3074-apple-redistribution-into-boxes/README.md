@@ -35,10 +35,10 @@ Explanation: We will need to use all the boxes.
 
 **Constraints:**
 
-* `1 <= n == apple.length <= 50`
-* `1 <= m == capacity.length <= 50`
-* `1 <= apple[i], capacity[i] <= 50`
-* The input is generated such that it's possible to redistribute packs of apples into boxes.
+- `1 <= n == apple.length <= 50`
+- `1 <= m == capacity.length <= 50`
+- `1 <= apple[i], capacity[i] <= 50`
+- The input is generated such that it's possible to redistribute packs of apples into boxes.
 
 ---
 

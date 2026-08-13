@@ -47,10 +47,10 @@ Explanation: This route does not require any effort.
 
 **Constraints:**
 
-* `rows == heights.length`
-* `columns == heights[i].length`
-* `1 <= rows, columns <= 100`
-* `1 <= heights[i][j] <= 10^6`
+- `rows == heights.length`
+- `columns == heights[i].length`
+- `1 <= rows, columns <= 100`
+- `1 <= heights[i][j] <= 10^6`
 
 ---
 

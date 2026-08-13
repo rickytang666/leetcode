@@ -30,8 +30,8 @@ Explanation: Alice's hand can not be rearranged into groups of 4.
 
 **Constraints:**
 
-* `1 <= hand.length <= 10^4`
-* `0 <= hand[i] <= 10^9`
-* `1 <= groupSize <= hand.length`
+- `1 <= hand.length <= 10^4`
+- `0 <= hand[i] <= 10^9`
+- `1 <= groupSize <= hand.length`
 
 **Note:** This question is the same as 1296: [https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/](https://leetcode.com/problems/divide-array-in-sets-of-k-consecutive-numbers/)

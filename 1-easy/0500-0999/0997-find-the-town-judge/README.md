@@ -43,9 +43,9 @@ Output: -1
 
 **Constraints:**
 
-* `1 <= n <= 1000`
-* `0 <= trust.length <= 10^4`
-* `trust[i].length == 2`
-* All the pairs of `trust` are **unique**.
-* `a_i != b_i`
-* `1 <= a_i, b_i <= n`
+- `1 <= n <= 1000`
+- `0 <= trust.length <= 10^4`
+- `trust[i].length == 2`
+- All the pairs of `trust` are **unique**.
+- `a_i != b_i`
+- `1 <= a_i, b_i <= n`

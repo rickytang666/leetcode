@@ -10,9 +10,9 @@ Write a function `createCounter`. It should accept an initial integer `init`. It
 
 The three functions are:
 
-* `increment()` increases the current value by 1 and then returns it.
-* `decrement()` reduces the current value by 1 and then returns it.
-* `reset()` sets the current value to `init` and then returns it.
+- `increment()` increases the current value by 1 and then returns it.
+- `decrement()` reduces the current value by 1 and then returns it.
+- `reset()` sets the current value to `init` and then returns it.
 
 **Example 1:**
 
@@ -42,9 +42,9 @@ counter.reset(); // 0
 
 **Constraints:**
 
-* `-1000 <= init <= 1000`
-* `0 <= calls.length <= 1000`
-* `calls[i]` is one of "increment", "decrement" and "reset"
+- `-1000 <= init <= 1000`
+- `0 <= calls.length <= 1000`
+- `calls[i]` is one of "increment", "decrement" and "reset"
 
 ---
 

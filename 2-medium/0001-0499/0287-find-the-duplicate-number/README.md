@@ -37,12 +37,12 @@ Output: 3
 
 **Constraints:**
 
-* `1 <= n <= 10^5`
-* `nums.length == n + 1`
-* `1 <= nums[i] <= n`
-* All the integers in `nums` appear only **once** except for **precisely one integer** which appears **two or more** times.
+- `1 <= n <= 10^5`
+- `nums.length == n + 1`
+- `1 <= nums[i] <= n`
+- All the integers in `nums` appear only **once** except for **precisely one integer** which appears **two or more** times.
 
 **Follow up:**
 
-* How can we prove that at least one duplicate number must exist in `nums`?
-* Can you solve the problem in linear runtime complexity?
+- How can we prove that at least one duplicate number must exist in `nums`?
+- Can you solve the problem in linear runtime complexity?

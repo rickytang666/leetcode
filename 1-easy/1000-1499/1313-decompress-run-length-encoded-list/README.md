@@ -33,9 +33,9 @@ Output: [1,3,3]
 
 **Constraints:**
 
-* `2 <= nums.length <= 100`
-* `nums.length % 2 == 0`
-* `1 <= nums[i] <= 100`
+- `2 <= nums.length <= 100`
+- `nums.length % 2 == 0`
+- `1 <= nums[i] <= 100`
 
 ---
 

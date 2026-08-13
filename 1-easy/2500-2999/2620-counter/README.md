@@ -33,9 +33,9 @@ Explanation: counter() initially returns -2. Then increases after each sebsequen
 
 **Constraints:**
 
-* `-1000^<= n <= 1000`
-* `0 <= calls.length <= 1000`
-* `calls[i] === "call"`
+- `-1000^<= n <= 1000`
+- `0 <= calls.length <= 1000`
+- `calls[i] === "call"`
 
 ---
 

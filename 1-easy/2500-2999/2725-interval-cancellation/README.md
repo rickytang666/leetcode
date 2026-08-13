@@ -98,8 +98,8 @@ Cancelled at 180ms
 
 **Constraints:**
 
-* `fn` is a function
-* `args` is a valid JSON array
-* `1 <= args.length <= 10`
-* `30 <= t <= 100`
-* `10 <= cancelTimeMs <= 500`
+- `fn` is a function
+- `args` is a valid JSON array
+- `1 <= args.length <= 10`
+- `30 <= t <= 100`
+- `10 <= cancelTimeMs <= 500`

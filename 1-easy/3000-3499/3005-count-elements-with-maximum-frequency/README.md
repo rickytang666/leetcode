@@ -34,8 +34,8 @@ So the number of elements in the array with maximum frequency is 5.
 
 **Constraints:**
 
-* `1 <= nums.length <= 100`
-* `1 <= nums[i] <= 100`
+- `1 <= nums.length <= 100`
+- `1 <= nums[i] <= 100`
 
 ---
 

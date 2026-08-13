@@ -32,8 +32,8 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 **Constraints:**
 
-* `1 <= s.length <= 1000`
-* `s` consists of lowercase English letters.
+- `1 <= s.length <= 1000`
+- `s` consists of lowercase English letters.
 
 ---
 

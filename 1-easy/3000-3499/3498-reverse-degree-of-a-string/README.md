@@ -26,10 +26,10 @@ Return the **reverse degree** of `s`.
 **Explanation:**
 
 | Letter | Index in Reversed Alphabet | Index in String | Product |
-| --- | --- | --- | --- |
-| 'a' | 26 | 1 | 26 |
-| 'b' | 25 | 2 | 50 |
-| 'c' | 24 | 3 | 72 |
+| ------ | -------------------------- | --------------- | ------- |
+| 'a'    | 26                         | 1               | 26      |
+| 'b'    | 25                         | 2               | 50      |
+| 'c'    | 24                         | 3               | 72      |
 
 The reversed degree is `26 + 50 + 72 = 148`.
 
@@ -42,18 +42,18 @@ The reversed degree is `26 + 50 + 72 = 148`.
 **Explanation:**
 
 | Letter | Index in Reversed Alphabet | Index in String | Product |
-| --- | --- | --- | --- |
-| 'z' | 1 | 1 | 1 |
-| 'a' | 26 | 2 | 52 |
-| 'z' | 1 | 3 | 3 |
-| 'a' | 26 | 4 | 104 |
+| ------ | -------------------------- | --------------- | ------- |
+| 'z'    | 1                          | 1               | 1       |
+| 'a'    | 26                         | 2               | 52      |
+| 'z'    | 1                          | 3               | 3       |
+| 'a'    | 26                         | 4               | 104     |
 
 The reverse degree is `1 + 52 + 3 + 104 = 160`.
 
 **Constraints:**
 
-* `1 <= s.length <= 1000`
-* `s` contains only lowercase English letters.
+- `1 <= s.length <= 1000`
+- `s` contains only lowercase English letters.
 
 ---
 

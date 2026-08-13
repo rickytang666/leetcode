@@ -36,9 +36,9 @@ Output: 3
 
 **Constraints:**
 
-* `1 <= n <= 200`
-* `n == isConnected.length`
-* `n == isConnected[i].length`
-* `isConnected[i][j]` is `1` or `0`.
-* `isConnected[i][i] == 1`
-* `isConnected[i][j] == isConnected[j][i]`
+- `1 <= n <= 200`
+- `n == isConnected.length`
+- `n == isConnected[i].length`
+- `isConnected[i][j]` is `1` or `0`.
+- `isConnected[i][i] == 1`
+- `isConnected[i][j] == isConnected[j][i]`

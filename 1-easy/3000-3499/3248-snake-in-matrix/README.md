@@ -24,17 +24,17 @@ Return the position of the final cell where the snake ends up after executing `c
 
 **Explanation:**
 
-| 0 | 1 |
+| 0   | 1   |
 | --- | --- |
-| 2 | 3 |
+| 2   | 3   |
 
-| 0 | 1 |
+| 0   | 1   |
 | --- | --- |
-| 2 | 3 |
+| 2   | 3   |
 
-| 0 | 1 |
+| 0   | 1   |
 | --- | --- |
-| 2 | 3 |
+| 2   | 3   |
 
 **Example 2:**
 
@@ -44,32 +44,32 @@ Return the position of the final cell where the snake ends up after executing `c
 
 **Explanation:**
 
-| 0 | 1 | 2 |
+| 0   | 1   | 2   |
 | --- | --- | --- |
-| 3 | 4 | 5 |
-| 6 | 7 | 8 |
+| 3   | 4   | 5   |
+| 6   | 7   | 8   |
 
-| 0 | 1 | 2 |
+| 0   | 1   | 2   |
 | --- | --- | --- |
-| 3 | 4 | 5 |
-| 6 | 7 | 8 |
+| 3   | 4   | 5   |
+| 6   | 7   | 8   |
 
-| 0 | 1 | 2 |
+| 0   | 1   | 2   |
 | --- | --- | --- |
-| 3 | 4 | 5 |
-| 6 | 7 | 8 |
+| 3   | 4   | 5   |
+| 6   | 7   | 8   |
 
-| 0 | 1 | 2 |
+| 0   | 1   | 2   |
 | --- | --- | --- |
-| 3 | 4 | 5 |
-| 6 | 7 | 8 |
+| 3   | 4   | 5   |
+| 6   | 7   | 8   |
 
 **Constraints:**
 
-* `2 <= n <= 10`
-* `1 <= commands.length <= 100`
-* `commands` consists only of `"UP"`, `"RIGHT"`, `"DOWN"`, and `"LEFT"`.
-* The input is generated such the snake will not move outside of the boundaries.
+- `2 <= n <= 10`
+- `1 <= commands.length <= 100`
+- `commands` consists only of `"UP"`, `"RIGHT"`, `"DOWN"`, and `"LEFT"`.
+- The input is generated such the snake will not move outside of the boundaries.
 
 ---
 

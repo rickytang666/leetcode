@@ -48,13 +48,13 @@ Output: [false,true,false,false,true,true]
 
 **Constraints:**
 
-* `n == nums.length`
-* `m == l.length`
-* `m == r.length`
-* `2 <= n <= 500`
-* `1 <= m <= 500`
-* `0 <= l[i] < r[i] < n`
-* `-10^5 <= nums[i] <= 10^5`
+- `n == nums.length`
+- `m == l.length`
+- `m == r.length`
+- `2 <= n <= 500`
+- `1 <= m <= 500`
+- `0 <= l[i] < r[i] < n`
+- `-10^5 <= nums[i] <= 10^5`
 
 ---
 

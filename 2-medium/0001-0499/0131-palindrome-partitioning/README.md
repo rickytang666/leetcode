@@ -26,5 +26,5 @@ Output: [["a"]]
 
 **Constraints:**
 
-* `1 <= s.length <= 16`
-* `s` contains only lowercase English letters.
+- `1 <= s.length <= 16`
+- `s` contains only lowercase English letters.

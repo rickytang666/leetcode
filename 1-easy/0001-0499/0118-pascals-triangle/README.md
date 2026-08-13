@@ -30,4 +30,4 @@ Output: [[1]]
 
 **Constraints:**
 
-* `1 <= numRows <= 30`
+- `1 <= numRows <= 30`

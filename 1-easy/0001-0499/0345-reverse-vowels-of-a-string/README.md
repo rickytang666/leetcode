@@ -30,5 +30,5 @@ The vowels in `s` are `['I', 'e', 'e', 'A']`. On reversing the vowels, s becomes
 
 **Constraints:**
 
-* `1 <= s.length <= 3 * 10^5`
-* `s` consist of **printable ASCII** characters.
+- `1 <= s.length <= 3 * 10^5`
+- `s` consist of **printable ASCII** characters.

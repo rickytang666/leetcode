@@ -39,8 +39,8 @@ Each row of this table contains the id of an employee and their respective bonus
 
 Write a solution to report the name and bonus amount of each employee who satisfies either of the following:
 
-* The employee has a bonus **less than** `1000`.
-* The employee did not get any bonus.
+- The employee has a bonus **less than** `1000`.
+- The employee did not get any bonus.
 
 Return the result table in **any order**.
 

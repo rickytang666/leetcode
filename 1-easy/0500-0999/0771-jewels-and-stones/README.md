@@ -28,9 +28,9 @@ Output: 0
 
 **Constraints:**
 
-* `1 <= jewels.length, stones.length <= 50`
-* `jewels` and `stones` consist of only English letters.
-* All the characters of `jewels` are **unique**.
+- `1 <= jewels.length, stones.length <= 50`
+- `jewels` and `stones` consist of only English letters.
+- All the characters of `jewels` are **unique**.
 
 ---
 

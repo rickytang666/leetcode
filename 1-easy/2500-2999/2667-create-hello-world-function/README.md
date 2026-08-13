@@ -34,4 +34,4 @@ Any arguments could be passed to the function but it should still always return 
 
 **Constraints:**
 
-* `0 <= args.length <= 10`
+- `0 <= args.length <= 10`

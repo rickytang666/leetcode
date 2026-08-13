@@ -30,5 +30,5 @@ Explanation: Note that the values of nums are not necessarily unique.
 
 **Constraints:**
 
-* `1 <= nums.length <= 5 * 10^4`
-* `-5 * 10^4 <= nums[i] <= 5 * 10^4`
+- `1 <= nums.length <= 5 * 10^4`
+- `-5 * 10^4 <= nums[i] <= 5 * 10^4`

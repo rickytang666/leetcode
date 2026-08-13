@@ -28,9 +28,9 @@ Output: [5]
 
 **Constraints:**
 
-* The number of nodes in the list is `n`.
-* `1 <= n <= 500`
-* `-500 <= Node.val <= 500`
-* `1 <= left <= right <= n`
+- The number of nodes in the list is `n`.
+- `1 <= n <= 500`
+- `-500 <= Node.val <= 500`
+- `1 <= left <= right <= n`
 
 **Follow up:** Could you do it in one pass?

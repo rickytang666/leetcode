@@ -16,9 +16,9 @@ Every time you guess wrong, I will tell you whether the number I picked is highe
 
 You call a pre-defined API `int guess(int num)`, which returns three possible results:
 
-* `-1`: Your guess is higher than the number I picked (i.e. `num > pick`).
-* `1`: Your guess is lower than the number I picked (i.e. `num < pick`).
-* `0`: your guess is equal to the number I picked (i.e. `num == pick`).
+- `-1`: Your guess is higher than the number I picked (i.e. `num > pick`).
+- `1`: Your guess is lower than the number I picked (i.e. `num < pick`).
+- `0`: your guess is equal to the number I picked (i.e. `num == pick`).
 
 Return _the number that I picked_.
 
@@ -45,5 +45,5 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= n <= 2^31 - 1`
-* `1 <= pick <= n`
+- `1 <= n <= 2^31 - 1`
+- `1 <= pick <= n`

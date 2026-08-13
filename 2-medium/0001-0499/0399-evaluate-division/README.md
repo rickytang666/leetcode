@@ -46,15 +46,15 @@ Output: [0.50000,2.00000,-1.00000,-1.00000]
 
 **Constraints:**
 
-* `1 <= equations.length <= 20`
-* `equations[i].length == 2`
-* `1 <= A_i.length, B_i.length <= 5`
-* `values.length == equations.length`
-* `0.0 < values[i] <= 20.0`
-* `1 <= queries.length <= 20`
-* `queries[i].length == 2`
-* `1 <= C_j.length, D_j.length <= 5`
-* `A_i, B_i, C_j, D_j` consist of lower case English letters and digits.
+- `1 <= equations.length <= 20`
+- `equations[i].length == 2`
+- `1 <= A_i.length, B_i.length <= 5`
+- `values.length == equations.length`
+- `0.0 < values[i] <= 20.0`
+- `1 <= queries.length <= 20`
+- `queries[i].length == 2`
+- `1 <= C_j.length, D_j.length <= 5`
+- `A_i, B_i, C_j, D_j` consist of lower case English letters and digits.
 
 ---
 

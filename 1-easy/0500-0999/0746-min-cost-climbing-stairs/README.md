@@ -41,8 +41,8 @@ The total cost is 6.
 
 **Constraints:**
 
-* `2 <= cost.length <= 1000`
-* `0 <= cost[i] <= 999`
+- `2 <= cost.length <= 1000`
+- `0 <= cost[i] <= 999`
 
 ---
 

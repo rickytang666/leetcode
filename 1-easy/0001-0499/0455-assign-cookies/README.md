@@ -34,8 +34,8 @@ You need to output 2.
 
 **Constraints:**
 
-* `1 <= g.length <= 3 * 10^4`
-* `0 <= s.length <= 3 * 10^4`
-* `1 <= g[i], s[j] <= 2^31 - 1`
+- `1 <= g.length <= 3 * 10^4`
+- `0 <= s.length <= 3 * 10^4`
+- `1 <= g[i], s[j] <= 2^31 - 1`
 
 **Note:** This question is the same as [2410: Maximum Matching of Players With Trainers.](https://leetcode.com/problems/maximum-matching-of-players-with-trainers/description/)

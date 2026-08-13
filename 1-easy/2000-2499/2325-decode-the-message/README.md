@@ -15,7 +15,7 @@ You are given the strings `key` and `message`, which represent a cipher key and 
 3.  Each letter in `message` is then **substituted** using the table.
 4.  Spaces `' '` are transformed to themselves.
 
-* For example, given `key = "**hap**p**y** **bo**y"` (actual key would have **at least one** instance of each letter in the alphabet), we have the partial substitution table of (`'h' -> 'a'`, `'a' -> 'b'`, `'p' -> 'c'`, `'y' -> 'd'`, `'b' -> 'e'`, `'o' -> 'f'`).
+- For example, given `key = "**hap**p**y** **bo**y"` (actual key would have **at least one** instance of each letter in the alphabet), we have the partial substitution table of (`'h' -> 'a'`, `'a' -> 'b'`, `'p' -> 'c'`, `'y' -> 'd'`, `'b' -> 'e'`, `'o' -> 'f'`).
 
 Return _the decoded message_.
 
@@ -43,11 +43,11 @@ It is obtained by taking the first appearance of each letter in "eljuxhpwnyrdgtq
 
 **Constraints:**
 
-* `26 <= key.length <= 2000`
-* `key` consists of lowercase English letters and `' '`.
-* `key` contains every letter in the English alphabet (`'a'` to `'z'`) **at least once**.
-* `1 <= message.length <= 2000`
-* `message` consists of lowercase English letters and `' '`.
+- `26 <= key.length <= 2000`
+- `key` consists of lowercase English letters and `' '`.
+- `key` contains every letter in the English alphabet (`'a'` to `'z'`) **at least once**.
+- `1 <= message.length <= 2000`
+- `message` consists of lowercase English letters and `' '`.
 
 ---
 

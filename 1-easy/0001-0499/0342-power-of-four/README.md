@@ -35,6 +35,6 @@ Output: true
 
 **Constraints:**
 
-* `-2^31 <= n <= 2^31 - 1`
+- `-2^31 <= n <= 2^31 - 1`
 
 **Follow up:** Could you solve it without loops/recursion?

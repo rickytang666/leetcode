@@ -37,5 +37,5 @@ Output: true
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[0, 5000]`.
-* `-10^4 <= Node.val <= 10^4`
+- The number of nodes in the tree is in the range `[0, 5000]`.
+- `-10^4 <= Node.val <= 10^4`

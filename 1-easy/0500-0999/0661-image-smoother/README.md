@@ -42,7 +42,7 @@ For the point (1,1): floor((50+200+200+200+200+100+100+100+100)/9) = floor(138.8
 
 **Constraints:**
 
-* `m == img.length`
-* `n == img[i].length`
-* `1 <= m, n <= 200`
-* `0 <= img[i][j] <= 255`
+- `m == img.length`
+- `n == img[i].length`
+- `1 <= m, n <= 200`
+- `0 <= img[i][j] <= 255`

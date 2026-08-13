@@ -38,8 +38,8 @@ Explanation: It can be proven, that it is impossible to make 5 equal to 0 with t
 
 **Constraints:**
 
-* `1 <= num1 <= 10^9`
-* `-10^9 <= num2 <= 10^9`
+- `1 <= num1 <= 10^9`
+- `-10^9 <= num2 <= 10^9`
 
 ---
 

@@ -20,8 +20,8 @@ Return an integer denoting the **maximum** number of substrings you can split `s
 
 **Explanation:**
 
-* Split `"abab"` into `"a"` and `"bab"`.
-* Each substring starts with a distinct character i.e `'a'` and `'b'`. Thus, the answer is 2.
+- Split `"abab"` into `"a"` and `"bab"`.
+- Each substring starts with a distinct character i.e `'a'` and `'b'`. Thus, the answer is 2.
 
 **Example 2:**
 
@@ -31,8 +31,8 @@ Return an integer denoting the **maximum** number of substrings you can split `s
 
 **Explanation:**
 
-* Split `"abcd"` into `"a"`, `"b"`, `"c"`, and `"d"`.
-* Each substring starts with a distinct character. Thus, the answer is 4.
+- Split `"abcd"` into `"a"`, `"b"`, `"c"`, and `"d"`.
+- Each substring starts with a distinct character. Thus, the answer is 4.
 
 **Example 3:**
 
@@ -42,13 +42,13 @@ Return an integer denoting the **maximum** number of substrings you can split `s
 
 **Explanation:**
 
-* All characters in `"aaaa"` are `'a'`.
-* Only one substring can start with `'a'`. Thus, the answer is 1.
+- All characters in `"aaaa"` are `'a'`.
+- Only one substring can start with `'a'`. Thus, the answer is 1.
 
 **Constraints:**
 
-* `1 <= s.length <= 10^5`
-* `s` consists of lowercase English letters.
+- `1 <= s.length <= 10^5`
+- `s` consists of lowercase English letters.
 
 ---
 

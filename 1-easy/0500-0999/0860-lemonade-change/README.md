@@ -40,5 +40,5 @@ Since not every customer received the correct change, the answer is false.
 
 **Constraints:**
 
-* `1 <= bills.length <= 10^5`
-* `bills[i]` is either `5`, `10`, or `20`.
+- `1 <= bills.length <= 10^5`
+- `bills[i]` is either `5`, `10`, or `20`.

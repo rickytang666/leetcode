@@ -55,11 +55,11 @@ The maximum depth of any subarray is 1. Thus, all of them are flattened.
 
 **Constraints:**
 
-* `0 <= count of numbers in arr <= 10^5`
-* `0 <= count of subarrays in arr <= 10^5`
-* `maxDepth <= 1000`
-* `-1000 <= each number <= 1000`
-* `0 <= n <= 1000`
+- `0 <= count of numbers in arr <= 10^5`
+- `0 <= count of subarrays in arr <= 10^5`
+- `maxDepth <= 1000`
+- `-1000 <= each number <= 1000`
+- `0 <= n <= 1000`
 
 ---
 

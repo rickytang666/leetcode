@@ -35,9 +35,9 @@ Explanation: Length of diagonal is the same for both which is 5, so maximum area
 
 **Constraints:**
 
-* `1 <= dimensions.length <= 100`
-* `dimensions[i].length == 2`
-* `1 <= dimensions[i][0], dimensions[i][1] <= 100`
+- `1 <= dimensions.length <= 100`
+- `dimensions[i].length == 2`
+- `1 <= dimensions[i][0], dimensions[i][1] <= 100`
 
 ---
 

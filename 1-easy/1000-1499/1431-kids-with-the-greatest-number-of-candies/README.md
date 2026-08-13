@@ -10,7 +10,7 @@
 
 There are `n` kids with candies. You are given an integer array `candies`, where each `candies[i]` represents the number of candies the `i^th` kid has, and an integer `extraCandies`, denoting the number of extra candies that you have.
 
-Return _a boolean array_ `result` _of length_ `n`_, where_ `result[i]` _is_ `true` _if, after giving the_ `i^th` _kid all the_ `extraCandies`_, they will have the **greatest** number of candies among all the kids__, or_ `false` _otherwise_.
+Return _a boolean array_ `result` _of length_ `n`_, where_ `result[i]` _is_ `true` _if, after giving the_ `i^th` _kid all the_ `extraCandies`_, they will have the **greatest** number of candies among all the kids\__, or_ `false` _otherwise_.
 
 Note that **multiple** kids can have the **greatest** number of candies.
 
@@ -45,10 +45,10 @@ Output: [true,false,true]
 
 **Constraints:**
 
-* `n == candies.length`
-* `2 <= n <= 100`
-* `1 <= candies[i] <= 100`
-* `1 <= extraCandies <= 50`
+- `n == candies.length`
+- `2 <= n <= 100`
+- `1 <= candies[i] <= 100`
+- `1 <= extraCandies <= 50`
 
 ---
 

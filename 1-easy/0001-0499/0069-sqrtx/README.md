@@ -12,7 +12,7 @@ Given a non-negative integer `x`, return _the square root of_ `x` _rounded down 
 
 You **must not use** any built-in exponent function or operator.
 
-* For example, do not use `pow(x, 0.5)` in c++ or `x ** 0.5` in python.
+- For example, do not use `pow(x, 0.5)` in c++ or `x ** 0.5` in python.
 
 **Example 1:**
 
@@ -32,7 +32,7 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 
 **Constraints:**
 
-* `0 <= x <= 2^31 - 1`
+- `0 <= x <= 2^31 - 1`
 
 ---
 

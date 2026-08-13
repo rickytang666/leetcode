@@ -30,9 +30,9 @@ Output: 3
 
 **Constraints:**
 
-* The number of nodes in the tree is `n`.
-* `1 <= k <= n <= 10^4`
-* `0 <= Node.val <= 10^4`
+- The number of nodes in the tree is `n`.
+- `1 <= k <= n <= 10^4`
+- `0 <= Node.val <= 10^4`
 
 **Follow up:** If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?
 

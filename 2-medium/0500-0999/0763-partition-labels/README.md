@@ -34,8 +34,8 @@ Output: [10]
 
 **Constraints:**
 
-* `1 <= s.length <= 500`
-* `s` consists of lowercase English letters.
+- `1 <= s.length <= 500`
+- `s` consists of lowercase English letters.
 
 ---
 

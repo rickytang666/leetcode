@@ -30,11 +30,11 @@ Output: true
 
 **Constraints:**
 
-* `1 <= trips.length <= 1000`
-* `trips[i].length == 3`
-* `1 <= numPassengersi <= 100`
-* `0 <= fromi < to_i <= 1000`
-* `1 <= capacity <= 10^5`
+- `1 <= trips.length <= 1000`
+- `trips[i].length == 3`
+- `1 <= numPassengersi <= 100`
+- `0 <= fromi < to_i <= 1000`
+- `1 <= capacity <= 10^5`
 
 ---
 

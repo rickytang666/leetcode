@@ -14,9 +14,9 @@ To compare version strings, compare their revision values in **left-to-right ord
 
 Return the following:
 
-* If `version1 < version2`, return -1.
-* If `version1 > version2`, return 1.
-* Otherwise, return 0.
+- If `version1 < version2`, return -1.
+- If `version1 > version2`, return 1.
+- Otherwise, return 0.
 
 **Example 1:**
 
@@ -50,10 +50,10 @@ version1 has less revisions, which means every missing revision are treated as "
 
 **Constraints:**
 
-* `1 <= version1.length, version2.length <= 500`
-* `version1` and `version2` only contain digits and `'.'`.
-* `version1` and `version2` **are valid version numbers**.
-* All the given revisions in `version1` and `version2` can be stored in a **32-bit integer**.
+- `1 <= version1.length, version2.length <= 500`
+- `version1` and `version2` only contain digits and `'.'`.
+- `version1` and `version2` **are valid version numbers**.
+- All the given revisions in `version1` and `version2` can be stored in a **32-bit integer**.
 
 ---
 
