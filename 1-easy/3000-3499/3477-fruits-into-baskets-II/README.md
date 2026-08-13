@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 70.3%
-
-**Tags:** `Array`, `Binary Search`, `Segment Tree`, `Simulation`, `Ordered Set`
+**Tags:** `array`, `binary-search`, `segment-tree`, `simulation`, `ordered-set`
 
 ---
 
 ## Description
 
-You are given two arrays of integers, `fruits` and `baskets`, each of length `n`, where `fruits[i]` represents the **quantity** of the `ith` type of fruit, and `baskets[j]` represents the **capacity** of the `jth` basket.
+You are given two arrays of integers, `fruits` and `baskets`, each of length `n`, where `fruits[i]` represents the **quantity** of the `i^th` type of fruit, and `baskets[j]` represents the **capacity** of the `j^th` basket.
 
 From left to right, place the fruits according to these rules:
 
@@ -58,4 +56,8 @@ Since all fruits are successfully placed, we return 0.
 
 ## Hints
 
-1. Simulate the operations for each fruit as described
+<details>
+<summary>Hint 1</summary>
+
+Simulate the operations for each fruit as described
+</details>

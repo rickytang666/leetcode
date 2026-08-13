@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 50.5%
-
-**Tags:** `Linked List`, `Two Pointers`
+**Tags:** `linked-list`, `two-pointers`
 
 ---
 
 ## Description
 
-Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
+Given the `head` of a linked list, remove the `n^th` node from the end of the list and return its head.
 
 **Example 1:**
 
@@ -48,4 +46,8 @@ Output: [1]
 
 ## Hints
 
-1. Maintain two pointers and update one with a delay of n steps.
+<details>
+<summary>Hint 1</summary>
+
+Maintain two pointers and update one with a delay of n steps.
+</details>

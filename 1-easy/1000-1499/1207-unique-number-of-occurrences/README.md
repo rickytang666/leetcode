@@ -2,22 +2,20 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.6%
-
-**Tags:** `Array`, `Hash Table`
+**Tags:** `array`, `hash-table`
 
 ---
 
 ## Description
 
-Given an array of integers `arr`, return `true` *if the number of occurrences of each value in the array is **unique** or* `false` *otherwise*.
+Given an array of integers `arr`, return `true` _if the number of occurrences of each value in the array is **unique** or_ `false` _otherwise_.
 
 **Example 1:**
 
 ```
 Input: arr = [1,2,2,1,1,3]
 Output: true
-Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
+Explanation: The value 1 has 3 occurrences, 2 has 2 and 3 has 1. No two values have the same number of occurrences.
 ```
 
 **Example 2:**
@@ -43,5 +41,14 @@ Output: true
 
 ## Hints
 
-1. Find the number of occurrences of each element in the array using a hash map.
-2. Iterate through the hash map and check if there is a repeated value.
+<details>
+<summary>Hint 1</summary>
+
+Find the number of occurrences of each element in the array using a hash map.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Iterate through the hash map and check if there is a repeated value.
+</details>

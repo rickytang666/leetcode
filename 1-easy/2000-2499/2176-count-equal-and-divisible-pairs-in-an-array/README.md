@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 84.0%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
 ## Description
 
-Given a **0-indexed** integer array `nums` of length `n` and an integer `k`, return *the **number of pairs*** `(i, j)` *where* `0 <= i < j < n`, *such that* `nums[i] == nums[j]` *and* `(i * j)` *is divisible by* `k`.
+Given a **0-indexed** integer array `nums` of length `n` and an integer `k`, return _the **number of pairs**_ `(i, j)` _where_ `0 <= i < j < n`, _such that_ `nums[i] == nums[j]` _and_ `(i * j)` _is divisible by_ `k`.
 
 **Example 1:**
 
@@ -42,4 +40,8 @@ Explanation: Since no value in nums is repeated, there are no pairs (i,j) that m
 
 ## Hints
 
-1. For every possible pair of indices (i, j) where i < j, check if it satisfies the given conditions.
+<details>
+<summary>Hint 1</summary>
+
+For every possible pair of indices (i, j) where i < j, check if it satisfies the given conditions.
+</details>

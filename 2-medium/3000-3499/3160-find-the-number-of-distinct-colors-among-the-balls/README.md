@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 54.2%
-
-**Tags:** `Array`, `Hash Table`, `Simulation`
+**Tags:** `array`, `hash-table`, `simulation`
 
 ---
 
@@ -14,9 +12,9 @@ You are given an integer `limit` and a 2D array `queries` of size `n x 2`.
 
 There are `limit + 1` balls with **distinct** labels in the range `[0, limit]`. Initially, all balls are uncolored. For every query in `queries` that is of the form `[x, y]`, you mark ball `x` with the color `y`. After each query, you need to find the number of colors among the balls.
 
-Return an array `result` of length `n`, where `result[i]` denotes the number of colors *after* `ith` query.
+Return an array `result` of length `n`, where `result[i]` denotes the number of colors _after_ `i^th` query.
 
-**Note** that when answering a query, lack of a color *will not* be considered as a color.
+**Note** that when answering a query, lack of a color _will not_ be considered as a color.
 
 **Example 1:**
 
@@ -51,14 +49,18 @@ Return an array `result` of length `n`, where `result[i]` denotes the number of 
 
 **Constraints:**
 
-* `1 <= limit <= 109`
-* `1 <= n == queries.length <= 105`
+* `1 <= limit <= 10^9`
+* `1 <= n == queries.length <= 10^5`
 * `queries[i].length == 2`
 * `0 <= queries[i][0] <= limit`
-* `1 <= queries[i][1] <= 109`
+* `1 <= queries[i][1] <= 10^9`
 
 ---
 
 ## Hints
 
-1. Use two HashMaps to maintain the color of each ball and the set of balls with each color.
+<details>
+<summary>Hint 1</summary>
+
+Use two HashMaps to maintain the color of each ball and the set of balls with each color.
+</details>

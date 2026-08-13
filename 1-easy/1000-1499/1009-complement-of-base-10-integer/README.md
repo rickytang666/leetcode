@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 63.2%
-
-**Tags:** `Bit Manipulation`
+**Tags:** `bit-manipulation`
 
 ---
 
@@ -14,7 +12,7 @@ The **complement** of an integer is the integer you get when you flip all the `0
 
 * For example, The integer `5` is `"101"` in binary and its **complement** is `"010"` which is the integer `2`.
 
-Given an integer `n`, return *its complement*.
+Given an integer `n`, return _its complement_.
 
 **Example 1:**
 
@@ -42,9 +40,9 @@ Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 
 
 **Constraints:**
 
-* `0 <= n < 109`
+* `0 <= n < 10^9`
 
-**Note:** This question is the same as 476: <https://leetcode.com/problems/number-complement/>
+**Note:** This question is the same as 476: [https://leetcode.com/problems/number-complement/](https://leetcode.com/problems/number-complement/)
 
 ---
 
@@ -53,6 +51,5 @@ Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 
 <details>
 <summary>Hint 1</summary>
 
-A binary number plus its complement will equal 111....111 in binary.  Also, N = 0 is a corner case.
+A binary number plus its complement will equal 111....111 in binary. Also, N = 0 is a corner case.
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 64.8%
-
-**Tags:** `Array`, `Two Pointers`
+**Tags:** `array`, `two-pointers`
 
 ---
 
@@ -12,9 +10,9 @@
 
 Given an integer array `nums` sorted in **non-decreasing order**, remove some duplicates [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm) such that each unique element appears **at most twice**. The **relative order** of the elements should be kept the **same**.
 
-Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the **first part** of the array `nums`. More formally, if there are `k` elements after removing the duplicates, then the first `k` elements of `nums` should hold the final result. It does not matter what you leave beyond the first `k` elements.
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the **first part** of the array `nums`. More formally, if there are `k` elements after removing the duplicates, then the first `k` elements of `nums` should hold the final result. It does not matter what you leave beyond the first `k` elements.
 
-Return `k` *after placing the final result in the first* `k` *slots of* `nums`.
+Return `k` _after placing the final result in the first_ `k` _slots of_ `nums`.
 
 Do **not** allocate extra space for another array. You must do this by **modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** with O(1) extra memory.
 
@@ -56,6 +54,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 **Constraints:**
 
-* `1 <= nums.length <= 3 * 104`
-* `-104 <= nums[i] <= 104`
+* `1 <= nums.length <= 3 * 10^4`
+* `-10^4 <= nums[i] <= 10^4`
 * `nums` is sorted in **non-decreasing** order.

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 80.3%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -30,11 +28,15 @@ Output: ["h","a","n","n","a","H"]
 
 **Constraints:**
 
-* `1 <= s.length <= 105`
+* `1 <= s.length <= 10^5`
 * `s[i]` is a [printable ascii character](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
 
 ---
 
 ## Hints
 
-1. The entire logic for reversing a string is based on using the opposite directional two-pointer approach!
+<details>
+<summary>Hint 1</summary>
+
+The entire logic for reversing a string is based on using the opposite directional two-pointer approach!
+</details>

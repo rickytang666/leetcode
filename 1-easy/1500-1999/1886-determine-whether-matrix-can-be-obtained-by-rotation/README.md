@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 67.8%
-
-**Tags:** `Array`, `Matrix`
+**Tags:** `array`, `matrix`
 
 ---
 
 ## Description
 
-Given two `n x n` binary matrices `mat` and `target`, return `true` *if it is possible to make* `mat` *equal to* `target` *by **rotating*** `mat` *in **90-degree increments**, or* `false` *otherwise.*
+Given two `n x n` binary matrices `mat` and `target`, return `true` _if it is possible to make_ `mat` _equal to_ `target` _by **rotating**_ `mat` _in **90-degree increments**, or_ `false` _otherwise._
 
 **Example 1:**
 
@@ -64,4 +62,3 @@ What is the maximum number of rotations you have to check?
 
 Is there a formula you can use to rotate a matrix 90 degrees?
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 84.5%
-
-**Tags:** `Math`, `Greedy`
+**Tags:** `math`, `greedy`
 
 ---
 
@@ -12,14 +10,14 @@
 
 You are given a positive integer `num` consisting only of digits `6` and `9`.
 
-Return *the maximum number you can get by changing **at most** one digit (*`6` *becomes* `9`*, and* `9` *becomes* `6`*)*.
+Return _the maximum number you can get by changing **at most** one digit (_`6` _becomes_ `9`_, and_ `9` _becomes_ `6`_)_.
 
 **Example 1:**
 
 ```
 Input: num = 9669
 Output: 9969
-Explanation: 
+Explanation:
 Changing the first digit results in 6669.
 Changing the second digit results in 9969.
 Changing the third digit results in 9699.
@@ -45,12 +43,21 @@ Explanation: It is better not to apply any change.
 
 **Constraints:**
 
-* `1 <= num <= 104`
-* `num` consists of only `6` and `9` digits.
+* `1 <= num <= 10^4`
+* `num` consists of only `6` and `9` digits.
 
 ---
 
 ## Hints
 
-1. Convert the number in an array of its digits.
-2. Brute force on every digit to get the maximum number.
+<details>
+<summary>Hint 1</summary>
+
+Convert the number in an array of its digits.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Brute force on every digit to get the maximum number.
+</details>

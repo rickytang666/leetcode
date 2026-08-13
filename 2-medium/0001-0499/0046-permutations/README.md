@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 81.5%
-
-**Tags:** `Array`, `Backtracking`
+**Tags:** `array`, `backtracking`
 
 ---
 

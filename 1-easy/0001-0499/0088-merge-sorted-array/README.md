@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 54.0%
-
-**Tags:** `Array`, `Two Pointers`, `Sorting`
+**Tags:** `array`, `two-pointers`, `sorting`
 
 ---
 
@@ -14,7 +12,7 @@ You are given two integer arrays `nums1` and `nums2`, sorted in **non-decreasing
 
 **Merge** `nums1` and `nums2` into a single array sorted in **non-decreasing order**.
 
-The final sorted array should not be returned by the function, but instead be *stored inside the array* `nums1`. To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0` and should be ignored. `nums2` has a length of `n`.
+The final sorted array should not be returned by the function, but instead be _stored inside the array_ `nums1`. To accommodate this, `nums1` has a length of `m + n`, where the first `m` elements denote the elements that should be merged, and the last `n` elements are set to `0` and should be ignored. `nums2` has a length of `n`.
 
 **Example 1:**
 
@@ -50,7 +48,7 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 * `nums2.length == n`
 * `0 <= m, n <= 200`
 * `1 <= m + n <= 200`
-* `-109 <= nums1[i], nums2[j] <= 109`
+* `-10^9 <= nums1[i], nums2[j] <= 10^9`
 
 **Follow up:** Can you come up with an algorithm that runs in `O(m + n)` time?
 
@@ -58,5 +56,14 @@ Note that because m = 0, there are no elements in nums1. The 0 is only there to 
 
 ## Hints
 
-1. You can easily solve this problem if you simply think about two elements at a time rather than two arrays. We know that each of the individual arrays is sorted. What we don't know is how they will intertwine. Can we take a local decision and arrive at an optimal solution?
-2. If you simply consider one element each at a time from the two arrays and make a decision and proceed accordingly, you will arrive at the optimal solution.
+<details>
+<summary>Hint 1</summary>
+
+You can easily solve this problem if you simply think about two elements at a time rather than two arrays. We know that each of the individual arrays is sorted. What we don't know is how they will intertwine. Can we take a local decision and arrive at an optimal solution?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If you simply consider one element each at a time from the two arrays and make a decision and proceed accordingly, you will arrive at the optimal solution.
+</details>

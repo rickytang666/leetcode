@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.4%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 

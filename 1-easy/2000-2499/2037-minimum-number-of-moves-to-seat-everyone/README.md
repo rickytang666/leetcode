@@ -2,21 +2,19 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.2%
-
-**Tags:** `Array`, `Greedy`, `Sorting`, `Counting Sort`
+**Tags:** `array`, `greedy`, `sorting`, `counting-sort`
 
 ---
 
 ## Description
 
-There are `n` **availabe** seats and `n` students **standing** in a room. You are given an array `seats` of length `n`, where `seats[i]` is the position of the `ith` seat. You are also given the array `students` of length `n`, where `students[j]` is the position of the `jth` student.
+There are `n` **availabe** seats and `n` students **standing** in a room. You are given an array `seats` of length `n`, where `seats[i]` is the position of the `i^th` seat. You are also given the array `students` of length `n`, where `students[j]` is the position of the `j^th` student.
 
 You may perform the following move any number of times:
 
-* Increase or decrease the position of the `ith` student by `1` (i.e., moving the `ith` student from position `x` to `x + 1` or `x - 1`)
+* Increase or decrease the position of the `i^th` student by `1` (i.e., moving the `i^th` student from position `x` to `x + 1` or `x - 1`)
 
-Return *the **minimum number of moves** required to move each student to a seat* *such that no two students are in the same seat.*
+Return _the **minimum number of moves** required to move each student to a seat_ _such that no two students are in the same seat._
 
 Note that there may be **multiple** seats or students in the **same** position at the beginning.
 
@@ -69,6 +67,20 @@ In total, 1 + 3 + 0 + 0 = 4 moves were used.
 
 ## Hints
 
-1. Can we sort the arrays to help solve the problem?
-2. Can we greedily match each student to a seat?
-3. The smallest positioned student will go to the smallest positioned chair, and then the next smallest positioned student will go to the next smallest positioned chair, and so on.
+<details>
+<summary>Hint 1</summary>
+
+Can we sort the arrays to help solve the problem?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Can we greedily match each student to a seat?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+The smallest positioned student will go to the smallest positioned chair, and then the next smallest positioned student will go to the next smallest positioned chair, and so on.
+</details>

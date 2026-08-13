@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.7%
-
-**Tags:** `Array`, `Hash Table`
+**Tags:** `array`, `hash-table`
 
 ---
 
@@ -25,7 +23,7 @@ Return an array containing your friends' IDs in their **finishing** order.
 
 **Explanation:**
 
-The finishing order is `[3, 1, 2, 5, 4]`. Therefore, the finishing order of your friends is `[3, 1, 4]`.
+The finishing order is `[**3**, **1**, 2, 5, **4**]`. Therefore, the finishing order of your friends is `[3, 1, 4]`.
 
 **Example 2:**
 
@@ -35,7 +33,7 @@ The finishing order is `[3, 1, 2, 5, 4]`. Therefore, the finishing order of your
 
 **Explanation:**
 
-The finishing order is `[1, 4, 5, 3, 2]`. Therefore, the finishing order of your friends is `[5, 2]`.
+The finishing order is `[1, 4, **5**, 3, **2**]`. Therefore, the finishing order of your friends is `[5, 2]`.
 
 **Constraints:**
 
@@ -49,5 +47,14 @@ The finishing order is `[1, 4, 5, 3, 2]`. Therefore, the finishing order of your
 
 ## Hints
 
-1. Use a hash set for quick friend lookups from <code>friends</code>.
-2. Iterate over <code>order</code>, checking the set to collect your friends in finishing order.
+<details>
+<summary>Hint 1</summary>
+
+Use a hash set for quick friend lookups from `friends`.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Iterate over `order`, checking the set to collect your friends in finishing order.
+</details>

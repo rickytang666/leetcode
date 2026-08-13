@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 91.1%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
 ## Description
 
-Given two integers, `num` and `t`. A **number** `x`is **achievable** if it can become equal to `num` after applying the following operation **at most** `t` times:
+Given two integers, `num` and `t`. A **number** `x` is **achievable** if it can become equal to `num` after applying the following operation **at most** `t` times:
 
-* Increase or decrease `x` by `1`, and *simultaneously* increase or decrease `num` by `1`.
+* Increase or decrease `x` by `1`, and _simultaneously_ increase or decrease `num` by `1`.
 
 Return the **maximum** possible value of `x`.
 
@@ -42,10 +40,14 @@ Apply the following operation twice to make the maximum achievable number equal 
 
 **Constraints:**
 
-* `1 <= num, t <= 50`
+* `1 <= num, t <= 50`
 
 ---
 
 ## Hints
 
-1. Let x be the answer, it’s always optimal to decrease x in each operation and increase nums.
+<details>
+<summary>Hint 1</summary>
+
+Let x be the answer, it’s always optimal to decrease x in each operation and increase nums.
+</details>

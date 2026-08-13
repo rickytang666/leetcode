@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 65.5%
-
-**Tags:** `String`, `Greedy`, `Heap (Priority Queue)`
+**Tags:** `string`, `greedy`, `heap-priority-queue`
 
 ---
 
@@ -18,7 +16,7 @@ A string `s` is called **happy** if it satisfies the following conditions:
 * `s` contains **at most** `b` occurrences of the letter `'b'`.
 * `s` contains **at most** `c` occurrences of the letter `'c'`.
 
-Given three integers `a`, `b`, and `c`, return *the **longest possible happy** string*. If there are multiple longest happy strings, return *any of them*. If there is no such string, return *the empty string* `""`.
+Given three integers `a`, `b`, and `c`, return _the **longest possible happy** string_. If there are multiple longest happy strings, return _any of them_. If there is no such string, return _the empty string_ `""`.
 
 A **substring** is a contiguous sequence of characters within a string.
 
@@ -58,4 +56,3 @@ Use a greedy approach.
 
 Use the letter with the maximum current limit that can be added without breaking the condition.
 </details>
-

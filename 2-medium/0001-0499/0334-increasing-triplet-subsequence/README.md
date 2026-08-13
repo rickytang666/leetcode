@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 39.2%
-
-**Tags:** `Array`, `Greedy`
+**Tags:** `array`, `greedy`
 
 ---
 
 ## Description
 
-Given an integer array `nums`, return `true` *if there exists a triple of indices* `(i, j, k)` *such that* `i < j < k` *and* `nums[i] < nums[j] < nums[k]`. If no such indices exists, return `false`.
+Given an integer array `nums`, return `true` _if there exists a triple of indices_ `(i, j, k)` _such that_ `i < j < k` _and_ `nums[i] < nums[j] < nums[k]`. If no such indices exists, return `false`.
 
 **Example 1:**
 
@@ -38,7 +36,7 @@ Explanation: One of the valid triplet is (1, 4, 5), because nums[1] == 1 < nums[
 
 **Constraints:**
 
-* `1 <= nums.length <= 5 * 105`
-* `-231 <= nums[i] <= 231 - 1`
+* `1 <= nums.length <= 5 * 10^5`
+* `-2^31 <= nums[i] <= 2^31 - 1`
 
 **Follow up:** Could you implement a solution that runs in `O(n)` time complexity and `O(1)` space complexity?

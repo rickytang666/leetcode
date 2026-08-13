@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.9%
-
-**Tags:** `Array`, `Math`
+**Tags:** `array`, `math`
 
 ---
 
@@ -43,5 +41,14 @@ All array elements can be made divisible by 3 using 3 operations:
 
 ## Hints
 
-1. If <code>x % 3 != 0</code> we can always increment or decrement <code>x</code> such that we only need 1 operation.
-2. Add <code>min(nums[i] % 3, 3 - (nums[i] % 3))</code> to the count of operations.
+<details>
+<summary>Hint 1</summary>
+
+If `x % 3 != 0` we can always increment or decrement `x` such that we only need 1 operation.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Add `min(nums[i] % 3, 3 - (nums[i] % 3))` to the count of operations.
+</details>

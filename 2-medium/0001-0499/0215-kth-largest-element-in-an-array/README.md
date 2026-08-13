@@ -2,17 +2,15 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.7%
-
-**Tags:** `Array`, `Divide and Conquer`, `Sorting`, `Heap (Priority Queue)`, `Quickselect`
+**Tags:** `array`, `divide-and-conquer`, `sorting`, `heap-priority-queue`, `quickselect`
 
 ---
 
 ## Description
 
-Given an integer array `nums` and an integer `k`, return *the* `kth` *largest element in the array*.
+Given an integer array `nums` and an integer `k`, return _the_ `k^th` _largest element in the array_.
 
-Note that it is the `kth` largest element in the sorted order, not the `kth` distinct element.
+Note that it is the `k^th` largest element in the sorted order, not the `k^th` distinct element.
 
 Can you solve it without sorting?
 
@@ -32,5 +30,5 @@ Output: 4
 
 **Constraints:**
 
-* `1 <= k <= nums.length <= 105`
-* `-104 <= nums[i] <= 104`
+* `1 <= k <= nums.length <= 10^5`
+* `-10^4 <= nums[i] <= 10^4`

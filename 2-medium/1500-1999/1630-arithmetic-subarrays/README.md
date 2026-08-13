@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 83.8%
-
-**Tags:** `Array`, `Hash Table`, `Sorting`
+**Tags:** `array`, `hash-table`, `sorting`
 
 ---
 
@@ -26,9 +24,9 @@ The following sequence is not **arithmetic**:
 1, 1, 2, 5, 7
 ```
 
-You are given an array of `n` integers, `nums`, and two arrays of `m` integers each, `l` and `r`, representing the `m` range queries, where the `ith` query is the range `[l[i], r[i]]`. All the arrays are **0-indexed**.
+You are given an array of `n` integers, `nums`, and two arrays of `m` integers each, `l` and `r`, representing the `m` range queries, where the `i^th` query is the range `[l[i], r[i]]`. All the arrays are **0-indexed**.
 
-Return *a list of* `boolean` *elements* `answer`*, where* `answer[i]` *is* `true` *if the subarray* `nums[l[i]], nums[l[i]+1], ... , nums[r[i]]` *can be **rearranged** to form an **arithmetic** sequence, and* `false` *otherwise.*
+Return _a list of_ `boolean` _elements_ `answer`_, where_ `answer[i]` _is_ `true` _if the subarray_ `nums[l[i]], nums[l[i]+1], ... , nums[r[i]]` _can be **rearranged** to form an **arithmetic** sequence, and_ `false` _otherwise._
 
 **Example 1:**
 
@@ -36,9 +34,9 @@ Return *a list of* `boolean` *elements* `answer`*, where* `answer[i]` *is* `true
 Input: nums = [4,6,5,9,3,7], l = [0,0,2], r = [2,3,5]
 Output: [true,false,true]
 Explanation:
-In the 0th query, the subarray is [4,6,5]. This can be rearranged as [6,5,4], which is an arithmetic sequence.
-In the 1st query, the subarray is [4,6,5,9]. This cannot be rearranged as an arithmetic sequence.
-In the 2nd query, the subarray is [5,9,3,7]. This can be rearranged as [3,5,7,9], which is an arithmetic sequence.
+In the 0^th query, the subarray is [4,6,5]. This can be rearranged as [6,5,4], which is an arithmetic sequence.
+In the 1^st query, the subarray is [4,6,5,9]. This cannot be rearranged as an arithmetic sequence.
+In the 2^nd query, the subarray is [5,9,3,7]. This can be rearranged as [3,5,7,9], which is an arithmetic sequence.
 ```
 
 **Example 2:**
@@ -56,12 +54,26 @@ Output: [false,true,false,false,true,true]
 * `2 <= n <= 500`
 * `1 <= m <= 500`
 * `0 <= l[i] < r[i] < n`
-* `-105 <= nums[i] <= 105`
+* `-10^5 <= nums[i] <= 10^5`
 
 ---
 
 ## Hints
 
-1. To check if a given sequence is arithmetic, just check that the difference between every two consecutive elements is the same.
-2. If and only if a set of numbers can make an arithmetic sequence, then its sorted version makes an arithmetic sequence. So to check a set of numbers, sort it, and check if that sequence is arithmetic.
-3. For each query, get the corresponding set of numbers which will be the sub-array represented by the query, sort it, and check if the result sequence is arithmetic.
+<details>
+<summary>Hint 1</summary>
+
+To check if a given sequence is arithmetic, just check that the difference between every two consecutive elements is the same.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If and only if a set of numbers can make an arithmetic sequence, then its sorted version makes an arithmetic sequence. So to check a set of numbers, sort it, and check if that sequence is arithmetic.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+For each query, get the corresponding set of numbers which will be the sub-array represented by the query, sort it, and check if the result sequence is arithmetic.
+</details>

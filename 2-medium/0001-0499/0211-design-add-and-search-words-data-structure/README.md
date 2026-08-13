@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 48.0%
-
-**Tags:** `String`, `Depth-First Search`, `Design`, `Trie`
+**Tags:** `string`, `depth-first-search`, `design`, `trie`
 
 ---
 
@@ -14,9 +12,9 @@ Design a data structure that supports adding new words and finding if a string m
 
 Implement the `WordDictionary` class:
 
-* `WordDictionary()` Initializes the object.
+* `WordDictionary()` Initializes the object.
 * `void addWord(word)` Adds `word` to the data structure, it can be matched later.
-* `bool search(word)` Returns `true` if there is any string in the data structure that matches `word` or `false` otherwise. `word` may contain dots `'.'` where dots can be matched with any letter.
+* `bool search(word)` Returns `true` if there is any string in the data structure that matches `word` or `false` otherwise. `word` may contain dots `'.'` where dots can be matched with any letter.
 
 **Example:**
 
@@ -44,7 +42,7 @@ wordDictionary.search("b.."); // return True
 * `word` in `addWord` consists of lowercase English letters.
 * `word` in `search` consist of `'.'` or lowercase English letters.
 * There will be at most `2` dots in `word` for `search` queries.
-* At most `104` calls will be made to `addWord` and `search`.
+* At most `10^4` calls will be made to `addWord` and `search`.
 
 ---
 
@@ -53,6 +51,5 @@ wordDictionary.search("b.."); // return True
 <details>
 <summary>Hint 1</summary>
 
-You should be familiar with how a Trie works. If not, please work on this problem: <a href="https://leetcode.com/problems/implement-trie-prefix-tree/">Implement Trie (Prefix Tree)</a> first.
+You should be familiar with how a Trie works. If not, please work on this problem: [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) first.
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 91.1%
-
-**Tags:** `Array`, `Simulation`
+**Tags:** `array`, `simulation`
 
 ---
 
@@ -19,7 +17,7 @@ A **zero-based permutation** `nums` is an array of **distinct** integers from `0
 ```
 Input: nums = [0,2,1,5,3,4]
 Output: [0,1,2,4,5,3]
-Explanation: The array ans is built as follows: 
+Explanation: The array ans is built as follows:
 ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]], nums[nums[5]]]
     = [nums[0], nums[2], nums[1], nums[5], nums[3], nums[4]]
     = [0,1,2,4,5,3]
@@ -48,5 +46,14 @@ ans = [nums[nums[0]], nums[nums[1]], nums[nums[2]], nums[nums[3]], nums[nums[4]]
 
 ## Hints
 
-1. Just apply what's said in the statement.
-2. Notice that you can't apply it on the same array directly since some elements will change after application
+<details>
+<summary>Hint 1</summary>
+
+Just apply what's said in the statement.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Notice that you can't apply it on the same array directly since some elements will change after application
+</details>

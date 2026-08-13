@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 69.4%
-
-**Tags:** `Array`, `Two Pointers`, `Sorting`
+**Tags:** `array`, `two-pointers`, `sorting`
 
 ---
 
@@ -36,7 +34,7 @@ Output: [0,1,2]
 * `1 <= n <= 300`
 * `nums[i]` is either `0`, `1`, or `2`.
 
-**Follow up:** Could you come up with a one-pass algorithm using only constant extra space?
+**Follow up:** Could you come up with a one-pass algorithm using only constant extra space?
 
 ---
 
@@ -59,4 +57,3 @@ Iterate the array counting number of 0's, 1's, and 2's.
 
 Overwrite array with the total number of 0's, then 1's and followed by 2's.
 </details>
-

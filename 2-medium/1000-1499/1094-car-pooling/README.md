@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.3%
-
-**Tags:** `Array`, `Sorting`, `Heap (Priority Queue)`, `Simulation`, `Prefix Sum`
+**Tags:** `array`, `sorting`, `heap-priority-queue`, `simulation`, `prefix-sum`
 
 ---
 
@@ -12,9 +10,9 @@
 
 There is a car with `capacity` empty seats. The vehicle only drives east (i.e., it cannot turn around and drive west).
 
-You are given the integer `capacity` and an array `trips` where `trips[i] = [numPassengersi, fromi, toi]` indicates that the `ith` trip has `numPassengersi` passengers and the locations to pick them up and drop them off are `fromi` and `toi` respectively. The locations are given as the number of kilometers due east from the car's initial location.
+You are given the integer `capacity` and an array `trips` where `trips[i] = [numPassengersi, fromi, to_i]` indicates that the `i^th` trip has `numPassengersi` passengers and the locations to pick them up and drop them off are `fromi` and `to_i` respectively. The locations are given as the number of kilometers due east from the car's initial location.
 
-Return `true` *if it is possible to pick up and drop off all passengers for all the given trips, or* `false` *otherwise*.
+Return `true` _if it is possible to pick up and drop off all passengers for all the given trips, or_ `false` _otherwise_.
 
 **Example 1:**
 
@@ -35,8 +33,8 @@ Output: true
 * `1 <= trips.length <= 1000`
 * `trips[i].length == 3`
 * `1 <= numPassengersi <= 100`
-* `0 <= fromi < toi <= 1000`
-* `1 <= capacity <= 105`
+* `0 <= fromi < to_i <= 1000`
+* `1 <= capacity <= 10^5`
 
 ---
 
@@ -47,4 +45,3 @@ Output: true
 
 Sort the pickup and dropoff events by location, then process them in order.
 </details>
-

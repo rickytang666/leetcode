@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 73.3%
-
-**Tags:** `Array`, `Math`, `Dynamic Programming`, `Game Theory`
+**Tags:** `array`, `math`, `dynamic-programming`, `game-theory`
 
 ---
 
@@ -16,14 +14,14 @@ The objective of the game is to end with the most stones. The **total** number o
 
 Alice and Bob take turns, with **Alice starting first**. Each turn, a player takes the entire pile of stones either from the **beginning** or from the **end** of the row. This continues until there are no more piles left, at which point the person with the **most stones wins**.
 
-Assuming Alice and Bob play optimally, return `true` *if Alice wins the game, or* `false` *if Bob wins*.
+Assuming Alice and Bob play optimally, return `true` _if Alice wins the game, or_ `false` _if Bob wins_.
 
 **Example 1:**
 
 ```
 Input: piles = [5,3,4,5]
 Output: true
-Explanation: 
+Explanation:
 Alice starts first, and can only take the first 5 or the last 5.
 Say she takes the first 5, so that the row becomes [3, 4, 5].
 If Bob takes 3, then the board is [4, 5], and Alice takes 5 to win with 10 points.

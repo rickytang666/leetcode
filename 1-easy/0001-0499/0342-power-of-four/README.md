@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 51.5%
-
-**Tags:** `Math`, `Bit Manipulation`, `Recursion`
+**Tags:** `math`, `bit-manipulation`, `recursion`
 
 ---
 
 ## Description
 
-Given an integer `n`, return *`true` if it is a power of four. Otherwise, return `false`*.
+Given an integer `n`, return _`true` if it is a power of four. Otherwise, return `false`_.
 
-An integer `n` is a power of four, if there exists an integer `x` such that `n == 4x`.
+An integer `n` is a power of four, if there exists an integer `x` such that `n == 4^x`.
 
 **Example 1:**
 
@@ -37,6 +35,6 @@ Output: true
 
 **Constraints:**
 
-* `-231 <= n <= 231 - 1`
+* `-2^31 <= n <= 2^31 - 1`
 
 **Follow up:** Could you solve it without loops/recursion?

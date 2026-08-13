@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 61.6%
-
-**Tags:** `Array`, `Prefix Sum`
+**Tags:** `array`, `prefix-sum`
 
 ---
 
@@ -16,7 +14,7 @@ The **pivot index** is the index where the sum of all the numbers **strictly** t
 
 If the index is on the left edge of the array, then the left sum is `0` because there are no elements to the left. This also applies to the right edge of the array.
 
-Return *the **leftmost pivot index***. If no such index exists, return `-1`.
+Return _the **leftmost pivot index**_. If no such index exists, return `-1`.
 
 **Example 1:**
 
@@ -51,15 +49,29 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
+* `1 <= nums.length <= 10^4`
 * `-1000 <= nums[i] <= 1000`
 
-**Note:** This question is the same as 1991: <https://leetcode.com/problems/find-the-middle-index-in-array/>
+**Note:** This question is the same as 1991: [https://leetcode.com/problems/find-the-middle-index-in-array/](https://leetcode.com/problems/find-the-middle-index-in-array/)
 
 ---
 
 ## Hints
 
-1. Create an array sumLeft where sumLeft[i] is the sum of all the numbers to the left of index i.
-2. Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.
-3. For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1.
+<details>
+<summary>Hint 1</summary>
+
+Create an array sumLeft where sumLeft[i] is the sum of all the numbers to the left of index i.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Create an array sumRight where sumRight[i] is the sum of all the numbers to the right of index i.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+For each index i, check if sumLeft[i] equals sumRight[i]. If so, return i. If no such i is found, return -1.
+</details>

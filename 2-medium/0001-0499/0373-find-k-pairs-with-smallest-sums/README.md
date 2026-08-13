@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 42.1%
-
-**Tags:** `Array`, `Heap (Priority Queue)`
+**Tags:** `array`, `heap-priority-queue`
 
 ---
 
 ## Description
 
-You are given two integer arrays `nums1` and `nums2` sorted in **non-decreasing order** and an integer `k`.
+You are given two integer arrays `nums1` and `nums2` sorted in **non-decreasing order** and an integer `k`.
 
 Define a pair `(u, v)` which consists of one element from the first array and one element from the second array.
 
-Return *the* `k` *pairs* `(u1, v1), (u2, v2), ..., (uk, vk)` *with the smallest sums*.
+Return _the_ `k` _pairs_ `(u_1, v_1), (u_2, v_2), ..., (u_k, v_k)` _with the smallest sums_.
 
 **Example 1:**
 
@@ -34,8 +32,8 @@ Explanation: The first 2 pairs are returned from the sequence: [1,1],[1,1],[1,2]
 
 **Constraints:**
 
-* `1 <= nums1.length, nums2.length <= 105`
-* `-109 <= nums1[i], nums2[i] <= 109`
+* `1 <= nums1.length, nums2.length <= 10^5`
+* `-10^9 <= nums1[i], nums2[i] <= 10^9`
 * `nums1` and `nums2` both are sorted in **non-decreasing order**.
-* `1 <= k <= 104`
-* `k <= nums1.length * nums2.length`
+* `1 <= k <= 10^4`
+* `k <= nums1.length * nums2.length`

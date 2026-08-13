@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.4%
-
-**Tags:** `Array`, `String`
+**Tags:** `array`, `string`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given a **0-indexed** array of strings `words` and a character `x`.
 
-Return *an **array of indices** representing the words that contain the character* `x`.
+Return _an **array of indices** representing the words that contain the character_ `x`.
 
 **Note** that the returned array may be in **any** order.
 
@@ -51,4 +49,8 @@ Explanation: "z" does not occur in any of the words. Hence, we return an empty a
 
 ## Hints
 
-1. Use two nested loops.
+<details>
+<summary>Hint 1</summary>
+
+Use two nested loops.
+</details>

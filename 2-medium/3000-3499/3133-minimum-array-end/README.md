@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 55.4%
-
-**Tags:** `Bit Manipulation`
+**Tags:** `bit-manipulation`
 
 ---
 
@@ -36,7 +34,7 @@ Return the **minimum** possible value of `nums[n - 1]`.
 
 **Constraints:**
 
-* `1 <= n, x <= 108`
+* `1 <= n, x <= 10^8`
 
 ---
 
@@ -45,18 +43,17 @@ Return the **minimum** possible value of `nums[n - 1]`.
 <details>
 <summary>Hint 1</summary>
 
-Each element of the array should be obtained by “merging” <code>x</code> and <code>v</code> where <code>v = 0, 1, 2, …(n - 1)</code>.
+Each element of the array should be obtained by “merging” `x` and `v` where `v = 0, 1, 2, …(n - 1)`.
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-To merge <code>x</code> with another number <code>v</code>, keep the set bits of <code>x</code> untouched, for all the other bits, fill the set bits of <code>v</code> from right to left in order one by one.
+To merge `x` with another number `v`, keep the set bits of `x` untouched, for all the other bits, fill the set bits of `v` from right to left in order one by one.
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-So the final answer is the “merge” of <code>x</code> and <code>n - 1</code>.
+So the final answer is the “merge” of `x` and `n - 1`.
 </details>
-

@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.4%
-
 ---
 
 ## Description
@@ -22,7 +20,7 @@ DataFrame students
 
 Write a solution to correct the errors:
 
-The `grade` column is stored as floats, convert it to integers.
+The `grade` column is stored as floats, convert it to integers.
 
 The result format is in the following example.
 
@@ -43,7 +41,7 @@ Output:
 | 1          | Ava  | 6   | 73    |
 | 2          | Kate | 15  | 87    |
 +------------+------+-----+-------+
-Explanation: 
+Explanation:
 The data types of the column grade is converted to int.
 ```
 
@@ -51,4 +49,8 @@ The data types of the column grade is converted to int.
 
 ## Hints
 
-1. Consider using a build-in function in pandas library with a dictionary to convert the datatype of columns as specified.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a build-in function in pandas library with a dictionary to convert the datatype of columns as specified.
+</details>

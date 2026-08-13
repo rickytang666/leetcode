@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 75.8%
-
-**Tags:** `Array`, `Divide and Conquer`, `Tree`, `Binary Search Tree`, `Binary Tree`
+**Tags:** `array`, `divide-and-conquer`, `tree`, `binary-search-tree`, `binary-tree`
 
 ---
 
 ## Description
 
-Given an integer array `nums` where the elements are sorted in **ascending order**, convert *it to a* ***height-balanced*** *binary search tree*.
+Given an integer array `nums` where the elements are sorted in **ascending order**, convert _it to a_ **_height-balanced_** _binary search tree_.
 
 **Example 1:**
 
@@ -20,7 +18,6 @@ Given an integer array `nums` where the elements are sorted in **ascending order
 Input: nums = [-10,-3,0,5,9]
 Output: [0,-3,9,-10,null,5]
 Explanation: [0,-10,5,null,-3,null,9] is also accepted:
-![](https://assets.leetcode.com/uploads/2021/02/18/btree2.jpg)
 ```
 
 **Example 2:**
@@ -35,6 +32,6 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `-104 <= nums[i] <= 104`
+* `1 <= nums.length <= 10^4`
+* `-10^4 <= nums[i] <= 10^4`
 * `nums` is sorted in a **strictly increasing** order.

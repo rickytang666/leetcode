@@ -2,9 +2,7 @@
 
 **Difficulty:** Hard
 
-**Acceptance Rate:** 66.4%
-
-**Tags:** `Array`, `Two Pointers`, `Dynamic Programming`, `Stack`, `Monotonic Stack`
+**Tags:** `array`, `two-pointers`, `dynamic-programming`, `stack`, `monotonic-stack`
 
 ---
 
@@ -32,5 +30,5 @@ Output: 9
 **Constraints:**
 
 * `n == height.length`
-* `1 <= n <= 2 * 104`
-* `0 <= height[i] <= 105`
+* `1 <= n <= 2 * 10^4`
+* `0 <= height[i] <= 10^5`

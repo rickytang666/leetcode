@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 72.3%
-
-**Tags:** `Database`
+**Tags:** `database`
 
 ---
 
@@ -26,8 +24,8 @@ Each row of this table indicates the id of a customer, their name, and the id of
 
 Find the names of the customer that are either:
 
-1. **referred by** any customer with `id != 2`.
-2. **not referred by** any customer.
+1.  **referred by** any customer with `id != 2`.
+2.  **not referred by** any customer.
 
 Return the result table in **any order**.
 
@@ -36,7 +34,7 @@ The result format is in the following example.
 **Example 1:**
 
 ```
-Input: 
+Input:
 Customer table:
 +----+------+------------+
 | id | name | referee_id |
@@ -48,7 +46,7 @@ Customer table:
 | 5  | Zack | 1          |
 | 6  | Mark | 2          |
 +----+------+------------+
-Output: 
+Output:
 +------+
 | name |
 +------+
@@ -63,4 +61,8 @@ Output:
 
 ## Hints
 
-1. Be careful of the NULL value
+<details>
+<summary>Hint 1</summary>
+
+Be careful of the NULL value
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 44.8%
-
-**Tags:** `Array`, `Math`, `Two Pointers`
+**Tags:** `array`, `math`, `two-pointers`
 
 ---
 
@@ -28,16 +26,16 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 ```
 Input: nums = [-1,-100,3,99], k = 2
 Output: [3,99,-1,-100]
-Explanation: 
+Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 ```
 
 **Constraints:**
 
-* `1 <= nums.length <= 105`
-* `-231 <= nums[i] <= 231 - 1`
-* `0 <= k <= 105`
+* `1 <= nums.length <= 10^5`
+* `-2^31 <= nums[i] <= 2^31 - 1`
+* `0 <= k <= 10^5`
 
 **Follow up:**
 
@@ -69,6 +67,5 @@ One line of thought is based on reversing the array (or parts of it) to obtain t
 <details>
 <summary>Hint 4</summary>
 
-The other line of thought is a tad bit complicated but essentially it builds on the idea of placing each element in its original position while keeping track of the element originally in that position. Basically, at every step, we place an element in its rightful position and keep track of the element already there or the one being overwritten in an additional variable. We can't do this in one linear pass and the idea here is based on <b>cyclic-dependencies</b> between elements.
+The other line of thought is a tad bit complicated but essentially it builds on the idea of placing each element in its original position while keeping track of the element originally in that position. Basically, at every step, we place an element in its rightful position and keep track of the element already there or the one being overwritten in an additional variable. We can't do this in one linear pass and the idea here is based on **cyclic-dependencies** between elements.
 </details>
-

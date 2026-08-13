@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.2%
-
-**Tags:** `Math`, `Greedy`, `Sorting`
+**Tags:** `math`, `greedy`, `sorting`
 
 ---
 
@@ -14,7 +12,7 @@ You are given a **positive** integer `num` consisting of exactly four digits. Sp
 
 * For example, given `num = 2932`, you have the following digits: two `2`'s, one `9` and one `3`. Some of the possible pairs `[new1, new2]` are `[22, 93]`, `[23, 92]`, `[223, 9]` and `[2, 329]`.
 
-Return *the **minimum** possible sum of* `new1` *and* `new2`.
+Return _the **minimum** possible sum of_ `new1` _and_ `new2`.
 
 **Example 1:**
 
@@ -30,7 +28,7 @@ The minimum sum can be obtained by the pair [29, 23]: 29 + 23 = 52.
 ```
 Input: num = 4009
 Output: 13
-Explanation: Some possible pairs [new1, new2] are [0, 49], [490, 0], etc. 
+Explanation: Some possible pairs [new1, new2] are [0, 49], [490, 0], etc.
 The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
 ```
 
@@ -42,6 +40,20 @@ The minimum sum can be obtained by the pair [4, 9]: 4 + 9 = 13.
 
 ## Hints
 
-1. Notice that the most optimal way to obtain the minimum possible sum using 4 digits is by summing up two 2-digit numbers.
-2. We can use the two smallest digits out of the four as the digits found in the tens place respectively.
-3. Similarly, we use the final 2 larger digits as the digits found in the ones place.
+<details>
+<summary>Hint 1</summary>
+
+Notice that the most optimal way to obtain the minimum possible sum using 4 digits is by summing up two 2-digit numbers.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+We can use the two smallest digits out of the four as the digits found in the tens place respectively.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Similarly, we use the final 2 larger digits as the digits found in the ones place.
+</details>

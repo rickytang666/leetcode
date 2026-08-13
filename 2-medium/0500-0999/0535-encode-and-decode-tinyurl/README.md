@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 86.5%
-
-**Tags:** `Hash Table`, `String`, `Design`, `Hash Function`
+**Tags:** `hash-table`, `string`, `design`, `hash-function`
 
 ---
 
 ## Description
 
-> Note: This is a companion problem to the [System Design](https://leetcode.com/discuss/interview-question/system-design/) problem: [Design TinyURL](https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/).
+> Note: This is a companion problem to the [System Design](https://leetcode.com/discuss/interview-question/system-design/) problem: [Design TinyURL](https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-\(-TinyURL-\)-System/).
 
 TinyURL is a URL shortening service where you enter a URL such as `https://leetcode.com/problems/design-tinyurl` and it returns a short URL such as `http://tinyurl.com/4e9iAk`. Design a class to encode a URL and decode a tiny URL.
 
@@ -36,5 +34,5 @@ string ans = obj.decode(tiny); // returns the original url after decoding it.
 
 **Constraints:**
 
-* `1 <= url.length <= 104`
+* `1 <= url.length <= 10^4`
 * `url` is guranteed to be a valid URL.

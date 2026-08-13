@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.7%
-
-**Tags:** `Array`, `Dynamic Programming`, `Greedy`, `Sorting`
+**Tags:** `array`, `dynamic-programming`, `greedy`, `sorting`
 
 ---
 
 ## Description
 
-Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`, return *the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping*.
+Given an array of intervals `intervals` where `intervals[i] = [starti, endi]`, return _the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping_.
 
 **Note** that intervals which only touch at a point are **non-overlapping**. For example, `[1, 2]` and `[2, 3]` are non-overlapping.
 
@@ -40,6 +38,6 @@ Explanation: You don't need to remove any of the intervals since they're already
 
 **Constraints:**
 
-* `1 <= intervals.length <= 105`
+* `1 <= intervals.length <= 10^5`
 * `intervals[i].length == 2`
-* `-5 * 104 <= starti < endi <= 5 * 104`
+* `-5 * 10^4 <= starti < endi <= 5 * 10^4`

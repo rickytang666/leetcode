@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 73.4%
-
-**Tags:** `Array`, `Two Pointers`, `Sorting`
+**Tags:** `array`, `two-pointers`, `sorting`
 
 ---
 
 ## Description
 
-Given an integer array `nums` sorted in **non-decreasing** order, return *an array of **the squares of each number** sorted in non-decreasing order*.
+Given an integer array `nums` sorted in **non-decreasing** order, return _an array of **the squares of each number** sorted in non-decreasing order_.
 
 **Example 1:**
 
@@ -30,8 +28,8 @@ Output: [4,9,9,49,121]
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `-104 <= nums[i] <= 104`
+* `1 <= nums.length <= 10^4`
+* `-10^4 <= nums[i] <= 10^4`
 * `nums` is sorted in **non-decreasing** order.
 
 **Follow up:** Squaring each element and sorting the new array is very trivial, could you find an `O(n)` solution using a different approach?

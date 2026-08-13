@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 59.2%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -19,7 +17,7 @@ Begin with an empty string `s`. For each group of **consecutive repeating charac
 
 The compressed string `s` **should not be returned separately**, but instead, be stored **in the input character array `chars`**. Note that group lengths that are `10` or longer will be split into multiple characters in `chars`.
 
-After you are done **modifying the input array,** return *the new length of the array*.
+After you are done **modifying the input array,** return _the new length of the array_.
 
 You must write an algorithm that uses only constant extra space.
 
@@ -29,24 +27,27 @@ You must write an algorithm that uses only constant extra space.
 
 ```
 Input: chars = ["a","a","b","b","c","c","c"]
-Output: Return 6, and the first 6 characters of the input array should be: ["a","2","b","2","c","3"]
+Output: 6
 Explanation: The groups are "aa", "bb", and "ccc". This compresses to "a2b2c3".
+After modifying the input array in-place, the first 6 characters of chars should be ["a","2","b","2","c","3"].
 ```
 
 **Example 2:**
 
 ```
 Input: chars = ["a"]
-Output: Return 1, and the first character of the input array should be: ["a"]
-Explanation: The only group is "a", which remains uncompressed since it's a single character.
+Output: 1
+Explanation: The only group is "a", which remains uncompressed since it is a single character.
+After modifying the input array in-place, the first character of chars should be ["a"].
 ```
 
 **Example 3:**
 
 ```
 Input: chars = ["a","b","b","b","b","b","b","b","b","b","b","b","b"]
-Output: Return 4, and the first 4 characters of the input array should be: ["a","b","1","2"].
+Output: 4
 Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
+After modifying the input array in-place, the first 4 characters of chars should be ["a","b","1","2"].
 ```
 
 **Constraints:**
@@ -58,4 +59,8 @@ Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
 
 ## Hints
 
-1. How do you know if you are at the end of a consecutive group of characters?
+<details>
+<summary>Hint 1</summary>
+
+How do you know if you are at the end of a consecutive group of characters?
+</details>

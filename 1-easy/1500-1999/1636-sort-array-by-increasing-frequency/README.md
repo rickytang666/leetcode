@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 80.6%
-
-**Tags:** `Array`, `Hash Table`, `Sorting`
+**Tags:** `array`, `hash-table`, `sorting`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given an array of integers `nums`, sort the array in **increasing** order based on the frequency of the values. If multiple values have the same frequency, sort them in **decreasing** order.
 
-Return the *sorted array*.
+Return the _sorted array_.
 
 **Example 1:**
 
@@ -46,5 +44,14 @@ Output: [5,-1,4,4,-6,-6,1,1,1]
 
 ## Hints
 
-1. Count the frequency of each value.
-2. Use a custom comparator to compare values by their frequency. If two values have the same frequency, compare their values.
+<details>
+<summary>Hint 1</summary>
+
+Count the frequency of each value.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Use a custom comparator to compare values by their frequency. If two values have the same frequency, compare their values.
+</details>

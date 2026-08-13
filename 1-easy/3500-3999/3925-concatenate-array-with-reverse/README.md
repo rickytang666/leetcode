@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 91.8%
-
-**Tags:** `Array`, `Simulation`
+**Tags:** `array`, `simulation`
 
 ---
 
@@ -63,4 +61,3 @@ The array remains the same when reversed. Thus, `ans = [1, 1]`.
 
 Pure simulation problem.
 </details>
-

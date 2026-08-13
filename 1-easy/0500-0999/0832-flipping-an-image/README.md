@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.4%
-
-**Tags:** `Array`, `Two Pointers`, `Bit Manipulation`, `Matrix`, `Simulation`
+**Tags:** `array`, `two-pointers`, `bit-manipulation`, `matrix`, `simulation`
 
 ---
 
 ## Description
 
-Given an `n x n` binary matrix `image`, flip the image **horizontally**, then invert it, and return *the resulting image*.
+Given an `n x n` binary matrix `image`, flip the image **horizontally**, then invert it, and return _the resulting image_.
 
 To flip an image horizontally means that each row of the image is reversed.
 

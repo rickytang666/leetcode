@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.9%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, imagine yourself standing on the **right side** of it, return *the values of the nodes you can see ordered from top to bottom*.
+Given the `root` of a binary tree, imagine yourself standing on the **right side** of it, return _the values of the nodes you can see ordered from top to bottom_.
 
 **Example 1:**
 

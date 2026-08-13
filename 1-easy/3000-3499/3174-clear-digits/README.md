@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.6%
-
-**Tags:** `String`, `Stack`, `Simulation`
+**Tags:** `string`, `stack`, `simulation`
 
 ---
 
@@ -14,11 +12,11 @@ You are given a string `s`.
 
 Your task is to remove **all** digits by doing this operation repeatedly:
 
-* Delete the *first* digit and the **closest** **non-digit** character to its *left*.
+* Delete the _first_ digit and the **closest** **non-digit** character to its _left_.
 
 Return the resulting string after removing all digits.
 
-**Note** that the operation *cannot* be performed on a digit that does not have any non-digit character to its left.
+**Note** that the operation _cannot_ be performed on a digit that does not have any non-digit character to its left.
 
 **Example 1:**
 
@@ -52,5 +50,14 @@ Then we apply the operation on `s[1]`, and `s` becomes `""`.
 
 ## Hints
 
-1. Process string <code>s</code> from left to right, if <code>s[i]</code> is a digit, mark the nearest unmarked non-digit index to its left.
-2. Delete all digits and all marked characters.
+<details>
+<summary>Hint 1</summary>
+
+Process string `s` from left to right, if `s[i]` is a digit, mark the nearest unmarked non-digit index to its left.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Delete all digits and all marked characters.
+</details>

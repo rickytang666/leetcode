@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 57.1%
-
-**Tags:** `Hash Table`, `String`, `Greedy`, `Sorting`, `Heap (Priority Queue)`, `Counting`
+**Tags:** `hash-table`, `string`, `greedy`, `sorting`, `heap-priority-queue`, `counting`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given a string `s`, rearrange the characters of `s` so that any two adjacent characters are not the same.
 
-Return *any possible rearrangement of* `s` *or return* `""` *if not possible*.
+Return _any possible rearrangement of_ `s` _or return_ `""` _if not possible_.
 
 **Example 1:**
 
@@ -42,4 +40,3 @@ Output: ""
 
 Alternate placing the most common letters.
 </details>
-

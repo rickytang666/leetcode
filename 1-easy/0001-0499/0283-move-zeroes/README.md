@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 63.3%
-
-**Tags:** `Array`, `Two Pointers`
+**Tags:** `array`, `two-pointers`
 
 ---
 
@@ -30,8 +28,8 @@ Output: [0]
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `-231 <= nums[i] <= 231 - 1`
+* `1 <= nums.length <= 10^4`
+* `-2^31 <= nums[i] <= 2^31 - 1`
 
 **Follow up:** Could you minimize the total number of operations done?
 
@@ -39,5 +37,14 @@ Output: [0]
 
 ## Hints
 
-1. <b>In-place</b> means we should not be allocating any space for extra array. But we are allowed to modify the existing array. However, as a first step, try coming up with a solution that makes use of additional space. For this problem as well, first apply the idea discussed using an additional array and the in-place solution will pop up eventually.
-2. A <b>two-pointer</b> approach could be helpful here. The idea would be to have one pointer for iterating the array and another pointer that just works on the non-zero elements of the array.
+<details>
+<summary>Hint 1</summary>
+
+**In-place** means we should not be allocating any space for extra array. But we are allowed to modify the existing array. However, as a first step, try coming up with a solution that makes use of additional space. For this problem as well, first apply the idea discussed using an additional array and the in-place solution will pop up eventually.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A **two-pointer** approach could be helpful here. The idea would be to have one pointer for iterating the array and another pointer that just works on the non-zero elements of the array.
+</details>

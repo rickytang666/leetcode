@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 59.9%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
 ## Description
 
-You are given an array of integers `stones` where `stones[i]` is the weight of the `ith` stone.
+You are given an array of integers `stones` where `stones[i]` is the weight of the `i^th` stone.
 
 We are playing a game with the stones. On each turn, we choose any two stones and smash them together. Suppose the stones have weights `x` and `y` with `x <= y`. The result of this smash is:
 
@@ -19,7 +17,7 @@ We are playing a game with the stones. On each turn, we choose any two stones an
 
 At the end of the game, there is **at most one** stone left.
 
-Return *the smallest possible weight of the left stone*. If there are no stones left, return `0`.
+Return _the smallest possible weight of the left stone_. If there are no stones left, return `0`.
 
 **Example 1:**
 
@@ -52,12 +50,11 @@ Output: 5
 <details>
 <summary>Hint 1</summary>
 
-Think of the final answer as a sum of weights with + or - sign symbols infront of each weight.  Actually, all sums with 1 of each sign symbol are possible.
+Think of the final answer as a sum of weights with + or - sign symbols infront of each weight. Actually, all sums with 1 of each sign symbol are possible.
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-Use dynamic programming: for every possible sum with N stones, those sums +x or -x is possible with N+1 stones, where x is the value of the newest stone.  (This overcounts sums that are all positive or all negative, but those don't matter.)
+Use dynamic programming: for every possible sum with N stones, those sums +x or -x is possible with N+1 stones, where x is the value of the newest stone. (This overcounts sums that are all positive or all negative, but those don't matter.)
 </details>
-

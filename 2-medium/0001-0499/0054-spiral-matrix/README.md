@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.5%
-
-**Tags:** `Array`, `Matrix`, `Simulation`
+**Tags:** `array`, `matrix`, `simulation`
 
 ---
 
 ## Description
 
-Given an `m x n` `matrix`, return *all elements of the* `matrix` *in spiral order*.
+Given an `m x n` `matrix`, return _all elements of the_ `matrix` _in spiral order_.
 
 **Example 1:**
 
@@ -56,7 +54,5 @@ We go boundary by boundary and move inwards. That is the essential operation. Fi
 <details>
 <summary>Hint 3</summary>
 
-Think about when you want to switch the progress on one of the indexes. If you progress on i out of [i, j], you'll shift in the same column. Similarly, by changing values for j, you'd be shifting in the same row.
-Also, keep track of the end of a boundary so that you can move inwards and then keep repeating. It's always best to simulate edge cases like a single column or a single row to see if anything breaks or not.
+Think about when you want to switch the progress on one of the indexes. If you progress on i out of [i, j], you'll shift in the same column. Similarly, by changing values for j, you'd be shifting in the same row. Also, keep track of the end of a boundary so that you can move inwards and then keep repeating. It's always best to simulate edge cases like a single column or a single row to see if anything breaks or not.
 </details>
-

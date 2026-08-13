@@ -2,17 +2,15 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 44.5%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
 ## Description
 
-You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are **arranged in a circle.** That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and **it will automatically contact the police if two adjacent houses were broken into on the same night**.
+You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are **arranged in a circle.** That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have a security system connected, and **it will automatically contact the police if two adjacent houses were broken into on the same night**.
 
-Given an integer array `nums` representing the amount of money of each house, return *the maximum amount of money you can rob tonight **without alerting the police***.
+Given an integer array `nums` representing the amount of money of each house, return _the maximum amount of money you can rob tonight **without alerting the police**_.
 
 **Example 1:**
 
@@ -50,6 +48,5 @@ Output: 3
 <details>
 <summary>Hint 1</summary>
 
-Since House[1] and House[n] are adjacent, they cannot be robbed together. Therefore, the problem becomes to rob either House[1]-House[n-1] or House[2]-House[n], depending on which choice offers more money. Now the problem has degenerated to the <a href ="https://leetcode.com/problems/house-robber/description/">House Robber</a>, which is already been solved.
+Since House[1] and House[n] are adjacent, they cannot be robbed together. Therefore, the problem becomes to rob either House[1]-House[n-1] or House[2]-House[n], depending on which choice offers more money. Now the problem has degenerated to the [House Robber](https://leetcode.com/problems/house-robber/description/), which is already been solved.
 </details>
-

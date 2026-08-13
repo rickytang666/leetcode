@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 64.5%
-
 ---
 
 ## Description
@@ -42,10 +40,10 @@ Output:
 | student_id | name    | age |
 +------------+---------+-----+
 | 32         | Piper   | 5   |
-| 779        | Georgia | 20  | 
-| 849        | Willow  | 14  | 
+| 779        | Georgia | 20  |
+| 849        | Willow  | 14  |
 +------------+---------+-----+
-Explanation: 
+Explanation:
 Student with id 217 havs empty value in the name column, so it will be removed.
 ```
 
@@ -53,4 +51,8 @@ Student with id 217 havs empty value in the name column, so it will be removed.
 
 ## Hints
 
-1. Consider using a build-in function in pandas library to remove the rows with missing values based on specified data.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a build-in function in pandas library to remove the rows with missing values based on specified data.
+</details>

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 71.2%
-
-**Tags:** `Array`, `Hash Table`, `Math`, `Binary Search`, `Bit Manipulation`, `Sorting`
+**Tags:** `array`, `hash-table`, `math`, `binary-search`, `bit-manipulation`, `sorting`
 
 ---
 
 ## Description
 
-Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return *the only number in the range that is missing from the array.*
+Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, return _the only number in the range that is missing from the array._
 
 **Example 1:**
 
@@ -45,7 +43,7 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`, ret
 **Constraints:**
 
 * `n == nums.length`
-* `1 <= n <= 104`
+* `1 <= n <= 10^4`
 * `0 <= nums[i] <= n`
 * All the numbers of `nums` are **unique**.
 

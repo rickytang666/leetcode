@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 70.7%
-
-**Tags:** `Array`, `Design`, `Prefix Sum`
+**Tags:** `array`, `design`, `prefix-sum`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given an integer array `nums`, handle multiple queries of the following type:
 
-1. Calculate the **sum** of the elements of `nums` between indices `left` and `right` **inclusive** where `left <= right`.
+1.  Calculate the **sum** of the elements of `nums` between indices `left` and `right` **inclusive** where `left <= right`.
 
 Implement the `NumArray` class:
 
@@ -37,7 +35,7 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `-105 <= nums[i] <= 105`
+* `1 <= nums.length <= 10^4`
+* `-10^5 <= nums[i] <= 10^5`
 * `0 <= left <= right < nums.length`
-* At most `104` calls will be made to `sumRange`.
+* At most `10^4` calls will be made to `sumRange`.

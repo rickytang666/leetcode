@@ -2,21 +2,19 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.4%
-
-**Tags:** `Array`, `Binary Search`
+**Tags:** `array`, `binary-search`
 
 ---
 
 ## Description
 
-Koko loves to eat bananas. There are `n` piles of bananas, the `ith` pile has `piles[i]` bananas. The guards have gone and will come back in `h` hours.
+Koko loves to eat bananas. There are `n` piles of bananas, the `i^th` pile has `piles[i]` bananas. The guards have gone and will come back in `h` hours.
 
 Koko can decide her bananas-per-hour eating speed of `k`. Each hour, she chooses some pile of bananas and eats `k` bananas from that pile. If the pile has less than `k` bananas, she eats all of them instead and will not eat any more bananas during this hour.
 
 Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.
 
-Return *the minimum integer* `k` *such that she can eat all the bananas within* `h` *hours*.
+Return _the minimum integer_ `k` _such that she can eat all the bananas within_ `h` _hours_.
 
 **Example 1:**
 
@@ -41,6 +39,6 @@ Output: 23
 
 **Constraints:**
 
-* `1 <= piles.length <= 104`
-* `piles.length <= h <= 109`
-* `1 <= piles[i] <= 109`
+* `1 <= piles.length <= 10^4`
+* `piles.length <= h <= 10^9`
+* `1 <= piles[i] <= 10^9`

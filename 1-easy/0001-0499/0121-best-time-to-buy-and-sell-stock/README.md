@@ -2,19 +2,17 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 56.1%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
 ## Description
 
-You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day.
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `i^th` day.
 
 You want to maximize your profit by choosing a **single day** to buy one stock and choosing a **different day in the future** to sell that stock.
 
-Return *the maximum profit you can achieve from this transaction*. If you cannot achieve any profit, return `0`.
+Return _the maximum profit you can achieve from this transaction_. If you cannot achieve any profit, return `0`.
 
 **Example 1:**
 
@@ -35,5 +33,5 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 
 **Constraints:**
 
-* `1 <= prices.length <= 105`
-* `0 <= prices[i] <= 104`
+* `1 <= prices.length <= 10^5`
+* `0 <= prices[i] <= 10^4`

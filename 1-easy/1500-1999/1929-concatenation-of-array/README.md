@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.6%
-
-**Tags:** `Array`, `Simulation`
+**Tags:** `array`, `simulation`
 
 ---
 
@@ -14,7 +12,7 @@ Given an integer array `nums` of length `n`, you want to create an array `ans` o
 
 Specifically, `ans` is the **concatenation** of two `nums` arrays.
 
-Return *the array* `ans`.
+Return _the array_ `ans`.
 
 **Example 1:**
 
@@ -46,4 +44,8 @@ Explanation: The array ans is formed as follows:
 
 ## Hints
 
-1. Build an array of size 2 * n and assign num[i] to ans[i] and ans[i + n]
+<details>
+<summary>Hint 1</summary>
+
+Build an array of size 2 \* n and assign nums[i] to ans[i] and ans[i + n]
+</details>

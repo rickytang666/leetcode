@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 61.0%
-
-**Tags:** `Array`, `Two Pointers`
+**Tags:** `array`, `two-pointers`
 
 ---
 
 ## Description
 
-Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm). The order of the elements may be changed. Then return *the number of elements in* `nums` *which are not equal to* `val`.
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` [**in-place**](https://en.wikipedia.org/wiki/In-place_algorithm). The order of the elements may be changed. Then return _the number of elements in_ `nums` _which are not equal to_ `val`.
 
 Consider the number of elements in `nums` which are not equal to `val` be `k`, to get accepted, you need to do the following things:
 
@@ -67,7 +65,21 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 ## Hints
 
-1. The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to <b>remove</b> that element per se, right?
-2. We can move all the occurrences of this element to the end of the array. Use two pointers!
-<br><img src="https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png" width="500"/>
-3. Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us.
+<details>
+<summary>Hint 1</summary>
+
+The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to **remove** that element per se, right?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+We can move all the occurrences of this element to the end of the array. Use two pointers!
+![](https://assets.leetcode.com/uploads/2019/10/20/hint_remove_element.png)
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us.
+</details>

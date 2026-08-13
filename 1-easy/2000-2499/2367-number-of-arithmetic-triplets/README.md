@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 85.3%
-
-**Tags:** `Array`, `Hash Table`, `Two Pointers`, `Enumeration`
+**Tags:** `array`, `hash-table`, `two-pointers`, `enumeration`
 
 ---
 
@@ -16,7 +14,7 @@ You are given a **0-indexed**, **strictly increasing** integer array `nums` and 
 * `nums[j] - nums[i] == diff`, and
 * `nums[k] - nums[j] == diff`.
 
-Return *the number of unique **arithmetic triplets**.*
+Return _the number of unique **arithmetic triplets**._
 
 **Example 1:**
 
@@ -49,5 +47,14 @@ Explanation:
 
 ## Hints
 
-1. Are the constraints small enough for brute force?
-2. We can use three loops, each iterating through the array to go through every possible triplet. Be sure to not count duplicates.
+<details>
+<summary>Hint 1</summary>
+
+Are the constraints small enough for brute force?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+We can use three loops, each iterating through the array to go through every possible triplet. Be sure to not count duplicates.
+</details>

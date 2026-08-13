@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 53.4%
-
-**Tags:** `Linked List`, `Recursion`
+**Tags:** `linked-list`, `recursion`
 
 ---
 
 ## Description
 
-Given the `head` of a linked list and an integer `val`, remove all the nodes of the linked list that has `Node.val == val`, and return *the new head*.
+Given the `head` of a linked list and an integer `val`, remove all the nodes of the linked list that has `Node.val == val`, and return _the new head_.
 
 **Example 1:**
 
@@ -37,6 +35,6 @@ Output: []
 
 **Constraints:**
 
-* The number of nodes in the list is in the range `[0, 104]`.
+* The number of nodes in the list is in the range `[0, 10^4]`.
 * `1 <= Node.val <= 50`
 * `0 <= val <= 50`

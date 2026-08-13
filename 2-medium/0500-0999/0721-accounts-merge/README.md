@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 61.3%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Depth-First Search`, `Breadth-First Search`, `Union-Find`, `Sorting`
+**Tags:** `array`, `hash-table`, `string`, `depth-first-search`, `breadth-first-search`, `union-find`, `sorting`
 
 ---
 
@@ -24,7 +22,7 @@ Output: [["John","john00@mail.com","john_newyork@mail.com","johnsmith@mail.com"]
 Explanation:
 The first and second John's are the same person as they have the common email "johnsmith@mail.com".
 The third John and Mary are different people as none of their email addresses are used by other accounts.
-We could return these lists in any order, for example the answer [['Mary', 'mary@mail.com'], ['John', 'johnnybravo@mail.com'], 
+We could return these lists in any order, for example the answer [['Mary', 'mary@mail.com'], ['John', 'johnnybravo@mail.com'],
 ['John', 'john00@mail.com', 'john_newyork@mail.com', 'johnsmith@mail.com']] would still be accepted.
 ```
 
@@ -50,6 +48,5 @@ Output: [["Ethan","Ethan0@m.co","Ethan4@m.co","Ethan5@m.co"],["Gabe","Gabe0@m.co
 <details>
 <summary>Hint 1</summary>
 
-For every pair of emails in the same account, draw an edge between those emails.  The problem is about enumerating the connected components of this graph.
+For every pair of emails in the same account, draw an edge between those emails. The problem is about enumerating the connected components of this graph.
 </details>
-

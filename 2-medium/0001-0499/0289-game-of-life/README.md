@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 72.7%
-
-**Tags:** `Array`, `Matrix`, `Simulation`
+**Tags:** `array`, `matrix`, `simulation`
 
 ---
 
@@ -14,10 +12,10 @@ According to [Wikipedia's article](https://en.wikipedia.org/wiki/Conway%27s_Game
 
 The board is made up of an `m x n` grid of cells, where each cell has an initial state: **live** (represented by a `1`) or **dead** (represented by a `0`). Each cell interacts with its [eight neighbors](https://en.wikipedia.org/wiki/Moore_neighborhood) (horizontal, vertical, diagonal) using the following four rules (taken from the above Wikipedia article):
 
-1. Any live cell with fewer than two live neighbors dies as if caused by under-population.
-2. Any live cell with two or three live neighbors lives on to the next generation.
-3. Any live cell with more than three live neighbors dies, as if by over-population.
-4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+1.  Any live cell with fewer than two live neighbors dies as if caused by under-population.
+2.  Any live cell with two or three live neighbors lives on to the next generation.
+3.  Any live cell with more than three live neighbors dies, as if by over-population.
+4.  Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 The next state of the board is determined by applying the above rules simultaneously to every cell in the current state of the `m x n` grid `board`. In this process, births and deaths occur **simultaneously**.
 

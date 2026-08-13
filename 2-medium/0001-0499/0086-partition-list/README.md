@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 61.5%
-
-**Tags:** `Linked List`, `Two Pointers`
+**Tags:** `linked-list`, `two-pointers`
 
 ---
 

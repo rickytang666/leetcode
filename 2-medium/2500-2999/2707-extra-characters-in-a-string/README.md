@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 57.4%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie`
+**Tags:** `array`, `hash-table`, `string`, `dynamic-programming`, `trie`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given a **0-indexed** string `s` and a dictionary of words `dictionary`. You have to break `s` into one or more **non-overlapping** substrings such that each substring is present in `dictionary`. There may be some **extra characters** in `s` which are not present in any of the substrings.
 
-Return *the **minimum** number of extra characters left over if you break up* `s` *optimally.*
+Return _the **minimum** number of extra characters left over if you break up_ `s` _optimally._
 
 **Example 1:**
 
@@ -35,7 +33,7 @@ Explanation: We can break s in two substrings: "hello" from index 3 to 7 and "wo
 * `1 <= s.length <= 50`
 * `1 <= dictionary.length <= 50`
 * `1 <= dictionary[i].length <= 50`
-* `dictionary[i]` and `s` consists of only lowercase English letters
+* `dictionary[i]` and `s` consists of only lowercase English letters
 * `dictionary` contains distinct words
 
 ---
@@ -53,4 +51,3 @@ Can we use Dynamic Programming here?
 
 Define DP[i] as the min extra character if breaking up s[0:i] optimally.
 </details>
-

@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 56.7%
-
-**Tags:** `Array`, `Hash Table`
+**Tags:** `array`, `hash-table`
 
 ---
 
 ## Description
 
-Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to `target`*.
+You are given an array of integers `nums` and an integer `target`, return _indices of the two numbers such that they add up to `target`_.
 
-You may assume that each input would have ***exactly* one solution**, and you may not use the *same* element twice.
+You may assume that each input would have **_exactly_ one solution**, and you may not use the _same_ element twice.
 
 You can return the answer in any order.
 
@@ -40,17 +38,31 @@ Output: [0,1]
 
 **Constraints:**
 
-* `2 <= nums.length <= 104`
-* `-109 <= nums[i] <= 109`
-* `-109 <= target <= 109`
+* `2 <= nums.length <= 10^4`
+* `-10^9 <= nums[i] <= 10^9`
+* `-10^9 <= target <= 10^9`
 * **Only one valid answer exists.**
 
-**Follow-up:**Can you come up with an algorithm that is less than `O(n2)` time complexity?
+**Follow-up:** Can you come up with an algorithm that is less than `O(n^2)` time complexity?
 
 ---
 
 ## Hints
 
-1. A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions just for completeness. It is from these brute force solutions that you can come up with optimizations.
-2. So, if we fix one of the numbers, say <code>x</code>, we have to scan the entire array to find the next number <code>y</code> which is <code>value - x</code> where value is the input parameter. Can we change our array somehow so that this search becomes faster?
-3. The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?
+<details>
+<summary>Hint 1</summary>
+
+A really brute force way would be to search for all possible pairs of numbers but that would be too slow. Again, it's best to try out brute force solutions just for completeness. It is from these brute force solutions that you can come up with optimizations.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+So, if we fix one of the numbers, say `x`, we have to scan the entire array to find the next number `y` which is `value - x` where value is the input parameter. Can we change our array somehow so that this search becomes faster?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+The second train of thought is, without changing the array, can we use additional space somehow? Like maybe a hash map to speed up the search?
+</details>

@@ -2,13 +2,11 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.0%
-
 ---
 
 ## Description
 
-Given an array `arr` and a function `fn`, return a sorted array `sortedArr`. You can assume `fn` only returns numbers and those numbers determine the sort order of `sortedArr`. `sortedArr` must be sorted in **ascending order** by `fn` output.
+Given an array `arr` and a function `fn`, return a sorted array `sortedArr`. You can assume `fn` only returns numbers and those numbers determine the sort order of `sortedArr`. `sortedArr` must be sorted in **ascending order** by `fn` output.
 
 You may assume that `fn` will never duplicate numbers for a given array.
 
@@ -33,11 +31,11 @@ Explanation: fn returns the value for the "x" key. So the array is sorted based 
 ```
 Input: arr = [[3, 4], [5, 2], [10, 1]], fn = (x) => x[1]
 Output: [[10, 1], [5, 2], [3, 4]]
-Explanation: arr is sorted in ascending order by number at index=1. 
+Explanation: arr is sorted in ascending order by number at index=1.
 ```
 
 **Constraints:**
 
 * `arr` is a valid JSON array
 * `fn` is a function that returns a number
-* `1 <= arr.length <= 5 * 105`
+* `1 <= arr.length <= 5 * 10^5`

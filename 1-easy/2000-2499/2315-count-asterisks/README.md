@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.2%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 
 ## Description
 
-You are given a string `s`, where every **two** consecutive vertical bars `'|'` are grouped into a **pair**. In other words, the 1st and 2nd `'|'` make a pair, the 3rd and 4th `'|'` make a pair, and so forth.
+You are given a string `s`, where every **two** consecutive vertical bars `'|'` are grouped into a **pair**. In other words, the 1^st and 2^nd `'|'` make a pair, the 3^rd and 4^th `'|'` make a pair, and so forth.
 
-Return *the number of* `'*'` *in* `s`*, **excluding** the* `'*'` *between each pair of* `'|'`.
+Return _the number of_ `'*'` _in_ `s`_, **excluding** the_ `'*'` _between each pair of_ `'|'`.
 
 **Note** that each `'|'` will belong to **exactly** one pair.
 
@@ -53,5 +51,14 @@ Explanation: The considered characters are underlined: "yo|uar|e**|b|e***au|tifu
 
 ## Hints
 
-1. Iterate through each character, while maintaining whether we are currently between a pair of ‘|’ or not.
-2. If we are not in between a pair of ‘|’ and there is a ‘*’, increment the answer by 1.
+<details>
+<summary>Hint 1</summary>
+
+Iterate through each character, while maintaining whether we are currently between a pair of ‘|’ or not.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If we are not in between a pair of ‘|’ and there is a ‘\*’, increment the answer by 1.
+</details>

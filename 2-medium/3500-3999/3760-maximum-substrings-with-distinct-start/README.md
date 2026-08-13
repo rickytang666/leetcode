@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 91.5%
-
-**Tags:** `Hash Table`, `String`
+**Tags:** `hash-table`, `string`
 
 ---
 
@@ -49,7 +47,7 @@ Return an integer denoting the **maximum** number of substrings you can split `s
 
 **Constraints:**
 
-* `1 <= s.length <= 105`
+* `1 <= s.length <= 10^5`
 * `s` consists of lowercase English letters.
 
 ---
@@ -59,6 +57,5 @@ Return an integer denoting the **maximum** number of substrings you can split `s
 <details>
 <summary>Hint 1</summary>
 
-Count the number of distinct characters in <code>s</code>
+Count the number of distinct characters in `s`
 </details>
-

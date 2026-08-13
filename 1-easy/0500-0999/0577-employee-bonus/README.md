@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 76.9%
-
-**Tags:** `Database`
+**Tags:** `database`
 
 ---
 
@@ -46,12 +44,12 @@ Write a solution to report the name and bonus amount of each employee who satisf
 
 Return the result table in **any order**.
 
-The result format is in the following example.
+The result format is in the following example.
 
 **Example 1:**
 
 ```
-Input: 
+Input:
 Employee table:
 +-------+--------+------------+--------+
 | empId | name   | supervisor | salary |
@@ -68,7 +66,7 @@ Bonus table:
 | 2     | 500   |
 | 4     | 2000  |
 +-------+-------+
-Output: 
+Output:
 +------+-------+
 | name | bonus |
 +------+-------+
@@ -82,5 +80,14 @@ Output:
 
 ## Hints
 
-1. If the EmpId in table Employee has no match in table Bonus, we consider that the corresponding bonus is null and null is smaller than 1000.
-2. Inner join is the default join, we can solve the mismatching problem by using outer join.
+<details>
+<summary>Hint 1</summary>
+
+If the EmpId in table Employee has no match in table Bonus, we consider that the corresponding bonus is null and null is smaller than 1000.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Inner join is the default join, we can solve the mismatching problem by using outer join.
+</details>

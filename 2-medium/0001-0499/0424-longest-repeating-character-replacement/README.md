@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 58.6%
-
-**Tags:** `Hash Table`, `String`, `Sliding Window`
+**Tags:** `hash-table`, `string`, `sliding-window`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given a string `s` and an integer `k`. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most `k` times.
 
-Return *the length of the longest substring containing the same letter you can get after performing the above operations*.
+Return _the length of the longest substring containing the same letter you can get after performing the above operations_.
 
 **Example 1:**
 
@@ -34,6 +32,6 @@ There may exists other ways to achieve this answer too.
 
 **Constraints:**
 
-* `1 <= s.length <= 105`
+* `1 <= s.length <= 10^5`
 * `s` consists of only uppercase English letters.
 * `0 <= k <= s.length`

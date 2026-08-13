@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 69.0%
-
-**Tags:** `Stack`, `Design`, `Queue`
+**Tags:** `stack`, `design`, `queue`
 
 ---
 
@@ -45,7 +43,7 @@ myQueue.empty(); // return false
 **Constraints:**
 
 * `1 <= x <= 9`
-* At most `100` calls will be made to `push`, `pop`, `peek`, and `empty`.
+* At most `100` calls will be made to `push`, `pop`, `peek`, and `empty`.
 * All the calls to `pop` and `peek` are valid.
 
 **Follow-up:** Can you implement the queue such that each operation is **[amortized](https://en.wikipedia.org/wiki/Amortized_analysis)** `O(1)` time complexity? In other words, performing `n` operations will take overall `O(n)` time even if one of those operations may take longer.

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.6%
-
-**Tags:** `Hash Table`, `Design`, `Heap (Priority Queue)`, `Ordered Set`
+**Tags:** `hash-table`, `design`, `heap-priority-queue`, `ordered-set`
 
 ---
 
@@ -60,4 +58,3 @@ Based on the constraints, what is the maximum element that can possibly be poppe
 
 Maintain whether elements are in or not in the set. How many elements do we consider?
 </details>
-

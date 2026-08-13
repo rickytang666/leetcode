@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.8%
-
-**Tags:** `Array`, `Prefix Sum`
+**Tags:** `array`, `prefix-sum`
 
 ---
 
@@ -40,11 +38,20 @@ The array answer is [|0 - 0|] = [0].
 **Constraints:**
 
 * `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 105`
+* `1 <= nums[i] <= 10^5`
 
 ---
 
 ## Hints
 
-1. For each index i, maintain two variables leftSum and rightSum.
-2. Iterate on the range j: [0 … i - 1] and add nums[j] to the leftSum and similarly iterate on the range j: [i + 1 … nums.length - 1] and add nums[j] to the rightSum.
+<details>
+<summary>Hint 1</summary>
+
+For each index i, maintain two variables leftSum and rightSum.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Iterate on the range j: [0 … i - 1] and add nums[j] to the leftSum and similarly iterate on the range j: [i + 1 … nums.length - 1] and add nums[j] to the rightSum.
+</details>

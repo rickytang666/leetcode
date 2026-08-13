@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 46.6%
-
-**Tags:** `Array`, `Stack`, `Simulation`
+**Tags:** `array`, `stack`, `simulation`
 
 ---
 
@@ -43,14 +41,14 @@ Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulti
 **Example 4:**
 
 ```
-Input: asteroids = [3,5,-6,2,-1,4]​​​​​​​
+Input: asteroids = [3,5,-6,2,-1,4]
 Output: [-6,2,4]
-Explanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then continues going left. On the other side, the asteroid 2 makes the asteroid -1 explode and then continues going right, without reaching asteroid 4.
+Explanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then continues going left. On the other side, the asteroid 2 destroys -1. Since 2 and 4 are both moving right, they never collide.
 ```
 
 **Constraints:**
 
-* `2 <= asteroids.length <= 104`
+* `2 <= asteroids.length <= 10^4`
 * `-1000 <= asteroids[i] <= 1000`
 * `asteroids[i] != 0`
 
@@ -58,4 +56,8 @@ Explanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then contin
 
 ## Hints
 
-1. Say a row of asteroids is stable.  What happens when a new asteroid is added on the right?
+<details>
+<summary>Hint 1</summary>
+
+Say a row of asteroids is stable. What happens when a new asteroid is added on the right?
+</details>

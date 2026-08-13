@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 55.9%
-
-**Tags:** `Array`, `Divide and Conquer`, `Sorting`, `Heap (Priority Queue)`, `Merge Sort`, `Bucket Sort`, `Radix Sort`, `Counting Sort`
+**Tags:** `array`, `divide-and-conquer`, `sorting`, `heap-priority-queue`, `merge-sort`, `bucket-sort`, `radix-sort`, `counting-sort`
 
 ---
 
@@ -32,5 +30,5 @@ Explanation: Note that the values of nums are not necessarily unique.
 
 **Constraints:**
 
-* `1 <= nums.length <= 5 * 104`
-* `-5 * 104 <= nums[i] <= 5 * 104`
+* `1 <= nums.length <= 5 * 10^4`
+* `-5 * 10^4 <= nums[i] <= 5 * 10^4`

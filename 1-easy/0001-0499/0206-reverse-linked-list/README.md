@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 80.0%
-
-**Tags:** `Linked List`, `Recursion`
+**Tags:** `linked-list`, `recursion`
 
 ---
 
 ## Description
 
-Given the `head` of a singly linked list, reverse the list, and return *the reversed list*.
+Given the `head` of a singly linked list, reverse the list, and return _the reversed list_.
 
 **Example 1:**
 

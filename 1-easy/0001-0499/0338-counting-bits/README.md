@@ -2,15 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 80.5%
-
-**Tags:** `Dynamic Programming`, `Bit Manipulation`
+**Tags:** `dynamic-programming`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given an integer `n`, return *an array* `ans` *of length* `n + 1` *such that for each* `i`(`0 <= i <= n`)*,* `ans[i]` *is the **number of*** `1`***'s** in the binary representation of* `i`.
+Given an integer `n`, return _an array_ `ans` _of length_ `n + 1` _such that for each_ `i` (`0 <= i <= n`)_,_ `ans[i]` _is the **number of**_ `1`_**'s** in the binary representation of_ `i`.
+
+Do not solve it with built-in functions (i.e., like `__builtin_popcount` in C++).
 
 **Example 1:**
 
@@ -39,12 +39,11 @@ Explanation:
 
 **Constraints:**
 
-* `0 <= n <= 105`
+* `0 <= n <= 10^5`
 
 **Follow up:**
 
 * It is very easy to come up with a solution with a runtime of `O(n log n)`. Can you do it in linear time `O(n)` and possibly in a single pass?
-* Can you do it without using any built-in function (i.e., like `__builtin_popcount` in C++)?
 
 ---
 
@@ -67,4 +66,3 @@ Divide the numbers in ranges like [2-3], [4-7], [8-15] and so on. And try to gen
 
 Or does the odd/even status of the number help you in calculating the number of 1s?
 </details>
-

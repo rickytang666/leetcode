@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 66.3%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
@@ -44,4 +42,4 @@ Output: false
 **Constraints:**
 
 * The number of nodes in both trees is in the range `[0, 100]`.
-* `-104 <= Node.val <= 104`
+* `-10^4 <= Node.val <= 10^4`

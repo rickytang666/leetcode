@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.6%
-
 ---
 
 ## Description
@@ -71,4 +69,8 @@ The two DataFramess are stacked vertically, and their rows are combined.
 
 ## Hints
 
-1. Consider using a built-in function in pandas library with the appropriate axis argument.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a built-in function in pandas library with the appropriate axis argument.
+</details>

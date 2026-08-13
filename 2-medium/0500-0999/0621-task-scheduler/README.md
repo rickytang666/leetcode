@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 62.4%
-
-**Tags:** `Array`, `Hash Table`, `Greedy`, `Sorting`, `Heap (Priority Queue)`, `Counting`
+**Tags:** `array`, `hash-table`, `greedy`, `sorting`, `heap-priority-queue`, `counting`
 
 ---
 
@@ -22,7 +20,7 @@ Return the **minimum** number of CPU intervals required to complete all tasks.
 
 **Explanation:** A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
 
-After completing task A, you must wait two intervals before doing A again. The same applies to task B. In the 3rd interval, neither A nor B can be done, so you idle. By the 4th interval, you can do A again as 2 intervals have passed.
+After completing task A, you must wait two intervals before doing A again. The same applies to task B. In the 3^rd interval, neither A nor B can be done, so you idle. By the 4^th interval, you can do A again as 2 intervals have passed.
 
 **Example 2:**
 
@@ -46,7 +44,7 @@ There are only two types of tasks, A and B, which need to be separated by 3 inte
 
 **Constraints:**
 
-* `1 <= tasks.length <= 104`
+* `1 <= tasks.length <= 10^4`
 * `tasks[i]` is an uppercase English letter.
 * `0 <= n <= 100`
 
@@ -71,4 +69,3 @@ For every cycle, find the most frequent letter that can be placed in this cycle.
 
 Use Priority Queue.
 </details>
-

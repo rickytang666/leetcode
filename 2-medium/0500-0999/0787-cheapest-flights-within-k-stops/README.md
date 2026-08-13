@@ -2,17 +2,15 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 41.5%
-
-**Tags:** `Dynamic Programming`, `Depth-First Search`, `Breadth-First Search`, `Graph Theory`, `Heap (Priority Queue)`, `Shortest Path`
+**Tags:** `dynamic-programming`, `depth-first-search`, `breadth-first-search`, `graph`, `heap-priority-queue`, `shortest-path`
 
 ---
 
 ## Description
 
-There are `n` cities connected by some number of flights. You are given an array `flights` where `flights[i] = [fromi, toi, pricei]` indicates that there is a flight from city `fromi` to city `toi` with cost `pricei`.
+There are `n` cities connected by some number of flights. You are given an array `flights` where `flights[i] = [fromi, to_i, pricei]` indicates that there is a flight from city `fromi` to city `to_i` with cost `pricei`.
 
-You are also given three integers `src`, `dst`, and `k`, return ***the cheapest price** from* `src` *to* `dst` *with at most* `k` *stops.* If there is no such route, return`-1`.
+You are also given three integers `src`, `dst`, and `k`, return _**the cheapest price** from_ `src` _to_ `dst` _with at most_ `k` _stops._ If there is no such route, return `-1`.
 
 **Example 1:**
 
@@ -56,9 +54,9 @@ The optimal path with no stops from city 0 to 2 is marked in red and has cost 50
 * `2 <= n <= 100`
 * `0 <= flights.length <= (n * (n - 1) / 2)`
 * `flights[i].length == 3`
-* `0 <= fromi, toi < n`
-* `fromi != toi`
-* `1 <= pricei <= 104`
+* `0 <= fromi, to_i < n`
+* `fromi != to_i`
+* `1 <= pricei <= 10^4`
 * There will not be any multiple flights between two cities.
 * `0 <= src, dst, k < n`
 * `src != dst`

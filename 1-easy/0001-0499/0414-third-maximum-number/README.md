@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 38.4%
-
-**Tags:** `Array`, `Sorting`
+**Tags:** `array`, `sorting`
 
 ---
 
 ## Description
 
-Given an integer array `nums`, return *the **third distinct maximum** number in this array. If the third maximum does not exist, return the **maximum** number*.
+Given an integer array `nums`, return _the **third distinct maximum** number in this array. If the third maximum does not exist, return the **maximum** number_.
 
 **Example 1:**
 
@@ -47,7 +45,7 @@ The third distinct maximum is 1.
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `-231 <= nums[i] <= 231 - 1`
+* `1 <= nums.length <= 10^4`
+* `-2^31 <= nums[i] <= 2^31 - 1`
 
 **Follow up:** Can you find an `O(n)` solution?

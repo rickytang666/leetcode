@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 55.3%
-
-**Tags:** `Math`, `Bit Manipulation`
+**Tags:** `math`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given two integers `a` and `b`, return *the sum of the two integers without using the operators* `+` *and* `-`.
+Given two integers `a` and `b`, return _the sum of the two integers without using the operators_ `+` _and_ `-`.
 
 **Example 1:**
 

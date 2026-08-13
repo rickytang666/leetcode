@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.5%
-
-**Tags:** `Array`, `Math`, `Stack`
+**Tags:** `array`, `math`, `stack`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given an array of strings `tokens` that represents an arithmetic expression in a [Reverse Polish Notation](http://en.wikipedia.org/wiki/Reverse_Polish_notation).
 
-Evaluate the expression. Return *an integer that represents the value of the expression*.
+Evaluate the expression. Return _an integer that represents the value of the expression_.
 
 **Note** that:
 
@@ -55,5 +53,5 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 
 **Constraints:**
 
-* `1 <= tokens.length <= 104`
+* `1 <= tokens.length <= 10^4`
 * `tokens[i]` is either an operator: `"+"`, `"-"`, `"*"`, or `"/"`, or an integer in the range `[-200, 200]`.

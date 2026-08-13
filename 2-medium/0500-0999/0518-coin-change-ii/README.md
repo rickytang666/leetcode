@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 60.3%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
@@ -12,11 +10,11 @@
 
 You are given an integer array `coins` representing coins of different denominations and an integer `amount` representing a total amount of money.
 
-Return *the number of combinations that make up that amount*. If that amount of money cannot be made up by any combination of the coins, return `0`.
+Return _the number of combinations that make up that amount_. If that amount of money cannot be made up by any combination of the coins, return `0`.
 
 You may assume that you have an infinite number of each kind of coin.
 
-The answer is **guaranteed** to fit into a signed **32-bit** integer.
+The **final** answer is **guaranteed** to fit into a signed **32-bit** integer.
 
 **Example 1:**
 

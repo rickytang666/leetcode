@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 53.8%
-
-**Tags:** `Math`, `Dynamic Programming`, `Memoization`
+**Tags:** `math`, `dynamic-programming`, `memoization`
 
 ---
 
@@ -43,4 +41,8 @@ Explanation: There are three ways to climb to the top.
 
 ## Hints
 
-1. To reach nth step, what could have been your previous steps? (Think about the step sizes)
+<details>
+<summary>Hint 1</summary>
+
+To reach nth step, what could have been your previous steps? (Think about the step sizes)
+</details>

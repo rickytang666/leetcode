@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 72.5%
-
-**Tags:** `Two Pointers`, `String`, `Dynamic Programming`
+**Tags:** `two-pointers`, `string`, `dynamic-programming`
 
 ---
 
 ## Description
 
-Given a string `s`, return *the number of **palindromic substrings** in it*.
+Given a string `s`, return _the number of **palindromic substrings** in it_.
 
 A string is a **palindrome** when it reads the same backward as forward.
 
@@ -56,7 +54,6 @@ If “aba” is a palindrome, is “xabax” a palindrome? Similarly is “xabay
 <details>
 <summary>Hint 3</summary>
 
-Complexity based hint:</br>
+Complexity based hint:
 If we use brute force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation?
 </details>
-

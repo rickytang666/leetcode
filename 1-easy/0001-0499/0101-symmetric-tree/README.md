@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 61.5%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, *check whether it is a mirror of itself* (i.e., symmetric around its center).
+Given the `root` of a binary tree, _check whether it is a mirror of itself_ (i.e., symmetric around its center).
 
 **Example 1:**
 

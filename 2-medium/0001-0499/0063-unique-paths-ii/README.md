@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 44.5%
-
-**Tags:** `Array`, `Dynamic Programming`, `Matrix`
+**Tags:** `array`, `dynamic-programming`, `matrix`
 
 ---
 
@@ -14,9 +12,9 @@ You are given an `m x n` integer array `grid`. There is a robot initially locate
 
 An obstacle and space are marked as `1` or `0` respectively in `grid`. A path that the robot takes cannot include **any** square that is an obstacle.
 
-Return *the number of possible unique paths that the robot can take to reach the bottom-right corner*.
+Return _the number of possible unique paths that the robot can take to reach the bottom-right corner_.
 
-The testcases are generated so that the answer will be less than or equal to `2 * 109`.
+The testcases are generated so that the answer will be less than or equal to `2 * 10^9`.
 
 **Example 1:**
 
@@ -62,4 +60,3 @@ Use dynamic programming since, from each cell, you can move to the right or down
 
 assume dp[i][j] is the number of unique paths to reach (i, j). dp[i][j] = dp[i][j -1] + dp[i - 1][j]. Be careful when you encounter an obstacle. set its value in dp to 0.
 </details>
-

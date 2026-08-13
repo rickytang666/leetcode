@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.9%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 
@@ -12,14 +10,14 @@
 
 You own a **Goal Parser** that can interpret a string `command`. The `command` consists of an alphabet of `"G"`, `"()"` and/or `"(al)"` in some order. The Goal Parser will interpret `"G"` as the string `"G"`, `"()"` as the string `"o"`, and `"(al)"` as the string `"al"`. The interpreted strings are then concatenated in the original order.
 
-Given the string `command`, return *the **Goal Parser**'s interpretation of* `command`.
+Given the string `command`, return _the **Goal Parser**'s interpretation of_ `command`.
 
 **Example 1:**
 
 ```
 Input: command = "G()(al)"
 Output: "Goal"
-Explanation: The Goal Parser interprets the command as follows:
+Explanation: The Goal Parser interprets the command as follows:
 G -> G
 () -> o
 (al) -> al
@@ -49,4 +47,8 @@ Output: "alGalooG"
 
 ## Hints
 
-1. You need to check at most 2 characters to determine which character comes next.
+<details>
+<summary>Hint 1</summary>
+
+You need to check at most 2 characters to determine which character comes next.
+</details>

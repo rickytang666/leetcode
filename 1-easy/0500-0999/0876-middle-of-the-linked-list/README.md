@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.3%
-
-**Tags:** `Linked List`, `Two Pointers`
+**Tags:** `linked-list`, `two-pointers`
 
 ---
 
 ## Description
 
-Given the `head` of a singly linked list, return *the middle node of the linked list*.
+Given the `head` of a singly linked list, return _the middle node of the linked list_.
 
 If there are two middle nodes, return **the second middle** node.
 

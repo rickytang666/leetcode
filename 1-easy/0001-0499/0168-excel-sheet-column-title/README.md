@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 45.2%
-
-**Tags:** `Math`, `String`
+**Tags:** `math`, `string`
 
 ---
 
 ## Description
 
-Given an integer `columnNumber`, return *its corresponding column title as it appears in an Excel sheet*.
+Given an integer `columnNumber`, return _its corresponding column title as it appears in an Excel sheet_.
 
 For example:
 
@@ -21,7 +19,7 @@ C -> 3
 ...
 Z -> 26
 AA -> 27
-AB -> 28 
+AB -> 28
 ...
 ```
 
@@ -48,4 +46,4 @@ Output: "ZY"
 
 **Constraints:**
 
-* `1 <= columnNumber <= 231 - 1`
+* `1 <= columnNumber <= 2^31 - 1`

@@ -2,19 +2,17 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.1%
-
 ---
 
 ## Description
 
-Write a function `createCounter`. It should accept an initial integer `init`. It should return an object with three functions.
+Write a function `createCounter`. It should accept an initial integer `init`. It should return an object with three functions.
 
 The three functions are:
 
-* `increment()` increases the current value by 1 and then returns it.
-* `decrement()` reduces the current value by 1 and then returns it.
-* `reset()` sets the current value to `init` and then returns it.
+* `increment()` increases the current value by 1 and then returns it.
+* `decrement()` reduces the current value by 1 and then returns it.
+* `reset()` sets the current value to `init` and then returns it.
 
 **Example 1:**
 
@@ -46,11 +44,20 @@ counter.reset(); // 0
 
 * `-1000 <= init <= 1000`
 * `0 <= calls.length <= 1000`
-* `calls[i]` is one of "increment", "decrement" and "reset"
+* `calls[i]` is one of "increment", "decrement" and "reset"
 
 ---
 
 ## Hints
 
-1. You can return an object with methods.
-2. Initialize a variable for currentCount. Inside these methods, add the appropriate logic which mutates currentCount.
+<details>
+<summary>Hint 1</summary>
+
+You can return an object with methods.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Initialize a variable for currentCount. Inside these methods, add the appropriate logic which mutates currentCount.
+</details>

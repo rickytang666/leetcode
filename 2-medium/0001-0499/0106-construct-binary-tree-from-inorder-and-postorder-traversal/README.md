@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 69.0%
-
-**Tags:** `Array`, `Hash Table`, `Divide and Conquer`, `Tree`, `Binary Tree`
+**Tags:** `array`, `hash-table`, `divide-and-conquer`, `tree`, `binary-tree`
 
 ---
 
 ## Description
 
-Given two integer arrays `inorder` and `postorder` where `inorder` is the inorder traversal of a binary tree and `postorder` is the postorder traversal of the same tree, construct and return *the binary tree*.
+Given two integer arrays `inorder` and `postorder` where `inorder` is the inorder traversal of a binary tree and `postorder` is the postorder traversal of the same tree, construct and return _the binary tree_.
 
 **Example 1:**
 

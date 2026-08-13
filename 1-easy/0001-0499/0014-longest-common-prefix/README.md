@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 46.7%
-
-**Tags:** `Array`, `String`, `Trie`
+**Tags:** `array`, `string`, `trie`
 
 ---
 

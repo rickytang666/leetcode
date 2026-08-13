@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 72.8%
-
-**Tags:** `Array`, `Math`, `Dynamic Programming`, `Prefix Sum`, `Game Theory`
+**Tags:** `array`, `math`, `dynamic-programming`, `prefix-sum`, `game-theory`
 
 ---
 
@@ -42,7 +40,7 @@ So we return 10 since it's larger.
 **Constraints:**
 
 * `1 <= piles.length <= 100`
-* `1 <= piles[i] <= 104`
+* `1 <= piles[i] <= 10^4`
 
 ---
 
@@ -53,4 +51,3 @@ So we return 10 since it's larger.
 
 Use dynamic programming: the states are (i, m) for the answer of piles[i:] and that given m.
 </details>
-

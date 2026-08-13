@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 78.0%
-
-**Tags:** `String`, `Dynamic Programming`, `Backtracking`
+**Tags:** `string`, `dynamic-programming`, `backtracking`
 
 ---
 
 ## Description
 
-Given `n` pairs of parentheses, write a function to *generate all combinations of well-formed parentheses*.
+Given `n` pairs of parentheses, write a function to _generate all combinations of well-formed parentheses_.
 
 **Example 1:**
 

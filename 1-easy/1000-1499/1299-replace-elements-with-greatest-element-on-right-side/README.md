@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 71.8%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
 ## Description
 
-Given an array `arr`, replace every element in that array with the greatest element among the elements to its right, and replace the last element with `-1`.
+Given an array `arr`, replace every element in that array with the greatest element among the elements to its right, and replace the last element with `-1`.
 
 After doing so, return the array.
 
@@ -19,7 +17,7 @@ After doing so, return the array.
 ```
 Input: arr = [17,18,5,4,6,1]
 Output: [18,6,6,6,1,-1]
-Explanation: 
+Explanation:
 - index 0 --> the greatest element to the right of index 0 is index 1 (18).
 - index 1 --> the greatest element to the right of index 1 is index 4 (6).
 - index 2 --> the greatest element to the right of index 2 is index 4 (6).
@@ -38,8 +36,8 @@ Explanation: There are no elements to the right of index 0.
 
 **Constraints:**
 
-* `1 <= arr.length <= 104`
-* `1 <= arr[i] <= 105`
+* `1 <= arr.length <= 10^4`
+* `1 <= arr[i] <= 10^5`
 
 ---
 
@@ -56,4 +54,3 @@ Loop through the array starting from the end.
 
 Keep the maximum value seen so far.
 </details>
-

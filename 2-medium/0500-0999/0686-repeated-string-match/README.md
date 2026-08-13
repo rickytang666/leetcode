@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 38.0%
-
-**Tags:** `String`, `String Matching`
+**Tags:** `string`, `string-matching`
 
 ---
 
 ## Description
 
-Given two strings `a` and `b`, return *the minimum number of times you should repeat string* `a` *so that string* `b` *is a substring of it*. If it is impossible for `b`​​​​​​ to be a substring of `a` after repeating it, return `-1`.
+Given two strings `a` and `b`, return _the minimum number of times you should repeat string_ `a` _so that string_ `b` _is a substring of it_. If it is impossible for `b` to be a substring of `a` after repeating it, return `-1`.
 
 **Notice:** string `"abc"` repeated 0 times is `""`, repeated 1 time is `"abc"` and repeated 2 times is `"abcabc"`.
 
@@ -31,5 +29,5 @@ Output: 2
 
 **Constraints:**
 
-* `1 <= a.length, b.length <= 104`
+* `1 <= a.length, b.length <= 10^4`
 * `a` and `b` consist of lowercase English letters.

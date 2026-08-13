@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 48.6%
-
-**Tags:** `Array`, `Breadth-First Search`, `Matrix`
+**Tags:** `array`, `breadth-first-search`, `matrix`
 
 ---
 
@@ -14,7 +12,7 @@ You are given an `m x n` matrix `maze` (**0-indexed**) with empty cells (represe
 
 In one step, you can move one cell **up**, **down**, **left**, or **right**. You cannot step into a cell with a wall, and you cannot step outside the maze. Your goal is to find the **nearest exit** from the `entrance`. An **exit** is defined as an **empty cell** that is at the **border** of the `maze`. The `entrance` **does not count** as an exit.
 
-Return *the **number of steps** in the shortest path from the* `entrance` *to the nearest exit, or* `-1` *if no such path exists*.
+Return _the **number of steps** in the shortest path from the_ `entrance` _to the nearest exit, or_ `-1` _if no such path exists_.
 
 **Example 1:**
 
@@ -81,4 +79,3 @@ Which type of traversal lets you find the distance from a point?
 
 Try using a Breadth First Search.
 </details>
-

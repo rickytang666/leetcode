@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 53.5%
-
-**Tags:** `Array`, `Binary Search`
+**Tags:** `array`, `binary-search`
 
 ---
 
@@ -17,9 +15,9 @@ Suppose an array of length `n` sorted in ascending order is **rotated** between 
 
 Notice that **rotating** an array `[a[0], a[1], a[2], ..., a[n-1]]` 1 time results in the array `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]`.
 
-Given the sorted rotated array `nums` of **unique** elements, return *the minimum element of this array*.
+Given the sorted rotated array `nums` of **unique** elements, return _the minimum element of this array_.
 
-You must write an algorithm that runs in `O(log n) time`.
+You must write an algorithm that runs in `O(log n) time`.
 
 **Example 1:**
 
@@ -57,10 +55,21 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 
 ## Hints
 
-1. Array was originally in ascending order. Now that the array is rotated, there would be a point in the array where there is a small deflection from the increasing sequence. eg. The array would be something like [4, 5, 6, 7, 0, 1, 2].
-2. You can divide the search space into two and see which direction to go.
-Can you think of an algorithm which has O(logN) search complexity?
-3. <ol>
-<li>All the elements to the left of inflection point > first element of the array.</li>
-<li>All the elements to the right of inflection point < first element of the array.</li>
-<ol>
+<details>
+<summary>Hint 1</summary>
+
+Array was originally in ascending order. Now that the array is rotated, there would be a point in the array where there is a small deflection from the increasing sequence. eg. The array would be something like [4, 5, 6, 7, 0, 1, 2].
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+You can divide the search space into two and see which direction to go. Can you think of an algorithm which has O(logN) search complexity?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+1.  All the elements to the left of inflection point > first element of the array.
+2.  All the elements to the right of inflection point < first element of the array.
+</details>

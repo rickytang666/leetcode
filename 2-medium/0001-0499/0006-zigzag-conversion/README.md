@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 54.4%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 

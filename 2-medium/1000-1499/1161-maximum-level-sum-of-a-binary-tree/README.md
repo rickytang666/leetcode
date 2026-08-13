@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.0%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
@@ -21,7 +19,7 @@ Return the **smallest** level `x` such that the sum of all the values of nodes a
 ```
 Input: root = [1,7,0,7,-8,null,null]
 Output: 2
-Explanation: 
+Explanation:
 Level 1 sum = 1.
 Level 2 sum = 7 + 0 = 7.
 Level 3 sum = 7 + -8 = -1.
@@ -37,8 +35,8 @@ Output: 2
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 104]`.
-* `-105 <= Node.val <= 105`
+* The number of nodes in the tree is in the range `[1, 10^4]`.
+* `-10^5 <= Node.val <= 10^5`
 
 ---
 
@@ -67,4 +65,3 @@ How can you sum up the values for every level ?
 
 Use DFS or BFS to traverse the tree keeping the level of each node, and sum up those values with a map or a frequency array.
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 35.5%
-
-**Tags:** `String`, `Dynamic Programming`, `Sliding Window`, `Prefix Sum`
+**Tags:** `string`, `dynamic-programming`, `sliding-window`, `prefix-sum`
 
 ---
 
@@ -15,7 +13,7 @@ You are given a **0-indexed** binary string `s` and two integers `minJump` and `
 * `i + minJump <= j <= min(i + maxJump, s.length - 1)`, and
 * `s[j] == '0'`.
 
-Return `true` *if you can reach index* `s.length - 1` *in* `s`*, or* `false` *otherwise.*
+Return `true` _if you can reach index_ `s.length - 1` _in_ `s`_, or_ `false` _otherwise._
 
 **Example 1:**
 
@@ -23,7 +21,7 @@ Return `true` *if you can reach index* `s.length - 1` *in* `s`*, or* `false` *ot
 Input: s = "011010", minJump = 2, maxJump = 3
 Output: true
 Explanation:
-In the first step, move from index 0 to index 3. 
+In the first step, move from index 0 to index 3.
 In the second step, move from index 3 to index 5.
 ```
 
@@ -36,7 +34,7 @@ Output: false
 
 **Constraints:**
 
-* `2 <= s.length <= 105`
+* `2 <= s.length <= 10^5`
 * `s[i]` is either `'0'` or `'1'`.
 * `s[0] == '0'`
 * `1 <= minJump <= maxJump < s.length`
@@ -56,4 +54,3 @@ Consider for each reachable index i the interval [i + a, i + b].
 
 Use partial sums to mark the intervals as reachable.
 </details>
-

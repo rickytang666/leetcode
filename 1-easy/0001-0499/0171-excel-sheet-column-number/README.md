@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 66.9%
-
-**Tags:** `Math`, `String`
+**Tags:** `math`, `string`
 
 ---
 
 ## Description
 
-Given a string `columnTitle` that represents the column title as appears in an Excel sheet, return *its corresponding column number*.
+Given a string `columnTitle` that represents the column title as appears in an Excel sheet, return _its corresponding column number_.
 
 For example:
 
@@ -21,7 +19,7 @@ C -> 3
 ...
 Z -> 26
 AA -> 27
-AB -> 28 
+AB -> 28
 ...
 ```
 

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.2%
-
-**Tags:** `Array`, `Hash Table`
+**Tags:** `array`, `hash-table`
 
 ---
 
@@ -46,4 +44,8 @@ The 2 good pairs are `(3, 0)` and `(3, 1)`.
 
 ## Hints
 
-1. The constraints are small. Check all pairs.
+<details>
+<summary>Hint 1</summary>
+
+The constraints are small. Check all pairs.
+</details>

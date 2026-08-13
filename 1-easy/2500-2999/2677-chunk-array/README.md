@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 84.5%
-
 ---
 
 ## Description
@@ -49,5 +47,5 @@ Explanation: There are no elements to be chunked so an empty array is returned.
 **Constraints:**
 
 * `arr` is a string representing the array.
-* `2 <= arr.length <= 105`
+* `2 <= arr.length <= 10^5`
 * `1 <= size <= arr.length + 1`

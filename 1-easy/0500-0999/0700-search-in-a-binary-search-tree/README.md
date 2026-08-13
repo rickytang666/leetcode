@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.7%
-
-**Tags:** `Tree`, `Binary Search Tree`, `Binary Tree`
+**Tags:** `tree`, `binary-search-tree`, `binary-tree`
 
 ---
 
@@ -35,6 +33,6 @@ Output: []
 **Constraints:**
 
 * The number of nodes in the tree is in the range `[1, 5000]`.
-* `1 <= Node.val <= 107`
+* `1 <= Node.val <= 10^7`
 * `root` is a binary search tree.
-* `1 <= val <= 107`
+* `1 <= val <= 10^7`

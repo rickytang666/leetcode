@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 69.8%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Sorting`
+**Tags:** `array`, `hash-table`, `string`, `sorting`
 
 ---
 
@@ -14,7 +12,7 @@ You are given a **0-indexed** string array `words`, where `words[i]` consists of
 
 In one operation, select any index `i` such that `0 < i < words.length` and `words[i - 1]` and `words[i]` are **anagrams**, and **delete** `words[i]` from `words`. Keep performing this operation as long as you can select an index that satisfies the conditions.
 
-Return `words` *after performing all operations*. It can be shown that selecting the indices for each operation in **any** arbitrary order will lead to the same result.
+Return `words` _after performing all operations_. It can be shown that selecting the indices for each operation in **any** arbitrary order will lead to the same result.
 
 An **Anagram** is a word or phrase formed by rearranging the letters of a different word or phrase using all the original letters exactly once. For example, `"dacb"` is an anagram of `"abdc"`.
 
@@ -53,6 +51,20 @@ No two adjacent strings in words are anagrams of each other, so no operations ar
 
 ## Hints
 
-1. Instead of removing each repeating anagram, try to find all the strings in words which will not be present in the final answer.
-2. For every index i, find the largest index j < i such that words[j] will be present in the final answer.
-3. Check if words[i] and words[j] are anagrams. If they are, then it can be confirmed that words[i] will not be present in the final answer.
+<details>
+<summary>Hint 1</summary>
+
+Instead of removing each repeating anagram, try to find all the strings in words which will not be present in the final answer.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+For every index i, find the largest index j < i such that words[j] will be present in the final answer.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Check if words[i] and words[j] are anagrams. If they are, then it can be confirmed that words[i] will not be present in the final answer.
+</details>

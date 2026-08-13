@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 37.2%
-
-**Tags:** `Two Pointers`, `String`, `Dynamic Programming`
+**Tags:** `two-pointers`, `string`, `dynamic-programming`, `manacher`
 
 ---
 
 ## Description
 
-Given a string `s`, return *the longest* *palindromic* *substring* in `s`.
+Given a string `s`, return _the longest_ _palindromic_ _substring_ in `s`.
 
 **Example 1:**
 
@@ -51,7 +49,6 @@ If “aba” is a palindrome, is “xabax” a palindrome? Similarly is “xabay
 <details>
 <summary>Hint 3</summary>
 
-Complexity based hint:</br>
+Complexity based hint:
 If we use brute-force and check whether for every start and end position a substring is a palindrome we have O(n^2) start - end pairs and O(n) palindromic checks. Can we reduce the time for palindromic checks to O(1) by reusing some previous computation.
 </details>
-

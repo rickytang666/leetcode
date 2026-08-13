@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 81.7%
-
-**Tags:** `Hash Table`, `Two Pointers`, `String`, `Greedy`
+**Tags:** `hash-table`, `two-pointers`, `string`, `greedy`
 
 ---
 
@@ -14,7 +12,7 @@ You are given a string `s`. We want to partition the string into as many parts a
 
 Note that the partition is done so that after concatenating all the parts in order, the resultant string should be `s`.
 
-Return *a list of integers representing the size of these parts*.
+Return _a list of integers representing the size of these parts_.
 
 **Example 1:**
 
@@ -43,4 +41,8 @@ Output: [10]
 
 ## Hints
 
-1. Try to greedily choose the smallest partition that includes the first letter.  If you have something like "abaccbdeffed", then you might need to add b.  You can use an map like "last['b'] = 5" to help you expand the width of your partition.
+<details>
+<summary>Hint 1</summary>
+
+Try to greedily choose the smallest partition that includes the first letter. If you have something like "abaccbdeffed", then you might need to add b. You can use an map like "last['b'] = 5" to help you expand the width of your partition.
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 67.8%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -15,7 +13,7 @@ Given a string `s`, reverse the string according to the following rules:
 * All the characters that are not English letters remain in the same position.
 * All the English letters (lowercase or uppercase) should be reversed.
 
-Return `s` *after reversing it*.
+Return `s` _after reversing it_.
 
 **Example 1:**
 
@@ -48,4 +46,8 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 
 ## Hints
 
-1. This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach.
+<details>
+<summary>Hint 1</summary>
+
+This problem is exactly like reversing a normal string except that there are certain characters that we have to simply skip. That should be easy enough to do if you know how to reverse a string using the two-pointer approach.
+</details>

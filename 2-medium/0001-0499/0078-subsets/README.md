@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 81.8%
-
-**Tags:** `Array`, `Backtracking`, `Bit Manipulation`
+**Tags:** `array`, `backtracking`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given an integer array `nums` of **unique** elements, return *all possible* *subsets* *(the power set)*.
+Given an integer array `nums` of **unique** elements, return _all possible_ _subsets_ _(the power set)_.
 
 The solution set **must not** contain duplicate subsets. Return the solution in **any order**.
 
@@ -32,4 +30,4 @@ Output: [[],[0]]
 
 * `1 <= nums.length <= 10`
 * `-10 <= nums[i] <= 10`
-* All the numbers of `nums` are **unique**.
+* All the numbers of `nums` are **unique**.

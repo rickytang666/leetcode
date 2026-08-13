@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 77.0%
-
-**Tags:** `Array`, `Bit Manipulation`
+**Tags:** `array`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given a **non-empty** array of integers `nums`, every element appears *twice* except for one. Find that single one.
+Given a **non-empty** array of integers `nums`, every element appears _twice_ except for one. Find that single one.
 
-You must implement a solution with a linear runtime complexity and use only constant extra space.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 **Example 1:**
 
@@ -34,12 +32,16 @@ You must implement a solution with a linear runtime complexity and use only co
 
 **Constraints:**
 
-* `1 <= nums.length <= 3 * 104`
-* `-3 * 104 <= nums[i] <= 3 * 104`
+* `1 <= nums.length <= 3 * 10^4`
+* `-3 * 10^4 <= nums[i] <= 3 * 10^4`
 * Each element in the array appears twice except for one element which appears only once.
 
 ---
 
 ## Hints
 
-1. Think about the XOR (^) operator's property.
+<details>
+<summary>Hint 1</summary>
+
+Think about the XOR (^) operator's property.
+</details>

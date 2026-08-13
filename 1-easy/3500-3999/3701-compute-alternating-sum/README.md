@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.2%
-
-**Tags:** `Array`, `Simulation`
+**Tags:** `array`, `simulation`
 
 ---
 
@@ -20,7 +18,7 @@ Return an integer denoting the alternating sum of `nums`.
 
 **Input:** nums = [1,3,5,7]
 
-**Output:** -4
+**Output:** \-4
 
 **Explanation:**
 
@@ -49,4 +47,8 @@ Return an integer denoting the alternating sum of `nums`.
 
 ## Hints
 
-1. Simulate as described
+<details>
+<summary>Hint 1</summary>
+
+Simulate as described
+</details>

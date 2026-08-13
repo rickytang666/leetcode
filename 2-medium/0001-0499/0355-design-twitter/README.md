@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 44.0%
-
-**Tags:** `Hash Table`, `Linked List`, `Design`, `Heap (Priority Queue)`
+**Tags:** `hash-table`, `linked-list`, `design`, `heap-priority-queue`
 
 ---
 
@@ -43,7 +41,7 @@ twitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet
 **Constraints:**
 
 * `1 <= userId, followerId, followeeId <= 500`
-* `0 <= tweetId <= 104`
+* `0 <= tweetId <= 10^4`
 * All the tweets have **unique** IDs.
-* At most `3 * 104` calls will be made to `postTweet`, `getNewsFeed`, `follow`, and `unfollow`.
+* At most `3 * 10^4` calls will be made to `postTweet`, `getNewsFeed`, `follow`, and `unfollow`.
 * A user cannot follow himself.

@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 39.0%
-
-**Tags:** `Array`, `Binary Search`, `Segment Tree`, `Ordered Set`
+**Tags:** `array`, `binary-search`, `segment-tree`, `ordered-set`
 
 ---
 
 ## Description
 
-You are given two arrays of integers, `fruits` and `baskets`, each of length `n`, where `fruits[i]` represents the **quantity** of the `ith` type of fruit, and `baskets[j]` represents the **capacity** of the `jth` basket.
+You are given two arrays of integers, `fruits` and `baskets`, each of length `n`, where `fruits[i]` represents the **quantity** of the `i^th` type of fruit, and `baskets[j]` represents the **capacity** of the `j^th` basket.
 
 From left to right, place the fruits according to these rules:
 
@@ -51,14 +49,33 @@ Since all fruits are successfully placed, we return 0.
 **Constraints:**
 
 * `n == fruits.length == baskets.length`
-* `1 <= n <= 105`
-* `1 <= fruits[i], baskets[i] <= 109`
+* `1 <= n <= 10^5`
+* `1 <= fruits[i], baskets[i] <= 10^9`
 
 ---
 
 ## Hints
 
-1. Sort the baskets by the pair of <code>(basket[i], i)</code> in the array.
-2. For each fruit from left to right, use binary search to find the first index in the sorted array such that <code>basket[i] >= fruit</code>.
-3. Use a segment tree to maintain the smallest original indices where <code>basket[i] >= fruit</code>.
-4. When a valid index is found, set the corresponding point to infinity to mark it as used.
+<details>
+<summary>Hint 1</summary>
+
+Sort the baskets by the pair of `(basket[i], i)` in the array.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+For each fruit from left to right, use binary search to find the first index in the sorted array such that `basket[i] >= fruit`.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Use a segment tree to maintain the smallest original indices where `basket[i] >= fruit`.
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+When a valid index is found, set the corresponding point to infinity to mark it as used.
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 71.0%
-
-**Tags:** `Linked List`, `Stack`, `Tree`, `Depth-First Search`, `Binary Tree`
+**Tags:** `linked-list`, `stack`, `tree`, `depth-first-search`, `binary-tree`
 
 ---
 
@@ -54,4 +52,3 @@ Output: [0]
 
 If you notice carefully in the flattened tree, each node's right child points to the next node of a pre-order traversal.
 </details>
-

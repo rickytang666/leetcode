@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.5%
-
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Union-Find`, `Graph Theory`
+**Tags:** `depth-first-search`, `breadth-first-search`, `union-find`, `graph`
 
 ---
 
@@ -14,9 +12,9 @@ There are `n` cities. Some of them are connected, while some are not. If city `a
 
 A **province** is a group of directly or indirectly connected cities and no other cities outside of the group.
 
-You are given an `n x n` matrix `isConnected` where `isConnected[i][j] = 1` if the `ith` city and the `jth` city are directly connected, and `isConnected[i][j] = 0` otherwise.
+You are given an `n x n` matrix `isConnected` where `isConnected[i][j] = 1` if the `i^th` city and the `j^th` city are directly connected, and `isConnected[i][j] = 0` otherwise.
 
-Return *the total number of **provinces***.
+Return _the total number of **provinces**_.
 
 **Example 1:**
 

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 91.6%
-
-**Tags:** `Hash Table`, `Math`
+**Tags:** `hash-table`, `math`
 
 ---
 
@@ -42,7 +40,7 @@ Return an integer denoting the score of `n`.
 
 **Constraints:**
 
-* `1 <= n <= 109`
+* `1 <= n <= 10^9`
 
 ---
 
@@ -53,4 +51,3 @@ Return an integer denoting the score of `n`.
 
 The answer is the sum of the digits.
 </details>
-

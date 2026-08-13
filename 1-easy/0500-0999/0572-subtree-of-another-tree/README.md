@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 50.9%
-
-**Tags:** `Tree`, `Depth-First Search`, `String Matching`, `Binary Tree`, `Hash Function`
+**Tags:** `tree`, `depth-first-search`, `string-matching`, `binary-tree`, `hash-function`
 
 ---
 
@@ -36,15 +34,33 @@ Output: false
 
 * The number of nodes in the `root` tree is in the range `[1, 2000]`.
 * The number of nodes in the `subRoot` tree is in the range `[1, 1000]`.
-* `-104 <= root.val <= 104`
-* `-104 <= subRoot.val <= 104`
+* `-10^4 <= root.val <= 10^4`
+* `-10^4 <= subRoot.val <= 10^4`
 
 ---
 
 ## Hints
 
-1. Which approach is better here- recursive or iterative?
-2. If recursive approach is better, can you write recursive function with its parameters?
-3. Two trees <b>s</b> and <b>t</b> are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?
-4. Recursive formulae can be: 
-isIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)
+<details>
+<summary>Hint 1</summary>
+
+Which approach is better here- recursive or iterative?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If recursive approach is better, can you write recursive function with its parameters?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Two trees **s** and **t** are said to be identical if their root values are same and their left and right subtrees are identical. Can you write this in form of recursive formulae?
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+Recursive formulae can be: isIdentical(s,t)= s.val==t.val AND isIdentical(s.left,t.left) AND isIdentical(s.right,t.right)
+</details>

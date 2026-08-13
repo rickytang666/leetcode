@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 78.3%
-
-**Tags:** `Array`, `Divide and Conquer`, `Tree`, `Matrix`
+**Tags:** `array`, `divide-and-conquer`, `tree`, `matrix`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given a `n * n` matrix `grid` of `0's` and `1's` only. We want to represent `grid` with a Quad-Tree.
 
-Return *the root of the Quad-Tree representing* `grid`.
+Return _the root of the Quad-Tree representing_ `grid`.
 
 A Quad-Tree is a tree data structure in which each internal node has exactly four children. Besides, each node has two attributes:
 
@@ -32,9 +30,9 @@ class Node {
 
 We can construct a Quad-Tree from a two-dimensional area using the following steps:
 
-1. If the current grid has the same value (i.e all `1's` or all `0's`) set `isLeaf` True and set `val` to the value of the grid and set the four children to Null and stop.
-2. If the current grid has different values, set `isLeaf` to False and set `val` to any value and divide the current grid into four sub-grids as shown in the photo.
-3. Recurse for each of the children with the proper sub-grid.
+1.  If the current grid has the same value (i.e all `1's` or all `0's`) set `isLeaf` True and set `val` to the value of the grid and set the four children to Null and stop.
+2.  If the current grid has different values, set `isLeaf` to False and set `val` to any value and divide the current grid into four sub-grids as shown in the photo.
+3.  Recurse for each of the children with the proper sub-grid.
 
 ![](https://assets.leetcode.com/uploads/2020/02/11/new_top.png)
 
@@ -57,7 +55,6 @@ Input: grid = [[0,1],[1,0]]
 Output: [[0,1],[1,0],[1,1],[1,1],[1,0]]
 Explanation: The explanation of this example is shown below:
 Notice that 0 represents False and 1 represents True in the photo representing the Quad-Tree.
-![](https://assets.leetcode.com/uploads/2020/02/12/e1tree.png)
 ```
 
 **Example 2:**
@@ -71,10 +68,9 @@ Explanation: All values in the grid are not the same. We divide the grid into fo
 The topLeft, bottomLeft and bottomRight each has the same value.
 The topRight have different values so we divide it into 4 sub-grids where each has the same value.
 Explanation is shown in the photo below:
-![](https://assets.leetcode.com/uploads/2020/02/12/e2tree.png)
 ```
 
 **Constraints:**
 
 * `n == grid.length == grid[i].length`
-* `n == 2x` where `0 <= x <= 6`
+* `n == 2^x` where `0 <= x <= 6`

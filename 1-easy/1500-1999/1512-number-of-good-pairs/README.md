@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.7%
-
-**Tags:** `Array`, `Hash Table`, `Math`, `Counting`
+**Tags:** `array`, `hash-table`, `math`, `counting`
 
 ---
 
 ## Description
 
-Given an array of integers `nums`, return *the number of **good pairs***.
+Given an array of integers `nums`, return _the number of **good pairs**_.
 
-A pair `(i, j)` is called *good* if `nums[i] == nums[j]` and `i` < `j`.
+A pair `(i, j)` is called _good_ if `nums[i] == nums[j]` and `i` < `j`.
 
 **Example 1:**
 
@@ -46,4 +44,8 @@ Output: 0
 
 ## Hints
 
-1. Count how many times each number appears. If a number appears n times, then n * (n – 1) // 2 good pairs can be made with this number.
+<details>
+<summary>Hint 1</summary>
+
+Count how many times each number appears. If a number appears n times, then n \* (n – 1) // 2 good pairs can be made with this number.
+</details>

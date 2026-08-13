@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 79.6%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, invert the tree, and return *its root*.
+Given the `root` of a binary tree, invert the tree, and return _its root_.
 
 **Example 1:**
 

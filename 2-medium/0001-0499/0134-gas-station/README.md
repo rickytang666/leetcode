@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 47.5%
-
-**Tags:** `Array`, `Greedy`
+**Tags:** `array`, `greedy`
 
 ---
 
 ## Description
 
-There are `n` gas stations along a circular route, where the amount of gas at the `ith` station is `gas[i]`.
+There are `n` gas stations along a circular route, where the amount of gas at the `i^th` station is `gas[i]`.
 
-You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from the `ith` station to its next `(i + 1)th` station. You begin the journey with an empty tank at one of the gas stations.
+You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from the `i^th` station to its next `(i + 1)^th` station. You begin the journey with an empty tank at one of the gas stations.
 
-Given two integer arrays `gas` and `cost`, return *the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return* `-1`. If there exists a solution, it is **guaranteed** to be **unique**.
+Given two integer arrays `gas` and `cost`, return _the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return_ `-1`. If there exists a solution, it is **guaranteed** to be **unique**.
 
 **Example 1:**
 
@@ -48,6 +46,6 @@ Therefore, you can't travel around the circuit once no matter where you start.
 **Constraints:**
 
 * `n == gas.length == cost.length`
-* `1 <= n <= 105`
-* `0 <= gas[i], cost[i] <= 104`
+* `1 <= n <= 10^5`
+* `0 <= gas[i], cost[i] <= 10^4`
 * The input is generated such that the answer is unique.

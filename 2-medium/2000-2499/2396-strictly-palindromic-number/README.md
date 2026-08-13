@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 89.9%
-
-**Tags:** `Math`, `Two Pointers`, `Brainteaser`
+**Tags:** `math`, `two-pointers`, `brainteaser`
 
 ---
 
@@ -12,7 +10,7 @@
 
 An integer `n` is **strictly palindromic** if, for **every** base `b` between `2` and `n - 2` (**inclusive**), the string representation of the integer `n` in base `b` is **palindromic**.
 
-Given an integer `n`, return `true` *if* `n` *is **strictly palindromic** and* `false` *otherwise*.
+Given an integer `n`, return `true` _if_ `n` _is **strictly palindromic** and_ `false` _otherwise_.
 
 A string is **palindromic** if it reads the same forward and backward.
 
@@ -38,11 +36,20 @@ Therefore, we return false.
 
 **Constraints:**
 
-* `4 <= n <= 105`
+* `4 <= n <= 10^5`
 
 ---
 
 ## Hints
 
-1. Consider the representation of the given number in the base n - 2.
-2. The number n in base (n - 2) is always 12, which is not palindromic.
+<details>
+<summary>Hint 1</summary>
+
+Consider the representation of the given number in the base n - 2.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+The number n in base (n - 2) is always 12, which is not palindromic.
+</details>

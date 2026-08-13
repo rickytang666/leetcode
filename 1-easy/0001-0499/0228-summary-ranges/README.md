@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 53.7%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
@@ -14,7 +12,7 @@ You are given a **sorted unique** integer array `nums`.
 
 A **range** `[a,b]` is the set of all integers from `a` to `b` (inclusive).
 
-Return *the **smallest sorted** list of ranges that **cover all the numbers in the array exactly***. That is, each element of `nums` is covered by exactly one of the ranges, and there is no integer `x` such that `x` is in one of the ranges but not in `nums`.
+Return _the **smallest sorted** list of ranges that **cover all the numbers in the array exactly**_. That is, each element of `nums` is covered by exactly one of the ranges, and there is no integer `x` such that `x` is in one of the ranges but not in `nums`.
 
 Each range `[a,b]` in the list should be output as:
 
@@ -47,6 +45,6 @@ Explanation: The ranges are:
 **Constraints:**
 
 * `0 <= nums.length <= 20`
-* `-231 <= nums[i] <= 231 - 1`
+* `-2^31 <= nums[i] <= 2^31 - 1`
 * All the values of `nums` are **unique**.
 * `nums` is sorted in ascending order.

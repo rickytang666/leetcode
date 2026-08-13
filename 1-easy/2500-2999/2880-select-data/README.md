@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.8%
-
 ---
 
 ## Description
@@ -36,7 +34,7 @@ Input:
 +------------+---------+-----+
 Output:
 +---------+-----+
-| name    | age | 
+| name    | age |
 +---------+-----+
 | Ulysses | 13  |
 +---------+-----+
@@ -48,4 +46,8 @@ Student Ulysses has student_id = 101, we select the name and age.
 
 ## Hints
 
-1. Consider applying both row and column filtering to select the desired data.
+<details>
+<summary>Hint 1</summary>
+
+Consider applying both row and column filtering to select the desired data.
+</details>

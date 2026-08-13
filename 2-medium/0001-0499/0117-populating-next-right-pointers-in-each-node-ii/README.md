@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 57.8%
-
-**Tags:** `Linked List`, `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `linked-list`, `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 

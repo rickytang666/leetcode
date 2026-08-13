@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.2%
-
 ---
 
 ## Description
 
-Given an integer array `arr` and a mapping function `fn`, return a new array with a transformation applied to each element.
+Given an integer array `arr` and a mapping function `fn`, return a new array with a transformation applied to each element.
 
-The returned array should be created such that `returnedArray[i] = fn(arr[i], i)`.
+The returned array should be created such that `returnedArray[i] = fn(arr[i], i)`.
 
 Please solve it without the built-in `Array.map` method.
 
@@ -43,12 +41,21 @@ Explanation: The function always returns 42.
 **Constraints:**
 
 * `0 <= arr.length <= 1000`
-* `-109 <= arr[i] <= 109`
+* `-10^9 <= arr[i] <= 10^9`
 * `fn` returns an integer.
 
 ---
 
 ## Hints
 
-1. Start by creating an array that will eventually be returned.
-2. Loop over each element in the passed array. Push fn(arr[i]) to the returned array.
+<details>
+<summary>Hint 1</summary>
+
+Start by creating an array that will eventually be returned.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Loop over each element in the passed array. Push fn(arr[i]) to the returned array.
+</details>

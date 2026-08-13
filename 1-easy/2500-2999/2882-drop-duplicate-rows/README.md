@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 85.3%
-
 ---
 
 ## Description
@@ -38,7 +36,7 @@ Input:
 | 5           | Finn    | john@example.com    |
 | 6           | Violet  | alice@example.com   |
 +-------------+---------+---------------------+
-Output:  
+Output:
 +-------------+---------+---------------------+
 | customer_id | name    | email               |
 +-------------+---------+---------------------+
@@ -56,4 +54,8 @@ Alic (customer_id = 4) and Finn (customer_id = 5) both use john@example.com, so 
 
 ## Hints
 
-1. Consider using a build-in function in pandas library to remove the duplicate rows based on specified data.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a build-in function in pandas library to remove the duplicate rows based on specified data.
+</details>

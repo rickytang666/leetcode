@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 85.5%
-
 ---
 
 ## Description
@@ -12,10 +10,10 @@ Given an integer array `arr` and a filtering function `fn`, return a filtered ar
 
 The `fn` function takes one or two arguments:
 
-* `arr[i]` - number from the `arr`
-* `i` - index of `arr[i]`
+* `arr[i]` - number from the `arr`
+* `i` - index of `arr[i]`
 
-`filteredArr` should only contain the elements from the `arr` for which the expression `fn(arr[i], i)` evaluates to a **truthy** value. A **truthy** value is a value where `Boolean(value)` returns `true`.
+`filteredArr` should only contain the elements from the `arr` for which the expression `fn(arr[i], i)` evaluates to a **truthy** value. A **truthy** value is a value where `Boolean(value)` returns `true`.
 
 Please solve it without the built-in `Array.filter` method.
 
@@ -51,12 +49,26 @@ Falsey values such as 0 should be filtered out
 **Constraints:**
 
 * `0 <= arr.length <= 1000`
-* `-109 <= arr[i] <= 109`
+* `-10^9 <= arr[i] <= 10^9`
 
 ---
 
 ## Hints
 
-1. Start by declaring a new array which will eventually be returned.
-2. In Javascript, there is the concept of "truthiness" and "falsiness". Values such as 0, undefined, null, and false are falsy. Most values are truthy: 1, {}, [], true, etc. In Javascript, the contents of if-statements don't need to be booleans. You can say "if ([1,2,3]) {}", and it's equivalent to saying 'if (true) {}".
-3. Loop over each element in the array. If fn(arr[i]) is truthy, push it to the array.
+<details>
+<summary>Hint 1</summary>
+
+Start by declaring a new array which will eventually be returned.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+In Javascript, there is the concept of "truthiness" and "falsiness". Values such as 0, undefined, null, and false are falsy. Most values are truthy: 1, {}, [], true, etc. In Javascript, the contents of if-statements don't need to be booleans. You can say "if ([1,2,3]) {}", and it's equivalent to saying 'if (true) {}".
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Loop over each element in the array. If fn(arr[i]) is truthy, push it to the array.
+</details>

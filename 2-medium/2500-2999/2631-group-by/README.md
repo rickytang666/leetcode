@@ -2,38 +2,36 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 81.5%
-
 ---
 
 ## Description
 
-Write code that enhances all arrays such that you can call the `array.groupBy(fn)` method on any array and it will return a **grouped** version of the array.
+Write code that enhances all arrays such that you can call the `array.groupBy(fn)` method on any array and it will return a **grouped** version of the array.
 
-A **grouped** array is an object where each key is the output of `fn(arr[i])` and each value is an array containing all items in the original array which generate that key.
+A **grouped** array is an object where each key is the output of `fn(arr[i])` and each value is an array containing all items in the original array which generate that key.
 
-The provided callback `fn` will accept an item in the array and return a string key.
+The provided callback `fn` will accept an item in the array and return a string key.
 
 The order of each value list should be the order the items appear in the array. Any order of keys is acceptable.
 
-Please solve it without lodash's `_.groupBy` function.
+Please solve it without lodash's `_.groupBy` function.
 
 **Example 1:**
 
 ```
-Input: 
+Input:
 array = [
-  {"id":"1"},
-  {"id":"1"},
-  {"id":"2"}
-], 
-fn = function (item) { 
-  return item.id; 
+  {"id":"1"},
+  {"id":"1"},
+  {"id":"2"}
+],
+fn = function (item) {
+  return item.id;
 }
-Output: 
-{ 
-  "1": [{"id": "1"}, {"id": "1"}],   
-  "2": [{"id": "2"}] 
+Output:
+{
+  "1": [{"id": "1"}, {"id": "1"}],
+  "2": [{"id": "2"}]
 }
 Explanation:
 Output is from array.groupBy(fn).
@@ -45,21 +43,21 @@ There is one object with an "id" of 2. That object is put in the second array.
 **Example 2:**
 
 ```
-Input: 
+Input:
 array = [
-  [1, 2, 3],
-  [1, 3, 5],
-  [1, 5, 9]
+  [1, 2, 3],
+  [1, 3, 5],
+  [1, 5, 9]
 ]
-fn = function (list) { 
-  return String(list[0]); 
+fn = function (list) {
+  return String(list[0]);
 }
-Output: 
-{ 
-  "1": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] 
+Output:
+{
+  "1": [[1, 2, 3], [1, 3, 5], [1, 5, 9]]
 }
 Explanation:
-The array can be of any type. In this case, the selector function defines the key as being the first element in the array. 
+The array can be of any type. In this case, the selector function defines the key as being the first element in the array.
 All the arrays have 1 as their first element so they are grouped together.
 {
   "1": [[1, 2, 3], [1, 3, 5], [1, 5, 9]]
@@ -69,15 +67,15 @@ All the arrays have 1 as their first element so they are grouped together.
 **Example 3:**
 
 ```
-Input: 
+Input:
 array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-fn = function (n) { 
-  return String(n > 5);
+fn = function (n) {
+  return String(n > 5);
 }
 Output:
 {
-  "true": [6, 7, 8, 9, 10],
-  "false": [1, 2, 3, 4, 5]
+  "true": [6, 7, 8, 9, 10],
+  "false": [1, 2, 3, 4, 5]
 }
 Explanation:
 The selector function splits the array by whether each number is greater than 5.
@@ -85,7 +83,7 @@ The selector function splits the array by whether each number is greater than 5.
 
 **Constraints:**
 
-* `0 <= array.length <= 105`
+* `0 <= array.length <= 10^5`
 * `fn` returns a string
 
 ---
@@ -109,4 +107,3 @@ Iterate of each element in the array. You can access the array with the "this" k
 
 The key is fn(arr[i]). If the key already exists on the object, set the value to be an empty array. Then push the value onto the array at the key.
 </details>
-

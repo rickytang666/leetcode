@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 36.0%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
 ## Description
 
-Given an integer array `nums`, find a subarray that has the largest product, and return *the product*.
+Given an integer array `nums`, find a subarray that has the largest product, and return _the product_.
 
 The test cases are generated so that the answer will fit in a **32-bit** integer.
 
@@ -34,6 +32,6 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 
 **Constraints:**
 
-* `1 <= nums.length <= 2 * 104`
+* `1 <= nums.length <= 2 * 10^4`
 * `-10 <= nums[i] <= 10`
 * The product of any subarray of `nums` is **guaranteed** to fit in a **32-bit** integer.

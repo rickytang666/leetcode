@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 74.7%
-
 ---
 
 ## Description
 
-Write code that enhances all arrays such that you can call the `array.last()` method on any array and it will return the last element. If there are no elements in the array, it should return `-1`.
+Write code that enhances all arrays such that you can call the `array.last()` method on any array and it will return the last element. If there are no elements in the array, it should return `-1`.
 
-You may assume the array is the output of `JSON.parse`.
+You may assume the array is the output of `JSON.parse`.
 
 **Example 1:**
 
@@ -48,4 +46,3 @@ Inside the Array.prototype.last function body, you have access to the "this" key
 
 You can access elements in the array via this[0], this[1], etc. You can also access properties and method like this.length, this.forEach, etc.
 </details>
-

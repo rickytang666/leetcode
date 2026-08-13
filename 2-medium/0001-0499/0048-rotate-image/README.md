@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 79.5%
-
-**Tags:** `Array`, `Math`, `Matrix`
+**Tags:** `array`, `math`, `matrix`
 
 ---
 

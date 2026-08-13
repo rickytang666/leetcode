@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 52.0%
-
-**Tags:** `Array`, `Dynamic Programming`, `Backtracking`
+**Tags:** `array`, `dynamic-programming`, `backtracking`
 
 ---
 

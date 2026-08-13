@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.1%
-
-**Tags:** `Array`, `Hash Table`, `Counting`
+**Tags:** `array`, `hash-table`, `counting`
 
 ---
 
 ## Description
 
-Given an array `nums` of **distinct** positive integers, return *the number of tuples* `(a, b, c, d)` *such that* `a * b = c * d` *where* `a`*,* `b`*,* `c`*, and* `d` *are elements of* `nums`*, and* `a != b != c != d`*.*
+Given an array `nums` of **distinct** positive integers, return _the number of tuples_ `(a, b, c, d)` _such that_ `a * b = c * d` _where_ `a`_,_ `b`_,_ `c`_, and_ `d` _are elements of_ `nums`_, and_ `a != b != c != d`_._
 
 **Example 1:**
 
@@ -37,12 +35,21 @@ Explanation: There are 16 valid tuples:
 **Constraints:**
 
 * `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 104`
+* `1 <= nums[i] <= 10^4`
 * All elements in `nums` are **distinct**.
 
 ---
 
 ## Hints
 
-1. Note that all of the integers are distinct. This means that each time a product is formed it must be formed by two unique integers.
-2. Count the frequency of each product of 2 distinct numbers. Then calculate the permutations formed.
+<details>
+<summary>Hint 1</summary>
+
+Note that all of the integers are distinct. This means that each time a product is formed it must be formed by two unique integers.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Count the frequency of each product of 2 distinct numbers. Then calculate the permutations formed.
+</details>

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 60.0%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
 ## Description
 
-Given an integer `x`, return `true` *if* `x` *is a* ***palindrome****, and* `false` *otherwise*.
+Given an integer `x`, return `true` if `x` is a **palindrome**, and `false` otherwise.
 
 **Example 1:**
 
@@ -38,7 +36,7 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 **Constraints:**
 
-* `-231 <= x <= 231 - 1`
+* `-2^31 <= x <= 2^31 - 1`
 
 **Follow up:** Could you solve it without converting the integer to a string?
 
@@ -46,4 +44,8 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 ## Hints
 
-1. Beware of overflow when you reverse the integer.
+<details>
+<summary>Hint 1</summary>
+
+Beware of overflow when you reverse the integer.
+</details>

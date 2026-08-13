@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 76.0%
-
-**Tags:** `Array`, `Matrix`, `Simulation`
+**Tags:** `array`, `matrix`, `simulation`
 
 ---
 
 ## Description
 
-Given a 2D integer array `matrix`, return *the **transpose** of* `matrix`.
+Given a 2D integer array `matrix`, return _the **transpose** of_ `matrix`.
 
 The **transpose** of a matrix is the matrix flipped over its main diagonal, switching the matrix's row and column indices.
 
@@ -35,8 +33,8 @@ Output: [[1,4],[2,5],[3,6]]
 * `m == matrix.length`
 * `n == matrix[i].length`
 * `1 <= m, n <= 1000`
-* `1 <= m * n <= 105`
-* `-109 <= matrix[i][j] <= 109`
+* `1 <= m * n <= 10^5`
+* `-10^9 <= matrix[i][j] <= 10^9`
 
 ---
 
@@ -47,4 +45,3 @@ Output: [[1,4],[2,5],[3,6]]
 
 We don't need any special algorithms to do this. You just need to know what the transpose of a matrix looks like. Rows become columns and vice versa!
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.2%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
@@ -14,7 +12,7 @@ You are given a non-negative floating point number rounded to two decimal places
 
 You should convert Celsius into **Kelvin** and **Fahrenheit** and return it as an array `ans = [kelvin, fahrenheit]`.
 
-Return *the array `ans`.* Answers within `10-5` of the actual answer will be accepted.
+Return _the array `ans`._ Answers within `10^-5` of the actual answer will be accepted.
 
 **Note that:**
 
@@ -45,4 +43,8 @@ Explanation: Temperature at 122.11 Celsius converted in Kelvin is 395.26 and con
 
 ## Hints
 
-1. Implement formulas that are given in the statement.
+<details>
+<summary>Hint 1</summary>
+
+Implement formulas that are given in the statement.
+</details>

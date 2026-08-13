@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.6%
-
-**Tags:** `Hash Table`, `String`, `Counting`
+**Tags:** `hash-table`, `string`, `counting`
 
 ---
 
@@ -56,5 +54,14 @@ The **frequency** of a letter `x` is the number of times it occurs in the string
 
 ## Hints
 
-1. Use a hashmap
-2. Simulate as described
+<details>
+<summary>Hint 1</summary>
+
+Use a hashmap
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Simulate as described
+</details>

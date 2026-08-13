@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 63.2%
-
-**Tags:** `Array`, `Binary Search`, `Depth-First Search`, `Breadth-First Search`, `Union-Find`, `Heap (Priority Queue)`, `Matrix`
+**Tags:** `array`, `binary-search`, `depth-first-search`, `breadth-first-search`, `union-find`, `heap-priority-queue`, `matrix`
 
 ---
 
 ## Description
 
-You are a hiker preparing for an upcoming hike. You are given `heights`, a 2D array of size `rows x columns`, where `heights[row][col]` represents the height of cell `(row, col)`. You are situated in the top-left cell, `(0, 0)`, and you hope to travel to the bottom-right cell, `(rows-1, columns-1)` (i.e., **0-indexed**). You can move **up**, **down**, **left**, or **right**, and you wish to find a route that requires the minimum **effort**.
+You are a hiker preparing for an upcoming hike. You are given `heights`, a 2D array of size `rows x columns`, where `heights[row][col]` represents the height of cell `(row, col)`. You are situated in the top-left cell, `(0, 0)`, and you hope to travel to the bottom-right cell, `(rows-1, columns-1)` (i.e., **0-indexed**). You can move **up**, **down**, **left**, or **right**, and you wish to find a route that requires the minimum **effort**.
 
-A route's **effort** is the **maximum absolute difference**in heights between two consecutive cells of the route.
+A route's **effort** is the **maximum absolute difference** in heights between two consecutive cells of the route.
 
-Return *the minimum **effort** required to travel from the top-left cell to the bottom-right cell.*
+Return _the minimum **effort** required to travel from the top-left cell to the bottom-right cell._
 
 **Example 1:**
 
@@ -52,7 +50,7 @@ Explanation: This route does not require any effort.
 * `rows == heights.length`
 * `columns == heights[i].length`
 * `1 <= rows, columns <= 100`
-* `1 <= heights[i][j] <= 106`
+* `1 <= heights[i][j] <= 10^6`
 
 ---
 
@@ -75,4 +73,3 @@ If you are given threshold k, check if it is possible to go from (0, 0) to (n-1,
 
 Binary search the k value.
 </details>
-

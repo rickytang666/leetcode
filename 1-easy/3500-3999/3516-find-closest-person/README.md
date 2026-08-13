@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.0%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
@@ -73,4 +71,8 @@ Since both Person 1 and Person 2 reach Person 3 at the same time, the output is 
 
 ## Hints
 
-1. Compare the distances from Persons 1 and 2 to Person 3 to determine the answer.
+<details>
+<summary>Hint 1</summary>
+
+Compare the distances from Persons 1 and 2 to Person 3 to determine the answer.
+</details>

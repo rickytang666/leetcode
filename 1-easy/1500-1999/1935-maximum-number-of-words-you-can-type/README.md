@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.9%
-
-**Tags:** `Hash Table`, `String`
+**Tags:** `hash-table`, `string`
 
 ---
 
@@ -12,7 +10,7 @@
 
 There is a malfunctioning keyboard where some letter keys do not work. All other keys on the keyboard work properly.
 
-Given a string `text` of words separated by a single space (no leading or trailing spaces) and a string `brokenLetters` of all **distinct** letter keys that are broken, return *the **number of words** in* `text` *you can fully type using this keyboard*.
+Given a string `text` of words separated by a single space (no leading or trailing spaces) and a string `brokenLetters` of all **distinct** letter keys that are broken, return _the **number of words** in_ `text` _you can fully type using this keyboard_.
 
 **Example 1:**
 
@@ -40,7 +38,7 @@ Explanation: We cannot type either word because the 'e' key is broken.
 
 **Constraints:**
 
-* `1 <= text.length <= 104`
+* `1 <= text.length <= 10^4`
 * `0 <= brokenLetters.length <= 26`
 * `text` consists of words separated by a single space without any leading or trailing spaces.
 * Each word only consists of lowercase English letters.
@@ -50,5 +48,14 @@ Explanation: We cannot type either word because the 'e' key is broken.
 
 ## Hints
 
-1. Check each word separately if it can be typed.
-2. A word can be typed if all its letters are not broken.
+<details>
+<summary>Hint 1</summary>
+
+Check each word separately if it can be typed.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A word can be typed if all its letters are not broken.
+</details>

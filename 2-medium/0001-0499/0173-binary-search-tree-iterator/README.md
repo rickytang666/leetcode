@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 76.7%
-
-**Tags:** `Stack`, `Tree`, `Design`, `Binary Search Tree`, `Binary Tree`, `Iterator`
+**Tags:** `stack`, `tree`, `design`, `binary-search-tree`, `binary-tree`, `iterator`
 
 ---
 
 ## Description
 
-Implement the `BSTIterator` class that represents an iterator over the **[in-order traversal](https://en.wikipedia.org/wiki/Tree_traversal#In-order_(LNR))** of a binary search tree (BST):
+Implement the `BSTIterator` class that represents an iterator over the **[in-order traversal](https://en.wikipedia.org/wiki/Tree_traversal#In-order_\(LNR\))** of a binary search tree (BST):
 
 * `BSTIterator(TreeNode root)` Initializes an object of the `BSTIterator` class. The `root` of the BST is given as part of the constructor. The pointer should be initialized to a non-existent number smaller than any element in the BST.
 * `boolean hasNext()` Returns `true` if there exists a number in the traversal to the right of the pointer, otherwise returns `false`.
@@ -46,10 +44,10 @@ bSTIterator.hasNext(); // return False
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 105]`.
-* `0 <= Node.val <= 106`
-* At most `105` calls will be made to `hasNext`, and `next`.
+* The number of nodes in the tree is in the range `[1, 10^5]`.
+* `0 <= Node.val <= 10^6`
+* At most `10^5` calls will be made to `hasNext`, and `next`.
 
 **Follow up:**
 
-* Could you implement `next()` and `hasNext()` to run in average `O(1)` time and use `O(h)` memory, where `h` is the height of the tree?
+* Could you implement `next()` and `hasNext()` to run in average `O(1)` time and use `O(h)` memory, where `h` is the height of the tree?

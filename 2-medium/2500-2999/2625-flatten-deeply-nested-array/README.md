@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 66.1%
-
 ---
 
 ## Description
 
-Given a **multi-dimensional** array `arr` and a depth `n`, return a **flattened** version of that array.
+Given a **multi-dimensional** array `arr` and a depth `n`, return a **flattened** version of that array.
 
-A **multi-dimensional** array is a recursive data structure that contains integers or other **multi-dimensional** arrays.
+A **multi-dimensional** array is a recursive data structure that contains integers or other **multi-dimensional** arrays.
 
-A **flattened** array is a version of that array with some or all of the sub-arrays removed and replaced with the actual elements in that sub-array. This flattening operation should only be done if the current depth of nesting is less than `n`. The depth of the elements in the first array are considered to be `0`.
+A **flattened** array is a version of that array with some or all of the sub-arrays removed and replaced with the actual elements in that sub-array. This flattening operation should only be done if the current depth of nesting is less than `n`. The depth of the elements in the first array are considered to be `0`.
 
-Please solve it without the built-in `Array.flat` method.
+Please solve it without the built-in `Array.flat` method.
 
 **Example 1:**
 
@@ -57,8 +55,8 @@ The maximum depth of any subarray is 1. Thus, all of them are flattened.
 
 **Constraints:**
 
-* `0 <= count of numbers in arr <= 105`
-* `0 <= count of subarrays in arr <= 105`
+* `0 <= count of numbers in arr <= 10^5`
+* `0 <= count of subarrays in arr <= 10^5`
 * `maxDepth <= 1000`
 * `-1000 <= each number <= 1000`
 * `0 <= n <= 1000`
@@ -78,4 +76,3 @@ Write a recursive function that keeps track of the current depth.
 
 if the current depth >= the maximum depth, always just push the value to the returned array. Otherwise recursively call flat on the array.
 </details>
-

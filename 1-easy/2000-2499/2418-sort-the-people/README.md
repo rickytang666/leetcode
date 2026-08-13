@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 84.8%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Sorting`
+**Tags:** `array`, `hash-table`, `string`, `sorting`
 
 ---
 
@@ -12,9 +10,9 @@
 
 You are given an array of strings `names`, and an array `heights` that consists of **distinct** positive integers. Both arrays are of length `n`.
 
-For each index `i`, `names[i]` and `heights[i]` denote the name and height of the `ith` person.
+For each index `i`, `names[i]` and `heights[i]` denote the name and height of the `i^th` person.
 
-Return `names` *sorted in **descending** order by the people's heights*.
+Return `names` _sorted in **descending** order by the people's heights_.
 
 **Example 1:**
 
@@ -35,9 +33,9 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 **Constraints:**
 
 * `n == names.length == heights.length`
-* `1 <= n <= 103`
+* `1 <= n <= 10^3`
 * `1 <= names[i].length <= 20`
-* `1 <= heights[i] <= 105`
+* `1 <= heights[i] <= 10^5`
 * `names[i]` consists of lower and upper case English letters.
 * All the values of `heights` are distinct.
 
@@ -45,4 +43,8 @@ Explanation: The first Bob is the tallest, followed by Alice and the second Bob.
 
 ## Hints
 
-1. Find the tallest person and swap with the first person, then find the second tallest person and swap with the second person, etc. Repeat until you fix all n people.
+<details>
+<summary>Hint 1</summary>
+
+Find the tallest person and swap with the first person, then find the second tallest person and swap with the second person, etc. Repeat until you fix all n people.
+</details>

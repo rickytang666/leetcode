@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 52.5%
-
-**Tags:** `Array`, `Hash Table`, `Design`, `Counting`, `Data Stream`
+**Tags:** `array`, `hash-table`, `design`, `counting`, `data-stream`
 
 ---
 
@@ -69,4 +67,3 @@ Maintain the frequency of all the points in a hash map.
 
 Traverse the hash map and if any point has the same y-coordinate as the query point, consider this point and the query point to form one of the horizontal lines of the square.
 </details>
-

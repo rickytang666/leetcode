@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.3%
-
-**Tags:** `Array`, `String`
+**Tags:** `array`, `string`
 
 ---
 
 ## Description
 
-Given an array of strings `patterns` and a string `word`, return *the **number** of strings in* `patterns` *that exist as a **substring** in* `word`.
+Given an array of strings `patterns` and a string `word`, return _the **number** of strings in_ `patterns` _that exist as a **substring** in_ `word`.
 
 A **substring** is a contiguous sequence of characters within a string.
 
@@ -58,5 +56,14 @@ Explanation: Each of the patterns appears as a substring in word "ab".
 
 ## Hints
 
-1. Deal with each of the patterns individually.
-2. Use the built-in function in the language you are using to find if the pattern exists as a substring in <code>word</code>.
+<details>
+<summary>Hint 1</summary>
+
+Deal with each of the patterns individually.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Use the built-in function in the language you are using to find if the pattern exists as a substring in `word`.
+</details>

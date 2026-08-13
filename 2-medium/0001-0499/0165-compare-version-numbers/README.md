@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 45.9%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -24,7 +22,7 @@ Return the following:
 
 **Input:** version1 = "1.2", version2 = "1.10"
 
-**Output:** -1
+**Output:** \-1
 
 **Explanation:**
 
@@ -53,13 +51,22 @@ version1 has less revisions, which means every missing revision are treated as "
 **Constraints:**
 
 * `1 <= version1.length, version2.length <= 500`
-* `version1` and `version2` only contain digits and `'.'`.
-* `version1` and `version2` **are valid version numbers**.
-* All the given revisions in `version1` and `version2` can be stored in a **32-bit integer**.
+* `version1` and `version2` only contain digits and `'.'`.
+* `version1` and `version2` **are valid version numbers**.
+* All the given revisions in `version1` and `version2` can be stored in a **32-bit integer**.
 
 ---
 
 ## Hints
 
-1. You can use two pointers for each version string to traverse them together while comparing the corresponding segments.
-2. Utilize the substring method to extract each version segment delimited by '.'. Ensure you're extracting the segments correctly by adjusting the start and end indices accordingly.
+<details>
+<summary>Hint 1</summary>
+
+You can use two pointers for each version string to traverse them together while comparing the corresponding segments.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Utilize the substring method to extract each version segment delimited by '.'. Ensure you're extracting the segments correctly by adjusting the start and end indices accordingly.
+</details>

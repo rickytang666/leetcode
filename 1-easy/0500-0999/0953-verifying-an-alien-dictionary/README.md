@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 55.8%
-
-**Tags:** `Array`, `Hash Table`, `String`
+**Tags:** `array`, `hash-table`, `string`
 
 ---
 

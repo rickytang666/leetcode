@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 64.0%
-
-**Tags:** `Tree`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, return *the zigzag level order traversal of its nodes' values*. (i.e., from left to right, then right to left for the next level and alternate between).
+Given the `root` of a binary tree, return _the zigzag level order traversal of its nodes' values_. (i.e., from left to right, then right to left for the next level and alternate between).
 
 **Example 1:**
 

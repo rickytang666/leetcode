@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.4%
-
-**Tags:** `Hash Table`, `String`
+**Tags:** `hash-table`, `string`
 
 ---
 
@@ -30,12 +28,16 @@ Output: 0
 
 **Constraints:**
 
-* `1 <= jewels.length, stones.length <= 50`
+* `1 <= jewels.length, stones.length <= 50`
 * `jewels` and `stones` consist of only English letters.
-* All the characters of `jewels` are **unique**.
+* All the characters of `jewels` are **unique**.
 
 ---
 
 ## Hints
 
-1. For each stone, check if it is a jewel.
+<details>
+<summary>Hint 1</summary>
+
+For each stone, check if it is a jewel.
+</details>

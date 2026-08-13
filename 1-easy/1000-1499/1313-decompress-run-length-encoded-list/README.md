@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.1%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
@@ -12,7 +10,7 @@
 
 We are given a list `nums` of integers representing a list compressed with run-length encoding.
 
-Consider each adjacent pair of elements `[freq, val] = [nums[2*i], nums[2*i+1]]` (with `i >= 0`).  For each such pair, there are `freq` elements with value `val` concatenated in a sublist. Concatenate all the sublists from left to right to generate the decompressed list.
+Consider each adjacent pair of elements `[freq, val] = [nums[2*i], nums[2*i+1]]` (with `i >= 0`). For each such pair, there are `freq` elements with value `val` concatenated in a sublist. Concatenate all the sublists from left to right to generate the decompressed list.
 
 Return the decompressed list.
 
@@ -43,4 +41,8 @@ Output: [1,3,3]
 
 ## Hints
 
-1. Decompress the given array by repeating nums[2*i+1] a number of times equal to nums[2*i].
+<details>
+<summary>Hint 1</summary>
+
+Decompress the given array by repeating nums[2\*i+1] a number of times equal to nums[2\*i].
+</details>

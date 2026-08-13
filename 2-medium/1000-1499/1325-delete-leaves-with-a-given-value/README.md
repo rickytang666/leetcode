@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 77.2%
-
-**Tags:** `Tree`, `Depth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `binary-tree`
 
 ---
 
@@ -21,7 +19,7 @@ Note that once you delete a leaf node with value `target`**,** if its parent nod
 ```
 Input: root = [1,2,3,2,null,2,4], target = 2
 Output: [1,null,3,null,4]
-Explanation: Leaf nodes in green with value (target = 2) are removed (Picture in left). 
+Explanation: Leaf nodes in green with value (target = 2) are removed (Picture in left).
 After removing, new nodes become leaf nodes with value (target = 2) (Picture in center).
 ```
 
@@ -58,4 +56,3 @@ Explanation: Leaf nodes in green with value (target = 2) are removed at each ste
 
 Use the DFS to reconstruct the tree such that no leaf node is equal to the target. If the leaf node is equal to the target, return an empty object instead.
 </details>
-

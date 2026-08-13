@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 47.6%
-
-**Tags:** `Array`, `Sorting`, `Heap (Priority Queue)`
+**Tags:** `array`, `sorting`, `heap-priority-queue`
 
 ---
 
 ## Description
 
-You are given `n`​​​​​​ tasks labeled from `0` to `n - 1` represented by a 2D integer array `tasks`, where `tasks[i] = [enqueueTimei, processingTimei]` means that the `i​​​​​​th`​​​​ task will be available to process at `enqueueTimei` and will take `processingTimei`to finish processing.
+You are given `n` tasks labeled from `0` to `n - 1` represented by a 2D integer array `tasks`, where `tasks[i] = [enqueueTimei, processingTimei]` means that the `i^th` task will be available to process at `enqueueTimei` and will take `processingTimei`to finish processing.
 
 You have a single-threaded CPU that can process **at most one** task at a time and will act in the following way:
 
@@ -19,14 +17,14 @@ You have a single-threaded CPU that can process **at most one** task at a time a
 * Once a task is started, the CPU will **process the entire task** without stopping.
 * The CPU can finish a task then start a new one instantly.
 
-Return *the order in which the CPU will process the tasks.*
+Return the order in which the CPU will process the tasks.
 
 **Example 1:**
 
 ```
 Input: tasks = [[1,2],[2,4],[3,2],[4,1]]
 Output: [0,2,3,1]
-Explanation: The events go as follows: 
+Explanation: The events go as follows:
 - At time = 1, task 0 is available to process. Available tasks = {0}.
 - Also at time = 1, the idle CPU starts processing task 0. Available tasks = {}.
 - At time = 2, task 1 is available to process. Available tasks = {1}.
@@ -55,9 +53,9 @@ Explanation: The events go as follows:
 
 **Constraints:**
 
-* `tasks.length == n`
-* `1 <= n <= 105`
-* `1 <= enqueueTimei, processingTimei <= 109`
+* `1 <= tasks.length <= 10^5`
+* `tasks[i] = [enqueueTimei, processingTimei]`
+* `1 <= enqueueTimei, processingTimei <= 10^9`
 
 ---
 
@@ -74,4 +72,3 @@ To simulate the problem we first need to note that if at any point in time there
 
 We need a data structure like a min-heap to support choosing the task with the smallest processing time from all the enqueued tasks
 </details>
-

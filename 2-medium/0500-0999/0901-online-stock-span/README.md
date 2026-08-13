@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.4%
-
-**Tags:** `Stack`, `Design`, `Monotonic Stack`, `Data Stream`
+**Tags:** `stack`, `design`, `monotonic-stack`, `data-stream`
 
 ---
 
@@ -44,5 +42,5 @@ stockSpanner.next(85);  // return 6
 
 **Constraints:**
 
-* `1 <= price <= 105`
-* At most `104` calls will be made to `next`.
+* `1 <= price <= 10^5`
+* At most `10^4` calls will be made to `next`.

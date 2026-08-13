@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 72.7%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 
@@ -15,7 +13,7 @@ You are given a string `num` representing a large integer. An integer is **good*
 * It is a **substring** of `num` with length `3`.
 * It consists of only one unique digit.
 
-Return *the **maximum good** integer as a **string** or an empty string* `""` *if no such integer exists*.
+Return _the **maximum good** integer as a **string** or an empty string_ `""` _if no such integer exists_.
 
 Note:
 
@@ -56,5 +54,14 @@ Explanation: No substring of length 3 consists of only one unique digit. Therefo
 
 ## Hints
 
-1. We can sequentially check if “999”, “888”, “777”, … , “000” exists in num in that order. The first to be found is the maximum good integer.
-2. If we cannot find any of the above integers, we return an empty string “”.
+<details>
+<summary>Hint 1</summary>
+
+We can sequentially check if “999”, “888”, “777”, … , “000” exists in num in that order. The first to be found is the maximum good integer.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If we cannot find any of the above integers, we return an empty string “”.
+</details>

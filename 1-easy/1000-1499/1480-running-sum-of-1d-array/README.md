@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.9%
-
-**Tags:** `Array`, `Prefix Sum`
+**Tags:** `array`, `prefix-sum`
 
 ---
 
 ## Description
 
-Given an array `nums`. We define a running sum of an array as `runningSum[i] = sum(nums[0]…nums[i])`.
+Given an array `nums`. We define a running sum of an array as `runningSum[i] = sum(nums[0]…nums[i])`.
 
 Return the running sum of `nums`.
 
@@ -40,10 +38,14 @@ Output: [3,4,6,16,17]
 **Constraints:**
 
 * `1 <= nums.length <= 1000`
-* `-10^6 <= nums[i] <= 10^6`
+* `-10^6 <= nums[i] <= 10^6`
 
 ---
 
 ## Hints
 
-1. Think about how we can calculate the i-th number in the running sum from the (i-1)-th number.
+<details>
+<summary>Hint 1</summary>
+
+Think about how we can calculate the i-th number in the running sum from the (i-1)-th number.
+</details>

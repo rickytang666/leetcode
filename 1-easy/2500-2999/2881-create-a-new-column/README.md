@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.2%
-
 ---
 
 ## Description
@@ -18,7 +16,7 @@ DataFrame employees
 +-------------+--------+
 ```
 
-A company plans to provide its employees with a bonus.
+A company plans to provide its employees with a bonus.
 
 Write a solution to create a new column name `bonus` that contains the **doubled values** of the `salary` column.
 
@@ -50,7 +48,7 @@ Output:
 | Finn    | 74576  | 149152 |
 | Thomas  | 24433  | 48866  |
 +---------+--------+--------+
-Explanation: 
+Explanation:
 A new column bonus is created by doubling the value in the column salary.
 ```
 
@@ -58,4 +56,8 @@ A new column bonus is created by doubling the value in the column salary.
 
 ## Hints
 
-1. Consider using the `[]` brackets with the new column name at the left side of the assignment. The calculation of the value is done element-wise.
+<details>
+<summary>Hint 1</summary>
+
+Consider using the \`[]\` brackets with the new column name at the left side of the assignment. The calculation of the value is done element-wise.
+</details>

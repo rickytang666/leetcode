@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 76.3%
-
 ---
 
 ## Description
@@ -22,14 +20,14 @@ DataFrame animals
 
 Write a solution to list the names of animals that weigh **strictly more than** `100` kilograms.
 
-Return the animals sorted by weight in **descending order**.
+Return the animals sorted by weight in **descending order**.
 
 The result format is in the following example.
 
 **Example 1:**
 
 ```
-Input: 
+Input:
 DataFrame animals:
 +----------+---------+-----+--------+
 | name     | species | age | weight |
@@ -41,7 +39,7 @@ DataFrame animals:
 | Stefan   | Bear    | 100 | 50     |
 | Tommy    | Panda   | 26  | 349    |
 +----------+---------+-----+--------+
-Output: 
+Output:
 +----------+
 | name     |
 +----------+
@@ -50,12 +48,12 @@ Output:
 | Tommy    |
 | Alex     |
 +----------+
-Explanation: 
+Explanation:
 All animals weighing more than 100 should be included in the results table.
 Tatiana's weight is 464, Jonathan's weight is 463, Tommy's weight is 349, and Alex's weight is 328.
 The results should be sorted in descending order of weight.
 ```
 
-In Pandas, **method chaining** enables us to perform operations on a DataFrame without breaking up each operation into a separate line or creating multiple temporary variables.
+In Pandas, **method chaining** enables us to perform operations on a DataFrame without breaking up each operation into a separate line or creating multiple temporary variables.
 
-Can you complete this task in just **one line** of code using method chaining?
+Can you complete this task in just **one line** of code using method chaining?

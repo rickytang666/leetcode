@@ -2,11 +2,12 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 59.3%
+**Tags:** `array`, `sorting`
 
-**Tags:** `Array`, `Sorting`
+**Premium:** Yes
 
 ---
 
 ## Description
 
+_No description available from the LeetCode API._

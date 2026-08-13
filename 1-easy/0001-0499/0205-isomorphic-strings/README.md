@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 47.7%
-
-**Tags:** `Hash Table`, `String`
+**Tags:** `hash-table`, `string`
 
 ---
 
 ## Description
 
-Given two strings `s` and `t`, *determine if they are isomorphic*.
+Given two strings `s` and `t`, _determine if they are isomorphic_.
 
 Two strings `s` and `t` are isomorphic if the characters in `s` can be replaced to get `t`.
 
@@ -31,13 +29,13 @@ The strings `s` and `t` can be made identical by:
 
 **Example 2:**
 
-**Input:** s = "foo", t = "bar"
+**Input:** s = "f11", t = "b23"
 
 **Output:** false
 
 **Explanation:**
 
-The strings `s` and `t` can not be made identical as `'o'` needs to be mapped to both `'a'` and `'r'`.
+The strings `s` and `t` can not be made identical as `'1'` needs to be mapped to both `'2'` and `'3'`.
 
 **Example 3:**
 
@@ -47,6 +45,6 @@ The strings `s` and `t` can not be made identical as `'o'` needs to be mapped to
 
 **Constraints:**
 
-* `1 <= s.length <= 5 * 104`
+* `1 <= s.length <= 5 * 10^4`
 * `t.length == s.length`
 * `s` and `t` consist of any valid ascii character.

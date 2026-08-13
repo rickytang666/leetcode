@@ -2,15 +2,13 @@
 
 **Difficulty:** Hard
 
-**Acceptance Rate:** 48.9%
-
-**Tags:** `Array`, `Stack`, `Monotonic Stack`
+**Tags:** `array`, `stack`, `monotonic-stack`
 
 ---
 
 ## Description
 
-Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return *the area of the largest rectangle in the histogram*.
+Given an array of integers `heights` representing the histogram's bar height where the width of each bar is `1`, return _the area of the largest rectangle in the histogram_.
 
 **Example 1:**
 
@@ -34,5 +32,5 @@ Output: 4
 
 **Constraints:**
 
-* `1 <= heights.length <= 105`
-* `0 <= heights[i] <= 104`
+* `1 <= heights.length <= 10^5`
+* `0 <= heights[i] <= 10^4`

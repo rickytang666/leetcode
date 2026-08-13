@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.5%
-
-**Tags:** `Array`, `String`, `Simulation`
+**Tags:** `array`, `string`, `simulation`
 
 ---
 
@@ -17,14 +15,14 @@ There is a programming language with only **four** operations and **one** variab
 
 Initially, the value of `X` is `0`.
 
-Given an array of strings `operations` containing a list of operations, return *the **final** value of* `X` *after performing all the operations*.
+Given an array of strings `operations` containing a list of operations, return _the **final** value of_ `X` _after performing all the operations_.
 
 **Example 1:**
 
 ```
 Input: operations = ["--X","X++","X++"]
 Output: 1
-Explanation: The operations are performed as follows:
+Explanation: The operations are performed as follows:
 Initially, X = 0.
 --X: X is decremented by 1, X =  0 - 1 = -1.
 X++: X is incremented by 1, X = -1 + 1 =  0.
@@ -48,7 +46,7 @@ X++: X is incremented by 1, X = 2 + 1 = 3.
 ```
 Input: operations = ["X++","++X","--X","X--"]
 Output: 0
-Explanation: The operations are performed as follows:
+Explanation: The operations are performed as follows:
 Initially, X = 0.
 X++: X is incremented by 1, X = 0 + 1 = 1.
 ++X: X is incremented by 1, X = 1 + 1 = 2.
@@ -65,5 +63,14 @@ X--: X is decremented by 1, X = 1 - 1 = 0.
 
 ## Hints
 
-1. There are only two operations to keep track of.
-2. Use a variable to store the value after each operation.
+<details>
+<summary>Hint 1</summary>
+
+There are only two operations to keep track of.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Use a variable to store the value after each operation.
+</details>

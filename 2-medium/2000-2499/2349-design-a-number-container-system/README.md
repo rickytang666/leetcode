@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 57.1%
-
-**Tags:** `Hash Table`, `Design`, `Heap (Priority Queue)`, `Ordered Set`
+**Tags:** `hash-table`, `design`, `heap-priority-queue`, `ordered-set`
 
 ---
 
@@ -38,18 +36,27 @@ nc.change(1, 10); // Your container at index 1 will be filled with number 10.
 nc.change(3, 10); // Your container at index 3 will be filled with number 10.
 nc.change(5, 10); // Your container at index 5 will be filled with number 10.
 nc.find(10); // Number 10 is at the indices 1, 2, 3, and 5. Since the smallest index that is filled with 10 is 1, we return 1.
-nc.change(1, 20); // Your container at index 1 will be filled with number 20. Note that index 1 was filled with 10 and then replaced with 20. 
+nc.change(1, 20); // Your container at index 1 will be filled with number 20. Note that index 1 was filled with 10 and then replaced with 20.
 nc.find(10); // Number 10 is at the indices 2, 3, and 5. The smallest index that is filled with 10 is 2. Therefore, we return 2.
 ```
 
 **Constraints:**
 
-* `1 <= index, number <= 109`
-* At most `105` calls will be made **in total** to `change` and `find`.
+* `1 <= index, number <= 10^9`
+* At most `10^5` calls will be made **in total** to `change` and `find`.
 
 ---
 
 ## Hints
 
-1. Use a hash table to efficiently map each number to all of its indices in the container and to map each index to their current number.
-2. In addition, you can use ordered set to store all of the indices for each number to solve the find method. Do not forget to update the ordered set according to the change method.
+<details>
+<summary>Hint 1</summary>
+
+Use a hash table to efficiently map each number to all of its indices in the container and to map each index to their current number.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+In addition, you can use ordered set to store all of the indices for each number to solve the find method. Do not forget to update the ordered set according to the change method.
+</details>

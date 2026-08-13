@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.6%
-
-**Tags:** `Array`, `Two Pointers`, `Binary Search`, `Sliding Window`, `Sorting`, `Heap (Priority Queue)`
+**Tags:** `array`, `two-pointers`, `binary-search`, `sliding-window`, `sorting`, `heap-priority-queue`
 
 ---
 
@@ -32,6 +30,6 @@ An integer `a` is closer to `x` than an integer `b` if:
 **Constraints:**
 
 * `1 <= k <= arr.length`
-* `1 <= arr.length <= 104`
+* `1 <= arr.length <= 10^4`
 * `arr` is sorted in **ascending** order.
-* `-104 <= arr[i], x <= 104`
+* `-10^4 <= arr[i], x <= 10^4`

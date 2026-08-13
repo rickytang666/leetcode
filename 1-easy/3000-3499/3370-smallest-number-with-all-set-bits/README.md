@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 80.3%
-
-**Tags:** `Math`, `Bit Manipulation`
+**Tags:** `math`, `bit-manipulation`
 
 ---
 
 ## Description
 
-You are given a *positive* number `n`.
+You are given a _positive_ number `n`.
 
 Return the **smallest** number `x` **greater than** or **equal to** `n`, such that the binary representation of `x` contains only set bits
 
@@ -52,4 +50,8 @@ The binary representation of 3 is `"11"`.
 
 ## Hints
 
-1. Find the strictly greater power of 2, and subtract 1 from it.
+<details>
+<summary>Hint 1</summary>
+
+Find the strictly greater power of 2, and subtract 1 from it.
+</details>

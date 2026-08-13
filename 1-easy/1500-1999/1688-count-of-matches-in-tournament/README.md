@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.2%
-
-**Tags:** `Math`, `Simulation`
+**Tags:** `math`, `simulation`
 
 ---
 
@@ -15,14 +13,14 @@ You are given an integer `n`, the number of teams in a tournament that has stran
 * If the current number of teams is **even**, each team gets paired with another team. A total of `n / 2` matches are played, and `n / 2` teams advance to the next round.
 * If the current number of teams is **odd**, one team randomly advances in the tournament, and the rest gets paired. A total of `(n - 1) / 2` matches are played, and `(n - 1) / 2 + 1` teams advance to the next round.
 
-Return *the number of matches played in the tournament until a winner is decided.*
+Return _the number of matches played in the tournament until a winner is decided._
 
 **Example 1:**
 
 ```
 Input: n = 7
 Output: 6
-Explanation: Details of the tournament: 
+Explanation: Details of the tournament:
 - 1st Round: Teams = 7, Matches = 3, and 4 teams advance.
 - 2nd Round: Teams = 4, Matches = 2, and 2 teams advance.
 - 3rd Round: Teams = 2, Matches = 1, and 1 team is declared the winner.
@@ -50,5 +48,14 @@ Total number of matches = 7 + 3 + 2 + 1 = 13.
 
 ## Hints
 
-1. Simulate the tournament as given in the statement.
-2. Be careful when handling odd integers.
+<details>
+<summary>Hint 1</summary>
+
+Simulate the tournament as given in the statement.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Be careful when handling odd integers.
+</details>

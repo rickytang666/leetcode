@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 42.8%
-
-**Tags:** `Linked List`, `Two Pointers`
+**Tags:** `linked-list`, `two-pointers`
 
 ---
 
 ## Description
 
-Given the `head` of a linked list, rotate the list to the right by `k` places.
+Given the `head` of a linked list, rotate the list to the right by `k` places.
 
 **Example 1:**
 
@@ -34,4 +32,4 @@ Output: [2,0,1]
 
 * The number of nodes in the list is in the range `[0, 500]`.
 * `-100 <= Node.val <= 100`
-* `0 <= k <= 2 * 109`
+* `0 <= k <= 2 * 10^9`

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 79.1%
-
-**Tags:** `Array`, `Stack`, `Queue`, `Simulation`
+**Tags:** `array`, `stack`, `queue`, `simulation`
 
 ---
 
@@ -19,13 +17,13 @@ The number of sandwiches in the cafeteria is equal to the number of students. Th
 
 This continues until none of the queue students want to take the top sandwich and are thus unable to eat.
 
-You are given two integer arrays `students` and `sandwiches` where `sandwiches[i]` is the type of the `i​​​​​​th` sandwich in the stack (`i = 0` is the top of the stack) and `students[j]` is the preference of the `j​​​​​​th` student in the initial queue (`j = 0` is the front of the queue). Return *the number of students that are unable to eat.*
+You are given two integer arrays `students` and `sandwiches` where `sandwiches[i]` is the type of the `i^th` sandwich in the stack (`i = 0` is the top of the stack) and `students[j]` is the preference of the `j^th` student in the initial queue (`j = 0` is the front of the queue). Return _the number of students that are unable to eat._
 
 **Example 1:**
 
 ```
 Input: students = [1,1,0,0], sandwiches = [0,1,0,1]
-Output: 0 
+Output: 0
 Explanation:
 - Front student leaves the top sandwich and returns to the end of the line making students = [1,0,0,1].
 - Front student leaves the top sandwich and returns to the end of the line making students = [0,0,1,1].
@@ -56,5 +54,14 @@ Output: 3
 
 ## Hints
 
-1. Simulate the given in the statement
-2. Calculate those who will eat instead of those who will not.
+<details>
+<summary>Hint 1</summary>
+
+Simulate the given in the statement
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Calculate those who will eat instead of those who will not.
+</details>

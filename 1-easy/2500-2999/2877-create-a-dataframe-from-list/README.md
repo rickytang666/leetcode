@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.1%
-
 ---
 
 ## Description
@@ -42,4 +40,8 @@ A DataFrame was created on top of student_data, with two columns named student_i
 
 ## Hints
 
-1. Consider using a built-in function in pandas library and specifying the column names within it.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a built-in function in pandas library and specifying the column names within it.
+</details>

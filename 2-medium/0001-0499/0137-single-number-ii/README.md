@@ -2,17 +2,15 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 67.4%
-
-**Tags:** `Array`, `Bit Manipulation`
+**Tags:** `array`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given an integer array `nums` where every element appears **three times** except for one, which appears **exactly once**. *Find the single element and return it*.
+Given an integer array `nums` where every element appears **three times** except for one, which appears **exactly once**. _Find the single element and return it_.
 
-You must implement a solution with a linear runtime complexity and use only constant extra space.
+You must implement a solution with a linear runtime complexity and use only constant extra space.
 
 **Example 1:**
 
@@ -30,6 +28,6 @@ Output: 99
 
 **Constraints:**
 
-* `1 <= nums.length <= 3 * 104`
-* `-231 <= nums[i] <= 231 - 1`
+* `1 <= nums.length <= 3 * 10^4`
+* `-2^31 <= nums[i] <= 2^31 - 1`
 * Each element in `nums` appears exactly **three times** except for one element which appears **once**.

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.3%
-
-**Tags:** `Array`, `Binary Search`
+**Tags:** `array`, `binary-search`
 
 ---
 
@@ -14,7 +12,7 @@ Given an array of integers `nums` sorted in non-decreasing order, find the start
 
 If `target` is not found in the array, return `[-1, -1]`.
 
-You must write an algorithm with `O(log n)` runtime complexity.
+You must write an algorithm with `O(log n)` runtime complexity.
 
 **Example 1:**
 
@@ -39,7 +37,7 @@ Output: [-1,-1]
 
 **Constraints:**
 
-* `0 <= nums.length <= 105`
-* `-109 <= nums[i] <= 109`
+* `0 <= nums.length <= 10^5`
+* `-10^9 <= nums[i] <= 10^9`
 * `nums` is a non-decreasing array.
-* `-109 <= target <= 109`
+* `-10^9 <= target <= 10^9`

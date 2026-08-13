@@ -2,11 +2,12 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 64.8%
+**Tags:** `depth-first-search`, `breadth-first-search`, `union-find`, `graph`
 
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Union-Find`, `Graph Theory`
+**Premium:** Yes
 
 ---
 
 ## Description
 
+_No description available from the LeetCode API._

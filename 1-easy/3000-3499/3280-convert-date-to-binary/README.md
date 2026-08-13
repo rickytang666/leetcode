@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 88.6%
-
-**Tags:** `Math`, `String`
+**Tags:** `math`, `string`
 
 ---
 
@@ -40,4 +38,4 @@ Return the **binary** representation of `date`.
 
 * `date.length == 10`
 * `date[4] == date[7] == '-'`, and all other `date[i]`'s are digits.
-* The input is generated such that `date` represents a valid Gregorian calendar date between Jan 1st, 1900 and Dec 31st, 2100 (both inclusive).
+* The input is generated such that `date` represents a valid Gregorian calendar date between Jan 1^st, 1900 and Dec 31^st, 2100 (both inclusive).

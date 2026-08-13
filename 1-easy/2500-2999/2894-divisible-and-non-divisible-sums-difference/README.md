@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 91.1%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
@@ -17,7 +15,7 @@ Define two integers as follows:
 * `num1`: The sum of all integers in the range `[1, n]` (both **inclusive**) that are **not divisible** by `m`.
 * `num2`: The sum of all integers in the range `[1, n]` (both **inclusive**) that are **divisible** by `m`.
 
-Return *the integer* `num1 - num2`.
+Return _the integer_ `num1 - num2`.
 
 **Example 1:**
 
@@ -63,6 +61,5 @@ We return 0 - 15 = -15 as the answer.
 <details>
 <summary>Hint 1</summary>
 
-With arithmetic progression we know that the sum of integers in the range <code>[1, n]</code> is <code>n * (n + 1) / 2 </code>.
+With arithmetic progression we know that the sum of integers in the range `[1, n]` is `n * (n + 1) / 2` .
 </details>
-

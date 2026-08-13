@@ -2,19 +2,17 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 67.9%
-
-**Tags:** `Array`, `Dynamic Programming`
+**Tags:** `array`, `dynamic-programming`
 
 ---
 
 ## Description
 
-You are given an integer array `cost` where `cost[i]` is the cost of `ith` step on a staircase. Once you pay the cost, you can either climb one or two steps.
+You are given an integer array `cost` where `cost[i]` is the cost of `i^th` step on a staircase. Once you pay the cost, you can either climb one or two steps.
 
 You can either start from the step with index `0`, or the step with index `1`.
 
-Return *the minimum cost to reach the top of the floor*.
+Return _the minimum cost to reach the top of the floor_.
 
 **Example 1:**
 
@@ -67,4 +65,3 @@ Assuming we have n staircase labeled from 0 to n - 1 and assuming the top is n, 
 
 Now, looping from n - 1 to 0, the dp[i] = cost[i] + min(dp[i + 1], dp[i + 2]). The answer will be the minimum of dp[0] and dp[1]
 </details>
-

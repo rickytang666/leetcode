@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 42.6%
-
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Graph Theory`, `Topological Sort`
+**Tags:** `depth-first-search`, `breadth-first-search`, `graph`, `topological-sort`
 
 ---
 
 ## Description
 
-A tree is an undirected graph in which any two vertices are connected by *exactly* one path. In other words, any connected graph without simple cycles is a tree.
+A tree is an undirected graph in which any two vertices are connected by _exactly_ one path. In other words, any connected graph without simple cycles is a tree.
 
-Given a tree of `n` nodes labelled from `0` to `n - 1`, and an array of `n - 1` `edges` where `edges[i] = [ai, bi]` indicates that there is an undirected edge between the two nodes `ai` and `bi` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`)  are called **minimum height trees** (MHTs).
+Given a tree of `n` nodes labelled from `0` to `n - 1`, and an array of `n - 1` `edges` where `edges[i] = [a_i, b_i]` indicates that there is an undirected edge between the two nodes `a_i` and `b_i` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`) are called **minimum height trees** (MHTs).
 
-Return *a list of all **MHTs'** root labels*. You can return the answer in **any order**.
+Return _a list of all **MHTs'** root labels_. You can return the answer in **any order**.
 
 The **height** of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
 
@@ -39,11 +37,11 @@ Output: [3,4]
 
 **Constraints:**
 
-* `1 <= n <= 2 * 104`
+* `1 <= n <= 2 * 10^4`
 * `edges.length == n - 1`
-* `0 <= ai, bi < n`
-* `ai != bi`
-* All the pairs `(ai, bi)` are distinct.
+* `0 <= a_i, b_i < n`
+* `a_i != b_i`
+* All the pairs `(a_i, b_i)` are distinct.
 * The given input is **guaranteed** to be a tree and there will be **no repeated** edges.
 
 ---
@@ -55,4 +53,3 @@ Output: [3,4]
 
 How many MHTs can a graph have at most?
 </details>
-

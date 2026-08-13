@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 64.1%
-
-**Tags:** `Linked List`, `Two Pointers`, `Stack`, `Recursion`
+**Tags:** `linked-list`, `two-pointers`, `stack`, `recursion`
 
 ---
 
@@ -13,13 +11,13 @@
 You are given the head of a singly linked-list. The list can be represented as:
 
 ```
-L0 → L1 → … → Ln - 1 → Ln
+L_0 → L_1 → … → L_n - 1 → L_n
 ```
 
-*Reorder the list to be on the following form:*
+_Reorder the list to be on the following form:_
 
 ```
-L0 → Ln → L1 → Ln - 1 → L2 → Ln - 2 → …
+L_0 → L_n → L_1 → L_n - 1 → L_2 → L_n - 2 → …
 ```
 
 You may not modify the values in the list's nodes. Only nodes themselves may be changed.
@@ -44,5 +42,5 @@ Output: [1,5,2,4,3]
 
 **Constraints:**
 
-* The number of nodes in the list is in the range `[1, 5 * 104]`.
+* The number of nodes in the list is in the range `[1, 5 * 10^4]`.
 * `1 <= Node.val <= 1000`

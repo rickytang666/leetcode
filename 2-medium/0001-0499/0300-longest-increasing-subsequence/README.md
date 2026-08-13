@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 59.0%
-
-**Tags:** `Array`, `Binary Search`, `Dynamic Programming`
+**Tags:** `array`, `binary-search`, `dynamic-programming`
 
 ---
 
 ## Description
 
-Given an integer array `nums`, return *the length of the longest **strictly increasing*** ***subsequence***.
+Given an integer array `nums`, return _the length of the longest **strictly increasing**_ _**subsequence**_.
 
 **Example 1:**
 
@@ -37,6 +35,6 @@ Output: 1
 **Constraints:**
 
 * `1 <= nums.length <= 2500`
-* `-104 <= nums[i] <= 104`
+* `-10^4 <= nums[i] <= 10^4`
 
-**Follow up:** Can you come up with an algorithm that runs in `O(n log(n))` time complexity?
+**Follow up:** Can you come up with an algorithm that runs in `O(n log(n))` time complexity?

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.9%
-
-**Tags:** `Hash Table`, `String`, `Design`, `Trie`
+**Tags:** `hash-table`, `string`, `design`, `trie`
 
 ---
 
@@ -42,4 +40,4 @@ trie.search("app");     // return True
 
 * `1 <= word.length, prefix.length <= 2000`
 * `word` and `prefix` consist only of lowercase English letters.
-* At most `3 * 104` calls **in total** will be made to `insert`, `search`, and `startsWith`.
+* At most `3 * 10^4` calls **in total** will be made to `insert`, `search`, and `startsWith`.

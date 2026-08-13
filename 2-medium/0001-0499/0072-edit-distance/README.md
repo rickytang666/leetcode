@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 60.3%
-
-**Tags:** `String`, `Dynamic Programming`
+**Tags:** `string`, `dynamic-programming`
 
 ---
 
 ## Description
 
-Given two strings `word1` and `word2`, return *the minimum number of operations required to convert `word1` to `word2`*.
+Given two strings `word1` and `word2`, return _the minimum number of operations required to convert `word1` to `word2`_.
 
 You have the following three operations permitted on a word:
 
@@ -23,7 +21,7 @@ You have the following three operations permitted on a word:
 ```
 Input: word1 = "horse", word2 = "ros"
 Output: 3
-Explanation: 
+Explanation:
 horse -> rorse (replace 'h' with 'r')
 rorse -> rose (remove 'r')
 rose -> ros (remove 'e')
@@ -34,7 +32,7 @@ rose -> ros (remove 'e')
 ```
 Input: word1 = "intention", word2 = "execution"
 Output: 5
-Explanation: 
+Explanation:
 intention -> inention (remove 't')
 inention -> enention (replace 'i' with 'e')
 enention -> exention (replace 'n' with 'x')

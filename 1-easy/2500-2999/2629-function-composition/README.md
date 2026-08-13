@@ -2,19 +2,17 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.8%
-
 ---
 
 ## Description
 
-Given an array of functions `[f1, f2, f3, ..., fn]`, return a new function `fn` that is the **function composition** of the array of functions.
+Given an array of functions `[f1, f_2, f_3, ..., f_n]`, return a new function `fn` that is the **function composition** of the array of functions.
 
-The **function composition** of `[f(x), g(x), h(x)]` is `fn(x) = f(g(h(x)))`.
+The **function composition** of `[f(x), g(x), h(x)]` is `fn(x) = f(g(h(x)))`.
 
-The **function composition** of an empty list of functions is the **identity function** `f(x) = x`.
+The **function composition** of an empty list of functions is the **identity function** `f(x) = x`.
 
-You may assume each function in the array accepts one integer as input and returns one integer as output.
+You may assume each function in the array accepts one integer as input and returns one integer as output.
 
 **Example 1:**
 
@@ -60,5 +58,14 @@ The composition of zero functions is the identity function
 
 ## Hints
 
-1. Start by returning a function that takes in a number and returns a number.
-2. Call each of the functions in the correct order. Each time passing the output of the previous function into the next function.
+<details>
+<summary>Hint 1</summary>
+
+Start by returning a function that takes in a number and returns a number.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Call each of the functions in the correct order. Each time passing the output of the previous function into the next function.
+</details>

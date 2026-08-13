@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 88.8%
-
-**Tags:** `Database`
+**Tags:** `database`
 
 ---
 
@@ -34,7 +32,7 @@ The result format is in the following example.
 **Example 1:**
 
 ```
-Input: 
+Input:
 Products table:
 +-------------+----------+------------+
 | product_id  | low_fats | recyclable |
@@ -45,7 +43,7 @@ Products table:
 | 3           | Y        | Y          |
 | 4           | N        | N          |
 +-------------+----------+------------+
-Output: 
+Output:
 +-------------+
 | product_id  |
 +-------------+

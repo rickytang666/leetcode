@@ -2,26 +2,24 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.1%
-
-**Tags:** `Array`, `Dynamic Programming`, `Sliding Window`
+**Tags:** `array`, `dynamic-programming`, `sliding-window`
 
 ---
 
 ## Description
 
-Given an integer array `arr`, return *the length of a maximum size turbulent subarray of* `arr`.
+Given an integer array `arr`, return _the length of a maximum size turbulent subarray of_ `arr`.
 
 A subarray is **turbulent** if the comparison sign flips between each adjacent pair of elements in the subarray.
 
 More formally, a subarray `[arr[i], arr[i + 1], ..., arr[j]]` of `arr` is said to be turbulent if and only if:
 
 * For `i <= k < j`:
-  + `arr[k] > arr[k + 1]` when `k` is odd, and
-  + `arr[k] < arr[k + 1]` when `k` is even.
+    *   `arr[k] > arr[k + 1]` when `k` is odd, and
+    *   `arr[k] < arr[k + 1]` when `k` is even.
 * Or, for `i <= k < j`:
-  + `arr[k] > arr[k + 1]` when `k` is even, and
-  + `arr[k] < arr[k + 1]` when `k` is odd.
+    *   `arr[k] > arr[k + 1]` when `k` is even, and
+    *   `arr[k] < arr[k + 1]` when `k` is odd.
 
 **Example 1:**
 
@@ -47,5 +45,5 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= arr.length <= 4 * 104`
-* `0 <= arr[i] <= 109`
+* `1 <= arr.length <= 4 * 10^4`
+* `0 <= arr[i] <= 10^9`

@@ -2,19 +2,17 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 54.9%
-
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Graph Theory`, `Topological Sort`
+**Tags:** `depth-first-search`, `breadth-first-search`, `graph`, `topological-sort`
 
 ---
 
 ## Description
 
-There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you **must** take course `bi` first if you want to take course `ai`.
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [a_i, b_i]` indicates that you **must** take course `b_i` first if you want to take course `a_i`.
 
 * For example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.
 
-Return *the ordering of courses you should take to finish all courses*. If there are many valid answers, return **any** of them. If it is impossible to finish all courses, return **an empty array**.
+Return _the ordering of courses you should take to finish all courses_. If there are many valid answers, return **any** of them. If it is impossible to finish all courses, return **an empty array**.
 
 **Example 1:**
 
@@ -45,9 +43,9 @@ Output: [0]
 * `1 <= numCourses <= 2000`
 * `0 <= prerequisites.length <= numCourses * (numCourses - 1)`
 * `prerequisites[i].length == 2`
-* `0 <= ai, bi < numCourses`
-* `ai != bi`
-* All the pairs `[ai, bi]` are **distinct**.
+* `0 <= a_i, b_i < numCourses`
+* `a_i != b_i`
+* All the pairs `[a_i, b_i]` are **distinct**.
 
 ---
 
@@ -62,12 +60,11 @@ This problem is equivalent to finding the topological order in a directed graph.
 <details>
 <summary>Hint 2</summary>
 
-<a href="https://www.youtube.com/watch?v=ozso3xxkVGU" target="_blank">Topological Sort via DFS</a> - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
+[Topological Sort via DFS](https://www.youtube.com/watch?v=ozso3xxkVGU) - A great video tutorial (21 minutes) on Coursera explaining the basic concepts of Topological Sort.
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-Topological sort could also be done via <a href="http://en.wikipedia.org/wiki/Topological_sorting#Algorithms" target="_blank">BFS</a>.
+Topological sort could also be done via [BFS](http://en.wikipedia.org/wiki/Topological_sorting#Algorithms).
 </details>
-

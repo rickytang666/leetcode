@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.9%
-
-**Tags:** `Array`, `Prefix Sum`
+**Tags:** `array`, `prefix-sum`
 
 ---
 
 ## Description
 
-There is a biker going on a road trip. The road trip consists of `n + 1` points at different altitudes. The biker starts his trip on point `0` with altitude equal `0`.
+There is a biker going on a road trip. The road trip consists of `n + 1` points at various altitudes. The biker starts his trip on point `0` with altitude equal `0`.
 
-You are given an integer array `gain` of length `n` where `gain[i]` is the **net gain in altitude** between points `i`​​​​​​ and `i + 1` for all (`0 <= i < n)`. Return *the **highest altitude** of a point.*
+You are given an integer array `gain` of length `n` where `gain[i]` is the **net gain in altitude** between points `i` and `i + 1` for all (`0 <= i < n)`. Return _the **highest altitude** of a point._
 
 **Example 1:**
 
@@ -40,5 +38,14 @@ Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
 
 ## Hints
 
-1. Let's note that the altitude of an element is the sum of gains of all the elements behind it
-2. Getting the altitudes can be done by getting the prefix sum array of the given array
+<details>
+<summary>Hint 1</summary>
+
+Let's note that the altitude of an element is the sum of gains of all the elements behind it
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Getting the altitudes can be done by getting the prefix sum array of the given array
+</details>

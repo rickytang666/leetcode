@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 76.6%
-
-**Tags:** `Divide and Conquer`, `Bit Manipulation`
+**Tags:** `divide-and-conquer`, `bit-manipulation`
 
 ---
 
@@ -44,6 +42,6 @@ The input binary string **1111111111111111111111111111101** has a total of thirt
 
 **Constraints:**
 
-* `1 <= n <= 231 - 1`
+* `1 <= n <= 2^31 - 1`
 
 **Follow up:** If this function is called many times, how would you optimize it?

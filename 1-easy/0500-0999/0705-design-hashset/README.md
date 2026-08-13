@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 67.5%
-
-**Tags:** `Array`, `Hash Table`, `Linked List`, `Design`, `Hash Function`
+**Tags:** `array`, `hash-table`, `linked-list`, `design`, `hash-function`
 
 ---
 
@@ -41,5 +39,5 @@ myHashSet.contains(2); // return False, (already removed)
 
 **Constraints:**
 
-* `0 <= key <= 106`
-* At most `104` calls will be made to `add`, `remove`, and `contains`.
+* `0 <= key <= 10^6`
+* At most `10^4` calls will be made to `add`, `remove`, and `contains`.

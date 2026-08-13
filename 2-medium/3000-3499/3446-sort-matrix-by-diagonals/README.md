@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 84.7%
-
-**Tags:** `Array`, `Sorting`, `Matrix`
+**Tags:** `array`, `sorting`, `matrix`
 
 ---
 
@@ -61,11 +59,20 @@ Diagonals with exactly one element are already in order, so no changes are neede
 
 * `grid.length == grid[i].length == n`
 * `1 <= n <= 10`
-* `-105 <= grid[i][j] <= 105`
+* `-10^5 <= grid[i][j] <= 10^5`
 
 ---
 
 ## Hints
 
-1. Use a data structure to store all values in each diagonal.
-2. Sort and replace them in the matrix.
+<details>
+<summary>Hint 1</summary>
+
+Use a data structure to store all values in each diagonal.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Sort and replace them in the matrix.
+</details>

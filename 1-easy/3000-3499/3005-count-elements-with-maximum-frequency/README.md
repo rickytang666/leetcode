@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 79.9%
-
-**Tags:** `Array`, `Hash Table`, `Counting`
+**Tags:** `array`, `hash-table`, `counting`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given an array `nums` consisting of **positive** integers.
 
-Return *the **total frequencies** of elements in*`nums` *such that those elements all have the **maximum** frequency*.
+Return _the **total frequencies** of elements in_ `nums` _such that those elements all have the **maximum** frequency_.
 
 The **frequency** of an element is the number of occurrences of that element in the array.
 
@@ -43,5 +41,14 @@ So the number of elements in the array with maximum frequency is 5.
 
 ## Hints
 
-1. Find frequencies of all elements of the array.
-2. Find the elements that have the maximum frequencies and count their total occurrences.
+<details>
+<summary>Hint 1</summary>
+
+Find frequencies of all elements of the array.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Find the elements that have the maximum frequencies and count their total occurrences.
+</details>

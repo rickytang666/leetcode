@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 57.8%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 
 ## Description
 
-Given a string `s` consisting of words and spaces, return *the length of the **last** word in the string.*
+Given a string `s` consisting of words and spaces, return _the length of the **last** word in the string._
 
 A **word** is a maximal substring consisting of non-space characters only.
 
@@ -40,6 +38,6 @@ Explanation: The last word is "joyboy" with length 6.
 
 **Constraints:**
 
-* `1 <= s.length <= 104`
+* `1 <= s.length <= 10^4`
 * `s` consists of only English letters and spaces `' '`.
 * There will be at least one word in `s`.

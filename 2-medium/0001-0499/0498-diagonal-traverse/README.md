@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 66.9%
-
-**Tags:** `Array`, `Matrix`, `Simulation`
+**Tags:** `array`, `matrix`, `simulation`
 
 ---
 
 ## Description
 
-Given an `m x n` matrix `mat`, return *an array of all the elements of the array in a diagonal order*.
+Given an `m x n` matrix `mat`, return _an array of all the elements of the array in a diagonal order_.
 
 **Example 1:**
 
@@ -32,6 +30,6 @@ Output: [1,2,3,4]
 
 * `m == mat.length`
 * `n == mat[i].length`
-* `1 <= m, n <= 104`
-* `1 <= m * n <= 104`
-* `-105 <= mat[i][j] <= 105`
+* `1 <= m, n <= 10^4`
+* `1 <= m * n <= 10^4`
+* `-10^5 <= mat[i][j] <= 10^5`

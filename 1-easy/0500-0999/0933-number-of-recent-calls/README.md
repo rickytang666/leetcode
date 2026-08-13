@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.0%
-
-**Tags:** `Design`, `Queue`, `Data Stream`
+**Tags:** `design`, `queue`, `data-stream`
 
 ---
 
@@ -38,6 +36,6 @@ recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002]
 
 **Constraints:**
 
-* `1 <= t <= 109`
+* `1 <= t <= 10^9`
 * Each test case will call `ping` with **strictly increasing** values of `t`.
-* At most `104` calls will be made to `ping`.
+* At most `10^4` calls will be made to `ping`.

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 38.1%
-
-**Tags:** `Hash Table`, `String`, `Sliding Window`
+**Tags:** `hash-table`, `string`, `sliding-window`
 
 ---
 
@@ -39,11 +37,15 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 **Constraints:**
 
-* `0 <= s.length <= 5 * 104`
+* `0 <= s.length <= 10^5`
 * `s` consists of English letters, digits, symbols and spaces.
 
 ---
 
 ## Hints
 
-1. Generate all possible substrings & check for each substring if it's valid and keep updating maxLen accordingly.
+<details>
+<summary>Hint 1</summary>
+
+There are less than 100 unique characters. We can check all substrings with length at most 100 for example. This is a good enough approximation.
+</details>

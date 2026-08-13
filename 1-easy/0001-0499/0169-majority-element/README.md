@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 66.0%
-
-**Tags:** `Array`, `Hash Table`, `Divide and Conquer`, `Sorting`, `Counting`
+**Tags:** `array`, `hash-table`, `divide-and-conquer`, `sorting`, `counting`
 
 ---
 
 ## Description
 
-Given an array `nums` of size `n`, return *the majority element*.
+Given an array `nums` of size `n`, return _the majority element_.
 
 The majority element is the element that appears more than `⌊n / 2⌋` times. You may assume that the majority element always exists in the array.
 
@@ -31,8 +29,8 @@ Output: 2
 **Constraints:**
 
 * `n == nums.length`
-* `1 <= n <= 5 * 104`
-* `-109 <= nums[i] <= 109`
+* `1 <= n <= 5 * 10^4`
+* `-10^9 <= nums[i] <= 10^9`
 * The input is generated such that a majority element will exist in the array.
 
 **Follow-up:** Could you solve the problem in linear time and in `O(1)` space?

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.2%
-
-**Tags:** `Array`, `Greedy`, `Sorting`, `Counting Sort`
+**Tags:** `array`, `greedy`, `sorting`, `counting-sort`
 
 ---
 
 ## Description
 
-Given an integer array `nums` of `2n` integers, group these integers into `n` pairs `(a1, b1), (a2, b2), ..., (an, bn)` such that the sum of `min(ai, bi)` for all `i` is **maximized**. Return *the maximized sum*.
+Given an integer array `nums` of `2n` integers, group these integers into `n` pairs `(a_1, b_1), (a_2, b_2), ..., (a_n, b_n)` such that the sum of `min(a_i, b_i)` for all `i` is **maximized**. Return _the maximized sum_.
 
 **Example 1:**
 
@@ -34,15 +32,34 @@ Explanation: The optimal pairing is (2, 1), (2, 5), (6, 6). min(2, 1) + min(2, 5
 
 **Constraints:**
 
-* `1 <= n <= 104`
+* `1 <= n <= 10^4`
 * `nums.length == 2 * n`
-* `-104 <= nums[i] <= 104`
+* `-10^4 <= nums[i] <= 10^4`
 
 ---
 
 ## Hints
 
-1. Obviously, brute force won't help here. Think of something else, take some example like 1,2,3,4.
-2. How will you make pairs to get the result? There must be some pattern.
-3. Did you observe that- Minimum element gets add into the result in sacrifice of maximum element.
-4. Still won't able to find pairs? Sort the array and try to find the pattern.
+<details>
+<summary>Hint 1</summary>
+
+Obviously, brute force won't help here. Think of something else, take some example like 1,2,3,4.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+How will you make pairs to get the result? There must be some pattern.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Did you observe that- Minimum element gets add into the result in sacrifice of maximum element.
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+Still won't able to find pairs? Sort the array and try to find the pattern.
+</details>

@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 85.5%
-
 ---
 
 ## Description
@@ -51,7 +49,7 @@ Output:
 | 4          | Georgia    | Thompson  | 18           |
 | 5          | Thomas     | Moore     | 10           |
 +------------+------------+-----------+--------------+
-Explanation: 
+Explanation:
 The column names are changed accordingly.
 ```
 
@@ -59,4 +57,8 @@ The column names are changed accordingly.
 
 ## Hints
 
-1. Consider using a build-in function in pandas library with a dictionary to rename the columns as specified.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a build-in function in pandas library with a dictionary to rename the columns as specified.
+</details>

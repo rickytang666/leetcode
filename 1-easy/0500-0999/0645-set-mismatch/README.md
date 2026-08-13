@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 44.8%
-
-**Tags:** `Array`, `Hash Table`, `Bit Manipulation`, `Sorting`
+**Tags:** `array`, `hash-table`, `bit-manipulation`, `sorting`
 
 ---
 
@@ -14,7 +12,7 @@ You have a set of integers `s`, which originally contains all the numbers from `
 
 You are given an integer array `nums` representing the data status of this set after the error.
 
-Find the number that occurs twice and the number that is missing and return *them in the form of an array*.
+Find the number that occurs twice and the number that is missing and return _them in the form of an array_.
 
 **Example 1:**
 
@@ -32,5 +30,5 @@ Output: [1,2]
 
 **Constraints:**
 
-* `2 <= nums.length <= 104`
-* `1 <= nums[i] <= 104`
+* `2 <= nums.length <= 10^4`
+* `1 <= nums[i] <= 10^4`

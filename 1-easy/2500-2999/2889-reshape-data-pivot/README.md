@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.3%
-
 ---
 
 ## Description
@@ -58,4 +56,8 @@ The table is pivoted, each column represents a city, and each row represents a s
 
 ## Hints
 
-1. Consider using a built-in function in pandas library to transform the data
+<details>
+<summary>Hint 1</summary>
+
+Consider using a built-in function in pandas library to transform the data
+</details>

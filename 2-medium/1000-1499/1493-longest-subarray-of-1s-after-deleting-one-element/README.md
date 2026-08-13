@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.9%
-
-**Tags:** `Array`, `Dynamic Programming`, `Sliding Window`
+**Tags:** `array`, `dynamic-programming`, `sliding-window`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given a binary array `nums`, you should delete one element from it.
 
-Return *the size of the longest non-empty subarray containing only* `1`*'s in the resulting array*. Return `0` if there is no such subarray.
+Return _the size of the longest non-empty subarray containing only_ `1`_'s in the resulting array_. Return `0` if there is no such subarray.
 
 **Example 1:**
 
@@ -40,11 +38,15 @@ Explanation: You must delete one element.
 
 **Constraints:**
 
-* `1 <= nums.length <= 105`
+* `1 <= nums.length <= 10^5`
 * `nums[i]` is either `0` or `1`.
 
 ---
 
 ## Hints
 
-1. Maintain a sliding window where there is at most one zero in it.
+<details>
+<summary>Hint 1</summary>
+
+Maintain a sliding window where there is at most one zero in it.
+</details>

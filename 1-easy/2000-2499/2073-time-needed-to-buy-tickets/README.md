@@ -2,21 +2,19 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 71.7%
-
-**Tags:** `Array`, `Queue`, `Simulation`
+**Tags:** `array`, `queue`, `simulation`
 
 ---
 
 ## Description
 
-There are `n` people in a line queuing to buy tickets, where the `0th` person is at the **front** of the line and the `(n - 1)th` person is at the **back** of the line.
+There are `n` people in a line queuing to buy tickets, where the `0^th` person is at the **front** of the line and the `(n - 1)^th` person is at the **back** of the line.
 
-You are given a **0-indexed** integer array `tickets` of length `n` where the number of tickets that the `ith` person would like to buy is `tickets[i]`.
+You are given a **0-indexed** integer array `tickets` of length `n` where the number of tickets that the `i^th` person would like to buy is `tickets[i]`.
 
 Each person takes **exactly 1 second** to buy a ticket. A person can only buy **1 ticket at a time** and has to go back to **the end** of the line (which happens **instantaneously**) in order to buy more tickets. If a person does not have any tickets left to buy, the person will **leave** the line.
 
-Return the **time taken** for the person **initially** at position **k**(0-indexed) to finish buying tickets.
+Return the **time taken** for the person **initially** at position **k** (0-indexed) to finish buying tickets.
 
 **Example 1:**
 
@@ -58,5 +56,14 @@ Return the **time taken** for the person **initially** at position **k**(0-index
 
 ## Hints
 
-1. Loop through the line of people and decrement the number of tickets for each to buy one at a time as if simulating the line moving forward. Keep track of how many tickets have been sold up until person k has no more tickets to buy.
-2. Remember that those who have no more tickets to buy will leave the line.
+<details>
+<summary>Hint 1</summary>
+
+Loop through the line of people and decrement the number of tickets for each to buy one at a time as if simulating the line moving forward. Keep track of how many tickets have been sold up until person k has no more tickets to buy.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Remember that those who have no more tickets to buy will leave the line.
+</details>

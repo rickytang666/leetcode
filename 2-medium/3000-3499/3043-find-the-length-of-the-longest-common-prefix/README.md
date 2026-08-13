@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.9%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Trie`
+**Tags:** `array`, `hash-table`, `string`, `trie`
 
 ---
 
@@ -18,7 +16,7 @@ A **common prefix** of two integers `a` and `b` is an integer `c`, such that `c`
 
 You need to find the length of the **longest common prefix** between all pairs of integers `(x, y)` such that `x` belongs to `arr1` and `y` belongs to `arr2`.
 
-Return *the length of the **longest** common prefix among all pairs*. *If no common prefix exists among them*, *return* `0`.
+Return _the length of the **longest** common prefix among all pairs_. _If no common prefix exists among them_, _return_ `0`.
 
 **Example 1:**
 
@@ -43,8 +41,8 @@ Note that common prefixes between elements of the same array do not count.
 
 **Constraints:**
 
-* `1 <= arr1.length, arr2.length <= 5 * 104`
-* `1 <= arr1[i], arr2[i] <= 108`
+* `1 <= arr1.length, arr2.length <= 5 * 10^4`
+* `1 <= arr1[i], arr2[i] <= 10^8`
 
 ---
 
@@ -53,12 +51,11 @@ Note that common prefixes between elements of the same array do not count.
 <details>
 <summary>Hint 1</summary>
 
-Put all the possible prefixes of each element in <code>arr1</code> into a HashSet.
+Put all the possible prefixes of each element in `arr1` into a HashSet.
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-For all the possible prefixes of each element in <code>arr2</code>, check if it exists in the HashSet.
+For all the possible prefixes of each element in `arr2`, check if it exists in the HashSet.
 </details>
-

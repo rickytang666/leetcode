@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 61.3%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Breadth-First Search`
+**Tags:** `array`, `hash-table`, `string`, `breadth-first-search`
 
 ---
 
@@ -23,7 +21,7 @@ Given a `target` representing the value of the wheels that will unlock the lock,
 ```
 Input: deadends = ["0201","0101","0102","1212","2002"], target = "0202"
 Output: 6
-Explanation: 
+Explanation:
 A sequence of valid moves would be "0000" -> "1000" -> "1100" -> "1200" -> "1201" -> "1202" -> "0202".
 Note that a sequence like "0000" -> "0001" -> "0002" -> "0102" -> "0202" would be invalid,
 because the wheels of the lock become stuck after the display becomes the dead end "0102".
@@ -60,6 +58,5 @@ Explanation: We cannot reach the target without getting stuck.
 <details>
 <summary>Hint 1</summary>
 
-We can think of this problem as a shortest path problem on a graph: there are `10000` nodes (strings `'0000'` to `'9999'`), and there is an edge between two nodes if they differ in one digit, that digit differs by 1 (wrapping around, so `'0'` and `'9'` differ by 1), and if *both* nodes are not in `deadends`.
+We can think of this problem as a shortest path problem on a graph: there are \`10000\` nodes (strings \`'0000'\` to \`'9999'\`), and there is an edge between two nodes if they differ in one digit, that digit differs by 1 (wrapping around, so \`'0'\` and \`'9'\` differ by 1), and if \*both\* nodes are not in \`deadends\`.
 </details>
-

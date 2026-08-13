@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 65.4%
-
-**Tags:** `Hash Table`, `String`, `Counting`
+**Tags:** `hash-table`, `string`, `counting`
 
 ---
 
 ## Description
 
-Given two strings `ransomNote` and `magazine`, return `true` *if* `ransomNote` *can be constructed by using the letters from* `magazine` *and* `false` *otherwise*.
+Given two strings `ransomNote` and `magazine`, return `true` _if_ `ransomNote` _can be constructed by using the letters from_ `magazine` _and_ `false` _otherwise_.
 
 Each letter in `magazine` can only be used once in `ransomNote`.
 
@@ -37,5 +35,5 @@ Output: true
 
 **Constraints:**
 
-* `1 <= ransomNote.length, magazine.length <= 105`
+* `1 <= ransomNote.length, magazine.length <= 10^5`
 * `ransomNote` and `magazine` consist of lowercase English letters.

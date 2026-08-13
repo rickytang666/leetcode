@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 68.4%
-
-**Tags:** `String`, `Stack`
+**Tags:** `string`, `stack`
 
 ---
 
@@ -19,7 +17,7 @@ A good string is a string which doesn't have **two adjacent characters** `s[i]` 
 
 To make the string good, you can choose **two adjacent** characters that make the string bad and remove them. You can keep doing this until the string becomes good.
 
-Return *the string* after making it good. The answer is guaranteed to be unique under the given constraints.
+Return _the string_ after making it good. The answer is guaranteed to be unique under the given constraints.
 
 **Notice** that an empty string is also good.
 
@@ -57,5 +55,14 @@ Output: "s"
 
 ## Hints
 
-1. The order you choose 2 characters to remove doesn't matter.
-2. Keep applying the mentioned step to s till the length of the string is not changed.
+<details>
+<summary>Hint 1</summary>
+
+The order you choose 2 characters to remove doesn't matter.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Keep applying the mentioned step to s till the length of the string is not changed.
+</details>

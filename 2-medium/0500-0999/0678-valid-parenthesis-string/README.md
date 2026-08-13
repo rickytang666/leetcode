@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 39.8%
-
-**Tags:** `String`, `Dynamic Programming`, `Stack`, `Greedy`
+**Tags:** `string`, `dynamic-programming`, `stack`, `greedy`
 
 ---
 
 ## Description
 
-Given a string `s` containing only three types of characters: `'('`, `')'` and `'*'`, return `true` *if* `s` *is **valid***.
+Given a string `s` containing only three types of characters: `'('`, `')'` and `'*'`, return `true` _if_ `s` _is **valid**_.
 
 The following rules define a **valid** string:
 
@@ -52,7 +50,7 @@ Output: true
 <details>
 <summary>Hint 1</summary>
 
-Use backtracking to explore all possible combinations of treating '*' as either '(', ')', or an empty string. If any combination leads to a valid string, return true.
+Use backtracking to explore all possible combinations of treating '\*' as either '(', ')', or an empty string. If any combination leads to a valid string, return true.
 </details>
 
 <details>
@@ -72,4 +70,3 @@ Keep track of the count of open parentheses encountered so far. If you encounter
 
 How about using 2 stacks instead of 1? Think about it.
 </details>
-

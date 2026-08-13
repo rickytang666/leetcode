@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.4%
-
 ---
 
 ## Description
 
-Given a positive integer `millis`, write an asynchronous function that sleeps for `millis` milliseconds. It can resolve any value.
+Given a positive integer `millis`, write an asynchronous function that sleeps for `millis` milliseconds. It can resolve any value.
 
-**Note** that *minor* deviation from `millis` in the actual sleep duration is acceptable.
+**Note** that _minor_ deviation from `millis` in the actual sleep duration is acceptable.
 
 **Example 1:**
 
@@ -40,6 +38,20 @@ Explanation: It should return a promise that resolves after 200ms.
 
 ## Hints
 
-1. In Javascript, you can execute code after some delay with the setTimeout(fn, sleepTime) function.
-2. An async function is defined as function which returns a Promise.
-3. To create a Promise, you can code new Promise((resolve, reject) => {}). When you want the function to return a value, code resolve(value) inside the callback.
+<details>
+<summary>Hint 1</summary>
+
+In Javascript, you can execute code after some delay with the setTimeout(fn, sleepTime) function.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+An async function is defined as function which returns a Promise.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+To create a Promise, you can code new Promise((resolve, reject) => {}). When you want the function to return a value, code resolve(value) inside the callback.
+</details>

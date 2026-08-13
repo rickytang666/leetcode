@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 92.6%
-
-**Tags:** `Array`, `Math`
+**Tags:** `array`, `math`
 
 ---
 
@@ -58,4 +56,8 @@ Return the **minimum** number of operations required to make the sum of the arra
 
 ## Hints
 
-1. <code> sum(nums) % k </code>
+<details>
+<summary>Hint 1</summary>
+
+`sum(nums) % k`
+</details>

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 59.5%
-
-**Tags:** `Array`, `Hash Table`, `Two Pointers`, `Binary Search`, `Sorting`
+**Tags:** `array`, `hash-table`, `two-pointers`, `binary-search`, `sorting`
 
 ---
 
 ## Description
 
-Given two integer arrays `nums1` and `nums2`, return *an array of their intersection*. Each element in the result must appear as many times as it shows in both arrays and you may return the result in **any order**.
+Given two integer arrays `nums1` and `nums2`, return _an array of their intersection_. Each element in the result must appear as many times as it shows in both arrays and you may return the result in **any order**.
 
 **Example 1:**
 

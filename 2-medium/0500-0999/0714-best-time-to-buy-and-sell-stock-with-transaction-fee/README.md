@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 72.1%
-
-**Tags:** `Array`, `Dynamic Programming`, `Greedy`
+**Tags:** `array`, `dynamic-programming`, `greedy`
 
 ---
 
 ## Description
 
-You are given an array `prices` where `prices[i]` is the price of a given stock on the `ith` day, and an integer `fee` representing a transaction fee.
+You are given an array `prices` where `prices[i]` is the price of a given stock on the `i^th` day, and an integer `fee` representing a transaction fee.
 
 Find the maximum profit you can achieve. You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.
 
@@ -41,9 +39,9 @@ Output: 6
 
 **Constraints:**
 
-* `1 <= prices.length <= 5 * 104`
-* `1 <= prices[i] < 5 * 104`
-* `0 <= fee < 5 * 104`
+* `1 <= prices.length <= 5 * 10^4`
+* `1 <= prices[i] < 5 * 10^4`
+* `0 <= fee < 5 * 10^4`
 
 ---
 
@@ -52,6 +50,5 @@ Output: 6
 <details>
 <summary>Hint 1</summary>
 
-Consider the first K stock prices.  At the end, the only legal states are that you don't own a share of stock, or that you do.  Calculate the most profit you could have under each of these two cases.
+Consider the first K stock prices. At the end, the only legal states are that you don't own a share of stock, or that you do. Calculate the most profit you could have under each of these two cases.
 </details>
-

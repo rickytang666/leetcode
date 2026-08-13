@@ -2,21 +2,19 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 81.6%
-
-**Tags:** `Linked List`, `Two Pointers`, `Stack`
+**Tags:** `linked-list`, `two-pointers`, `stack`
 
 ---
 
 ## Description
 
-In a linked list of size `n`, where `n` is **even**, the `ith` node (**0-indexed**) of the linked list is known as the **twin** of the `(n-1-i)th` node, if `0 <= i <= (n / 2) - 1`.
+In a linked list of size `n`, where `n` is **even**, the `i^th` node (**0-indexed**) of the linked list is known as the **twin** of the `(n-1-i)^th` node, if `0 <= i <= (n / 2) - 1`.
 
 * For example, if `n = 4`, then node `0` is the twin of node `3`, and node `1` is the twin of node `2`. These are the only nodes with twins for `n = 4`.
 
 The **twin sum** is defined as the sum of a node and its twin.
 
-Given the `head` of a linked list with even length, return *the **maximum twin sum** of the linked list*.
+Given the `head` of a linked list with even length, return _the **maximum twin sum** of the linked list_.
 
 **Example 1:**
 
@@ -58,14 +56,33 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 
 **Constraints:**
 
-* The number of nodes in the list is an **even** integer in the range `[2, 105]`.
-* `1 <= Node.val <= 105`
+* The number of nodes in the list is an **even** integer in the range `[2, 10^5]`.
+* `1 <= Node.val <= 10^5`
 
 ---
 
 ## Hints
 
-1. How can "reversing" a part of the linked list help find the answer?
-2. We know that the nodes of the first half are twins of nodes in the second half, so try dividing the linked list in half and reverse the second half.
-3. How can two pointers be used to find every twin sum optimally?
-4. Use two different pointers pointing to the first nodes of the two halves of the linked list. The second pointer will point to the first node of the reversed half, which is the (n-1-i)th node in the original linked list. By moving both pointers forward at the same time, we find all twin sums.
+<details>
+<summary>Hint 1</summary>
+
+How can "reversing" a part of the linked list help find the answer?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+We know that the nodes of the first half are twins of nodes in the second half, so try dividing the linked list in half and reverse the second half.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+How can two pointers be used to find every twin sum optimally?
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+Use two different pointers pointing to the first nodes of the two halves of the linked list. The second pointer will point to the first node of the reversed half, which is the (n-1-i)th node in the original linked list. By moving both pointers forward at the same time, we find all twin sums.
+</details>

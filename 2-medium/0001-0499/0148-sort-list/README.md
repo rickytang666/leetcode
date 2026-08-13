@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 64.9%
-
-**Tags:** `Linked List`, `Two Pointers`, `Divide and Conquer`, `Sorting`, `Merge Sort`
+**Tags:** `linked-list`, `two-pointers`, `divide-and-conquer`, `sorting`, `merge-sort`
 
 ---
 
 ## Description
 
-Given the `head` of a linked list, return *the list after sorting it in **ascending order***.
+Given the `head` of a linked list, return _the list after sorting it in **ascending order**_.
 
 **Example 1:**
 
@@ -39,7 +37,7 @@ Output: []
 
 **Constraints:**
 
-* The number of nodes in the list is in the range `[0, 5 * 104]`.
-* `-105 <= Node.val <= 105`
+* The number of nodes in the list is in the range `[0, 5 * 10^4]`.
+* `-10^5 <= Node.val <= 10^5`
 
 **Follow up:** Can you sort the linked list in `O(n logn)` time and `O(1)` memory (i.e. constant space)?

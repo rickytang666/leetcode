@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 77.7%
-
-**Tags:** `Array`, `String`, `Trie`, `Rolling Hash`, `String Matching`, `Hash Function`
+**Tags:** `array`, `string`, `trie`, `rolling-hash`, `string-matching`, `hash-function`
 
 ---
 
@@ -18,7 +16,7 @@ Let's define a **boolean** function `isPrefixAndSuffix` that takes two strings, 
 
 For example, `isPrefixAndSuffix("aba", "ababa")` is `true` because `"aba"` is a prefix of `"ababa"` and also a suffix, but `isPrefixAndSuffix("abc", "abcd")` is `false`.
 
-Return *an integer denoting the **number** of index pairs* `(i, j)` *such that* `i < j`*, and* `isPrefixAndSuffix(words[i], words[j])` *is* `true`*.*
+Return _an integer denoting the **number** of index pairs_ `(i, j)` _such that_ `i < j`_, and_ `isPrefixAndSuffix(words[i], words[j])` _is_ `true`_._
 
 **Example 1:**
 
@@ -66,12 +64,11 @@ Therefore, the answer is 0.
 <details>
 <summary>Hint 1</summary>
 
-Iterate through all index pairs <code>(i, j)</code>, such that <code>i < j</code>, and check <code>isPrefixAndSuffix(words[i], words[j])</code>.
+Iterate through all index pairs `(i, j)`, such that `i < j`, and check `isPrefixAndSuffix(words[i], words[j])`.
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-The answer is the total number of pairs where <code>isPrefixAndSuffix(words[i], words[j]) == true</code>.
+The answer is the total number of pairs where `isPrefixAndSuffix(words[i], words[j]) == true`.
 </details>
-

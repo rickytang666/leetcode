@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.0%
-
-**Tags:** `Array`, `Stack`, `Monotonic Stack`
+**Tags:** `array`, `stack`, `monotonic-stack`
 
 ---
 
 ## Description
 
-Given an array of integers `temperatures` represents the daily temperatures, return *an array* `answer` *such that* `answer[i]` *is the number of days you have to wait after the* `ith` *day to get a warmer temperature*. If there is no future day for which this is possible, keep `answer[i] == 0` instead.
+Given an array of integers `temperatures` represents the daily temperatures, return _an array_ `answer` _such that_ `answer[i]` _is the number of days you have to wait after the_ `i^th` _day to get a warmer temperature_. If there is no future day for which this is possible, keep `answer[i] == 0` instead.
 
 **Example 1:**
 
@@ -35,11 +33,15 @@ Output: [1,1,0]
 
 **Constraints:**
 
-* `1 <= temperatures.length <= 105`
-* `30 <= temperatures[i] <= 100`
+* `1 <= temperatures.length <= 10^5`
+* `30 <= temperatures[i] <= 100`
 
 ---
 
 ## Hints
 
-1. If the temperature is say, 70 today, then in the future a warmer temperature must be either 71, 72, 73, ..., 99, or 100.  We could remember when all of them occur next.
+<details>
+<summary>Hint 1</summary>
+
+If the temperature is say, 70 today, then in the future a warmer temperature must be either 71, 72, 73, ..., 99, or 100. We could remember when all of them occur next.
+</details>

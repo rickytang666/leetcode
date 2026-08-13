@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 54.3%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
 ## Description
 
-Given an integer array `nums` **(0-indexed)** and two integers `target` and `start`, find an index `i` such that `nums[i] == target` and `abs(i - start)` is **minimized**. Note that `abs(x)` is the absolute value of `x`.
+Given an integer array `nums` **(0-indexed)** and two integers `target` and `start`, find an index `i` such that `nums[i] == target` and `abs(i - start)` is **minimized**. Note that `abs(x)` is the absolute value of `x`.
 
 Return `abs(i - start)`.
 
@@ -43,7 +41,7 @@ Explanation: Every value of nums is 1, but nums[0] minimizes abs(i - start), whi
 **Constraints:**
 
 * `1 <= nums.length <= 1000`
-* `1 <= nums[i] <= 104`
+* `1 <= nums[i] <= 10^4`
 * `0 <= start < nums.length`
 * `target` is in `nums`.
 
@@ -51,5 +49,14 @@ Explanation: Every value of nums is 1, but nums[0] minimizes abs(i - start), whi
 
 ## Hints
 
-1. Loop in both directions until you find the target element.
-2. For each index i such that nums[i] == target calculate abs(i - start).
+<details>
+<summary>Hint 1</summary>
+
+Loop in both directions until you find the target element.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+For each index i such that nums[i] == target calculate abs(i - start).
+</details>

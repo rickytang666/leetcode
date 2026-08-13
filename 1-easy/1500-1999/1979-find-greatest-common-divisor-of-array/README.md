@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 79.5%
-
-**Tags:** `Array`, `Math`, `Number Theory`
+**Tags:** `array`, `math`, `number-theory`
 
 ---
 
 ## Description
 
-Given an integer array `nums`, return*the **greatest common divisor** of the smallest number and largest number in* `nums`.
+Given an integer array `nums`, return _the **greatest common divisor** of the smallest number and largest number in_ `nums`.
 
 The **greatest common divisor** of two numbers is the largest positive integer that evenly divides both numbers.
 
@@ -56,5 +54,14 @@ The greatest common divisor of 3 and 3 is 3.
 
 ## Hints
 
-1. Find the minimum and maximum in one iteration. Let them be mn and mx.
-2. Try all the numbers in the range [1, mn] and check the largest number which divides both of them.
+<details>
+<summary>Hint 1</summary>
+
+Find the minimum and maximum in one iteration. Let them be mn and mx.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Try all the numbers in the range [1, mn] and check the largest number which divides both of them.
+</details>

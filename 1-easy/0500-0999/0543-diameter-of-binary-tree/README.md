@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 64.7%
-
-**Tags:** `Tree`, `Depth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, return *the length of the **diameter** of the tree*.
+Given the `root` of a binary tree, return _the length of the **diameter** of the tree_.
 
 The **diameter** of a binary tree is the **length** of the longest path between any two nodes in a tree. This path may or may not pass through the `root`.
 
@@ -35,5 +33,5 @@ Output: 1
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 104]`.
+* The number of nodes in the tree is in the range `[1, 10^4]`.
 * `-100 <= Node.val <= 100`

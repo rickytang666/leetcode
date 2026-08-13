@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 41.5%
-
-**Tags:** `Array`, `Sorting`, `Counting Sort`
+**Tags:** `array`, `sorting`, `counting-sort`
 
 ---
 
 ## Description
 
-Given an array of integers `citations` where `citations[i]` is the number of citations a researcher received for their `ith` paper, return *the researcher's h-index*.
+Given an array of integers `citations` where `citations[i]` is the number of citations a researcher received for their `i^th` paper, return _the researcher's h-index_.
 
 According to the [definition of h-index on Wikipedia](https://en.wikipedia.org/wiki/H-index): The h-index is defined as the maximum value of `h` such that the given researcher has published at least `h` papers that have each been cited at least `h` times.
 
@@ -57,4 +55,3 @@ What are the possible values of h-index?
 
 A faster approach is to use extra space.
 </details>
-

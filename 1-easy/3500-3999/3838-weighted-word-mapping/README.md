@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.6%
-
-**Tags:** `Array`, `String`, `Simulation`
+**Tags:** `array`, `string`, `simulation`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given an array of strings `words`, where each string represents a word containing lowercase English letters.
 
-You are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.
+You are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `i^th` lowercase English letter.
 
 The **weight** of a word is defined as the **sum** of the weights of its characters.
 
@@ -52,7 +50,7 @@ Thus, the string formed by concatenating the mapped characters is `"yyy"`.
 
 **Output:** "g"
 
-**Explanation:​​​​​​​**
+**Explanation:**
 
 The weight of `"abcd"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.
 
@@ -73,19 +71,19 @@ Thus, the string formed by concatenating the mapped characters is `"g"`.
 <details>
 <summary>Hint 1</summary>
 
-For each word, sum character weights using <code>weights[c - 'a']</code>
+For each word, sum character weights using `weights[c - 'a']`
 </details>
 
 <details>
 <summary>Hint 2</summary>
 
-Take the sum modulo <code>26</code>
+Take the sum modulo `26`
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-Map the value to a character using reverse order: <code>char = 'z' - value</code>
+Map the value to a character using reverse order: `char = 'z' - value`
 </details>
 
 <details>
@@ -93,4 +91,3 @@ Map the value to a character using reverse order: <code>char = 'z' - value</code
 
 Append all mapped characters in order to form the result string
 </details>
-

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 75.0%
-
-**Tags:** `Math`, `String`, `Simulation`
+**Tags:** `math`, `string`, `simulation`
 
 ---
 
 ## Description
 
-Given an integer `n`, return *a string array* `answer` *(**1-indexed**) where*:
+Given an integer `n`, return _a string array_ `answer` _(**1-indexed**) where_:
 
 * `answer[i] == "FizzBuzz"` if `i` is divisible by `3` and `5`.
 * `answer[i] == "Fizz"` if `i` is divisible by `3`.
@@ -40,4 +38,4 @@ Output: ["1","2","Fizz","4","Buzz","Fizz","7","8","Fizz","Buzz","11","Fizz","13"
 
 **Constraints:**
 
-* `1 <= n <= 104`
+* `1 <= n <= 10^4`

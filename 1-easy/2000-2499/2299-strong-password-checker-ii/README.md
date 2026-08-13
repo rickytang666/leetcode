@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 55.2%
-
-**Tags:** `String`
+**Tags:** `string`
 
 ---
 
@@ -19,7 +17,7 @@ A password is said to be **strong** if it satisfies all the following criteria:
 * It contains at least **one special character**. The special characters are the characters in the following string: `"!@#$%^&*()-+"`.
 * It does **not** contain `2` of the same character in adjacent positions (i.e., `"aab"` violates this condition, but `"aba"` does not).
 
-Given a string `password`, return `true` *if it is a **strong** password*. Otherwise, return `false`.
+Given a string `password`, return `true` _if it is a **strong** password_. Otherwise, return `false`.
 
 **Example 1:**
 
@@ -54,5 +52,14 @@ Explanation: The password does not meet the length requirement. Therefore, we re
 
 ## Hints
 
-1. You can use a boolean flag to define certain types of characters seen in the string.
-2. In the end, check if all boolean flags have ended up True, and do not forget to check the "adjacent" and "length" criteria.
+<details>
+<summary>Hint 1</summary>
+
+You can use a boolean flag to define certain types of characters seen in the string.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+In the end, check if all boolean flags have ended up True, and do not forget to check the "adjacent" and "length" criteria.
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 56.7%
-
-**Tags:** `Binary Search`, `Interactive`
+**Tags:** `binary-search`, `interactive`
 
 ---
 
@@ -22,7 +20,7 @@ You call a pre-defined API `int guess(int num)`, which returns three possible re
 * `1`: Your guess is lower than the number I picked (i.e. `num < pick`).
 * `0`: your guess is equal to the number I picked (i.e. `num == pick`).
 
-Return *the number that I picked*.
+Return _the number that I picked_.
 
 **Example 1:**
 
@@ -47,5 +45,5 @@ Output: 1
 
 **Constraints:**
 
-* `1 <= n <= 231 - 1`
+* `1 <= n <= 2^31 - 1`
 * `1 <= pick <= n`

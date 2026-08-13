@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 85.5%
-
 ---
 
 ## Description
@@ -19,7 +17,7 @@ Please solve it without using the built-in `Array.reduce` method.
 **Example 1:**
 
 ```
-Input: 
+Input:
 nums = [1,2,3,4]
 fn = function sum(accum, curr) { return accum + curr; }
 init = 0
@@ -36,7 +34,7 @@ The final answer is 10.
 **Example 2:**
 
 ```
-Input: 
+Input:
 nums = [1,2,3,4]
 fn = function sum(accum, curr) { return accum + curr * curr; }
 init = 100
@@ -53,7 +51,7 @@ The final answer is 130.
 **Example 3:**
 
 ```
-Input: 
+Input:
 nums = []
 fn = function sum(accum, curr) { return 0; }
 init = 25
@@ -71,5 +69,14 @@ Explanation: For empty arrays, the answer is always init.
 
 ## Hints
 
-1. Declare a variable "res" and set it it equal to the initial value.
-2. Loop over each value in the array and set "res" = fn(res, arr[i]).
+<details>
+<summary>Hint 1</summary>
+
+Declare a variable "res" and set it it equal to the initial value.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Loop over each value in the array and set "res" = fn(res, arr[i]).
+</details>

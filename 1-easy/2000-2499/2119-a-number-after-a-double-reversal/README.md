@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.6%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
@@ -14,7 +12,7 @@
 
 * For example, reversing `2021` gives `1202`. Reversing `12300` gives `321` as the **leading zeros are not retained**.
 
-Given an integer `num`, **reverse** `num` to get `reversed1`, **then reverse** `reversed1` to get `reversed2`. Return `true` *if* `reversed2` *equals* `num`. Otherwise return `false`.
+Given an integer `num`, **reverse** `num` to get `reversed1`, **then reverse** `reversed1` to get `reversed2`. Return `true` _if_ `reversed2` _equals_ `num`. Otherwise return `false`.
 
 **Example 1:**
 
@@ -42,10 +40,14 @@ Explanation: Reverse num to get 0, then reverse 0 to get 0, which equals num.
 
 **Constraints:**
 
-* `0 <= num <= 106`
+* `0 <= num <= 10^6`
 
 ---
 
 ## Hints
 
-1. Other than the number 0 itself, any number that ends with 0 would lose some digits permanently when reversed.
+<details>
+<summary>Hint 1</summary>
+
+Other than the number 0 itself, any number that ends with 0 would lose some digits permanently when reversed.
+</details>

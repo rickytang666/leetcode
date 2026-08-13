@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.2%
-
-**Tags:** `Array`, `Greedy`, `Sorting`
+**Tags:** `array`, `greedy`, `sorting`
 
 ---
 
@@ -12,9 +10,9 @@
 
 You are given an array `apple` of size `n` and an array `capacity` of size `m`.
 
-There are `n` packs where the `ith` pack contains `apple[i]` apples. There are `m` boxes as well, and the `ith` box has a capacity of `capacity[i]` apples.
+There are `n` packs where the `i^th` pack contains `apple[i]` apples. There are `m` boxes as well, and the `i^th` box has a capacity of `capacity[i]` apples.
 
-Return *the **minimum** number of boxes you need to select to redistribute these* `n` *packs of apples into boxes*.
+Return _the **minimum** number of boxes you need to select to redistribute these_ `n` _packs of apples into boxes_.
 
 **Note** that, apples from the same pack can be distributed into different boxes.
 
@@ -46,5 +44,14 @@ Explanation: We will need to use all the boxes.
 
 ## Hints
 
-1. Sort array <code>capacity</code> in non-decreasing order.
-2. Greedily select boxes with the largest capacities to redistribute apples optimally.
+<details>
+<summary>Hint 1</summary>
+
+Sort array `capacity` in non-decreasing order.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Greedily select boxes with the largest capacities to redistribute apples optimally.
+</details>

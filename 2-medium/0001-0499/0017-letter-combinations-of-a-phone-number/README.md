@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 65.3%
-
-**Tags:** `Hash Table`, `String`, `Backtracking`
+**Tags:** `hash-table`, `string`, `backtracking`
 
 ---
 

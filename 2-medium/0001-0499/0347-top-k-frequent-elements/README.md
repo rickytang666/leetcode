@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 65.4%
-
-**Tags:** `Array`, `Hash Table`, `Divide and Conquer`, `Sorting`, `Heap (Priority Queue)`, `Bucket Sort`, `Counting`, `Quickselect`
+**Tags:** `array`, `hash-table`, `divide-and-conquer`, `sorting`, `heap-priority-queue`, `bucket-sort`, `counting`, `quickselect`
 
 ---
 
 ## Description
 
-Given an integer array `nums` and an integer `k`, return *the* `k` *most frequent elements*. You may return the answer in **any order**.
+Given an integer array `nums` and an integer `k`, return _the_ `k` _most frequent elements_. You may return the answer in **any order**.
 
 **Example 1:**
 
@@ -32,8 +30,8 @@ Given an integer array `nums` and an integer `k`, return *the* `k` *most frequen
 
 **Constraints:**
 
-* `1 <= nums.length <= 105`
-* `-104 <= nums[i] <= 104`
+* `1 <= nums.length <= 10^5`
+* `-10^4 <= nums[i] <= 10^4`
 * `k` is in the range `[1, the number of unique elements in the array]`.
 * It is **guaranteed** that the answer is **unique**.
 

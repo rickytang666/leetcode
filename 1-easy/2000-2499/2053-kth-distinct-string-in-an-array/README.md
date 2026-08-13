@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.1%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Counting`
+**Tags:** `array`, `hash-table`, `string`, `counting`
 
 ---
 
@@ -12,7 +10,7 @@
 
 A **distinct string** is a string that is present only **once** in an array.
 
-Given an array of strings `arr`, and an integer `k`, return *the* `kth` ***distinct string** present in* `arr`. If there are **fewer** than `k` distinct strings, return *an **empty string*** `""`.
+Given an array of strings `arr`, and an integer `k`, return _the_ `k^th` _**distinct string** present in_ `arr`. If there are **fewer** than `k` distinct strings, return _an **empty string**_ `""`.
 
 Note that the strings are considered in the **order in which they appear** in the array.
 
@@ -23,8 +21,8 @@ Input: arr = ["d","b","c","b","c","a"], k = 2
 Output: "a"
 Explanation:
 The only distinct strings in arr are "d" and "a".
-"d" appears 1st, so it is the 1st distinct string.
-"a" appears 2nd, so it is the 2nd distinct string.
+"d" appears 1^st, so it is the 1^st distinct string.
+"a" appears 2^nd, so it is the 2^nd distinct string.
 Since k == 2, "a" is returned.
 ```
 
@@ -34,7 +32,7 @@ Since k == 2, "a" is returned.
 Input: arr = ["aaa","aa","a"], k = 1
 Output: "aaa"
 Explanation:
-All strings in arr are distinct, so the 1st string "aaa" is returned.
+All strings in arr are distinct, so the 1^st string "aaa" is returned.
 ```
 
 **Example 3:**
@@ -56,4 +54,8 @@ The only distinct string is "b". Since there are fewer than 3 distinct strings, 
 
 ## Hints
 
-1. Try 'mapping' the strings to check if they are unique or not.
+<details>
+<summary>Hint 1</summary>
+
+Try 'mapping' the strings to check if they are unique or not.
+</details>

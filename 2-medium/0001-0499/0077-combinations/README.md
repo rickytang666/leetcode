@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 74.3%
-
-**Tags:** `Backtracking`
+**Tags:** `backtracking`
 
 ---
 
 ## Description
 
-Given two integers `n` and `k`, return *all possible combinations of* `k` *numbers chosen from the range* `[1, n]`.
+Given two integers `n` and `k`, return _all possible combinations of_ `k` _numbers chosen from the range_ `[1, n]`.
 
 You may return the answer in **any order**.
 

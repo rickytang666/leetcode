@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 55.9%
-
-**Tags:** `Linked List`
+**Tags:** `linked-list`
 
 ---
 
 ## Description
 
-Given the `head` of a sorted linked list, *delete all duplicates such that each element appears only once*. Return *the linked list **sorted** as well*.
+Given the `head` of a sorted linked list, _delete all duplicates such that each element appears only once_. Return _the linked list **sorted** as well_.
 
 **Example 1:**
 

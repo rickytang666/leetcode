@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 64.7%
-
-**Tags:** `Sorting`, `Heap (Priority Queue)`
+**Tags:** `sorting`, `heap-priority-queue`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given a positive integer `num`. You may swap any two digits of `num` that have the same **parity** (i.e. both odd digits or both even digits).
 
-Return *the **largest** possible value of* `num` *after **any** number of swaps.*
+Return _the **largest** possible value of_ `num` _after **any** number of swaps._
 
 **Example 1:**
 
@@ -37,12 +35,26 @@ Note that there may be other sequences of swaps but it can be shown that 87655 i
 
 **Constraints:**
 
-* `1 <= num <= 109`
+* `1 <= num <= 10^9`
 
 ---
 
 ## Hints
 
-1. The bigger digit should appear first (more to the left) because it contributes more to the value of the number.
-2. Get all the even digits, as well as odd digits. Sort them separately.
-3. Reconstruct the number by giving the earlier digits the highest available digit of the same parity.
+<details>
+<summary>Hint 1</summary>
+
+The bigger digit should appear first (more to the left) because it contributes more to the value of the number.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Get all the even digits, as well as odd digits. Sort them separately.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+Reconstruct the number by giving the earlier digits the highest available digit of the same parity.
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 69.7%
-
-**Tags:** `Stack`, `Design`, `Queue`
+**Tags:** `stack`, `design`, `queue`
 
 ---
 

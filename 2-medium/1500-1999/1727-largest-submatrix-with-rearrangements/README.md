@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 78.4%
-
-**Tags:** `Array`, `Greedy`, `Sorting`, `Matrix`
+**Tags:** `array`, `greedy`, `sorting`, `matrix`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given a binary matrix `matrix` of size `m x n`, and you are allowed to rearrange the **columns** of the `matrix` in any order.
 
-Return *the area of the largest submatrix within* `matrix` *where **every** element of the submatrix is* `1` *after reordering the columns optimally.*
+Return _the area of the largest submatrix within_ `matrix` _where **every** element of the submatrix is_ `1` _after reordering the columns optimally._
 
 **Example 1:**
 
@@ -48,7 +46,7 @@ Explanation: Notice that you must rearrange entire columns, and there is no way 
 
 * `m == matrix.length`
 * `n == matrix[i].length`
-* `1 <= m * n <= 105`
+* `1 <= m * n <= 10^5`
 * `matrix[i][j]` is either `0` or `1`.
 
 ---
@@ -66,4 +64,3 @@ For each column, find the number of consecutive ones ending at each position.
 
 For each row, sort the cumulative ones in non-increasing order and "fit" the largest submatrix.
 </details>
-

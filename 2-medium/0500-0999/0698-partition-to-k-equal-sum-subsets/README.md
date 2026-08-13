@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 38.6%
-
-**Tags:** `Array`, `Dynamic Programming`, `Backtracking`, `Bit Manipulation`, `Memoization`, `Bitmask`
+**Tags:** `array`, `dynamic-programming`, `backtracking`, `bit-manipulation`, `memoization`, `bitmask`
 
 ---
 
@@ -30,7 +28,7 @@ Output: false
 **Constraints:**
 
 * `1 <= k <= nums.length <= 16`
-* `1 <= nums[i] <= 104`
+* `1 <= nums[i] <= 10^4`
 * The frequency of each element is in the range `[1, 4]`.
 
 ---
@@ -40,6 +38,5 @@ Output: false
 <details>
 <summary>Hint 1</summary>
 
-We can figure out what target each subset must sum to.  Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join.
+We can figure out what target each subset must sum to. Then, let's recursively search, where at each call to our function, we choose which of k subsets the next value will join.
 </details>
-

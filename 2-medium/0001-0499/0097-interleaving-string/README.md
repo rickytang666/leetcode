@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 43.7%
-
-**Tags:** `String`, `Dynamic Programming`
+**Tags:** `string`, `dynamic-programming`
 
 ---
 
@@ -14,10 +12,10 @@ Given strings `s1`, `s2`, and `s3`, find whether `s3` is formed by an **interlea
 
 An **interleaving** of two strings `s` and `t` is a configuration where `s` and `t` are divided into `n` and `m` substrings respectively, such that:
 
-* `s = s1 + s2 + ... + sn`
-* `t = t1 + t2 + ... + tm`
+* `s = s_1 + s_2 + ... + s_n`
+* `t = t_1 + t_2 + ... + t_m`
 * `|n - m| <= 1`
-* The **interleaving** is `s1 + t1 + s2 + t2 + s3 + t3 + ...` or `t1 + s1 + t2 + s2 + t3 + s3 + ...`
+* The **interleaving** is `s_1 + t_1 + s_2 + t_2 + s_3 + t_3 + ...` or `t_1 + s_1 + t_2 + s_2 + t_3 + s_3 + ...`
 
 **Note:** `a + b` is the concatenation of strings `a` and `b`.
 

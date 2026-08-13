@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 62.0%
-
-**Tags:** `Hash Table`, `Linked List`
+**Tags:** `hash-table`, `linked-list`
 
 ---
 
@@ -16,7 +14,7 @@ Construct a [**deep copy**](https://en.wikipedia.org/wiki/Object_copying#Deep_co
 
 For example, if there are two nodes `X` and `Y` in the original list, where `X.random --> Y`, then for the corresponding two nodes `x` and `y` in the copied list, `x.random --> y`.
 
-Return *the head of the copied linked list*.
+Return _the head of the copied linked list_.
 
 The linked list is represented in the input/output as a list of `n` nodes. Each node is represented as a pair of `[val, random_index]` where:
 
@@ -55,16 +53,33 @@ Output: [[3,null],[3,0],[3,null]]
 **Constraints:**
 
 * `0 <= n <= 1000`
-* `-104 <= Node.val <= 104`
+* `-10^4 <= Node.val <= 10^4`
 * `Node.random` is `null` or is pointing to some node in the linked list.
 
 ---
 
 ## Hints
 
-1. Just iterate the linked list and create copies of the nodes on the go. Since a node can be referenced from multiple nodes due to the random pointers, ensure you are not making multiple copies of the same node.
-2. You may want to use extra space to keep old_node ---> new_node mapping to prevent creating multiple copies of the same node.
-3. We can avoid using extra space for old_node ---> new_node mapping by tweaking the original linked list. Simply interweave the nodes of the old and copied list. For example:
-Old List: A --> B --> C --> D
-InterWeaved List: A --> A' --> B --> B' --> C --> C' --> D --> D'
-4. The interweaving is done using next</b> pointers and we can make use of interweaved structure to get the correct reference nodes for random</b> pointers.
+<details>
+<summary>Hint 1</summary>
+
+Just iterate the linked list and create copies of the nodes on the go. Since a node can be referenced from multiple nodes due to the random pointers, ensure you are not making multiple copies of the same node.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+You may want to use extra space to keep old_node ---> new_node mapping to prevent creating multiple copies of the same node.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+We can avoid using extra space for old_node ---> new_node mapping by tweaking the original linked list. Simply interweave the nodes of the old and copied list. For example: Old List: A --> B --> C --> D InterWeaved List: A --> A' --> B --> B' --> C --> C' --> D --> D'
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+The interweaving is done using next pointers and we can make use of interweaved structure to get the correct reference nodes for random pointers.
+</details>

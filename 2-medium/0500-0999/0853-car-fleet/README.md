@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 54.4%
-
-**Tags:** `Array`, `Stack`, `Sorting`, `Monotonic Stack`
+**Tags:** `array`, `stack`, `sorting`, `monotonic-stack`
 
 ---
 
@@ -12,7 +10,7 @@
 
 There are `n` cars at given miles away from the starting mile 0, traveling to reach the mile `target`.
 
-You are given two integer arrays `position` and `speed`, both of length `n`, where `position[i]` is the starting mile of the `ith` car and `speed[i]` is the speed of the `ith` car in miles per hour.
+You are given two integer arrays `position` and `speed`, both of length `n`, where `position[i]` is the starting mile of the `i^th` car and `speed[i]` is the speed of the `i^th` car in miles per hour.
 
 A car cannot pass another car, but it can catch up and then travel next to it at the speed of the slower car.
 
@@ -58,8 +56,8 @@ There is only one car, hence there is only one fleet.
 **Constraints:**
 
 * `n == position.length == speed.length`
-* `1 <= n <= 105`
-* `0 < target <= 106`
+* `1 <= n <= 10^5`
+* `0 < target <= 10^6`
 * `0 <= position[i] < target`
 * All the values of `position` are **unique**.
-* `0 < speed[i] <= 106`
+* `0 < speed[i] <= 10^6`

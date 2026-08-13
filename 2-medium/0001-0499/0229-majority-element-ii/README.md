@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 56.1%
-
-**Tags:** `Array`, `Hash Table`, `Sorting`, `Counting`
+**Tags:** `array`, `hash-table`, `sorting`, `counting`
 
 ---
 
 ## Description
 
-Given an integer array of size `n`, find all elements that appear more than `⌊ n/3 ⌋` times.
+Given an integer array of size `n`, find all elements that appear more than `⌊n / 3⌋` times.
 
 **Example 1:**
 
@@ -35,8 +33,8 @@ Output: [1,2]
 
 **Constraints:**
 
-* `1 <= nums.length <= 5 * 104`
-* `-109 <= nums[i] <= 109`
+* `1 <= nums.length <= 5 * 10^4`
+* `-10^9 <= nums[i] <= 10^9`
 
 **Follow up:** Could you solve the problem in linear time and in `O(1)` space?
 
@@ -61,4 +59,3 @@ It can be at most two. Why?
 
 Consider using Boyer-Moore Voting Algorithm, which is efficient for finding elements that appear more than a certain threshold.
 </details>
-

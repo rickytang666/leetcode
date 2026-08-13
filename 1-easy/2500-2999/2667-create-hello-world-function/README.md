@@ -2,13 +2,11 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.0%
-
 ---
 
 ## Description
 
-Write a function `createHelloWorld`. It should return a new function that always returns `"Hello World"`.
+Write a function `createHelloWorld`. It should return a new function that always returns `"Hello World"`.
 
 **Example 1:**
 

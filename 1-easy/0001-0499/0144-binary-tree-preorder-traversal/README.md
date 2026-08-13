@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 74.8%
-
-**Tags:** `Stack`, `Tree`, `Depth-First Search`, `Binary Tree`
+**Tags:** `stack`, `tree`, `depth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, return *the preorder traversal of its nodes' values*.
+Given the `root` of a binary tree, return _the preorder traversal of its nodes' values_.
 
 **Example 1:**
 

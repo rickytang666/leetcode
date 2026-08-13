@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 41.8%
-
-**Tags:** `Array`, `Dynamic Programming`, `Backtracking`, `Bit Manipulation`, `Bitmask`
+**Tags:** `array`, `dynamic-programming`, `backtracking`, `bit-manipulation`, `bitmask`
 
 ---
 
 ## Description
 
-You are given an integer array `matchsticks` where `matchsticks[i]` is the length of the `ith` matchstick. You want to use **all the matchsticks** to make one square. You **should not break** any stick, but you can link them up, and each matchstick must be used **exactly one time**.
+You are given an integer array `matchsticks` where `matchsticks[i]` is the length of the `i^th` matchstick. You want to use **all the matchsticks** to make one square. You **should not break** any stick, but you can link them up, and each matchstick must be used **exactly one time**.
 
 Return `true` if you can make this square and `false` otherwise.
 
@@ -35,7 +33,7 @@ Explanation: You cannot find a way to form a square with all the matchsticks.
 **Constraints:**
 
 * `1 <= matchsticks.length <= 15`
-* `1 <= matchsticks[i] <= 108`
+* `1 <= matchsticks[i] <= 10^8`
 
 ---
 
@@ -62,7 +60,7 @@ For every matchstick, we have to try out each of the 4 options i.e. which side i
 <details>
 <summary>Hint 4</summary>
 
-We don't really need to keep track of which matchsticks belong to a particular side during recursion. We just need to keep track of the <b>length</b> of each of the 4 sides.
+We don't really need to keep track of which matchsticks belong to a particular side during recursion. We just need to keep track of the **length** of each of the 4 sides.
 </details>
 
 <details>
@@ -70,4 +68,3 @@ We don't really need to keep track of which matchsticks belong to a particular s
 
 When all matchsticks have been used we simply need to see the length of all 4 sides. If they're equal, we have a square on our hands!
 </details>
-

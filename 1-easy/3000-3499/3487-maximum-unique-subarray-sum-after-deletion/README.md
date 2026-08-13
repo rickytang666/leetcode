@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 40.4%
-
-**Tags:** `Array`, `Hash Table`, `Greedy`
+**Tags:** `array`, `hash-table`, `greedy`
 
 ---
 
@@ -14,8 +12,8 @@ You are given an integer array `nums`.
 
 You are allowed to delete any number of elements from `nums` without making it **empty**. After performing the deletions, select a subarray of `nums` such that:
 
-1. All elements in the subarray are **unique**.
-2. The sum of the elements in the subarray is **maximized**.
+1.  All elements in the subarray are **unique**.
+2.  The sum of the elements in the subarray is **maximized**.
 
 Return the **maximum sum** of such a subarray.
 
@@ -58,5 +56,14 @@ Delete the elements `nums[2] == -1` and `nums[3] == -2`, and select the subarray
 
 ## Hints
 
-1. If the maximum element in the array is less than zero, the answer is the maximum element.
-2. Otherwise, the answer is the sum of all unique values that are greater than or equal to zero.
+<details>
+<summary>Hint 1</summary>
+
+If the maximum element in the array is less than zero, the answer is the maximum element.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Otherwise, the answer is the sum of all unique values that are greater than or equal to zero.
+</details>

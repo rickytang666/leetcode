@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 72.4%
-
 ---
 
 ## Description
@@ -19,7 +17,7 @@ DataFrame products
 +-------------+--------+
 ```
 
-Write a solution to fill in the missing value as `0` in the `quantity` column.
+Write a solution to fill in the missing value as `**0**` in the `quantity` column.
 
 The result format is in the following example.
 
@@ -42,7 +40,7 @@ Output:
 | GolfClubs       | 779      | 9319  |
 | Printer         | 849      | 3051  |
 +-----------------+----------+-------+
-Explanation: 
+Explanation:
 The quantity for Wristwatch and WirelessEarbuds are filled by 0.
 ```
 
@@ -50,4 +48,8 @@ The quantity for Wristwatch and WirelessEarbuds are filled by 0.
 
 ## Hints
 
-1. Consider using a build-in function in pandas library to fill the missing values of specified columns.
+<details>
+<summary>Hint 1</summary>
+
+Consider using a build-in function in pandas library to fill the missing values of specified columns.
+</details>

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 54.6%
-
-**Tags:** `Array`, `Linked List`, `Design`, `Queue`
+**Tags:** `array`, `linked-list`, `design`, `queue`
 
 ---
 
@@ -52,4 +50,4 @@ myCircularQueue.Rear();     // return 4
 
 * `1 <= k <= 1000`
 * `0 <= value <= 1000`
-* At most `3000` calls will be made to `enQueue`, `deQueue`, `Front`, `Rear`, `isEmpty`, and `isFull`.
+* At most `3000` calls will be made to `enQueue`, `deQueue`, `Front`, `Rear`, `isEmpty`, and `isFull`.

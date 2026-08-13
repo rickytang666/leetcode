@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 44.7%
-
-**Tags:** `Array`, `Depth-First Search`, `Breadth-First Search`, `Union-Find`, `Matrix`
+**Tags:** `array`, `depth-first-search`, `breadth-first-search`, `union-find`, `matrix`
 
 ---
 

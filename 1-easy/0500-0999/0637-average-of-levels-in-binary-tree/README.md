@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 75.0%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, return *the average value of the nodes on each level in the form of an array*. Answers within `10-5` of the actual answer will be accepted.
+Given the `root` of a binary tree, return _the average value of the nodes on each level in the form of an array_. Answers within `10^-5` of the actual answer will be accepted.
 
 **Example 1:**
 
@@ -34,5 +32,5 @@ Output: [3.00000,14.50000,11.00000]
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 104]`.
-* `-231 <= Node.val <= 231 - 1`
+* The number of nodes in the tree is in the range `[1, 10^4]`.
+* `-2^31 <= Node.val <= 2^31 - 1`

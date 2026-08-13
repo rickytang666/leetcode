@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.3%
-
-**Tags:** `Array`, `String`
+**Tags:** `array`, `string`
 
 ---
 
@@ -17,7 +15,7 @@ You are given a **0-indexed** array of strings `details`. Each element of `detai
 * The following two characters are used to indicate the age of the person.
 * The last two characters determine the seat allotted to that person.
 
-Return *the number of passengers who are **strictly** **more than 60 years old**.*
+Return _the number of passengers who are **strictly** **more than 60 years old**._
 
 **Example 1:**
 
@@ -56,6 +54,5 @@ Convert the value at index 11 and 12 to a numerical value.
 <details>
 <summary>Hint 2</summary>
 
-The age of the person at index i is equal to details[i][11]*10+details[i][12].
+The age of the person at index i is equal to details[i][11]\*10+details[i][12].
 </details>
-

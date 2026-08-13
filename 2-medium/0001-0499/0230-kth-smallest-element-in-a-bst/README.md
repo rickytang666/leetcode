@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 76.2%
-
-**Tags:** `Tree`, `Depth-First Search`, `Binary Search Tree`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `binary-search-tree`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary search tree, and an integer `k`, return *the* `kth` *smallest value (**1-indexed**) of all the values of the nodes in the tree*.
+Given the `root` of a binary search tree, and an integer `k`, return _the_ `k^th` _smallest value (**1-indexed**) of all the values of the nodes in the tree_.
 
 **Example 1:**
 
@@ -33,8 +31,8 @@ Output: 3
 **Constraints:**
 
 * The number of nodes in the tree is `n`.
-* `1 <= k <= n <= 104`
-* `0 <= Node.val <= 104`
+* `1 <= k <= n <= 10^4`
+* `0 <= Node.val <= 10^4`
 
 **Follow up:** If the BST is modified often (i.e., we can do insert and delete operations) and you need to find the kth smallest frequently, how would you optimize?
 
@@ -65,4 +63,3 @@ What if you could modify the BST node's structure?
 
 The optimal runtime complexity is O(height of BST).
 </details>
-

@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 81.6%
-
-**Tags:** `Array`
+**Tags:** `array`
 
 ---
 
 ## Description
 
-An array is considered **special** if the *parity* of every pair of adjacent elements is different. In other words, one element in each pair **must** be even, and the other **must** be odd.
+An array is considered **special** if the _parity_ of every pair of adjacent elements is different. In other words, one element in each pair **must** be even, and the other **must** be odd.
 
 You are given an array of integers `nums`. Return `true` if `nums` is a **special** array, otherwise, return `false`.
 
@@ -53,4 +51,8 @@ There is only two pairs: `(2,1)` and `(1,4)`, and both of them contain numbers w
 
 ## Hints
 
-1. Try to check the parity of each element and its previous element.
+<details>
+<summary>Hint 1</summary>
+
+Try to check the parity of each element and its previous element.
+</details>

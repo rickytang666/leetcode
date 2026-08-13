@@ -2,17 +2,15 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.9%
-
-**Tags:** `Array`, `Hash Table`, `Math`
+**Tags:** `array`, `hash-table`, `math`
 
 ---
 
 ## Description
 
-In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`. Each number was supposed to appear **exactly once** in the list, however, **two** mischievous numbers sneaked in an *additional time*, making the list longer than usual.
+In the town of Digitville, there was a list of numbers called `nums` containing integers from `0` to `n - 1`. Each number was supposed to appear **exactly once** in the list, however, **two** mischievous numbers sneaked in an _additional time_, making the list longer than usual.
 
-As the town detective, your task is to find these two sneaky numbers. Return an array of size **two** containing the two numbers (in *any order*), so peace can return to Digitville.
+As the town detective, your task is to find these two sneaky numbers. Return an array of size **two** containing the two numbers (in _any order_), so peace can return to Digitville.
 
 **Example 1:**
 
@@ -55,4 +53,8 @@ The numbers 4 and 5 each appear twice in the array.
 
 ## Hints
 
-1. To solve the problem without the extra space, we need to think about how many times each number occurs in relation to the index.
+<details>
+<summary>Hint 1</summary>
+
+To solve the problem without the extra space, we need to think about how many times each number occurs in relation to the index.
+</details>

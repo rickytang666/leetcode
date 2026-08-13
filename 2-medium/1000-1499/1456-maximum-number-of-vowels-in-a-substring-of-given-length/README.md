@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 61.2%
-
-**Tags:** `String`, `Sliding Window`
+**Tags:** `string`, `sliding-window`
 
 ---
 
 ## Description
 
-Given a string `s` and an integer `k`, return *the maximum number of vowel letters in any substring of* `s` *with length* `k`.
+Given a string `s` and an integer `k`, return _the maximum number of vowel letters in any substring of_ `s` _with length_ `k`.
 
 **Vowel letters** in English are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`.
 
@@ -40,7 +38,7 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 
 **Constraints:**
 
-* `1 <= s.length <= 105`
+* `1 <= s.length <= 10^5`
 * `s` consists of lowercase English letters.
 * `1 <= k <= s.length`
 
@@ -48,5 +46,14 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 
 ## Hints
 
-1. Keep a window of size k and maintain the number of vowels in it.
-2. Keep moving the window and update the number of vowels while moving. Answer is max number of vowels of any window.
+<details>
+<summary>Hint 1</summary>
+
+Keep a window of size k and maintain the number of vowels in it.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Keep moving the window and update the number of vowels while moving. Answer is max number of vowels of any window.
+</details>

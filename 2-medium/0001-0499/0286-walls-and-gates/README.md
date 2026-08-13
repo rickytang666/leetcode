@@ -2,12 +2,12 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 63.7%
+**Tags:** `array`, `breadth-first-search`, `matrix`
 
-**Tags:** `Array`, `Breadth-First Search`, `Matrix`
+**Premium:** Yes
 
 ---
 
 ## Description
 
-Premium question
+_No description available from the LeetCode API._

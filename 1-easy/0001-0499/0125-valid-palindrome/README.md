@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 52.3%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -12,7 +10,7 @@
 
 A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
 
-Given a string `s`, return `true` *if it is a **palindrome**, or* `false` *otherwise*.
+Given a string `s`, return `true` _if it is a **palindrome**, or_ `false` _otherwise_.
 
 **Example 1:**
 
@@ -41,5 +39,5 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 
 **Constraints:**
 
-* `1 <= s.length <= 2 * 105`
+* `1 <= s.length <= 2 * 10^5`
 * `s` consists only of printable ASCII characters.

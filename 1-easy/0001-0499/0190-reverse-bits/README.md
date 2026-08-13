@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 68.1%
-
-**Tags:** `Divide and Conquer`, `Bit Manipulation`
+**Tags:** `divide-and-conquer`, `bit-manipulation`
 
 ---
 
@@ -40,7 +38,7 @@ Reverse bits of a given 32 bits signed integer.
 
 **Constraints:**
 
-* `0 <= n <= 231 - 2`
+* `0 <= n <= 2^31 - 2`
 * `n` is even.
 
 **Follow up:** If this function is called many times, how would you optimize it?

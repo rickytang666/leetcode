@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 86.1%
-
 ---
 
 ## Description
@@ -56,4 +54,8 @@ The DataFrame is reshaped from wide to long format. Each row represents the sale
 
 ## Hints
 
-1. Consider using a built-in function in pandas library to transform the data
+<details>
+<summary>Hint 1</summary>
+
+Consider using a built-in function in pandas library to transform the data
+</details>

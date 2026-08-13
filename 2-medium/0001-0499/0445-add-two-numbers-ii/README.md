@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 62.2%
-
-**Tags:** `Linked List`, `Math`, `Stack`
+**Tags:** `linked-list`, `math`, `stack`
 
 ---
 
@@ -43,4 +41,4 @@ Output: [0]
 * `0 <= Node.val <= 9`
 * It is guaranteed that the list represents a number that does not have leading zeros.
 
-**Follow up:** Could you solve it without reversing the input lists?
+**Follow up:** Could you solve it without reversing the input lists?

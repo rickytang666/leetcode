@@ -2,17 +2,15 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 47.0%
-
-**Tags:** `Array`, `Hash Table`, `Union Find`
+**Tags:** `array`, `hash-table`, `union-find`
 
 ---
 
 ## Description
 
-Given an unsorted array of integers `nums`, return *the length of the longest consecutive elements sequence.*
+Given an unsorted array of integers `nums`, return _the length of the longest consecutive elements sequence._
 
-You must write an algorithm that runs in `O(n)` time.
+You must write an algorithm that runs in `O(n)` time.
 
 **Example 1:**
 
@@ -38,5 +36,5 @@ Output: 3
 
 **Constraints:**
 
-* `0 <= nums.length <= 105`
-* `-109 <= nums[i] <= 109`
+* `0 <= nums.length <= 10^5`
+* `-10^9 <= nums[i] <= 10^9`

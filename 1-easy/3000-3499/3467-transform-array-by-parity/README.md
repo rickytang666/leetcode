@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 89.6%
-
-**Tags:** `Array`, `Sorting`, `Counting`
+**Tags:** `array`, `sorting`, `counting`
 
 ---
 
@@ -12,9 +10,9 @@
 
 You are given an integer array `nums`. Transform `nums` by performing the following operations in the **exact** order specified:
 
-1. Replace each even number with 0.
-2. Replace each odd numbers with 1.
-3. Sort the modified array in **non-decreasing** order.
+1.  Replace each even number with 0.
+2.  Replace each odd numbers with 1.
+3.  Sort the modified array in **non-decreasing** order.
 
 Return the resulting array after performing these operations.
 
@@ -49,4 +47,8 @@ Return the resulting array after performing these operations.
 
 ## Hints
 
-1. Let <code>x</code> be the number of even numbers, and <code>y</code> be the number of odd numbers. Output <code>0</code> <code>x</code> times, followed by <code>1</code> <code>y</code> times.
+<details>
+<summary>Hint 1</summary>
+
+Let `x` be the number of even numbers, and `y` be the number of odd numbers. Output `0` `x` times, followed by `1` `y` times.
+</details>

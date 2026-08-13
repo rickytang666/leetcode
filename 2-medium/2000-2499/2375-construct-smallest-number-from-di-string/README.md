@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 85.7%
-
-**Tags:** `String`, `Backtracking`, `Stack`, `Greedy`
+**Tags:** `string`, `backtracking`, `stack`, `greedy`
 
 ---
 
@@ -18,7 +16,7 @@ A **0-indexed** string `num` of length `n + 1` is created using the following co
 * If `pattern[i] == 'I'`, then `num[i] < num[i + 1]`.
 * If `pattern[i] == 'D'`, then `num[i] > num[i + 1]`.
 
-Return *the lexicographically **smallest** possible string* `num` *that meets the conditions.*
+Return _the lexicographically **smallest** possible string_ `num` _that meets the conditions._
 
 **Example 1:**
 
@@ -52,5 +50,14 @@ It can be proven that "4321" is the smallest possible num that meets the conditi
 
 ## Hints
 
-1. With the constraints, could we generate every possible string?
-2. Yes we can. Now we just need to check if the string meets all the conditions.
+<details>
+<summary>Hint 1</summary>
+
+With the constraints, could we generate every possible string?
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Yes we can. Now we just need to check if the string meets all the conditions.
+</details>

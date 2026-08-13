@@ -2,13 +2,11 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 94.5%
-
 ---
 
 ## Description
 
-Write a function `argumentsLength` that returns the count of arguments passed to it.
+Write a function `argumentsLength` that returns the count of arguments passed to it.
 
 **Example 1:**
 
@@ -26,7 +24,7 @@ One value was passed to the function so it should return 1.
 ```
 Input: args = [{}, null, "3"]
 Output: 3
-Explanation: 
+Explanation:
 argumentsLength({}, null, "3"); // 3
 
 Three values were passed to the function so it should return 3.
@@ -34,5 +32,5 @@ Three values were passed to the function so it should return 3.
 
 **Constraints:**
 
-* `args` is a valid JSON array
+* `args` is a valid JSON array
 * `0 <= args.length <= 100`

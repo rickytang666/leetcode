@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 40.4%
-
-**Tags:** `Array`, `Dynamic Programming`, `Greedy`
+**Tags:** `array`, `dynamic-programming`, `greedy`
 
 ---
 
@@ -12,7 +10,7 @@
 
 You are given an integer array `nums`. You are initially positioned at the array's **first index**, and each element in the array represents your maximum jump length at that position.
 
-Return `true` *if you can reach the last index, or* `false` *otherwise*.
+Return `true` _if you can reach the last index, or_ `false` _otherwise_.
 
 **Example 1:**
 
@@ -32,5 +30,5 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 
 **Constraints:**
 
-* `1 <= nums.length <= 104`
-* `0 <= nums[i] <= 105`
+* `1 <= nums.length <= 10^4`
+* `0 <= nums[i] <= 10^5`

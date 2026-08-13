@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.0%
-
-**Tags:** `Bit Manipulation`
+**Tags:** `bit-manipulation`
 
 ---
 
 ## Description
 
-Given two integers `left` and `right` that represent the range `[left, right]`, return *the bitwise AND of all numbers in this range, inclusive*.
+Given two integers `left` and `right` that represent the range `[left, right]`, return _the bitwise AND of all numbers in this range, inclusive_.
 
 **Example 1:**
 
@@ -35,4 +33,4 @@ Output: 0
 
 **Constraints:**
 
-* `0 <= left <= right <= 231 - 1`
+* `0 <= left <= right <= 2^31 - 1`

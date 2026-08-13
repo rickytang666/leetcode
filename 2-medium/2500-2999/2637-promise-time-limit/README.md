@@ -2,26 +2,24 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 83.0%
-
 ---
 
 ## Description
 
-Given an asynchronous function `fn` and a time `t` in milliseconds, return a new **time limited** version of the input function. `fn` takes arguments provided to the **time limited**function.
+Given an asynchronous function `fn` and a time `t` in milliseconds, return a new **time limited** version of the input function. `fn` takes arguments provided to the **time limited** function.
 
 The **time limited** function should follow these rules:
 
-* If the `fn` completes within the time limit of `t` milliseconds, the **time limited** function should resolve with the result.
+* If the `fn` completes within the time limit of `t` milliseconds, the **time limited** function should resolve with the result.
 * If the execution of the `fn` exceeds the time limit, the **time limited** function should reject with the string `"Time Limit Exceeded"`.
 
 **Example 1:**
 
 ```
-Input: 
-fn = async (n) => { 
-  await new Promise(res => setTimeout(res, 100)); 
-  return n * n; 
+Input:
+fn = async (n) => {
+  await new Promise(res => setTimeout(res, 100));
+  return n * n;
 }
 inputs = [5]
 t = 50
@@ -31,10 +29,10 @@ const limited = timeLimit(fn, t)
 const start = performance.now()
 let result;
 try {
-   const res = await limited(...inputs)
-   result = {"resolved": res, "time": Math.floor(performance.now() - start)};
+   const res = await limited(...inputs)
+   result = {"resolved": res, "time": Math.floor(performance.now() - start)};
 } catch (err) {
-   result = {"rejected": err, "time": Math.floor(performance.now() - start)};
+   result = {"rejected": err, "time": Math.floor(performance.now() - start)};
 }
 console.log(result) // Output
 
@@ -44,10 +42,10 @@ The provided function is set to resolve after 100ms. However, the time limit is 
 **Example 2:**
 
 ```
-Input: 
-fn = async (n) => { 
-  await new Promise(res => setTimeout(res, 100)); 
-  return n * n; 
+Input:
+fn = async (n) => {
+  await new Promise(res => setTimeout(res, 100));
+  return n * n;
 }
 inputs = [5]
 t = 150
@@ -59,24 +57,24 @@ The function resolved 5 * 5 = 25 at t=100ms. The time limit is never reached.
 **Example 3:**
 
 ```
-Input: 
-fn = async (a, b) => { 
-  await new Promise(res => setTimeout(res, 120)); 
-  return a + b; 
+Input:
+fn = async (a, b) => {
+  await new Promise(res => setTimeout(res, 120));
+  return a + b;
 }
 inputs = [5,10]
 t = 150
 Output: {"resolved":15,"time":120}
 Explanation:
-​​​​The function resolved 5 + 10 = 15 at t=120ms. The time limit is never reached.
+The function resolved 5 + 10 = 15 at t=120ms. The time limit is never reached.
 ```
 
 **Example 4:**
 
 ```
-Input: 
-fn = async () => { 
-  throw "Error";
+Input:
+fn = async () => {
+  throw "Error";
 }
 inputs = []
 t = 1000
@@ -95,15 +93,38 @@ The function immediately throws an error.
 
 ## Hints
 
-1. You can return a copy of a function with: 
+<details>
+<summary>Hint 1</summary>
 
-function outerFunction(fn) { 
-  return function innerFunction(...params) {
-    return fn(...params);
-  };
-}
-2. Inside the inner function, you will need to return a new Promise.
-3. You can create a new promise like: new Promise((resolve, reject) => {}).
-4. You can execute code with a delay with "setTimeout(fn, delay)"
-5. To reject a promise after a delay, "setTimeout(() => reject('err'), delay)"
-6. You can resolve and reject when the passed promise resolves or rejects with: "fn(...params).then(resolve).catch(reject)"
+You can return a copy of a function with: function outerFunction(fn) { return function innerFunction(...params) { return fn(...params); }; }
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Inside the inner function, you will need to return a new Promise.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+You can create a new promise like: new Promise((resolve, reject) => {}).
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+You can execute code with a delay with "setTimeout(fn, delay)"
+</details>
+
+<details>
+<summary>Hint 5</summary>
+
+To reject a promise after a delay, "setTimeout(() => reject('err'), delay)"
+</details>
+
+<details>
+<summary>Hint 6</summary>
+
+You can resolve and reject when the passed promise resolves or rejects with: "fn(...params).then(resolve).catch(reject)"
+</details>

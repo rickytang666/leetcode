@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 51.5%
-
-**Tags:** `Array`, `Binary Search`, `Sliding Window`, `Prefix Sum`
+**Tags:** `array`, `binary-search`, `sliding-window`, `prefix-sum`
 
 ---
 
 ## Description
 
-Given an array of positive integers `nums` and a positive integer `target`, return *the **minimal length** of a* *subarray* *whose sum is greater than or equal to* `target`. If there is no such subarray, return `0` instead.
+Given an array of positive integers `nums` and a positive integer `target`, return _the **minimal length** of a_ _subarray_ _whose sum is greater than or equal to_ `target`. If there is no such subarray, return `0` instead.
 
 **Example 1:**
 
@@ -36,8 +34,8 @@ Output: 0
 
 **Constraints:**
 
-* `1 <= target <= 109`
-* `1 <= nums.length <= 105`
-* `1 <= nums[i] <= 104`
+* `1 <= target <= 10^9`
+* `1 <= nums.length <= 10^5`
+* `1 <= nums[i] <= 10^4`
 
 **Follow up:** If you have figured out the `O(n)` solution, try coding another solution of which the time complexity is `O(n log(n))`.

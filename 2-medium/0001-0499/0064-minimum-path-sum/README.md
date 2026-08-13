@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 68.3%
-
-**Tags:** `Array`, `Dynamic Programming`, `Matrix`
+**Tags:** `array`, `dynamic-programming`, `matrix`
 
 ---
 

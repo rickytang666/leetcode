@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 58.0%
-
-**Tags:** `Array`, `Breadth-First Search`, `Matrix`
+**Tags:** `array`, `breadth-first-search`, `matrix`
 
 ---
 
@@ -18,7 +16,7 @@ You are given an `m x n` `grid` where each cell can have one of three values:
 
 Every minute, any fresh orange that is **4-directionally adjacent** to a rotten orange becomes rotten.
 
-Return *the minimum number of minutes that must elapse until no cell has a fresh orange*. If *this is impossible, return* `-1`.
+Return _the minimum number of minutes that must elapse until no cell has a fresh orange_. If _this is impossible, return_ `-1`.
 
 **Example 1:**
 

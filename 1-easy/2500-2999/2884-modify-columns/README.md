@@ -2,8 +2,6 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 92.4%
-
 ---
 
 ## Description
@@ -54,4 +52,8 @@ Every salary has been doubled.
 
 ## Hints
 
-1. Considering multiplying each salary value by 2, using a simple assignment operation. The calculation of the value is done column-wise.
+<details>
+<summary>Hint 1</summary>
+
+Considering multiplying each salary value by 2, using a simple assignment operation. The calculation of the value is done column-wise.
+</details>

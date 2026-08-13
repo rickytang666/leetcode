@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 50.8%
-
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Graph Theory`, `Topological Sort`
+**Tags:** `depth-first-search`, `breadth-first-search`, `graph`, `topological-sort`
 
 ---
 
 ## Description
 
-There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [ai, bi]` indicates that you **must** take course `bi` first if you want to take course `ai`.
+There are a total of `numCourses` courses you have to take, labeled from `0` to `numCourses - 1`. You are given an array `prerequisites` where `prerequisites[i] = [a_i, b_i]` indicates that you **must** take course `b_i` first if you want to take course `a_i`.
 
 * For example, the pair `[0, 1]`, indicates that to take course `0` you have to first take course `1`.
 
@@ -21,7 +19,7 @@ Return `true` if you can finish all courses. Otherwise, return `false`.
 ```
 Input: numCourses = 2, prerequisites = [[1,0]]
 Output: true
-Explanation: There are a total of 2 courses to take. 
+Explanation: There are a total of 2 courses to take.
 To take course 1 you should have finished course 0. So it is possible.
 ```
 
@@ -30,7 +28,7 @@ To take course 1 you should have finished course 0. So it is possible.
 ```
 Input: numCourses = 2, prerequisites = [[1,0],[0,1]]
 Output: false
-Explanation: There are a total of 2 courses to take. 
+Explanation: There are a total of 2 courses to take.
 To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
 ```
 
@@ -39,7 +37,7 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 * `1 <= numCourses <= 2000`
 * `0 <= prerequisites.length <= 5000`
 * `prerequisites[i].length == 2`
-* `0 <= ai, bi < numCourses`
+* `0 <= a_i, b_i < numCourses`
 * All the pairs prerequisites[i] are **unique**.
 
 ---
@@ -55,12 +53,11 @@ This problem is equivalent to finding if a cycle exists in a directed graph. If 
 <details>
 <summary>Hint 2</summary>
 
-<a href="https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/03Graphs.pdf" target="_blank">Topological Sort via DFS</a> - A great tutorial explaining the basic concepts of Topological Sort.
+[Topological Sort via DFS](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/pdf/03Graphs.pdf) - A great tutorial explaining the basic concepts of Topological Sort.
 </details>
 
 <details>
 <summary>Hint 3</summary>
 
-Topological sort could also be done via <a href="http://en.wikipedia.org/wiki/Topological_sorting#Algorithms" target="_blank">BFS</a>.
+Topological sort could also be done via [BFS](http://en.wikipedia.org/wiki/Topological_sorting#Algorithms).
 </details>
-

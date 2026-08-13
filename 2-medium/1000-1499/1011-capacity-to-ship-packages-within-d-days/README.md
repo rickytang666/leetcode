@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 73.8%
-
-**Tags:** `Array`, `Binary Search`
+**Tags:** `array`, `binary-search`
 
 ---
 
@@ -12,7 +10,7 @@
 
 A conveyor belt has packages that must be shipped from one port to another within `days` days.
 
-The `ith` package on the conveyor belt has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt (in the order given by `weights`). We may not load more weight than the maximum weight capacity of the ship.
+The `i^th` package on the conveyor belt has a weight of `weights[i]`. Each day, we load the ship with packages on the conveyor belt (in the order given by `weights`). We may not load more weight than the maximum weight capacity of the ship.
 
 Return the least weight capacity of the ship that will result in all the packages on the conveyor belt being shipped within `days` days.
 
@@ -56,7 +54,7 @@ Explanation:
 
 **Constraints:**
 
-* `1 <= days <= weights.length <= 5 * 104`
+* `1 <= days <= weights.length <= 5 * 10^4`
 * `1 <= weights[i] <= 500`
 
 ---
@@ -66,6 +64,5 @@ Explanation:
 <details>
 <summary>Hint 1</summary>
 
-Binary search on the answer.  We need a function possible(capacity) which returns true if and only if we can do the task in D days.
+Binary search on the answer. We need a function possible(capacity) which returns true if and only if we can do the task in D days.
 </details>
-

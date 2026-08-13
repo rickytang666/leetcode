@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 47.0%
-
-**Tags:** `Math`
+**Tags:** `math`
 
 ---
 
 ## Description
 
-Given an integer `n`, return *the number of trailing zeroes in* `n!`.
+Given an integer `n`, return _the number of trailing zeroes in_ `n!`.
 
 Note that `n! = n * (n - 1) * (n - 2) * ... * 3 * 2 * 1`.
 
@@ -39,6 +37,6 @@ Output: 0
 
 **Constraints:**
 
-* `0 <= n <= 104`
+* `0 <= n <= 10^4`
 
 **Follow up:** Could you write a solution that works in logarithmic time complexity?

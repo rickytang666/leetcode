@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 62.3%
-
-**Tags:** `Math`, `Dynamic Programming`
+**Tags:** `math`, `dynamic-programming`
 
 ---
 
@@ -12,7 +10,7 @@
 
 Given an integer `n`, break it into the sum of `k` **positive integers**, where `k >= 2`, and maximize the product of those integers.
 
-Return *the maximum product you can get*.
+Return _the maximum product you can get_.
 
 **Example 1:**
 
@@ -47,6 +45,5 @@ There is a simple O(n) solution to this problem.
 <details>
 <summary>Hint 2</summary>
 
-You may check the breaking results of <i>n</i> ranging from 7 to 10 to discover the regularities.
+You may check the breaking results of _n_ ranging from 7 to 10 to discover the regularities.
 </details>
-

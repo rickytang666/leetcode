@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 50.3%
-
-**Tags:** `Array`, `Hash Table`, `Sliding Window`
+**Tags:** `array`, `hash-table`, `sliding-window`
 
 ---
 
 ## Description
 
-Given an integer array `nums` and an integer `k`, return `true` *if there are two **distinct indices*** `i` *and* `j` *in the array such that* `nums[i] == nums[j]` *and* `abs(i - j) <= k`.
+Given an integer array `nums` and an integer `k`, return `true` _if there are two **distinct indices**_ `i` _and_ `j` _in the array such that_ `nums[i] == nums[j]` _and_ `abs(i - j) <= k`.
 
 **Example 1:**
 
@@ -35,6 +33,6 @@ Output: false
 
 **Constraints:**
 
-* `1 <= nums.length <= 105`
-* `-109 <= nums[i] <= 109`
-* `0 <= k <= 105`
+* `1 <= nums.length <= 10^5`
+* `-10^9 <= nums[i] <= 10^9`
+* `0 <= k <= 10^5`

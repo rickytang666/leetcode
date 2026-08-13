@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 55.9%
-
-**Tags:** `Dynamic Programming`, `Tree`, `Depth-First Search`, `Binary Tree`
+**Tags:** `dynamic-programming`, `tree`, `depth-first-search`, `binary-tree`
 
 ---
 
@@ -14,7 +12,7 @@ The thief has found himself a new place for his thievery again. There is only on
 
 Besides the `root`, each house has one and only one parent house. After a tour, the smart thief realized that all houses in this place form a binary tree. It will automatically contact the police if **two directly-linked houses were broken into on the same night**.
 
-Given the `root` of the binary tree, return *the maximum amount of money the thief can rob **without alerting the police***.
+Given the `root` of the binary tree, return _the maximum amount of money the thief can rob **without alerting the police**_.
 
 **Example 1:**
 
@@ -38,5 +36,5 @@ Explanation: Maximum amount of money the thief can rob = 4 + 5 = 9.
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[1, 104]`.
-* `0 <= Node.val <= 104`
+* The number of nodes in the tree is in the range `[1, 10^4]`.
+* `0 <= Node.val <= 10^4`

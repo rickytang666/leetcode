@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 73.8%
-
-**Tags:** `Array`, `Hash Table`, `String`
+**Tags:** `array`, `hash-table`, `string`
 
 ---
 
 ## Description
 
-Given an array of strings `words`, return *the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below*.
+Given an array of strings `words`, return _the words that can be typed using letters of the alphabet on only one row of American keyboard like the image below_.
 
 **Note** that the strings are **case-insensitive**, both lowercased and uppercased of the same letter are treated as if they are at the same row.
 

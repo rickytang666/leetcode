@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.0%
-
-**Tags:** `Array`, `String`
+**Tags:** `array`, `string`
 
 ---
 
@@ -24,7 +22,7 @@ cae
 
 You want to **delete** the columns that are **not sorted lexicographically**. In the above example (**0-indexed**), columns 0 (`'a'`, `'b'`, `'c'`) and 2 (`'c'`, `'e'`, `'e'`) are sorted, while column 1 (`'b'`, `'c'`, `'a'`) is not, so you would delete column 1.
 
-Return *the number of columns that you will delete*.
+Return _the number of columns that you will delete_.
 
 **Example 1:**
 

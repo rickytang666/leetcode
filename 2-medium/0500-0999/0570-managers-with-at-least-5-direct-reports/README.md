@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.4%
-
-**Tags:** `Database`
+**Tags:** `database`
 
 ---
 
@@ -36,7 +34,7 @@ The result format is in the following example.
 **Example 1:**
 
 ```
-Input: 
+Input:
 Employee table:
 +-----+-------+------------+-----------+
 | id  | name  | department | managerId |
@@ -48,7 +46,7 @@ Employee table:
 | 105 | Anne  | A          | 101       |
 | 106 | Ron   | B          | 101       |
 +-----+-------+------------+-----------+
-Output: 
+Output:
 +------+
 | name |
 +------+
@@ -83,4 +81,3 @@ This is a very good example to show the performance of SQL code. Try to work out
 
 If your solution uses 'IN' function and runs more than 5 seconds, try to optimize it by using 'JOIN' instead.
 </details>
-

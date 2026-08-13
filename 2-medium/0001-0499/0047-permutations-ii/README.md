@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 63.4%
-
-**Tags:** `Array`, `Backtracking`, `Sorting`
+**Tags:** `array`, `backtracking`, `sorting`
 
 ---
 
 ## Description
 
-Given a collection of numbers, `nums`, that might contain duplicates, return *all possible unique permutations **in any order**.*
+Given a collection of numbers, `nums`, that might contain duplicates, return _all possible unique permutations **in any order**._
 
 **Example 1:**
 

@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 76.8%
-
-**Tags:** `Database`
+**Tags:** `database`
 
 ---
 
@@ -22,7 +20,7 @@ Table: `Views`
 | view_date     | date    |
 +---------------+---------+
 There is no primary key (column with unique values) for this table, the table may have duplicate rows.
-Each row of this table indicates that some viewer viewed an article (written by some author) on some date. 
+Each row of this table indicates that some viewer viewed an article (written by some author) on some date.
 Note that equal author_id and viewer_id indicate the same person.
 ```
 
@@ -35,7 +33,7 @@ The result format is in the following example.
 **Example 1:**
 
 ```
-Input: 
+Input:
 Views table:
 +------------+-----------+-----------+------------+
 | article_id | author_id | viewer_id | view_date  |
@@ -48,7 +46,7 @@ Views table:
 | 3          | 4         | 4         | 2019-07-21 |
 | 3          | 4         | 4         | 2019-07-21 |
 +------------+-----------+-----------+------------+
-Output: 
+Output:
 +------+
 | id   |
 +------+

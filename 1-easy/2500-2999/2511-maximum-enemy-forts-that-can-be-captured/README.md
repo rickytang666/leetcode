@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 41.2%
-
-**Tags:** `Array`, `Two Pointers`
+**Tags:** `array`, `two-pointers`
 
 ---
 
@@ -12,9 +10,9 @@
 
 You are given a **0-indexed** integer array `forts` of length `n` representing the positions of several forts. `forts[i]` can be `-1`, `0`, or `1` where:
 
-* `-1` represents there is **no fort** at the `ith` position.
-* `0` indicates there is an **enemy** fort at the `ith` position.
-* `1` indicates the fort at the `ith` the position is under your command.
+* `-1` represents there is **no fort** at the `i^th` position.
+* `0` indicates there is an **enemy** fort at the `i^th` position.
+* `1` indicates the fort at the `i^th` the position is under your command.
 
 Now you have decided to move your army from one of your forts at position `i` to an empty position `j` such that:
 
@@ -23,7 +21,7 @@ Now you have decided to move your army from one of your forts at position `i` to
 
 While moving the army, all the enemy forts that come in the way are **captured**.
 
-Return *the **maximum** number of enemy forts that can be captured*. In case it is **impossible** to move your army, or you do not have any fort under your command, return `0`*.*
+Return _the **maximum** number of enemy forts that can be captured_. In case it is **impossible** to move your army, or you do not have any fort under your command, return `0`_._
 
 **Example 1:**
 
@@ -70,4 +68,3 @@ If yes, find the closest empty positions satisfying all criteria.
 
 How can two-pointers be used to solve this problem optimally?
 </details>
-

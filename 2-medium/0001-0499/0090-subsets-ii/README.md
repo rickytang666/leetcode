@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 60.7%
-
-**Tags:** `Array`, `Backtracking`, `Bit Manipulation`
+**Tags:** `array`, `backtracking`, `bit-manipulation`
 
 ---
 
 ## Description
 
-Given an integer array `nums` that may contain duplicates, return *all possible* *subsets* *(the power set)*.
+Given an integer array `nums` that may contain duplicates, return _all possible_ _subsets_ _(the power set)_.
 
 The solution set **must not** contain duplicate subsets. Return the solution in **any order**.
 

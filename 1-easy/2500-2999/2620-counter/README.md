@@ -2,22 +2,20 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 82.3%
-
 ---
 
 ## Description
 
-Given an integer `n`, return a `counter` function. This `counter` function initially returns `n` and then returns 1 more than the previous value every subsequent time it is called (`n`, `n + 1`, `n + 2`, etc).
+Given an integer `n`, return a `counter` function. This `counter` function initially returns `n` and then returns 1 more than the previous value every subsequent time it is called (`n`, `n + 1`, `n + 2`, etc).
 
 **Example 1:**
 
 ```
-Input: 
-n = 10 
+Input:
+n = 10
 ["call","call","call"]
 Output: [10,11,12]
-Explanation: 
+Explanation:
 counter() = 10 // The first time counter() is called, it returns n.
 counter() = 11 // Returns 1 more than the previous time.
 counter() = 12 // Returns 1 more than the previous time.
@@ -26,7 +24,7 @@ counter() = 12 // Returns 1 more than the previous time.
 **Example 2:**
 
 ```
-Input: 
+Input:
 n = -2
 ["call","call","call","call","call"]
 Output: [-2,-1,0,1,2]
@@ -35,7 +33,7 @@ Explanation: counter() initially returns -2. Then increases after each sebsequen
 
 **Constraints:**
 
-* `-1000 <= n <= 1000`
+* `-1000^<= n <= 1000`
 * `0 <= calls.length <= 1000`
 * `calls[i] === "call"`
 
@@ -43,5 +41,14 @@ Explanation: counter() initially returns -2. Then increases after each sebsequen
 
 ## Hints
 
-1. In JavaScript, a function can return a closure. A closure is defined as a function and the variables declared around it (it's lexical environment).
-2. A count variable can be initialized in the outer function and mutated in the inner function.
+<details>
+<summary>Hint 1</summary>
+
+In JavaScript, a function can return a closure. A closure is defined as a function and the variables declared around it (it's lexical environment).
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+A count variable can be initialized in the outer function and mutated in the inner function.
+</details>

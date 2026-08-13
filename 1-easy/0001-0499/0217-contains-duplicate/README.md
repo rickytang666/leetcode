@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 63.9%
-
-**Tags:** `Array`, `Hash Table`, `Sorting`
+**Tags:** `array`, `hash-table`, `sorting`
 
 ---
 
@@ -40,5 +38,5 @@ All elements are distinct.
 
 **Constraints:**
 
-* `1 <= nums.length <= 105`
-* `-109 <= nums[i] <= 109`
+* `1 <= nums.length <= 10^5`
+* `-10^9 <= nums[i] <= 10^9`

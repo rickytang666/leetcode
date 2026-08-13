@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 65.9%
-
-**Tags:** `Depth-First Search`, `Breadth-First Search`, `Graph Theory`
+**Tags:** `depth-first-search`, `breadth-first-search`, `graph`
 
 ---
 
@@ -12,7 +10,7 @@
 
 There are `n` cities numbered from `0` to `n - 1` and `n - 1` roads such that there is only one way to travel between two different cities (this network form a tree). Last year, The ministry of transport decided to orient the roads in one direction because they are too narrow.
 
-Roads are represented by `connections` where `connections[i] = [ai, bi]` represents a road from city `ai` to city `bi`.
+Roads are represented by `connections` where `connections[i] = [a_i, b_i]` represents a road from city `a_i` to city `b_i`.
 
 This year, there will be a big event in the capital (city `0`), and many people want to travel to this city.
 
@@ -49,11 +47,11 @@ Output: 0
 
 **Constraints:**
 
-* `2 <= n <= 5 * 104`
+* `2 <= n <= 5 * 10^4`
 * `connections.length == n - 1`
 * `connections[i].length == 2`
-* `0 <= ai, bi <= n - 1`
-* `ai != bi`
+* `0 <= a_i, b_i <= n - 1`
+* `a_i != b_i`
 
 ---
 
@@ -64,4 +62,3 @@ Output: 0
 
 Treat the graph as undirected. Start a dfs from the root, if you come across an edge in the forward direction, you need to reverse the edge.
 </details>
-

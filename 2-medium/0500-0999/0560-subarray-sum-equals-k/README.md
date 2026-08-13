@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 46.4%
-
-**Tags:** `Array`, `Hash Table`, `Prefix Sum`
+**Tags:** `array`, `hash-table`, `prefix-sum`
 
 ---
 
 ## Description
 
-Given an array of integers `nums` and an integer `k`, return *the total number of subarrays whose sum equals to* `k`.
+Given an array of integers `nums` and an integer `k`, return _the total number of subarrays whose sum equals to_ `k`.
 
 A subarray is a contiguous **non-empty** sequence of elements within an array.
 
@@ -30,17 +28,34 @@ Output: 2
 
 **Constraints:**
 
-* `1 <= nums.length <= 2 * 104`
+* `1 <= nums.length <= 2 * 10^4`
 * `-1000 <= nums[i] <= 1000`
-* `-107 <= k <= 107`
+* `-10^7 <= k <= 10^7`
 
 ---
 
 ## Hints
 
-1. Will Brute force work here? Try to optimize it.
-2. Can we optimize it by using some extra space?
-3. What about storing sum frequencies in a hash table? Will it be useful?
-4. sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the elements from index i to j-1.
+<details>
+<summary>Hint 1</summary>
 
-Can we use this property to optimize it.
+Will Brute force work here? Try to optimize it.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Can we optimize it by using some extra space?
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+What about storing sum frequencies in a hash table? Will it be useful?
+</details>
+
+<details>
+<summary>Hint 4</summary>
+
+sum(i,j)=sum(0,j)-sum(0,i), where sum(i,j) represents the sum of all the elements from index i to j-1. Can we use this property to optimize it.
+</details>

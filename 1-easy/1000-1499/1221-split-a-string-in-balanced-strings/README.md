@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.2%
-
-**Tags:** `String`, `Greedy`, `Counting`
+**Tags:** `string`, `greedy`, `counting`
 
 ---
 
@@ -16,7 +14,7 @@ Given a **balanced** string `s`, split it into some number of substrings such th
 
 * Each substring is balanced.
 
-Return *the **maximum** number of balanced strings you can obtain.*
+Return _the **maximum** number of balanced strings you can obtain._
 
 **Example 1:**
 
@@ -32,7 +30,7 @@ Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contai
 Input: s = "RLRRRLLRLL"
 Output: 2
 Explanation: s can be split into "RL", "RRRLLRLL", each substring contains same number of 'L' and 'R'.
-Note that s cannot be split into "RL", "RR", "RL", "LR", "LL", because the 2nd and 5th substrings are not balanced.
+Note that s cannot be split into "RL", "RR", "RL", "LR", "LL", because the 2^nd and 5^th substrings are not balanced.
 ```
 
 **Example 3:**
@@ -53,5 +51,14 @@ Explanation: s can be split into "LLLLRRRR".
 
 ## Hints
 
-1. Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.
-2. Whenever the balance variable reaches zero then we increase the answer by one.
+<details>
+<summary>Hint 1</summary>
+
+Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Whenever the balance variable reaches zero then we increase the answer by one.
+</details>

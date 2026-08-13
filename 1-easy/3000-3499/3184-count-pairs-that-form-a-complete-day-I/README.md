@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 77.9%
-
-**Tags:** `Array`, `Hash Table`, `Counting`
+**Tags:** `array`, `hash-table`, `counting`
 
 ---
 
@@ -39,10 +37,14 @@ The pairs of indices that form a complete day are `(0, 1)`, `(0, 2)`, and `(1, 2
 **Constraints:**
 
 * `1 <= hours.length <= 100`
-* `1 <= hours[i] <= 109`
+* `1 <= hours[i] <= 10^9`
 
 ---
 
 ## Hints
 
-1. Brute force all pairs <code>(i, j)</code> and check if they form a valid complete day. It is considered a complete day if <code>(hours[i] + hours[j]) % 24 == 0</code>.
+<details>
+<summary>Hint 1</summary>
+
+Brute force all pairs `(i, j)` and check if they form a valid complete day. It is considered a complete day if `(hours[i] + hours[j]) % 24 == 0`.
+</details>

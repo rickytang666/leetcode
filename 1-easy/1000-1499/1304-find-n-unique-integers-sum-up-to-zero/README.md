@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 78.5%
-
-**Tags:** `Array`, `Math`
+**Tags:** `array`, `math`
 
 ---
 
@@ -42,5 +40,14 @@ Output: [0]
 
 ## Hints
 
-1. Return an array where the values are symmetric. (+x , -x).
-2. If n is odd, append value 0 in your returned array.
+<details>
+<summary>Hint 1</summary>
+
+Return an array where the values are symmetric. (+x , -x).
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+If n is odd, append value 0 in your returned array.
+</details>

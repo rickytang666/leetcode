@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 70.7%
-
-**Tags:** `Array`, `Hash Table`, `Matrix`, `Simulation`
+**Tags:** `array`, `hash-table`, `matrix`, `simulation`
 
 ---
 
 ## Description
 
-Given a **0-indexed** `n x n` integer matrix `grid`, *return the number of pairs* `(ri, cj)` *such that row* `ri` *and column* `cj` *are equal*.
+Given a **0-indexed** `n x n` integer matrix `grid`, _return the number of pairs_ `(r_i, c_j)` _such that row_ `r_i` _and column_ `c_j` _are equal_.
 
 A row and column pair is considered equal if they contain the same elements in the same order (i.e., an equal array).
 
@@ -42,12 +40,26 @@ Explanation: There are 3 equal row and column pairs:
 
 * `n == grid.length == grid[i].length`
 * `1 <= n <= 200`
-* `1 <= grid[i][j] <= 105`
+* `1 <= grid[i][j] <= 10^5`
 
 ---
 
 ## Hints
 
-1. We can use nested loops to compare every row against every column.
-2. Another loop is necessary to compare the row and column element by element.
-3. It is also possible to hash the arrays and compare the hashed values instead.
+<details>
+<summary>Hint 1</summary>
+
+We can use nested loops to compare every row against every column.
+</details>
+
+<details>
+<summary>Hint 2</summary>
+
+Another loop is necessary to compare the row and column element by element.
+</details>
+
+<details>
+<summary>Hint 3</summary>
+
+It is also possible to hash the arrays and compare the hashed values instead.
+</details>

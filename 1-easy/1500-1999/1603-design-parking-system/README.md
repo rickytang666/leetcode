@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 87.1%
-
-**Tags:** `Design`, `Simulation`, `Counting`
+**Tags:** `design`, `simulation`, `counting`
 
 ---
 
@@ -44,4 +42,8 @@ parkingSystem.addCar(1); // return false because there is no available slot for 
 
 ## Hints
 
-1. Record number of parking slots still available for each car type.
+<details>
+<summary>Hint 1</summary>
+
+Record number of parking slots still available for each car type.
+</details>

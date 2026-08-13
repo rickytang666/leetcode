@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 44.0%
-
-**Tags:** `Two Pointers`, `String`, `Greedy`
+**Tags:** `two-pointers`, `string`, `greedy`
 
 ---
 
 ## Description
 
-Given a string `s`, return `true` *if the* `s` *can be palindrome after deleting **at most one** character from it*.
+Given a string `s`, return `true` _if the_ `s` _can be palindrome after deleting **at most one** character from it_.
 
 **Example 1:**
 
@@ -36,5 +34,5 @@ Output: false
 
 **Constraints:**
 
-* `1 <= s.length <= 105`
+* `1 <= s.length <= 10^5`
 * `s` consists of lowercase English letters.

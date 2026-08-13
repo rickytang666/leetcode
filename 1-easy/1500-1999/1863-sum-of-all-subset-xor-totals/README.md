@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 90.1%
-
-**Tags:** `Array`, `Math`, `Backtracking`, `Bit Manipulation`, `Combinatorics`, `Enumeration`
+**Tags:** `array`, `math`, `backtracking`, `bit-manipulation`, `combinatorics`, `enumeration`
 
 ---
 
@@ -14,7 +12,7 @@ The **XOR total** of an array is defined as the bitwise `XOR` of **all its eleme
 
 * For example, the **XOR total** of the array `[2,5,6]` is `2 XOR 5 XOR 6 = 1`.
 
-Given an array `nums`, return *the **sum** of all **XOR totals** for every **subset** of* `nums`.
+Given an array `nums`, return _the **sum** of all **XOR totals** for every **subset** of_ `nums`.
 
 **Note:** Subsets with the **same** elements should be counted **multiple** times.
 
@@ -78,4 +76,3 @@ Is there a way to iterate through all the subsets of the array?
 
 Can we use recursion to efficiently iterate through all the subsets?
 </details>
-

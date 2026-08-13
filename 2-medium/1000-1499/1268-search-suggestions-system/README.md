@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 65.2%
-
-**Tags:** `Array`, `String`, `Binary Search`, `Trie`, `Sorting`, `Heap (Priority Queue)`
+**Tags:** `array`, `string`, `binary-search`, `trie`, `sorting`, `heap-priority-queue`
 
 ---
 
@@ -14,7 +12,7 @@ You are given an array of strings `products` and a string `searchWord`.
 
 Design a system that suggests at most three product names from `products` after each character of `searchWord` is typed. Suggested products should have common prefix with `searchWord`. If there are more than three products with a common prefix return the three lexicographically minimums products.
 
-Return *a list of lists of the suggested products after each character of* `searchWord` *is typed*.
+Return _a list of lists of the suggested products after each character of_ `searchWord` _is typed_.
 
 **Example 1:**
 
@@ -38,7 +36,7 @@ Explanation: The only word "havana" will be always suggested while typing the se
 
 * `1 <= products.length <= 1000`
 * `1 <= products[i].length <= 3000`
-* `1 <= sum(products[i].length) <= 2 * 104`
+* `1 <= sum(products[i].length) <= 2 * 10^4`
 * All the strings of `products` are **unique**.
 * `products[i]` consists of lowercase English letters.
 * `1 <= searchWord.length <= 1000`
@@ -65,4 +63,3 @@ Binary search the answer.
 
 Use Trie data structure to store the best three matching. Traverse the Trie.
 </details>
-

@@ -2,9 +2,7 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 49.1%
-
-**Tags:** `Array`, `Hash Table`, `String`, `Dynamic Programming`, `Trie`, `Memoization`
+**Tags:** `array`, `hash-table`, `string`, `dynamic-programming`, `trie`, `memoization`
 
 ---
 

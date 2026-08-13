@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 71.8%
-
-**Tags:** `Tree`, `Breadth-First Search`, `Binary Tree`
+**Tags:** `tree`, `breadth-first-search`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a binary tree, return *the level order traversal of its nodes' values*. (i.e., from left to right, level by level).
+Given the `root` of a binary tree, return _the level order traversal of its nodes' values_. (i.e., from left to right, level by level).
 
 **Example 1:**
 
@@ -44,4 +42,8 @@ Output: []
 
 ## Hints
 
-1. Use a queue to perform BFS.
+<details>
+<summary>Hint 1</summary>
+
+Use a queue to perform BFS.
+</details>

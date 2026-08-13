@@ -2,15 +2,13 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 59.5%
-
-**Tags:** `Tree`, `Depth-First Search`, `Breadth-First Search`, `Binary Search Tree`, `Binary Tree`
+**Tags:** `tree`, `depth-first-search`, `breadth-first-search`, `binary-search-tree`, `binary-tree`
 
 ---
 
 ## Description
 
-Given the `root` of a Binary Search Tree (BST), return *the minimum absolute difference between the values of any two different nodes in the tree*.
+Given the `root` of a Binary Search Tree (BST), return _the minimum absolute difference between the values of any two different nodes in the tree_.
 
 **Example 1:**
 
@@ -32,7 +30,7 @@ Output: 1
 
 **Constraints:**
 
-* The number of nodes in the tree is in the range `[2, 104]`.
-* `0 <= Node.val <= 105`
+* The number of nodes in the tree is in the range `[2, 10^4]`.
+* `0 <= Node.val <= 10^5`
 
-**Note:** This question is the same as 783: <https://leetcode.com/problems/minimum-distance-between-bst-nodes/>
+**Note:** This question is the same as 783: [https://leetcode.com/problems/minimum-distance-between-bst-nodes/](https://leetcode.com/problems/minimum-distance-between-bst-nodes/)

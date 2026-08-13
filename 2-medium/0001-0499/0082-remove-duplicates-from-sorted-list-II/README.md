@@ -2,15 +2,13 @@
 
 **Difficulty:** Medium
 
-**Acceptance Rate:** 51.0%
-
-**Tags:** `Linked List`, `Two Pointers`
+**Tags:** `linked-list`, `two-pointers`
 
 ---
 
 ## Description
 
-Given the `head` of a sorted linked list, *delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list*. Return *the linked list **sorted** as well*.
+Given the `head` of a sorted linked list, _delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list_. Return _the linked list **sorted** as well_.
 
 **Example 1:**
 

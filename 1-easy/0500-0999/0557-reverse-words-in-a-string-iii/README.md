@@ -2,9 +2,7 @@
 
 **Difficulty:** Easy
 
-**Acceptance Rate:** 83.9%
-
-**Tags:** `Two Pointers`, `String`
+**Tags:** `two-pointers`, `string`
 
 ---
 
@@ -28,7 +26,7 @@ Output: "rM gniD"
 
 **Constraints:**
 
-* `1 <= s.length <= 5 * 104`
+* `1 <= s.length <= 5 * 10^4`
 * `s` contains printable **ASCII** characters.
 * `s` does not contain any leading or trailing spaces.
 * There is **at least one** word in `s`.
