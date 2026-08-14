@@ -37,11 +37,11 @@ LANG_EXTENSIONS = {
     "mssql": "sql",
     "mysql": "sql",
     "oraclesql": "sql",
-    "pandas": "py",
     "php": "php",
     "postgresql": "sql",
     "python": "py",
     "python3": "py",
+    "pythondata": "py",
     "racket": "rkt",
     "ruby": "rb",
     "rust": "rs",
@@ -51,6 +51,9 @@ LANG_EXTENSIONS = {
 }
 
 SOLUTION_FILE_RE = re.compile(r"^solution-[1-9]\d*\.[^.]+$")
+ALLOWED_SUPPORT_FILES = {"schema.py"}
+SQL_SCHEMA_LANG_SLUGS = {"mysql", "mssql", "oraclesql", "postgresql"}
+PANDAS_SCHEMA_LANG_SLUGS = {"pythondata"}
 
 
 class LcError(Exception):
@@ -106,6 +109,7 @@ def build_parser() -> argparse.ArgumentParser:
     add_parser.add_argument("problem_id", type=parse_problem_id, help="numeric LeetCode frontend ID")
     add_parser.add_argument("lang_slug", help="LeetCode language slug, for example python3 or postgresql")
     add_parser.add_argument("--force-readme", action="store_true", help="regenerate README.md if it exists")
+    add_parser.add_argument("--force-schema", action="store_true", help="regenerate schema.py support file if it exists")
     add_parser.add_argument("--no-open", action="store_true", help="do not open files in VS Code after writing")
     add_parser.set_defaults(func=add_problem)
 
@@ -134,6 +138,7 @@ def add_problem(args: argparse.Namespace) -> int:
     problem = fetch_problem(client, args.problem_id)
     snippets = fetch_snippets(client, args.problem_id)
     snippet = select_snippet(snippets, args.lang_slug)
+    schemas = fetch_schemas(client, args.problem_id)
 
     extension = LANG_EXTENSIONS.get(args.lang_slug)
     if not extension:
@@ -162,13 +167,21 @@ def add_problem(args: argparse.Namespace) -> int:
 
     readme_path = problem_dir / "README.md"
     wrote_readme = write_readme(readme_path, problem, force=args.force_readme)
+    schema_path = write_schema_file(problem_dir, schemas, args.lang_slug, force=args.force_schema)
 
     solution_path = next_solution_path(problem_dir, extension)
-    solution_path.write_text(snippet["code"].rstrip() + "\n", encoding="utf-8")
+    solution_content = format_solution_content(snippet["code"], schemas, args.lang_slug)
+    solution_path.write_text(solution_content, encoding="utf-8")
 
     print(f"problem: {problem['id']}. {problem['title']}")
     print(f"folder:  {problem_dir.relative_to(ROOT_DIR)}")
     print(f"readme:  {'wrote' if wrote_readme else 'kept'} README.md")
+    if schema_path:
+        print(f"schema:  {'wrote' if schema_path.wrote else 'kept'} {schema_path.path.name}")
+    elif has_embedded_sql_schema(schemas, args.lang_slug):
+        print(f"schema:  embedded in {solution_path.name}")
+    else:
+        print("schema:  none")
     print(f"code:    wrote {solution_path.name}")
 
     if not args.no_open:
@@ -246,7 +259,7 @@ def validate_done_problem_dir(problem_dir: Path) -> None:
 
     nonconvention_files = []
     for path in sorted(item for item in problem_dir.iterdir() if item.is_file()):
-        if path.name == "README.md" or SOLUTION_FILE_RE.match(path.name):
+        if path.name == "README.md" or path.name in ALLOWED_SUPPORT_FILES or SOLUTION_FILE_RE.match(path.name):
             continue
         if is_git_ignored(path):
             continue
@@ -310,6 +323,21 @@ def fetch_snippets(client: ApiClient, problem_id: int) -> list[dict[str, Any]]:
     return snippets
 
 
+def fetch_schemas(client: ApiClient, problem_id: int) -> dict[str, list[str]]:
+    payload = client.get(f"/api/problems/id/{problem_id}/schemas")
+    schemas = payload.get("schemas")
+    if not isinstance(schemas, dict):
+        raise LcError(f"schema response for problem {problem_id} was malformed")
+
+    mysql_schemas = schemas.get("mysql_schemas") or []
+    data_schemas = schemas.get("data_schemas") or []
+    if not isinstance(mysql_schemas, list) or not all(isinstance(item, str) for item in mysql_schemas):
+        raise LcError(f"SQL schema response for problem {problem_id} was malformed")
+    if not isinstance(data_schemas, list) or not all(isinstance(item, str) for item in data_schemas):
+        raise LcError(f"data schema response for problem {problem_id} was malformed")
+    return {"mysql_schemas": mysql_schemas, "data_schemas": data_schemas}
+
+
 def select_snippet(snippets: list[dict[str, Any]], lang_slug: str) -> dict[str, Any]:
     for snippet in snippets:
         if snippet.get("langSlug") == lang_slug:
@@ -368,6 +396,65 @@ def write_readme(readme_path: Path, problem: dict[str, Any], force: bool) -> boo
         return False
     readme_path.write_text(format_readme(problem), encoding="utf-8")
     return True
+
+
+@dataclass(frozen=True)
+class WrittenSchema:
+    path: Path
+    wrote: bool
+
+
+def write_schema_file(
+    problem_dir: Path,
+    schemas: dict[str, list[str]],
+    lang_slug: str,
+    *,
+    force: bool,
+) -> WrittenSchema | None:
+    if lang_slug in PANDAS_SCHEMA_LANG_SLUGS:
+        content = format_pandas_schema(schemas["data_schemas"])
+        if not content:
+            return None
+        return write_support_file(problem_dir / "schema.py", content, force=force)
+
+    return None
+
+
+def write_support_file(path: Path, content: str, *, force: bool) -> WrittenSchema:
+    if path.exists() and not force:
+        return WrittenSchema(path=path, wrote=False)
+    path.write_text(content, encoding="utf-8")
+    return WrittenSchema(path=path, wrote=True)
+
+
+def format_solution_content(snippet_code: str, schemas: dict[str, list[str]], lang_slug: str) -> str:
+    snippet = snippet_code.rstrip()
+    if lang_slug not in SQL_SCHEMA_LANG_SLUGS:
+        return snippet + "\n"
+
+    schema = format_sql_schema(schemas["mysql_schemas"])
+    if not schema:
+        return snippet + "\n"
+
+    return f"-- Schema\n{schema}\n{snippet}\n"
+
+
+def has_embedded_sql_schema(schemas: dict[str, list[str]], lang_slug: str) -> bool:
+    return lang_slug in SQL_SCHEMA_LANG_SLUGS and bool(format_sql_schema(schemas["mysql_schemas"]))
+
+
+def format_sql_schema(statements: list[str]) -> str | None:
+    cleaned = [statement.strip().rstrip(";") for statement in statements if statement.strip()]
+    if not cleaned:
+        return None
+    return ";\n".join(cleaned) + ";\n"
+
+
+def format_pandas_schema(statements: list[str]) -> str | None:
+    cleaned = [statement.strip() for statement in statements if statement.strip()]
+    if not cleaned:
+        return None
+    return "import pandas as pd\n\n" + "\n\n".join(cleaned) + "\n"
 
 
 def format_readme(problem: dict[str, Any]) -> str:
