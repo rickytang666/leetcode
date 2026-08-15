@@ -14,7 +14,6 @@ from dotenv import load_dotenv
 
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
-DEFAULT_API_BASE_URL = "https://leetcode-mcp-3in743b2uq-uc.a.run.app"
 
 DIFFICULTY_DIRS = {
     "Easy": "1-easy",
@@ -68,11 +67,13 @@ class ApiClient:
     @classmethod
     def from_env(cls) -> "ApiClient":
         load_dotenv(ROOT_DIR / ".env")
-        base_url = os.getenv("LEETCODE_API_BASE_URL", DEFAULT_API_BASE_URL).rstrip("/")
+        base_url = os.getenv("LEETCODE_API_BASE_URL")
         api_key = os.getenv("LEETCODE_API_KEY")
+        if not base_url:
+            raise LcError("LEETCODE_API_BASE_URL is missing. Add it to .env or your shell environment.")
         if not api_key:
             raise LcError("LEETCODE_API_KEY is missing. Add it to .env or your shell environment.")
-        return cls(base_url=base_url, api_key=api_key)
+        return cls(base_url=base_url.rstrip("/"), api_key=api_key)
 
     def get(self, path: str) -> dict[str, Any]:
         url = f"{self.base_url}{path}"
