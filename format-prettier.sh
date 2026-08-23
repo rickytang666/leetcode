@@ -2,11 +2,25 @@
 
 set -euo pipefail
 
+if [ -t 1 ] && [ -z "${NO_COLOR+x}" ] && [ "${TERM:-}" != "dumb" ]; then
+  bold=$'\033[1m'
+  dim=$'\033[2m'
+  green=$'\033[32m'
+  cyan=$'\033[36m'
+  reset=$'\033[0m'
+else
+  bold=""
+  dim=""
+  green=""
+  cyan=""
+  reset=""
+fi
+
 usage() {
   cat <<'EOF'
 usage: ./format-prettier.sh [--check] [--all]
 
-Formats tracked repo text with Prettier.
+formats tracked repo text with prettier.
 
 default: markdown only (*.md, *.mdx)
 --all:   markdown plus js/ts/json/yaml/css/html/scss
@@ -68,8 +82,18 @@ case "$scope" in
 esac
 
 if [ ! -s "$tmp_file" ]; then
-  echo "No files matched."
+  printf '%sno files matched.%s\n' "${dim}" "${reset}"
   exit 0
 fi
 
+file_count=$(tr -cd '\0' <"$tmp_file" | wc -c | tr -d ' ')
+if [ "$mode" = "--check" ]; then
+  action="checking"
+else
+  action="formatting"
+fi
+
+printf '%s%s%s %s%d%s files with prettier\n\n' \
+  "${bold}" "${action}" "${reset}" "${cyan}" "${file_count}" "${reset}"
 xargs -0 "${prettier_cmd[@]}" "$mode" <"$tmp_file"
+printf '\n%sdone%s\n' "${green}${bold}" "${reset}"

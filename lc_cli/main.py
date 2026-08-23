@@ -54,9 +54,37 @@ ALLOWED_SUPPORT_FILES = {"schema.py"}
 SQL_SCHEMA_LANG_SLUGS = {"mysql", "mssql", "oraclesql", "postgresql"}
 PANDAS_SCHEMA_LANG_SLUGS = {"pythondata"}
 
+ANSI = {
+    "bold": "1",
+    "dim": "2",
+    "red": "31",
+    "green": "32",
+    "yellow": "33",
+    "cyan": "36",
+}
+
 
 class LcError(Exception):
     pass
+
+
+def styled(text: object, *styles: str, stream: Any = sys.stdout) -> str:
+    value = str(text)
+    if not getattr(stream, "isatty", lambda: False)():
+        return value
+    if "NO_COLOR" in os.environ or os.getenv("TERM") == "dumb":
+        return value
+    codes = ";".join(ANSI[style] for style in styles)
+    return f"\033[{codes}m{value}\033[0m"
+
+
+def print_field(label: str, value: object, *, value_style: str | None = None) -> None:
+    rendered = styled(value, value_style) if value_style else str(value)
+    print(f"  {styled(f'{label:<9}', 'dim')} {rendered}")
+
+
+def print_heading(text: str, *, color: str = "green") -> None:
+    print(styled(text, "bold", color))
 
 
 @dataclass(frozen=True)
@@ -103,19 +131,19 @@ class ApiClient:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="lc", description="LeetCode repo DX helpers")
+    parser = argparse.ArgumentParser(prog="lc", description="leetcode repo dx helpers")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     add_parser = subparsers.add_parser("add", help="create a problem folder, README, and starter solution")
-    add_parser.add_argument("problem_id", type=parse_problem_id, help="numeric LeetCode frontend ID")
-    add_parser.add_argument("lang_slug", help="LeetCode language slug, for example python3 or postgresql")
+    add_parser.add_argument("problem_id", type=parse_problem_id, help="numeric leetcode frontend ID")
+    add_parser.add_argument("lang_slug", help="leetcode language slug, for example python3 or postgresql")
     add_parser.add_argument("--force-readme", action="store_true", help="regenerate README.md if it exists")
     add_parser.add_argument("--force-schema", action="store_true", help="regenerate schema.py support file if it exists")
     add_parser.add_argument("--no-open", action="store_true", help="do not open files in VS Code after writing")
     add_parser.set_defaults(func=add_problem)
 
     done_parser = subparsers.add_parser("done", help="stage and commit one completed problem")
-    done_parser.add_argument("problem_id", type=parse_problem_id, help="numeric LeetCode frontend ID")
+    done_parser.add_argument("problem_id", type=parse_problem_id, help="numeric leetcode frontend ID")
     done_parser.add_argument("--message", "-m", help='commit message, default: "add q<id>"')
     done_parser.add_argument("--push", action="store_true", help="push after a successful commit")
     done_parser.add_argument("--dry-run", action="store_true", help="show what would be committed without staging")
@@ -174,16 +202,24 @@ def add_problem(args: argparse.Namespace) -> int:
     solution_content = format_solution_content(snippet["code"], schemas, args.lang_slug)
     solution_path.write_text(solution_content, encoding="utf-8")
 
-    print(f"problem: {problem['id']}. {problem['title']}")
-    print(f"folder:  {problem_dir.relative_to(ROOT_DIR)}")
-    print(f"readme:  {'wrote' if wrote_readme else 'kept'} README.md")
+    print_heading(f"created {problem['id']}. {problem['title']}")
+    print_field("folder", problem_dir.relative_to(ROOT_DIR), value_style="cyan")
+    print_field(
+        "readme",
+        f"{'wrote' if wrote_readme else 'kept'} README.md",
+        value_style="green" if wrote_readme else "yellow",
+    )
     if schema_path:
-        print(f"schema:  {'wrote' if schema_path.wrote else 'kept'} {schema_path.path.name}")
+        print_field(
+            "schema",
+            f"{'wrote' if schema_path.wrote else 'kept'} {schema_path.path.name}",
+            value_style="green" if schema_path.wrote else "yellow",
+        )
     elif has_embedded_sql_schema(schemas, args.lang_slug):
-        print(f"schema:  embedded in {solution_path.name}")
+        print_field("schema", f"embedded in {solution_path.name}", value_style="green")
     else:
-        print("schema:  none")
-    print(f"code:    wrote {solution_path.name}")
+        print_field("schema", "none", value_style="dim")
+    print_field("solution", f"wrote {solution_path.name}", value_style="green")
 
     if not args.no_open:
         open_in_vscode(solution_path, readme_path)
@@ -198,40 +234,40 @@ def done_problem(args: argparse.Namespace) -> int:
     message = args.message or f"add q{args.problem_id}"
     changed_paths = git_changed_paths(problem_dir)
 
-    print(f"problem: q{args.problem_id}")
-    print(f"folder:  {problem_dir.relative_to(ROOT_DIR)}")
+    print_heading(f"finishing q{args.problem_id}", color="cyan")
+    print_field("folder", problem_dir.relative_to(ROOT_DIR), value_style="cyan")
 
     if not changed_paths:
-        print("nothing to commit for this problem")
+        print_field("status", "nothing to commit", value_style="yellow")
         return 0
 
-    print("changes:")
+    print(f"\n{styled('changes', 'bold')}")
     for path in changed_paths:
-        print(f"  {path}")
-    print(f"commit:  {message}")
+        print(f"  {styled(path, 'cyan')}")
+    print_field("commit", message)
 
     outside_staged = git_staged_paths_outside(problem_dir)
     if outside_staged:
-        print("note: unrelated staged changes exist and will be left untouched:")
+        print(f"\n{styled('note:', 'bold', 'yellow')} unrelated staged changes will be left untouched:")
         for path in outside_staged:
-            print(f"  {path}")
+            print(f"  {styled(path, 'dim')}")
 
     if args.dry_run:
-        print("dry run: skipped git add/commit")
+        print(f"\n{styled('dry run', 'bold', 'yellow')}  skipped git add and commit")
         return 0
 
     git_run(["add", "-A", "--", str(problem_dir.relative_to(ROOT_DIR))])
 
     if git_run(["diff", "--cached", "--quiet", "--", str(problem_dir.relative_to(ROOT_DIR))], check=False).returncode == 0:
-        print("nothing to commit for this problem")
+        print_field("status", "nothing to commit", value_style="yellow")
         return 0
 
     git_run(["commit", "-m", message, "--", str(problem_dir.relative_to(ROOT_DIR))])
-    print("committed")
+    print(f"\n{styled('committed', 'bold', 'green')}  {message}")
 
     if args.push:
         git_run(["push"])
-        print("pushed")
+        print(styled("pushed", "bold", "green"))
 
     return 0
 
@@ -517,7 +553,7 @@ def open_in_vscode(solution_path: Path, readme_path: Path) -> None:
             stderr=subprocess.DEVNULL,
         )
     except FileNotFoundError:
-        print("note: VS Code CLI `code` was not found; skipped opening files.")
+        print(f"\n{styled('note:', 'bold', 'yellow')} vs code cli `code` was not found; skipped opening files.")
 
 
 def main() -> None:
@@ -526,7 +562,7 @@ def main() -> None:
     try:
         raise SystemExit(args.func(args))
     except LcError as exc:
-        print(f"error: {exc}", file=sys.stderr)
+        print(f"{styled('error:', 'bold', 'red', stream=sys.stderr)} {exc}", file=sys.stderr)
         raise SystemExit(1) from exc
 
 
