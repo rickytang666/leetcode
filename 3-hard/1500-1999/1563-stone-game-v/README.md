@@ -42,8 +42,8 @@ Output: 0
 
 **Constraints:**
 
-* `1 <= stoneValue.length <= 500`
-* `1 <= stoneValue[i] <= 10^6`
+- `1 <= stoneValue.length <= 500`
+- `1 <= stoneValue[i] <= 10^6`
 
 ---
 

@@ -44,9 +44,9 @@ The first `k = 1` character `"h"` remains unchanged on reversal. The final resul
 
 **Constraints:**
 
-* `1 <= s.length <= 100`
-* `s` consists of lowercase English letters.
-* `1 <= k <= s.length`
+- `1 <= s.length <= 100`
+- `s` consists of lowercase English letters.
+- `1 <= k <= s.length`
 
 ---
 
