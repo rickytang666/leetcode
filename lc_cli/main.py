@@ -50,6 +50,7 @@ LANG_EXTENSIONS = {
 }
 
 SOLUTION_FILE_RE = re.compile(r"^solution-[1-9]\d*\.[^.]+$")
+PROBLEM_SLUG_RE = re.compile(r"^(?=.*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$")
 ALLOWED_SUPPORT_FILES = {"schema.py"}
 SQL_SCHEMA_LANG_SLUGS = {"mysql", "mssql", "oraclesql", "postgresql"}
 PANDAS_SCHEMA_LANG_SLUGS = {"pythondata"}
@@ -135,7 +136,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     add_parser = subparsers.add_parser("add", help="create a problem folder, README, and starter solution")
-    add_parser.add_argument("problem_id", type=parse_problem_id, help="numeric leetcode frontend ID")
+    add_parser.add_argument("problem_slug", type=parse_problem_slug, help="leetcode problem slug")
     add_parser.add_argument("lang_slug", help="leetcode language slug, for example python3 or postgresql")
     add_parser.add_argument("--force-readme", action="store_true", help="regenerate README.md if it exists")
     add_parser.add_argument("--force-schema", action="store_true", help="regenerate schema.py support file if it exists")
@@ -162,12 +163,20 @@ def parse_problem_id(value: str) -> int:
     return problem_id
 
 
+def parse_problem_slug(value: str) -> str:
+    if not PROBLEM_SLUG_RE.fullmatch(value):
+        raise argparse.ArgumentTypeError(
+            "problem slug must contain a lowercase letter and use only letters, numbers, and single hyphens"
+        )
+    return value
+
+
 def add_problem(args: argparse.Namespace) -> int:
     client = ApiClient.from_env()
-    problem = fetch_problem(client, args.problem_id)
-    snippets = fetch_snippets(client, args.problem_id)
+    problem = fetch_problem(client, args.problem_slug)
+    snippets = fetch_snippets(client, args.problem_slug)
     snippet = select_snippet(snippets, args.lang_slug)
-    schemas = fetch_schemas(client, args.problem_id)
+    schemas = fetch_schemas(client, args.problem_slug)
 
     extension = LANG_EXTENSIONS.get(args.lang_slug)
     if not extension:
@@ -178,7 +187,8 @@ def add_problem(args: argparse.Namespace) -> int:
         )
 
     problem_dir = canonical_problem_dir(problem)
-    existing = find_existing_problem_dirs(args.problem_id)
+    problem_id = int(problem["id"])
+    existing = find_existing_problem_dirs(problem_id)
     unexpected = [path for path in existing if path != problem_dir]
     if unexpected:
         paths = "\n".join(f"  - {path.relative_to(ROOT_DIR)}" for path in unexpected)
@@ -275,7 +285,10 @@ def done_problem(args: argparse.Namespace) -> int:
 def resolve_local_problem_dir(problem_id: int) -> Path:
     matches = find_existing_problem_dirs(problem_id)
     if not matches:
-        raise LcError(f"q{problem_id} is not present locally. Run `uv run lc add {problem_id} <langSlug>` first.")
+        raise LcError(
+            f"q{problem_id} is not present locally. "
+            "Run `uv run lc add <problemSlug> <langSlug>` first."
+        )
     if len(matches) > 1:
         paths = "\n".join(f"  - {path.relative_to(ROOT_DIR)}" for path in matches)
         raise LcError(f"multiple folders match q{problem_id}:\n{paths}")
@@ -344,34 +357,34 @@ def git_run(
     return result
 
 
-def fetch_problem(client: ApiClient, problem_id: int) -> dict[str, Any]:
-    payload = client.get(f"/api/problems/id/{problem_id}")
+def fetch_problem(client: ApiClient, problem_slug: str) -> dict[str, Any]:
+    payload = client.get(f"/api/problems/{problem_slug}")
     problem = payload.get("problem")
     if not problem:
-        raise LcError(f"problem {problem_id} was not found")
+        raise LcError(f'problem "{problem_slug}" was not found')
     return problem
 
 
-def fetch_snippets(client: ApiClient, problem_id: int) -> list[dict[str, Any]]:
-    payload = client.get(f"/api/problems/id/{problem_id}/code-snippets")
+def fetch_snippets(client: ApiClient, problem_slug: str) -> list[dict[str, Any]]:
+    payload = client.get(f"/api/problems/{problem_slug}/code-snippets")
     snippets = payload.get("code_snippets")
     if not isinstance(snippets, list):
-        raise LcError(f"code snippet response for problem {problem_id} was malformed")
+        raise LcError(f'code snippet response for problem "{problem_slug}" was malformed')
     return snippets
 
 
-def fetch_schemas(client: ApiClient, problem_id: int) -> dict[str, list[str]]:
-    payload = client.get(f"/api/problems/id/{problem_id}/schemas")
+def fetch_schemas(client: ApiClient, problem_slug: str) -> dict[str, list[str]]:
+    payload = client.get(f"/api/problems/{problem_slug}/schemas")
     schemas = payload.get("schemas")
     if not isinstance(schemas, dict):
-        raise LcError(f"schema response for problem {problem_id} was malformed")
+        raise LcError(f'schema response for problem "{problem_slug}" was malformed')
 
     mysql_schemas = schemas.get("mysql_schemas") or []
     data_schemas = schemas.get("data_schemas") or []
     if not isinstance(mysql_schemas, list) or not all(isinstance(item, str) for item in mysql_schemas):
-        raise LcError(f"SQL schema response for problem {problem_id} was malformed")
+        raise LcError(f'SQL schema response for problem "{problem_slug}" was malformed')
     if not isinstance(data_schemas, list) or not all(isinstance(item, str) for item in data_schemas):
-        raise LcError(f"data schema response for problem {problem_id} was malformed")
+        raise LcError(f'data schema response for problem "{problem_slug}" was malformed')
     return {"mysql_schemas": mysql_schemas, "data_schemas": data_schemas}
 
 
