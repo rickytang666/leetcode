@@ -91,9 +91,30 @@ if [ "$mode" = "--check" ]; then
   action="checking"
 else
   action="formatting"
+  before_checksums=()
+  while IFS= read -r -d '' file; do
+    before_checksums+=("$(cksum <"$file")")
+  done <"$tmp_file"
 fi
 
 printf '%s%s%s %s%d%s files with prettier\n\n' \
   "${bold}" "${action}" "${reset}" "${cyan}" "${file_count}" "${reset}"
 xargs -0 "${prettier_cmd[@]}" "$mode" <"$tmp_file"
-printf '\n%sdone%s\n' "${green}${bold}" "${reset}"
+
+if [ "$mode" = "--check" ]; then
+  printf '\n%sdone: formatting check passed (no files changed)%s\n' "${green}${bold}" "${reset}"
+else
+  changed_count=0
+  index=0
+  while IFS= read -r -d '' file; do
+    if [ "${before_checksums[$index]}" != "$(cksum <"$file")" ]; then
+      changed_count=$((changed_count + 1))
+    fi
+    index=$((index + 1))
+  done <"$tmp_file"
+  file_label="files"
+  if [ "$changed_count" -eq 1 ]; then
+    file_label="file"
+  fi
+  printf '\n%sdone: %d %s changed%s\n' "${green}${bold}" "${changed_count}" "${file_label}" "${reset}"
+fi
