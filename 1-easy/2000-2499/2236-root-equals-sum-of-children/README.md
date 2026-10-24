@@ -36,5 +36,5 @@ Explanation: The values of the root, its left child, and its right child are 5, 
 
 **Constraints:**
 
-* The tree consists only of the root, its left child, and its right child.
-* `-100 <= Node.val <= 100`
+- The tree consists only of the root, its left child, and its right child.
+- `-100 <= Node.val <= 100`
