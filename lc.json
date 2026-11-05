@@ -1,0 +1,7 @@
+{
+  "default_langs": {
+    "algorithms": "python3",
+    "database": "postgresql",
+    "javascript": "javascript"
+  }
+}

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import subprocess
@@ -48,6 +49,9 @@ LANG_EXTENSIONS = {
     "swift": "swift",
     "typescript": "ts",
 }
+
+CONFIG_PATH = ROOT_DIR / "lc.json"
+PROBLEM_TYPES = ("algorithms", "database", "javascript")
 
 SOLUTION_FILE_RE = re.compile(r"^solution-[1-9]\d*\.[^.]+$")
 PROBLEM_SLUG_RE = re.compile(r"^(?=.*[a-z])[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -153,7 +157,11 @@ def build_parser() -> argparse.ArgumentParser:
         type=parse_problem_ref,
         help="numeric leetcode frontend ID or problem slug",
     )
-    add_parser.add_argument("lang_slug", help="leetcode language slug, for example python3 or postgresql")
+    add_parser.add_argument(
+        "lang_slug",
+        nargs="?",
+        help="leetcode language slug; default: per problem type from lc.json",
+    )
     add_parser.add_argument("--force-readme", action="store_true", help="regenerate README.md if it exists")
     add_parser.add_argument("--force-schema", action="store_true", help="regenerate schema.py support file if it exists")
     add_parser.add_argument("--no-open", action="store_true", help="do not open files in VS Code after writing")
@@ -194,14 +202,19 @@ def add_problem(args: argparse.Namespace) -> int:
     client = ApiClient.from_env()
     problem = fetch_problem(client, args.problem)
     snippets = fetch_snippets(client, args.problem)
-    snippet = select_snippet(snippets, args.lang_slug)
+    if args.lang_slug:
+        lang_slug, lang_note = args.lang_slug, ""
+    else:
+        reason, lang_slug = default_lang_slug(snippets)
+        lang_note = f" ({reason})" if reason == "only option" else f" ({reason} default)"
+    snippet = select_snippet(snippets, lang_slug)
     schemas = fetch_schemas(client, args.problem)
 
-    extension = LANG_EXTENSIONS.get(args.lang_slug)
+    extension = LANG_EXTENSIONS.get(lang_slug)
     if not extension:
         available_known = ", ".join(sorted(LANG_EXTENSIONS))
         raise LcError(
-            f'langSlug "{args.lang_slug}" needs a file extension mapping. '
+            f'langSlug "{lang_slug}" needs a file extension mapping. '
             f"Known mappings: {available_known}"
         )
 
@@ -225,14 +238,15 @@ def add_problem(args: argparse.Namespace) -> int:
 
     readme_path = problem_dir / "README.md"
     wrote_readme = write_readme(readme_path, problem, force=args.force_readme)
-    schema_path = write_schema_file(problem_dir, schemas, args.lang_slug, force=args.force_schema)
+    schema_path = write_schema_file(problem_dir, schemas, lang_slug, force=args.force_schema)
 
     solution_path = next_solution_path(problem_dir, extension)
-    solution_content = format_solution_content(snippet["code"], schemas, args.lang_slug)
+    solution_content = format_solution_content(snippet["code"], schemas, lang_slug)
     solution_path.write_text(solution_content, encoding="utf-8")
 
     print_heading(f"created {problem['id']}. {problem['title']}")
     print_field("folder", problem_dir.relative_to(ROOT_DIR), value_style="cyan")
+    print_field("lang", f"{lang_slug}{lang_note}")
     print_field(
         "readme",
         f"{'wrote' if wrote_readme else 'kept'} README.md",
@@ -244,7 +258,7 @@ def add_problem(args: argparse.Namespace) -> int:
             f"{'wrote' if schema_path.wrote else 'kept'} {schema_path.path.name}",
             value_style="green" if schema_path.wrote else "yellow",
         )
-    elif has_embedded_sql_schema(schemas, args.lang_slug):
+    elif has_embedded_sql_schema(schemas, lang_slug):
         print_field("schema", f"embedded in {solution_path.name}", value_style="green")
     else:
         print_field("schema", "none", value_style="dim")
@@ -405,6 +419,49 @@ def fetch_schemas(client: ApiClient, problem_ref: ProblemRef) -> dict[str, list[
     if not isinstance(data_schemas, list) or not all(isinstance(item, str) for item in data_schemas):
         raise LcError(f'data schema response for problem "{problem_ref.value}" was malformed')
     return {"mysql_schemas": mysql_schemas, "data_schemas": data_schemas}
+
+
+def problem_type(snippets: list[dict[str, Any]]) -> str:
+    # leetcode exposes no category, but database and javascript problems ship distinctive snippet sets
+    available = {snippet.get("langSlug") for snippet in snippets}
+    if available & SQL_SCHEMA_LANG_SLUGS:
+        return "database"
+    if available and available <= {"javascript", "typescript"}:
+        return "javascript"
+    return "algorithms"
+
+
+def load_default_langs() -> dict[str, str]:
+    try:
+        config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    except FileNotFoundError as exc:
+        raise LcError(f"{CONFIG_PATH.name} is missing; pass a langSlug or restore it") from exc
+    except json.JSONDecodeError as exc:
+        raise LcError(f"{CONFIG_PATH.name} is not valid JSON: {exc}") from exc
+
+    default_langs = config.get("default_langs") if isinstance(config, dict) else None
+    if not isinstance(default_langs, dict) or not all(isinstance(v, str) for v in default_langs.values()):
+        raise LcError(f'{CONFIG_PATH.name} needs a "default_langs" object mapping problem type to langSlug')
+    unknown = sorted(set(default_langs) - set(PROBLEM_TYPES))
+    if unknown:
+        raise LcError(
+            f"{CONFIG_PATH.name} has unknown problem type(s): {', '.join(unknown)}. "
+            f"Known: {', '.join(PROBLEM_TYPES)}"
+        )
+    return default_langs
+
+
+def default_lang_slug(snippets: list[dict[str, Any]]) -> tuple[str, str]:
+    available = {snippet.get("langSlug") for snippet in snippets}
+    if len(available) == 1:
+        only = next(iter(available))
+        if isinstance(only, str):
+            return "only option", only
+    kind = problem_type(snippets)
+    lang_slug = load_default_langs().get(kind)
+    if not lang_slug:
+        raise LcError(f'{CONFIG_PATH.name} has no default for "{kind}" problems; add one or pass a langSlug')
+    return kind, lang_slug
 
 
 def select_snippet(snippets: list[dict[str, Any]], lang_slug: str) -> dict[str, Any]:
