@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -238,6 +239,7 @@ def add_problem(args: argparse.Namespace) -> int:
 
     readme_path = problem_dir / "README.md"
     wrote_readme = write_readme(readme_path, problem, force=args.force_readme)
+    formatted_readme = wrote_readme and format_markdown(readme_path)
     schema_path = write_schema_file(problem_dir, schemas, lang_slug, force=args.force_schema)
 
     solution_path = next_solution_path(problem_dir, extension)
@@ -247,10 +249,14 @@ def add_problem(args: argparse.Namespace) -> int:
     print_heading(f"created {problem['id']}. {problem['title']}")
     print_field("folder", problem_dir.relative_to(ROOT_DIR), value_style="cyan")
     print_field("lang", f"{lang_slug}{lang_note}")
+    if wrote_readme:
+        readme_status = "wrote README.md" + (" (formatted)" if formatted_readme else " (prettier failed, not formatted)")
+    else:
+        readme_status = "kept README.md"
     print_field(
         "readme",
-        f"{'wrote' if wrote_readme else 'kept'} README.md",
-        value_style="green" if wrote_readme else "yellow",
+        readme_status,
+        value_style="green" if formatted_readme else "yellow",
     )
     if schema_path:
         print_field(
@@ -621,6 +627,21 @@ def format_readme(problem: dict[str, Any]) -> str:
             )
 
     return "\n".join(lines).rstrip() + "\n"
+
+
+def format_markdown(path: Path) -> bool:
+    prettier = ["prettier"] if shutil.which("prettier") else ["npx", "--yes", "prettier"]
+    try:
+        result = subprocess.run(
+            [*prettier, "--write", "--log-level", "warn", str(path)],
+            cwd=ROOT_DIR,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+    except FileNotFoundError:
+        return False
+    return result.returncode == 0
 
 
 def next_solution_path(problem_dir: Path, extension: str) -> Path:
